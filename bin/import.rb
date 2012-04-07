@@ -22,6 +22,8 @@ class Converter
       convert_representatives
     when 'komiteer_oversikt'
       convert_committees
+    when 'emne_oversikt'
+      convert_topics
     else
       raise NotImplementedError, @doc.name
     end
@@ -39,6 +41,30 @@ class Converter
         end
       end
     end
+  end
+
+  def convert_topics
+    xml = create_builder
+    xml.topics { |topics|
+      @doc.css("emne_liste > emne").each do |xt|
+        topics.topic do |topic|
+          add_topic(topic, xt)
+
+          topic.subtopics do |subtopics|
+            xt.css("underemne_liste > emne").each do |xst|
+              subtopics.topic do |subtopic|
+                add_topic(subtopic, xst)
+              end
+            end
+          end
+        end
+      end
+    }
+  end
+
+  def add_topic(builder, node)
+    builder.externalId node.css("id").first.text
+    builder.name node.css("navn").first.text
   end
 
   def convert_parties
@@ -90,7 +116,10 @@ input_files = %w[
   folketingparser/rawdata/data.stortinget.no/eksport/partier/index.html?sesjonid=2011-2012
   folketingparser/rawdata/data.stortinget.no/eksport/komiteer/index.html?SesjonId=2011-2012
   folketingparser/rawdata/data.stortinget.no/eksport/dagensrepresentanter/index.html
+  folketingparser/rawdata/data.stortinget.no/eksport/emner/index.html
 ]
+
+# puts Converter.from_file(input_files.last).to_xml
 
 app_root = ENV['APP_ROOT'] or raise "must point APP_ROOT at checkout of git://github.com/holderdeord/hdo-site.git"
 Dir.chdir(File.expand_path("../..", __FILE__)) do
