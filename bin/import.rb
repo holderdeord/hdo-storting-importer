@@ -24,12 +24,26 @@ class Converter
       convert_committees
     when 'emne_oversikt'
       convert_topics
+    when 'fylker_oversikt'
+      convert_districts
     else
       raise NotImplementedError, @doc.name
     end
   end
 
   private
+
+  def convert_districts
+    xml = create_builder
+    xml.districts do |districts|
+      @doc.css("fylker_liste fylke").each do |xd|
+        districts.district do |district|
+          district.externalId xd.css("id").first.text
+          district.name xd.css("navn").first.text
+        end
+      end
+    end
+  end
 
   def convert_committees
     xml = create_builder
@@ -89,7 +103,7 @@ class Converter
           rep.externalId xrep.css("id").first.text
           rep.firstName xrep.css("fornavn").first.text
           rep.lastName xrep.css("etternavn").first.text
-          rep.area xrep.css("fylke navn").first.text
+          rep.district xrep.css("fylke navn").first.text
           rep.party xrep.css("parti navn").first.text
           rep.committees do |coms|
             xrep.css("komite").each do |xcom|
@@ -115,6 +129,7 @@ end
 input_files = %w[
   folketingparser/rawdata/data.stortinget.no/eksport/partier/index.html?sesjonid=2011-2012
   folketingparser/rawdata/data.stortinget.no/eksport/komiteer/index.html?SesjonId=2011-2012
+  folketingparser/rawdata/data.stortinget.no/eksport/fylker/index.html
   folketingparser/rawdata/data.stortinget.no/eksport/dagensrepresentanter/index.html
   folketingparser/rawdata/data.stortinget.no/eksport/emner/index.html
 ]
@@ -122,6 +137,7 @@ input_files = %w[
 # puts Converter.from_file(input_files.last).to_xml
 
 app_root = ENV['APP_ROOT'] or raise "must point APP_ROOT at checkout of git://github.com/holderdeord/hdo-site.git"
+
 Dir.chdir(File.expand_path("../..", __FILE__)) do
   input_files.each do |path|
     Tempfile.open("storting2hdo") do |f|
