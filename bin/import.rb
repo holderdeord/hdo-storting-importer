@@ -20,12 +20,26 @@ class Converter
       convert_parties
     when 'dagensrepresentanter_oversikt'
       convert_representatives
+    when 'komiteer_oversikt'
+      convert_committees
     else
       raise NotImplementedError, @doc.name
     end
   end
 
   private
+
+  def convert_committees
+    xml = create_builder
+    xml.committees do |committees|
+      @doc.css("komiteer_liste komite").each do |xc|
+        committees.committee do |committee|
+          committee.externalId xc.css("id").first.text
+          committee.name xc.css("navn").first.text
+        end
+      end
+    end
+  end
 
   def convert_parties
     xml = create_builder
@@ -74,6 +88,7 @@ end
 
 input_files = %w[
   folketingparser/rawdata/data.stortinget.no/eksport/partier/index.html?sesjonid=2011-2012
+  folketingparser/rawdata/data.stortinget.no/eksport/komiteer/index.html?SesjonId=2011-2012
   folketingparser/rawdata/data.stortinget.no/eksport/dagensrepresentanter/index.html
 ]
 
