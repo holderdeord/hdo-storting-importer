@@ -1,0 +1,3 @@
+[submodule "folketingparser"]
+	path = folketingparser
+	url = git://gitorious.org/nuug/folketingparser.git
