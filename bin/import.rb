@@ -197,11 +197,40 @@ end
 
 class Importer
 
+  FILES = {
+    :parties         => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/partier/index.html?sesjonid=2011-2012"),
+    :committees      => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/komiteer/index.html?SesjonId=2011-2012"),
+    :districts       => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/fylker/index.html"),
+    :representatives => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/dagensrepresentanter/index.html"),
+    :topics          => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/emner/index.html"),
+    :issues          => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/saker/index.html?sesjonid=2011-2012")
+  }
+
+  def self.execute(args)
+    importer = new
+
+    cmd = args.first
+
+    if cmd && FILES.member?(cmd.to_sym)
+      importer.import cmd.to_sym
+    else
+      importer.import_all
+    end
+  end
+
   def initialize(app_root = ENV['APP_ROOT'], opts = {})
     @app_root = app_root or raise "must point APP_ROOT at checkout of git://github.com/holderdeord/hdo-site.git"
   end
 
-  def execute
+  def import(what)
+    if what == :votes
+      import_votes
+    else
+      import FILES.fetch(what)
+    end
+  end
+
+  def import_all
     import FILES.fetch(:parties)
     import FILES.fetch(:committees)
     import FILES.fetch(:districts)
@@ -237,22 +266,24 @@ class Importer
     Dir.chdir(@app_root) { system "script/import", path }
   end
 
-  FILES = {
-    :parties         => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/partier/index.html?sesjonid=2011-2012"),
-    :committees      => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/komiteer/index.html?SesjonId=2011-2012"),
-    :districts       => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/fylker/index.html"),
-    :representatives => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/dagensrepresentanter/index.html"),
-    :topics          => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/emner/index.html"),
-    :issues          => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/saker/index.html?sesjonid=2011-2012")
-  }
-
-
   def import_votes
     issue_paths = Dir[File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/voteringer/index.html*")]
+    issue_paths.each_slice(20) do |paths|
+      xml = build_votes_xml(paths)
 
+      Tempfile.open("storting2hdo-votes") do |f|
+        f << xml
+        f.close
+
+        run_import(f.path)
+      end
+    end
+  end
+
+  def build_votes_xml(files)
     xml = Converter.builder
     xml.votes do |votes|
-      issue_paths.each do |path|
+      files.each do |path|
         doc = Nokogiri::XML.parse(File.read(path))
         doc.remove_namespaces!
 
@@ -285,12 +316,7 @@ class Importer
       end
     end
 
-    Tempfile.open("storting2hdo-votes") do |f|
-      f << xml.target!
-      f.close
-
-      run_import(f.path)
-    end
+    xml.target!
   end
 
   def build_vote(builder, issue_id, vote_id, vote_node, result_node)
@@ -329,19 +355,8 @@ class Importer
       }
     end
   end
-
 end
 
-
 if __FILE__ == $0
-  importer = Importer.new
-
-  case ARGV.first
-  when 'print'
-    importer.print
-  when 'votes'
-    importer.import_votes
-  else
-    importer.execute
-  end
+  Importer.execute(ARGV)
 end
