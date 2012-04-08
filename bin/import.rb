@@ -268,19 +268,23 @@ class Importer
 
   def import_votes
     issue_paths = Dir[File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/voteringer/index.html*")]
-    issue_paths.each_slice(20) do |paths|
-      xml = build_votes_xml(paths)
+    issue_paths.each_slice(5) do |paths|
+      xml, vote_count = build_votes_xml(paths)
 
-      Tempfile.open("storting2hdo-votes") do |f|
-        f << xml
-        f.close
+      if vote_count > 0 # no need to invoke this if we're passing empty XML
+        Tempfile.open("storting2hdo-votes") do |f|
+          f << xml
+          f.close
 
-        run_import(f.path)
+          run_import(f.path)
+        end
       end
     end
   end
 
   def build_votes_xml(files)
+    vote_count = 0
+
     xml = Converter.builder
     xml.votes do |votes|
       files.each do |path|
@@ -311,12 +315,13 @@ class Importer
           result_node = result_doc.css("voteringsresultat_liste").first
           result_node or raise "no vote result in #{vote_result_path.inspect}"
 
+          vote_count += 1
           build_vote votes, issue_id, vote_id, vote_node, result_node
         end
       end
     end
 
-    xml.target!
+    [xml.target!, vote_count]
   end
 
   def build_vote(builder, issue_id, vote_id, vote_node, result_node)
