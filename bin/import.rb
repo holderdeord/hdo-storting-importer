@@ -26,12 +26,48 @@ class Converter
       convert_topics
     when 'fylker_oversikt'
       convert_districts
+    when 'saker_oversikt'
+      convert_issues
     else
       raise NotImplementedError, @doc.name
     end
   end
 
   private
+
+  def convert_issues
+    xml = create_builder
+
+    xml.issues do |issues|
+      @doc.css("saker_liste sak").each do |xi|
+        issues.issue do |issue|
+          issue.externalId xi.css("id").first.text
+          issue.summary xi.css("korttittel").first.text
+          issue.description xi.css("tittel").first.text
+          issue.type xi.css("type").first.text
+          issue.status xi.css("status").first.text
+          issue.lastUpdate xi.css("sist_oppdatert_dato").first.text
+          issue.reference xi.css("henvisning").first.text
+          issue.documentGroup xi.css("dokumentgruppe").first.text
+
+          committee = xi.css("komite").first
+          if committee && committee['nil'] != "true"
+            issue.committee committee.css("navn").first.text
+          end
+
+          xtopics = xi.css("emne")
+          if xtopics.any?
+            issue.topics do |topics|
+              xtopics.each do |xt|
+                topics.topic xt.css("navn").first.text
+              end
+            end
+          end
+
+        end
+      end
+    end
+  end
 
   def convert_districts
     xml = create_builder
@@ -132,6 +168,7 @@ input_files = %w[
   folketingparser/rawdata/data.stortinget.no/eksport/fylker/index.html
   folketingparser/rawdata/data.stortinget.no/eksport/dagensrepresentanter/index.html
   folketingparser/rawdata/data.stortinget.no/eksport/emner/index.html
+  folketingparser/rawdata/data.stortinget.no/eksport/saker/index.html?sesjonid=2011-2012
 ]
 
 # puts Converter.from_file(input_files.last).to_xml
