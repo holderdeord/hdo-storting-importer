@@ -4,17 +4,32 @@ require 'nokogiri'
 require 'builder'
 require 'tempfile'
 
+IMPORT_ROOT = File.expand_path("../..", __FILE__)
+
 class Converter
   def self.from_file(path)
-    new Nokogiri.XML(File.read(path))
+    doc = Nokogiri.XML(File.read(path))
+    doc.remove_namespaces!
+
+    new doc.first_element_child
   end
 
-  def initialize(doc)
-    doc.remove_namespaces!
-    @doc = doc.first_element_child
+  def self.builder
+    b = Builder::XmlMarkup.new :indent => 2
+    b.instruct!
+
+    b
+  end
+
+  def initialize(node)
+    @doc = node
   end
 
   def to_xml
+    finished_builder.target!
+  end
+
+  def finished_builder
     case @doc.name
     when 'partier_oversikt'
       convert_parties
@@ -67,6 +82,8 @@ class Converter
         end
       end
     end
+
+    xml
   end
 
   def convert_districts
@@ -79,6 +96,8 @@ class Converter
         end
       end
     end
+
+    xml
   end
 
   def convert_committees
@@ -91,6 +110,8 @@ class Converter
         end
       end
     end
+
+    xml
   end
 
   def convert_topics
@@ -110,6 +131,8 @@ class Converter
         end
       end
     }
+
+    xml
   end
 
   def add_topic(builder, node)
@@ -128,37 +151,47 @@ class Converter
       end
     end
 
-    xml.target!
+    xml
   end
 
   def convert_representatives
     xml = create_builder
     xml.representatives do |reps|
       @doc.css("dagensrepresentant").each do |xrep|
-        reps.representative do |rep|
-          rep.externalId xrep.css("id").first.text
-          rep.firstName xrep.css("fornavn").first.text
-          rep.lastName xrep.css("etternavn").first.text
-          rep.district xrep.css("fylke navn").first.text
-          rep.party xrep.css("parti navn").first.text
-          rep.committees do |coms|
-            xrep.css("komite").each do |xcom|
-              coms.committee xcom.css("navn").text
-            end
-          end
-          rep.period("2011-2012") # FIXME
-        end
+        RepresentativeBuilder.new(reps, xrep).build
       end
     end
 
-    xml.target!
+    xml
   end
 
   def create_builder
-    b = Builder::XmlMarkup.new :indent => 2
-    b.instruct!
+    self.class.builder
+  end
+end
 
-    b
+class RepresentativeBuilder
+  def initialize(builder, node)
+    @builder = builder
+    @node = node
+  end
+
+  def build
+    @builder.representative do |rep|
+      rep.externalId @node.css("id").first.text
+      rep.firstName @node.css("fornavn").first.text
+      rep.lastName @node.css("etternavn").first.text
+      rep.district @node.css("fylke navn").first.text
+      rep.party @node.css("parti navn").first.text
+      rep.committees do |coms|
+        @node.css("komite").each do |xcom|
+          coms.committee xcom.css("navn").text
+        end
+      end
+      rep.period("2011-2012") # FIXME
+
+      yield rep if block_given?
+    end
   end
 end
 
@@ -169,43 +202,146 @@ class Importer
   end
 
   def execute
-    files.each { |path| import path }
+    import FILES.fetch(:parties)
+    import FILES.fetch(:committees)
+    import FILES.fetch(:districts)
+    import FILES.fetch(:representatives)
+    import FILES.fetch(:topics)
+    import FILES.fetch(:issues)
+
+    # for votes, the output XML is not mapped 1:1 with the types in the input data,
+    # so we handle them as a special case
+    import_votes
   end
 
   def print
     puts Converter.from_file(files.last).to_xml
   end
 
-  private
-
-  def import(path)
+  def with_tmp_xml_for(path)
     Tempfile.open("storting2hdo") do |f|
       f << Converter.from_file(path).to_xml
       f.close
 
-      Dir.chdir(@app_root) { system "script/import", f.path }
+      yield f
     end
   end
 
-  def files
-    %w[
-      folketingparser/rawdata/data.stortinget.no/eksport/partier/index.html?sesjonid=2011-2012
-      folketingparser/rawdata/data.stortinget.no/eksport/komiteer/index.html?SesjonId=2011-2012
-      folketingparser/rawdata/data.stortinget.no/eksport/fylker/index.html
-      folketingparser/rawdata/data.stortinget.no/eksport/dagensrepresentanter/index.html
-      folketingparser/rawdata/data.stortinget.no/eksport/emner/index.html
-      folketingparser/rawdata/data.stortinget.no/eksport/saker/index.html?sesjonid=2011-2012
-    ].map { |e| File.expand_path("../../#{e}", __FILE__) }
+  def import(path)
+    with_tmp_xml_for(path) do |f|
+      run_import f.path
+    end
+  end
+
+  def run_import(path)
+    Dir.chdir(@app_root) { system "script/import", path }
+  end
+
+  FILES = {
+    :parties         => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/partier/index.html?sesjonid=2011-2012"),
+    :committees      => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/komiteer/index.html?SesjonId=2011-2012"),
+    :districts       => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/fylker/index.html"),
+    :representatives => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/dagensrepresentanter/index.html"),
+    :topics          => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/emner/index.html"),
+    :issues          => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/saker/index.html?sesjonid=2011-2012")
+  }
+
+
+  def import_votes
+    issue_paths = Dir[File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/voteringer/index.html*")]
+
+    xml = Converter.builder
+    xml.votes do |votes|
+      issue_paths.each do |path|
+        doc = Nokogiri::XML.parse(File.read(path))
+        doc.remove_namespaces!
+
+        next unless doc.css("sak_votering").any? # ignore issues with no votes
+
+        issue_id = doc.css("sak_id").first.text
+        vote_nodes = doc.css("sak_votering")
+
+        vote_nodes.each do |vote_node|
+          unless vote_node.css("personlig_votering").text == "true"
+            next # ignored
+          end
+
+          vote_id = vote_node.css("votering_id").text
+
+          vote_result_path = File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/voteringsresultat/index.html?voteringid=#{vote_id}")
+          unless File.exist?(vote_result_path)
+            STDERR.puts "vote result file not found for issue #{issue_id} at #{vote_result_path.inspect}"
+            next
+          end
+
+          result_doc = Nokogiri::XML.parse(File.read(vote_result_path))
+          result_doc.remove_namespaces!
+
+          result_node = result_doc.css("voteringsresultat_liste").first
+          result_node or raise "no vote result in #{vote_result_path.inspect}"
+
+          build_vote votes, issue_id, vote_id, vote_node, result_node
+        end
+      end
+    end
+
+    Tempfile.open("storting2hdo-votes") do |f|
+      f << xml.target!
+      f.close
+
+      run_import(f.path)
+    end
+  end
+
+  def build_vote(builder, issue_id, vote_id, vote_node, result_node)
+    builder.vote do |vote|
+      vote.externalId vote_id
+      vote.externalIssueId issue_id
+
+      vote.counts do |counts|
+        counts.for vote_node.css("antall_for").text
+        counts.against vote_node.css("antall_mot").text
+        counts.missing vote_node.css("antall_ikke_tilstede").text
+      end
+
+      vote.enacted vote_node.css("vedtatt").text == "true"
+      vote.subject vote_node.css("votering_tema").text
+      vote.method vote_node.css("votering_metode").text
+      vote.resultType vote_node.css("votering_resultat_type").text
+      vote.time vote_node.css("votering_tid").text
+
+      vote.representatives { |reps|
+        result_node.css("representant_voteringsresultat").each do |xrep|
+          RepresentativeBuilder.new(reps, xrep.css("representant").first).build do |rep|
+            vote_result = xrep.css("votering").text
+            case vote_result
+            when 'for'
+              rep.voteResult(1)
+            when 'mot'
+              rep.voteResult(-1)
+            when 'ikke_tilstede'
+              rep.voteResult(0)
+            else
+              raise "unexpected vote: #{vote_result.inspect}"
+            end
+          end
+        end
+      }
+    end
   end
 
 end
 
-importer = Importer.new
 
-case ARGV.first
-when 'import', nil
-  importer.execute
-when 'print'
-  importer.print
+if __FILE__ == $0
+  importer = Importer.new
+
+  case ARGV.first
+  when 'print'
+    importer.print
+  when 'votes'
+    importer.import_votes
+  else
+    importer.execute
+  end
 end
-
