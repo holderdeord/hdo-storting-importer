@@ -41,7 +41,7 @@ class Converter
     xml.issues do |issues|
       @doc.css("saker_liste sak").each do |xi|
         issues.issue do |issue|
-          issue.externalId xi.css("id").first.text
+          issue.externalId xi.xpath("./id").first.text
           issue.summary xi.css("korttittel").first.text
           issue.description xi.css("tittel").first.text
           issue.type xi.css("type").first.text
@@ -162,26 +162,50 @@ class Converter
   end
 end
 
-input_files = %w[
-  folketingparser/rawdata/data.stortinget.no/eksport/partier/index.html?sesjonid=2011-2012
-  folketingparser/rawdata/data.stortinget.no/eksport/komiteer/index.html?SesjonId=2011-2012
-  folketingparser/rawdata/data.stortinget.no/eksport/fylker/index.html
-  folketingparser/rawdata/data.stortinget.no/eksport/dagensrepresentanter/index.html
-  folketingparser/rawdata/data.stortinget.no/eksport/emner/index.html
-  folketingparser/rawdata/data.stortinget.no/eksport/saker/index.html?sesjonid=2011-2012
-]
+class Importer
 
-# puts Converter.from_file(input_files.last).to_xml
+  def initialize(app_root = ENV['APP_ROOT'], opts = {})
+    @app_root = app_root or raise "must point APP_ROOT at checkout of git://github.com/holderdeord/hdo-site.git"
+  end
 
-app_root = ENV['APP_ROOT'] or raise "must point APP_ROOT at checkout of git://github.com/holderdeord/hdo-site.git"
+  def execute
+    files.each { |path| import path }
+  end
 
-Dir.chdir(File.expand_path("../..", __FILE__)) do
-  input_files.each do |path|
+  def print
+    puts Converter.from_file(files.last).to_xml
+  end
+
+  private
+
+  def import(path)
     Tempfile.open("storting2hdo") do |f|
       f << Converter.from_file(path).to_xml
       f.close
 
-      Dir.chdir(app_root) { system "script/import", f.path }
+      Dir.chdir(@app_root) { system "script/import", f.path }
     end
   end
+
+  def files
+    %w[
+      folketingparser/rawdata/data.stortinget.no/eksport/partier/index.html?sesjonid=2011-2012
+      folketingparser/rawdata/data.stortinget.no/eksport/komiteer/index.html?SesjonId=2011-2012
+      folketingparser/rawdata/data.stortinget.no/eksport/fylker/index.html
+      folketingparser/rawdata/data.stortinget.no/eksport/dagensrepresentanter/index.html
+      folketingparser/rawdata/data.stortinget.no/eksport/emner/index.html
+      folketingparser/rawdata/data.stortinget.no/eksport/saker/index.html?sesjonid=2011-2012
+    ].map { |e| File.expand_path("../../#{e}", __FILE__) }
+  end
+
 end
+
+importer = Importer.new
+
+case ARGV.first
+when 'import', nil
+  importer.execute
+when 'print'
+  importer.print
+end
+
