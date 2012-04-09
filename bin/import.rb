@@ -214,7 +214,7 @@ class Importer
     cmd = args.first
 
     if cmd && FILES.member?(cmd.to_sym)
-      importer.import cmd.to_sym
+      importer.import FILES[cmd.to_sym]
     else
       importer.import_all
     end
