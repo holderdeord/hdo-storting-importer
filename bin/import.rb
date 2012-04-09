@@ -178,11 +178,13 @@ class RepresentativeBuilder
 
   def build
     @builder.representative do |rep|
-      rep.externalId @node.css("id").first.text
-      rep.firstName @node.css("fornavn").first.text
-      rep.lastName @node.css("etternavn").first.text
-      rep.district @node.css("fylke navn").first.text
-      rep.party @node.css("parti navn").first.text
+      rep.externalId  @node.css("id").first.text
+      rep.firstName   @node.css("fornavn").first.text
+      rep.lastName    @node.css("etternavn").first.text
+      rep.district    @node.css("fylke navn").first.text
+      rep.party       @node.css("parti navn").first.text
+      rep.born        @node.css("foedselsdato").first.text
+
       rep.committees do |coms|
         @node.css("komite").each do |xcom|
           coms.committee xcom.css("navn").text
