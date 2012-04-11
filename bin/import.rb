@@ -214,8 +214,8 @@ class Importer
 
     cmd = args.first
 
-    if cmd && FILES.member?(cmd.to_sym)
-      importer.import FILES[cmd.to_sym]
+    if cmd && FILES.member?(cmd.to_sym) || cmd == 'votes'
+      importer.import cmd.to_sym
     else
       importer.import_all
     end
@@ -229,17 +229,17 @@ class Importer
     if what == :votes
       import_votes
     else
-      import FILES.fetch(what)
+      import_file FILES.fetch(what)
     end
   end
 
   def import_all
-    import FILES.fetch(:parties)
-    import FILES.fetch(:committees)
-    import FILES.fetch(:districts)
-    import FILES.fetch(:representatives)
-    import FILES.fetch(:topics)
-    import FILES.fetch(:issues)
+    import_file FILES.fetch(:parties)
+    import_file FILES.fetch(:committees)
+    import_file FILES.fetch(:districts)
+    import_file FILES.fetch(:representatives)
+    import_file FILES.fetch(:topics)
+    import_file FILES.fetch(:issues)
 
     # for votes, the output XML is not mapped 1:1 with the types in the input data,
     # so we handle them as a special case
@@ -259,7 +259,7 @@ class Importer
     end
   end
 
-  def import(path)
+  def import_file(path)
     with_tmp_xml_for(path) do |f|
       run_import f.path
     end
@@ -300,23 +300,23 @@ class Importer
         vote_nodes = doc.css("sak_votering")
 
         vote_nodes.each do |vote_node|
-          unless vote_node.css("personlig_votering").text == "true"
-            next # ignored
-          end
-
           vote_id = vote_node.css("votering_id").text
 
-          vote_result_path = File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/voteringsresultat/index.html?voteringid=#{vote_id}")
-          unless File.exist?(vote_result_path)
-            STDERR.puts "vote result file not found for issue #{issue_id} at #{vote_result_path.inspect}"
-            next
+          if vote_node.css("personlig_votering").text == "true"
+            vote_result_path = File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/voteringsresultat/index.html?voteringid=#{vote_id}")
+            unless File.exist?(vote_result_path)
+              STDERR.puts "vote result file not found for issue #{issue_id} at #{vote_result_path.inspect}"
+              next
+            end
+
+            result_doc = Nokogiri::XML.parse(File.read(vote_result_path))
+            result_doc.remove_namespaces!
+
+            result_node = result_doc.css("voteringsresultat_liste").first
+            result_node or raise "no vote result in #{vote_result_path.inspect}"
+          else
+            result_node = nil
           end
-
-          result_doc = Nokogiri::XML.parse(File.read(vote_result_path))
-          result_doc.remove_namespaces!
-
-          result_node = result_doc.css("voteringsresultat_liste").first
-          result_node or raise "no vote result in #{vote_result_path.inspect}"
 
           vote_count += 1
           build_vote votes, issue_id, vote_id, vote_node, result_node
@@ -332,10 +332,21 @@ class Importer
       vote.externalId vote_id
       vote.externalIssueId issue_id
 
+
+      forc     = Integer(vote_node.css("antall_for").text)
+      againstc = Integer(vote_node.css("antall_mot").text)
+      missingc = Integer(vote_node.css("antall_ikke_tilstede").text)
+
+
+      # settes til -1 ved personlig_votering=false
+      forc = 0 if forc < 0
+      againstc = 0 if againstc < 0
+      missingc = 0 if missingc < 0
+
       vote.counts do |counts|
-        counts.for vote_node.css("antall_for").text
-        counts.against vote_node.css("antall_mot").text
-        counts.missing vote_node.css("antall_ikke_tilstede").text
+        counts.for forc
+        counts.against againstc
+        counts.missing missingc
       end
 
       vote.enacted vote_node.css("vedtatt").text == "true"
@@ -344,24 +355,30 @@ class Importer
       vote.resultType vote_node.css("votering_resultat_type").text
       vote.time vote_node.css("votering_tid").text
 
-      vote.representatives { |reps|
-        result_node.css("representant_voteringsresultat").each do |xrep|
-          RepresentativeBuilder.new(reps, xrep.css("representant").first).build do |rep|
-            vote_result = xrep.css("votering").text
-            case vote_result
-            when 'for'
-              rep.voteResult(1)
-            when 'mot'
-              rep.voteResult(-1)
-            when 'ikke_tilstede'
-              rep.voteResult(0)
-            else
-              raise "unexpected vote: #{vote_result.inspect}"
-            end
+      if result_node # personlig votering
+        add_representative_votes(vote, result_node)
+      end
+    end
+  end
+
+  def add_representative_votes(vote, result_node)
+    vote.representatives { |reps|
+      result_node.css("representant_voteringsresultat").each do |xrep|
+        RepresentativeBuilder.new(reps, xrep.css("representant").first).build do |rep|
+          vote_result = xrep.css("votering").text
+          case vote_result
+          when 'for'
+            rep.voteResult(1)
+          when 'mot'
+            rep.voteResult(-1)
+          when 'ikke_tilstede'
+            rep.voteResult(0)
+          else
+            raise "unexpected vote: #{vote_result.inspect}"
           end
         end
-      }
-    end
+      end
+    }
   end
 end
 
