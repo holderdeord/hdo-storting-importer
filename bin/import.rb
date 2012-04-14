@@ -335,18 +335,18 @@ class Importer
 
       forc     = Integer(vote_node.css("antall_for").text)
       againstc = Integer(vote_node.css("antall_mot").text)
-      missingc = Integer(vote_node.css("antall_ikke_tilstede").text)
+      absentc = Integer(vote_node.css("antall_ikke_tilstede").text)
 
 
       # settes til -1 ved personlig_votering=false
       forc = 0 if forc < 0
       againstc = 0 if againstc < 0
-      missingc = 0 if missingc < 0
+      absentc = 0 if absentc < 0
 
       vote.counts do |counts|
         counts.for forc
         counts.against againstc
-        counts.missing missingc
+        counts.absent absentc
       end
 
       vote.enacted vote_node.css("vedtatt").text == "true"
