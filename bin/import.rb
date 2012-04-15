@@ -368,11 +368,11 @@ class Importer
           vote_result = xrep.css("votering").text
           case vote_result
           when 'for'
-            rep.voteResult(1)
+            rep.voteResult 'for'
           when 'mot'
-            rep.voteResult(-1)
+            rep.voteResult 'against'
           when 'ikke_tilstede'
-            rep.voteResult(0)
+            rep.voteResult 'absent'
           else
             raise "unexpected vote: #{vote_result.inspect}"
           end
