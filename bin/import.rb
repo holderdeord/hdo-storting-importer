@@ -212,16 +212,22 @@ class Importer
   def self.execute(args)
     importer = new
 
-    cmd = args.first
+    cmd, *rest = args
+
+    if rest.include? "--only-print"
+      importer.only_print = true
+    end
 
     if cmd && FILES.member?(cmd.to_sym) || cmd == 'votes'
-      importer.import cmd.to_sym
+      importer.import(cmd.to_sym)
     else
       importer.import_all
     end
   end
 
-  def initialize(app_root = ENV['APP_ROOT'], opts = {})
+  attr_accessor :only_print
+
+  def initialize(app_root = ENV['APP_ROOT'])
     @app_root = app_root or raise "must point APP_ROOT at checkout of git://github.com/holderdeord/hdo-site.git"
   end
 
@@ -261,7 +267,11 @@ class Importer
 
   def import_file(path)
     with_tmp_xml_for(path) do |f|
-      run_import f.path
+      if only_print
+        puts f.read
+      else
+        run_import f.path
+      end
     end
   end
 
@@ -275,11 +285,15 @@ class Importer
       xml, vote_count = build_votes_xml(paths)
 
       if vote_count > 0 # no need to invoke this if we're passing empty XML
-        Tempfile.open("storting2hdo-votes") do |f|
-          f << xml
-          f.close
+        if only_print
+          puts xml
+        else
+          Tempfile.open("storting2hdo-votes") { |f|
+            f << xml
+            f.close
 
-          run_import(f.path)
+            run_import(f.path)
+          }
         end
       end
     end
@@ -331,7 +345,6 @@ class Importer
     builder.vote do |vote|
       vote.externalId vote_id
       vote.externalIssueId issue_id
-
 
       forc     = Integer(vote_node.css("antall_for").text)
       againstc = Integer(vote_node.css("antall_mot").text)
