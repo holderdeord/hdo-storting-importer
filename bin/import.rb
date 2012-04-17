@@ -340,6 +340,17 @@ class Importer
         vote_nodes.each do |vote_node|
           vote_id = vote_node.css("votering_id").text
 
+          propositions_path = File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/voteringsforslag/index.html?voteringid=#{vote_id}")
+          unless File.exist?(propositions_path)
+            raise "propositions not found at #{propositions_path}"
+          end
+
+          propositions_doc = Nokogiri::XML.parse(open(propositions_path).read)
+          propositions_doc.remove_namespaces!
+
+          propositions_node = propositions_doc.css("voteringsforslag_liste").first
+          propositions_node or raise "no propositions in #{propositions_path}"
+
           if vote_node.css("personlig_votering").text == "true"
             vote_result_path = File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/voteringsresultat/index.html?voteringid=#{vote_id}")
             unless File.exist?(vote_result_path)
@@ -357,7 +368,7 @@ class Importer
           end
 
           vote_count += 1
-          build_vote votes, issue_id, vote_id, vote_node, result_node
+          build_vote votes, issue_id, vote_id, vote_node, result_node, propositions_node
         end
       end
     end
@@ -365,7 +376,7 @@ class Importer
     [xml.target!, vote_count]
   end
 
-  def build_vote(builder, issue_id, vote_id, vote_node, result_node)
+  def build_vote(builder, issue_id, vote_id, vote_node, result_node, propositions_node)
     builder.vote do |vote|
       vote.externalId vote_id
       vote.externalIssueId issue_id
@@ -393,6 +404,24 @@ class Importer
 
       if result_node # personlig votering
         add_representative_votes(vote, result_node)
+      end
+
+      vote.propositions do |propositions|
+        propositions_node.css("voteringsforslag").each do |xprop|
+          propositions.proposition do |proposition|
+            proposition.externalId xprop.css("forslag_id").first.text
+            proposition.description xprop.css("forslag_betegnelse").first.text
+
+            rep_node = xprop.css("forslag_levert_av_representant").first
+
+            if rep_node && rep_node['nil'] != 'true'
+              proposition.deliveredBy { |delivered_by| RepresentativeBuilder.new(delivered_by, rep_node).build }
+            end
+
+            proposition.onBehalfOf xprop.css("forslag_paa_vegne_av_tekst").first.text
+            proposition.body xprop.css("forslag_tekst").first.text
+          end
+        end
       end
     end
   end
