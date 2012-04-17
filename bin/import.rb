@@ -226,7 +226,10 @@ class Importer
     :parties         => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/partier/index.html?sesjonid=2011-2012"),
     :committees      => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/komiteer/index.html?SesjonId=2011-2012"),
     :districts       => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/fylker/index.html"),
-    :representatives => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/dagensrepresentanter/index.html"),
+    :representatives => [
+      File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/representanter/index.html?StortingsPeriodeId=2009-2013"),
+      File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/dagensrepresentanter/index.html")
+    ],
     :topics          => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/emner/index.html"),
     :issues          => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/saker/index.html?sesjonid=2011-2012")
   }
@@ -289,6 +292,7 @@ class Importer
           f.rewind
           puts f.read
         else
+          f.close
           run_import f.path
         end
       end
@@ -369,7 +373,6 @@ class Importer
       forc     = Integer(vote_node.css("antall_for").text)
       againstc = Integer(vote_node.css("antall_mot").text)
       absentc = Integer(vote_node.css("antall_ikke_tilstede").text)
-
 
       # settes til -1 ved personlig_votering=false
       forc = 0 if forc < 0
