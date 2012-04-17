@@ -3,12 +3,13 @@
 require 'nokogiri'
 require 'builder'
 require 'tempfile'
+require 'open-uri'
 
 IMPORT_ROOT = File.expand_path("../..", __FILE__)
 
 class Converter
   def self.from_file(path)
-    doc = Nokogiri.XML(File.read(path))
+    doc = Nokogiri.XML(open(path).read)
     doc.remove_namespaces!
 
     new doc.first_element_child
@@ -33,7 +34,7 @@ class Converter
     case @doc.name
     when 'partier_oversikt'
       convert_parties
-    when 'dagensrepresentanter_oversikt'
+    when 'dagensrepresentanter_oversikt', 'representanter_oversikt'
       convert_representatives
     when 'komiteer_oversikt'
       convert_committees
@@ -156,9 +157,17 @@ class Converter
 
   def convert_representatives
     xml = create_builder
+
     xml.representatives do |reps|
-      @doc.css("dagensrepresentant").each do |xrep|
-        RepresentativeBuilder.new(reps, xrep).build
+      nodes = @doc.css("dagensrepresentant")
+      nodes += @doc.css("representant")
+
+      seen = []
+      nodes.each do |xrep|
+        b = RepresentativeBuilder.new(reps, xrep)
+        b.build unless seen.include?(b.external_id)
+
+        seen << b.external_id
       end
     end
 
@@ -176,25 +185,38 @@ class RepresentativeBuilder
     @node = node
   end
 
+  def external_id
+    @node.css("id").first.text
+  end
+
   def build
     @builder.representative do |rep|
-      rep.externalId   @node.css("id").first.text
+      # required
+      rep.externalId   external_id
       rep.firstName    @node.css("fornavn").first.text
       rep.lastName     @node.css("etternavn").first.text
-      rep.district     @node.css("fylke navn").first.text
-      rep.party        @node.css("parti navn").first.text
       rep.dateOfBirth  @node.css("foedselsdato").first.text
       rep.dateOfDeath  @node.css("doedsdato").first.text
+
+      # not required
+      rep.district     fetch_if_exists("fylke navn")
+      rep.party        fetch_if_exists("parti navn")
 
       rep.committees do |coms|
         @node.css("komite").each do |xcom|
           coms.committee xcom.css("navn").text
         end
       end
+
       rep.period("2011-2012") # FIXME
 
       yield rep if block_given?
     end
+  end
+
+  def fetch_if_exists(selector)
+    subnode = @node.css(selector).first
+    subnode ? subnode.text : ''
   end
 end
 
@@ -235,42 +257,40 @@ class Importer
     if what == :votes
       import_votes
     else
-      import_file FILES.fetch(what)
+      import_files FILES.fetch(what)
     end
   end
 
   def import_all
-    import_file FILES.fetch(:parties)
-    import_file FILES.fetch(:committees)
-    import_file FILES.fetch(:districts)
-    import_file FILES.fetch(:representatives)
-    import_file FILES.fetch(:topics)
-    import_file FILES.fetch(:issues)
+    import_files FILES.fetch(:parties)
+    import_files FILES.fetch(:committees)
+    import_files FILES.fetch(:districts)
+    import_files FILES.fetch(:representatives)
+    import_files FILES.fetch(:topics)
+    import_files FILES.fetch(:issues)
 
     # for votes, the output XML is not mapped 1:1 with the types in the input data,
     # so we handle them as a special case
     import_votes
   end
 
-  def print
-    puts Converter.from_file(files.last).to_xml
-  end
-
   def with_tmp_xml_for(path)
     Tempfile.open("storting2hdo") do |f|
       f << Converter.from_file(path).to_xml
-      f.close
 
       yield f
     end
   end
 
-  def import_file(path)
-    with_tmp_xml_for(path) do |f|
-      if only_print
-        puts f.read
-      else
-        run_import f.path
+  def import_files(paths)
+    Array(paths).each do |path|
+      with_tmp_xml_for(path) do |f|
+        if only_print
+          f.rewind
+          puts f.read
+        else
+          run_import f.path
+        end
       end
     end
   end
@@ -305,7 +325,7 @@ class Importer
     xml = Converter.builder
     xml.votes do |votes|
       files.each do |path|
-        doc = Nokogiri::XML.parse(File.read(path))
+        doc = Nokogiri::XML.parse(open(path).read)
         doc.remove_namespaces!
 
         next unless doc.css("sak_votering").any? # ignore issues with no votes
@@ -323,7 +343,7 @@ class Importer
               next
             end
 
-            result_doc = Nokogiri::XML.parse(File.read(vote_result_path))
+            result_doc = Nokogiri::XML.parse(open(vote_result_path).read)
             result_doc.remove_namespaces!
 
             result_node = result_doc.css("voteringsresultat_liste").first
@@ -378,6 +398,7 @@ class Importer
     vote.representatives { |reps|
       result_node.css("representant_voteringsresultat").each do |xrep|
         RepresentativeBuilder.new(reps, xrep.css("representant").first).build do |rep|
+
           vote_result = xrep.css("votering").text
           case vote_result
           when 'for'
@@ -396,5 +417,12 @@ class Importer
 end
 
 if __FILE__ == $0
+  if sp = ENV['SOCKS_PROXY']
+    require 'socksify'
+    host, port = sp.split ":"
+    TCPSocket.socks_server = host
+    TCPSocket.socks_port = Integer(port)
+  end
+
   Importer.execute(ARGV)
 end
