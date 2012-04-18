@@ -239,11 +239,11 @@ class Importer
 
     cmd, *rest = args
 
-    if rest.include? "--only-print"
+    if rest.include? '--only-print'
       importer.only_print = true
     end
 
-    if cmd && FILES.member?(cmd.to_sym) || cmd == 'votes'
+    if cmd && FILES.member?(cmd.to_sym) || %w[votes dld].include?(cmd)
       importer.import(cmd.to_sym)
     else
       importer.import_all
@@ -257,8 +257,11 @@ class Importer
   end
 
   def import(what)
-    if what == :votes
+    case what
+    when :votes
       import_votes
+    when :dld
+      import_dld
     else
       import_files FILES.fetch(what)
     end
@@ -275,6 +278,7 @@ class Importer
     # for votes, the output XML is not mapped 1:1 with the types in the input data,
     # so we handle them as a special case
     import_votes
+    import_dld
   end
 
   def with_tmp_xml_for(path)
@@ -285,17 +289,26 @@ class Importer
     end
   end
 
+  def import_dld
+    run_import File.join(IMPORT_ROOT, 'data/dld-issues.xml')
+    run_import File.join(IMPORT_ROOT, 'folketingparser/data/votering-2011-04-04-dld-hdo.xml')
+  end
+
   def import_files(paths)
     Array(paths).each do |path|
       with_tmp_xml_for(path) do |f|
-        if only_print
-          f.rewind
-          puts f.read
-        else
-          f.close
-          run_import f.path
-        end
+        print_or_import(f)
       end
+    end
+  end
+
+  def print_or_import(f)
+    if only_print
+      f.rewind
+      puts f.read
+    else
+      f.close
+      run_import f.path
     end
   end
 

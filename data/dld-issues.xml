@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues>
+  <issue>
+    <externalId>48717</externalId>
+    <summary>Endringer i ekomloven og straffeprosessloven mv. (gjennomføring av EUs datalagringsdirektiv i norsk rett)</summary>
+    <description>Endringer i ekomloven og straffeprosessloven mv. (gjennomføring av EUs datalagringsdirektiv i norsk rett)</description>
+    <type>lovsak</type>
+    <status>behandlet</status>
+    <lastUpdate>2011-04-04T00:00:00</lastUpdate>
+    <reference>Prop. 49 L (2010-2011), Innst. 275 L (2010-2011), Lovvedtak 46 (2010-2011)</reference>
+    <documentGroup>proposisjon</documentGroup>
+    <committee>Transport- og kommunikasjonskomiteen</committee>
+    <topics>
+      <topic>KOMMUNIKASJON</topic>
+      <topic>RETTSVESEN</topic>
+      <topic>DOMSTOLER</topic>
+      <topic>PERSONVERN</topic>
+      <topic>POLITI OG PÅTALEMYNDIGHET</topic>
+      <topic>UTENRIKSSAKER</topic>
+      <topic>EFTA/EU</topic>
+      <topic>TELEKOMMUNIKASJONER</topic>
+    </topics>
+  </issue>
+  <issue>
+    <externalId>48650</externalId>
+    <summary>Samtykke til deltakelse i en beslutning i EØS-komiteen om innlemmelse i EØS-avtalen av direktiv 2006/24/EF om datalagring</summary>
+    <description>Samtykke til deltakelse i en beslutning i EØS-komiteen om innlemmelse i EØS-avtalen av direktiv 2006/24/EF om lagring av data fremkommet ved bruk av offentlig elektronisk kommunikasjonstjeneste eller offentlig elektronisk kommunikasjonsnett (datalagringsdirektivet))</description>
+    <type>alminneligsak</type>
+    <status>behandlet</status>
+    <lastUpdate>2011-04-04T00:00:00</lastUpdate>
+    <reference>Prop. 50 S (2010-2011), Innst. 292 S (2010-2011)</reference>
+    <documentGroup>proposisjon</documentGroup>
+    <committee>Utenriks- og forsvarskomiteen</committee>
+    <topics>
+      <topic>KOMMUNIKASJON</topic>
+      <topic>RETTSVESEN</topic>
+      <topic>PERSONVERN</topic>
+      <topic>POLITI OG PÅTALEMYNDIGHET</topic>
+      <topic>UTENRIKSSAKER</topic>
+      <topic>EFTA/EU</topic>
+      <topic>TELEKOMMUNIKASJONER</topic>
+    </topics>
+  </issue>
+</issues>
