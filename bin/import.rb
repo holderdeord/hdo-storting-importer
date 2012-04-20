@@ -243,7 +243,7 @@ class Importer
       importer.only_print = true
     end
 
-    if cmd && FILES.member?(cmd.to_sym) || %w[votes dld].include?(cmd)
+    if cmd && FILES.member?(cmd.to_sym) || %w[votes dld promises].include?(cmd)
       importer.import(cmd.to_sym)
     else
       importer.import_all
@@ -262,6 +262,8 @@ class Importer
       import_votes
     when :dld
       import_dld
+    when :promises
+      import_promises
     else
       import_files FILES.fetch(what)
     end
