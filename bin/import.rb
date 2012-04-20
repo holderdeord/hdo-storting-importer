@@ -279,6 +279,7 @@ class Importer
     # so we handle them as a special case
     import_votes
     import_dld
+    import_promises
   end
 
   def with_tmp_xml_for(path)
@@ -292,6 +293,10 @@ class Importer
   def import_dld
     run_import File.join(IMPORT_ROOT, 'data/dld-issues.xml')
     run_import File.join(IMPORT_ROOT, 'folketingparser/data/votering-2011-04-04-dld-hdo.xml')
+  end
+
+  def import_promises
+    run_import File.join(IMPORT_ROOT, 'data/promises-h.xml')
   end
 
   def import_files(paths)

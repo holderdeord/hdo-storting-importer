@@ -1,0 +1,45 @@
+#!/usr/bin/env ruby
+# encoding: UTF-8
+
+file = ARGV.first or abort "USAGE: #{$0} promises.csv"    
+
+require 'csv'
+require 'builder'
+
+str = File.read(File.expand_path(file), encoding: "ISO-8859-1").encode("UTF-8")
+table = CSV.parse(
+  str, 
+  headers: [:party, :body, :general, :topics, :source, :page], 
+  col_sep: ";",
+  skip_blanks: true,
+  return_headers: false
+)
+
+builder = Builder::XmlMarkup.new :indent => 2
+builder.instruct!
+    
+builder.promises do |promises|
+  table.each do |e|
+    data = e.to_hash
+    next if data[:body] == "Løftetekst" || data[:body].nil? || data[:body].empty?
+    
+    topic_names = data[:topics].split(",").map(&:upcase).map(&:strip)
+    
+    promises.promise do |promise|
+      promise.party data[:party]
+      promise.general data[:general].downcase.strip == "ja"
+      promise.topics do |topics|
+        topic_names.each do |name|
+          topics.topic name
+        end
+      end
+      
+      promise.source [data[:source], data[:page]].join(":")
+      promise.body data[:body]
+    end
+      
+    STDERR.print '.'
+  end
+end
+
+puts builder.target!
