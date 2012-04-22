@@ -4,6 +4,7 @@ require 'nokogiri'
 require 'builder'
 require 'tempfile'
 require 'open-uri'
+require 'optparse'
 
 IMPORT_ROOT = File.expand_path("../..", __FILE__)
 
@@ -221,6 +222,7 @@ class RepresentativeBuilder
 end
 
 class Importer
+  attr_accessor :only_print, :ignore
 
   FILES = {
     :parties         => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/partier/index.html?sesjonid=2011-2012"),
@@ -234,26 +236,30 @@ class Importer
     :issues          => File.join(IMPORT_ROOT, "folketingparser/rawdata/data.stortinget.no/eksport/saker/index.html?sesjonid=2011-2012")
   }
 
+  CUSTOM_COMMANDS = %w[votes dld promises]
+
   def self.execute(args)
     importer = new
 
     cmd, *rest = args
 
-    if rest.include? '--only-print'
-      importer.only_print = true
-    end
+    @opts = OptionParser.new do |opt|
+      opt.banner = "Usage: #{$0} <#{(FILES.keys + CUSTOM_COMMANDS).join('|')}> [options]"
+      opt.on("--only-print", "Don't run import, only print generated XML.") { importer.only_print = true }
+      opt.on("--except WHAT", 'Ignore this comma separated list of entities from import.') { |s| importer.ignore = s.split(",").map(&:strip).map(&:to_sym) }
+      opt.on("--help", "You're looking at it.") { puts opt; exit;}
+    end.parse!(args)
 
-    if cmd && FILES.member?(cmd.to_sym) || %w[votes dld promises].include?(cmd)
+    if cmd && FILES.member?(cmd.to_sym) || CUSTOM_COMMANDS.include?(cmd)
       importer.import(cmd.to_sym)
     else
       importer.import_all
     end
   end
 
-  attr_accessor :only_print
-
   def initialize(app_root = ENV['APP_ROOT'])
     @app_root = app_root or raise "must point APP_ROOT at checkout of git://github.com/holderdeord/hdo-site.git"
+    @ignore = []
   end
 
   def import(what)
@@ -270,18 +276,18 @@ class Importer
   end
 
   def import_all
-    import_files FILES.fetch(:parties)
-    import_files FILES.fetch(:committees)
-    import_files FILES.fetch(:districts)
-    import_files FILES.fetch(:representatives)
-    import_files FILES.fetch(:topics)
-    import_files FILES.fetch(:issues)
+    import_files FILES.fetch(:parties) unless @ignore.include?(:parties)
+    import_files FILES.fetch(:committees) unless @ignore.include?(:committees)
+    import_files FILES.fetch(:districts) unless @ignore.include?(:districts)
+    import_files FILES.fetch(:representatives) unless @ignore.include?(:representatives)
+    import_files FILES.fetch(:topics) unless @ignore.include?(:topics)
+    import_files FILES.fetch(:issues) unless @ignore.include?(:issues)
 
     # for votes, the output XML is not mapped 1:1 with the types in the input data,
     # so we handle them as a special case
-    import_votes
-    import_dld
-    import_promises
+    import_votes unless @ignore.include?(:votes)
+    import_dld unless @ignore.include?(:dld)
+    import_promises unless @ignore.include?(:promises)
   end
 
   def with_tmp_xml_for(path)
