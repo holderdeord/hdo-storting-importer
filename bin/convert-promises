@@ -22,7 +22,6 @@ builder.promises do |promises|
   table.each do |e|
     data = e.to_hash
     next if data[:body] == "Løftetekst" || data[:body].nil? || data[:body].empty?
-    
     topic_names = data[:topics].split(",").map(&:upcase).map(&:strip)
     
     promises.promise do |promise|
@@ -34,7 +33,7 @@ builder.promises do |promises|
         end
       end
       
-      promise.source [data[:source], data[:page]].join(":")
+      promise.source [data[:source].strip, data[:page].strip].join(":")
       promise.body data[:body]
     end
       

@@ -298,7 +298,9 @@ class Importer
   end
 
   def import_promises
-    run_import File.join(IMPORT_ROOT, 'data/promises-h.xml')
+    Dir[File.join(IMPORT_ROOT, 'data/promises-*.xml')].each do |path|
+      run_import path
+    end
   end
 
   def import_files(paths)
