@@ -241,7 +241,7 @@ class Importer
   def self.execute(args)
     importer = new
 
-    cmd, *rest = args
+    cmd = args.first
 
     @opts = OptionParser.new do |opt|
       opt.banner = "Usage: #{$0} <#{(FILES.keys + CUSTOM_COMMANDS).join('|')}> [options]"
@@ -447,7 +447,7 @@ class Importer
             end
 
             proposition.onBehalfOf xprop.css("forslag_paa_vegne_av_tekst").first.text
-            proposition.body xprop.css("forslag_tekst").first.text
+            proposition.body xprop.css("forslag_tekst").first.text.gsub("<\\p>", "")
           end
         end
       end
