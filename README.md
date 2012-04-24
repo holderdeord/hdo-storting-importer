@@ -1,9 +1,14 @@
+What
+====
+
 Convert and import XML from data.stortinget.no
 
-- saker m/ type representantforslag inneholder ikke hvilke representanter som har foreslått saken som data (kun som tekst i tittelen)
-- voteringer knytter sak_id til votering_id
+Usage
+=====
 
-TODO:
+    $ bin/hdo-converter --app /src/hdo-site all
 
-- tests
-- DTDs
+Caveats
+=======
+
+Right now we're executing script/import from hdo-site to perform the import. That means running this with bundler may fail if the gems don't match. Don't do that.
