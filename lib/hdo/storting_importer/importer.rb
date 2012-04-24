@@ -68,13 +68,13 @@ module Hdo
       def import_promises
         csvs = Dir[File.join(StortingImporter.root, 'data/promises-*.csv')]
         csvs.each do |path|
-          with_tmp_file(PromiseConverter.new(path).to_xml) { |tmp| run_import tmp }
+          with_tmp_file(PromiseConverter.new(path).to_xml) { |f| print_or_import f }
         end
       end
 
       def import_files(paths)
         Array(paths).each do |path|
-          with_tmp_file(Converter.from_file(path).to_xml) { |f| print_or_import(f) }
+          with_tmp_file(Converter.from_file(path).to_xml) { |f| print_or_import f }
         end
       end
 
@@ -102,16 +102,7 @@ module Hdo
           xml, vote_count = build_votes_xml(paths)
 
           if vote_count > 0 # no need to invoke this if we're passing empty XML
-            if only_print
-              puts xml
-            else
-              Tempfile.open("storting2hdo-votes") { |f|
-                f << xml
-                f.close
-
-                run_import(f.path)
-              }
-            end
+            with_tmp_file(xml) { |f| print_or_import(f) }
           end
         end
       end

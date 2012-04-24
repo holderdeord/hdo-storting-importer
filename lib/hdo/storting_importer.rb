@@ -14,4 +14,5 @@ require 'open-uri'
 require 'hdo/storting_importer/converter'
 require 'hdo/storting_importer/representative_builder'
 require 'hdo/storting_importer/importer'
+require 'hdo/storting_importer/promise_converter'
 
