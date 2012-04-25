@@ -30,7 +30,7 @@ module Hdo
         when 'dagensrepresentanter_oversikt', 'representanter_oversikt'
           RepresentativeConverter.new @doc
         when 'komiteer_oversikt'
-          convert_committees
+          CommitteeConverter.new @doc
         when 'emne_oversikt'
           convert_topics
         when 'fylker_oversikt'
