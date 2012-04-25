@@ -32,7 +32,7 @@ module Hdo
         when 'komiteer_oversikt'
           CommitteeConverter.new @doc
         when 'emne_oversikt'
-          convert_topics
+          TopicConverter.new @doc
         when 'fylker_oversikt'
           convert_districts
         when 'saker_oversikt'
@@ -76,55 +76,6 @@ module Hdo
             end
           end
         end
-
-        xml
-      end
-
-      def convert_districts
-        xml = create_builder
-        xml.districts do |districts|
-          @doc.css("fylker_liste fylke").each do |xd|
-            districts.district do |district|
-              district.externalId xd.css("id").first.text
-              district.name xd.css("navn").first.text
-            end
-          end
-        end
-
-        xml
-      end
-
-      def convert_committees
-        xml = create_builder
-        xml.committees do |committees|
-          @doc.css("komiteer_liste komite").each do |xc|
-            committees.committee do |committee|
-              committee.externalId xc.css("id").first.text
-              committee.name xc.css("navn").first.text
-            end
-          end
-        end
-
-        xml
-      end
-
-      def convert_topics
-        xml = create_builder
-        xml.topics { |topics|
-          @doc.css("emne_liste > emne").each do |xt|
-            topics.topic do |topic|
-              add_topic(topic, xt)
-
-              topic.subtopics do |subtopics|
-                xt.css("underemne_liste > emne").each do |xst|
-                  subtopics.topic do |subtopic|
-                    add_topic(subtopic, xst)
-                  end
-                end
-              end
-            end
-          end
-        }
 
         xml
       end

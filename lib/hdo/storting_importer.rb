@@ -20,6 +20,7 @@ require 'hdo/storting_importer/promise_converter'
 require 'hdo/storting_importer/party_converter'
 require 'hdo/storting_importer/representative_converter'
 require 'hdo/storting_importer/committee_converter'
+require 'hdo/storting_importer/topic_converter'
 
 
 
