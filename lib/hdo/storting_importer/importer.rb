@@ -95,7 +95,7 @@ module Hdo
       end
 
       def import_votes
-        issue_paths = Dir[File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/voteringer/index.html*")]
+        issue_paths = Dir[File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/voteringer/index.html*")].sort
 
         if ENV['VOTE_COUNT'] # temporarily for testing
           issue_paths = issue_paths.first(ENV['VOTE_COUNT'].to_i)
