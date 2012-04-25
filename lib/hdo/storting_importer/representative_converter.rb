@@ -15,22 +15,7 @@ module Hdo
         nodes += @doc.css("representant")
 
         nodes.map do |node|
-          rep = { 
-            externalId:  node.css("id").first.text,
-            firstName:   node.css("fornavn").first.text,
-            lastName:    node.css("etternavn").first.text,
-            dateOfBirth: node.css("foedselsdato").first.text,
-            dateOfDeath: node.css("doedsdato").first.text,
-
-            # not required
-            district:    fetch_if_exists(node, "fylke navn"),
-            party:       fetch_if_exists(node, "parti navn"),
-            period:      '2011-2012' # FIXME
-          }
-          
-          rep[:committees] = node.css("komite").map { |c| c.css("navn").text }
-          
-          rep
+          RepresentativeBuilder.new(node).build
         end
       end
       

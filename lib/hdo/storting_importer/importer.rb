@@ -111,129 +111,54 @@ module Hdo
       end
 
       def build_votes_xml(files)
-        vote_count = 0
+        vote_data = []
 
-        xml = Converter.builder
-        xml.votes do |votes|
-          files.each do |path|
-            doc = Nokogiri::XML.parse(open(path).read)
-            doc.remove_namespaces!
+        files.each do |path|
+          doc = Nokogiri::XML.parse(open(path).read)
+          doc.remove_namespaces!
 
-            next unless doc.css("sak_votering").any? # ignore issues with no votes
+          next unless doc.css("sak_votering").any? # ignore issues with no votes
 
-            issue_id = doc.css("sak_id").first.text
-            vote_nodes = doc.css("sak_votering")
+          issue_id = doc.css("sak_id").first.text
+          vote_nodes = doc.css("sak_votering")
 
-            vote_nodes.each do |vote_node|
-              vote_id = vote_node.css("votering_id").text
+          vote_nodes.each do |vote_node|
+            vote_id = vote_node.css("votering_id").text
 
-              propositions_path = File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/voteringsforslag/index.html?voteringid=#{vote_id}")
-              unless File.exist?(propositions_path)
-                raise "propositions not found at #{propositions_path}"
-              end
-
-              propositions_doc = Nokogiri::XML.parse(open(propositions_path).read)
-              propositions_doc.remove_namespaces!
-
-              propositions_node = propositions_doc.css("voteringsforslag_liste").first
-              propositions_node or raise "no propositions in #{propositions_path}"
-
-              if vote_node.css("personlig_votering").text == "true"
-                vote_result_path = File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/voteringsresultat/index.html?voteringid=#{vote_id}")
-                unless File.exist?(vote_result_path)
-                  STDERR.puts "vote result file not found for issue #{issue_id} at #{vote_result_path.inspect}"
-                  next
-                end
-
-                result_doc = Nokogiri::XML.parse(open(vote_result_path).read)
-                result_doc.remove_namespaces!
-
-                result_node = result_doc.css("voteringsresultat_liste").first
-                result_node or raise "no vote result in #{vote_result_path.inspect}"
-              else
-                result_node = nil
-              end
-
-              vote_count += 1
-              build_vote votes, issue_id, vote_id, vote_node, result_node, propositions_node
+            propositions_path = File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/voteringsforslag/index.html?voteringid=#{vote_id}")
+            unless File.exist?(propositions_path)
+              raise "propositions not found at #{propositions_path}"
             end
+
+            propositions_doc = Nokogiri::XML.parse(open(propositions_path).read)
+            propositions_doc.remove_namespaces!
+
+            propositions_node = propositions_doc.css("voteringsforslag_liste").first
+            propositions_node or raise "no propositions in #{propositions_path}"
+
+            if vote_node.css("personlig_votering").text == "true"
+              vote_result_path = File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/voteringsresultat/index.html?voteringid=#{vote_id}")
+              unless File.exist?(vote_result_path)
+                STDERR.puts "vote result file not found for issue #{issue_id} at #{vote_result_path.inspect}"
+                next
+              end
+
+              result_doc = Nokogiri::XML.parse(open(vote_result_path).read)
+              result_doc.remove_namespaces!
+
+              result_node = result_doc.css("voteringsresultat_liste").first
+              result_node or raise "no vote result in #{vote_result_path.inspect}"
+            else
+              result_node = nil
+            end
+
+            vote_data << [issue_id, vote_id, vote_node, result_node, propositions_node]
           end
         end
 
-        [xml.target!, vote_count]
+        [VoteConverter.new(vote_data).target!, vote_data.size]
       end
 
-      def build_vote(builder, issue_id, vote_id, vote_node, result_node, propositions_node)
-        builder.vote do |vote|
-          vote.externalId vote_id
-          vote.externalIssueId issue_id
-
-          forc     = Integer(vote_node.css("antall_for").text)
-          againstc = Integer(vote_node.css("antall_mot").text)
-          absentc = Integer(vote_node.css("antall_ikke_tilstede").text)
-
-          # settes til -1 ved personlig_votering=false
-          forc = 0 if forc < 0
-          againstc = 0 if againstc < 0
-          absentc = 0 if absentc < 0
-
-          vote.counts do |counts|
-            counts.for forc
-            counts.against againstc
-            counts.absent absentc
-          end
-
-          vote.enacted vote_node.css("vedtatt").text == "true"
-          vote.subject vote_node.css("votering_tema").text
-          vote.method vote_node.css("votering_metode").text
-          vote.resultType vote_node.css("votering_resultat_type").text
-          vote.time vote_node.css("votering_tid").text
-
-          if result_node # personlig votering
-            add_representative_votes(vote, result_node)
-          end
-
-          vote.propositions do |propositions|
-            propositions_node.css("voteringsforslag").each do |xprop|
-              propositions.proposition do |proposition|
-                proposition.externalId xprop.css("forslag_id").first.text
-                proposition.description xprop.css("forslag_betegnelse").first.text
-
-                rep_node = xprop.css("forslag_levert_av_representant").first
-
-                if rep_node && rep_node['nil'] != 'true'
-                  proposition.deliveredBy { |delivered_by| RepresentativeBuilder.new(delivered_by, rep_node).build }
-                end
-
-                proposition.onBehalfOf xprop.css("forslag_paa_vegne_av_tekst").first.text
-                proposition.body xprop.css("forslag_tekst").first.text.gsub("<\\p>", "")
-              end
-            end
-          end
-        end
-      end
-
-      def add_representative_votes(vote, result_node)
-        vote.representatives { |reps|
-          result_node.css("representant_voteringsresultat").each do |xrep|
-            RepresentativeBuilder.new(reps, xrep.css("representant").first).build do |rep|
-
-              vote_result = xrep.css("votering").text
-              case vote_result
-              when 'for'
-                rep.voteResult 'for'
-              when 'mot'
-                rep.voteResult 'against'
-              when 'ikke_tilstede'
-                rep.voteResult 'absent'
-              else
-                raise "unexpected vote: #{vote_result.inspect}"
-              end
-            end
-          end
-        }
-      end
     end
-
   end
 end

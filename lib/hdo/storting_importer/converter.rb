@@ -36,53 +36,12 @@ module Hdo
         when 'fylker_oversikt'
           DistrictConverter.new @doc
         when 'saker_oversikt'
-          convert_issues
+          IssueConverter.new @doc
         else
           raise NotImplementedError, @doc.name
         end
       end
 
-      private
-
-      def convert_issues
-        xml = create_builder
-
-        xml.issues do |issues|
-          @doc.css("saker_liste sak").each do |xi|
-            issues.issue do |issue|
-              issue.externalId xi.xpath("./id").first.text
-              issue.summary xi.css("korttittel").first.text
-              issue.description xi.css("tittel").first.text
-              issue.type xi.css("type").first.text
-              issue.status xi.css("status").first.text
-              issue.lastUpdate xi.css("sist_oppdatert_dato").first.text
-              issue.reference xi.css("henvisning").first.text
-              issue.documentGroup xi.css("dokumentgruppe").first.text
-
-              committee = xi.css("komite").first
-              if committee && committee['nil'] != "true"
-                issue.committee committee.css("navn").first.text
-              end
-
-              xtopics = xi.css("emne")
-              if xtopics.any?
-                issue.topics do |topics|
-                  xtopics.each do |xt|
-                    topics.topic xt.css("navn").first.text
-                  end
-                end
-              end
-
-            end
-          end
-        end
-
-        xml
-      end
-
-      def create_builder
-        self.class.builder
-      end
     end
   end
 end

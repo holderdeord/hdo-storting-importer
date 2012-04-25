@@ -13,8 +13,8 @@ module Hdo
       def districts
         @doc.css("fylker_liste fylke").map do |node|
           {
-            externalId:  node.css("id").first.text,
-            name: node.css("navn").first.text
+            externalId: node.css("id").first.text,
+            name:       node.css("navn").first.text
           }
         end
       end
@@ -22,7 +22,6 @@ module Hdo
       def template
         File.read(File.expand_path("../templates/districts.xml.erb", __FILE__))
       end
-      
     end
   end
 end

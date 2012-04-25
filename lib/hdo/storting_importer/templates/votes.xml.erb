@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<votes>
+  <%- votes.each do |vote| -%>
+  <vote>
+    <externalId><%= vote[:externalId] %></externalId>
+    <externalIssueId><%= vote[:externalIssueId] %></externalIssueId>
+    <counts>
+      <for><%= vote[:counts][:for] %></for>
+      <against><%= vote[:counts][:against] %></against>
+      <absent><%= vote[:counts][:absent] %></absent>
+    </counts>
+    <enacted><%= vote[:enacted] %></enacted>
+    <subject><%= vote[:subject] %></subject>
+    <method><%= vote[:method] %></method>
+    <resultType><%= vote[:resultType] %></resultType>
+    <time><%= vote[:time] %></time>
+    <%- if vote[:representatives] -%>
+    <representatives>
+      <%- vote[:representatives].each do |rep| -%>
+      <representative>
+        <externalId><%= rep[:externalId] %></externalId>
+        <firstName><%= rep[:firstName] %></firstName>
+        <lastName><%= rep[:lastName] %></lastName>
+        <dateOfBirth><%= rep[:dateOfBirth] %></dateOfBirth>
+        <dateOfDeath><%= rep[:dateOfDeath] %></dateOfDeath>
+        <district><%= rep[:district] %></district>
+        <party><%= rep[:party] %></party>
+        <committees>
+          <%- rep[:committees].each do |com| -%>
+          <committee><%= com %></committee>
+          <%- end -%>
+        </committees>
+        <period><%= rep[:period] %></period>
+        <voteResult><%= rep[:voteResult] %></voteResult>
+      </representative>
+      <%- end -%>
+    </representatives>
+    <%- end -%>
+    <propositions>
+      <%- vote[:propositions].each do |prop| -%>
+      <proposition>
+        <externalId><%= prop[:externalId] %></externalId>
+        <description><%=h prop[:description] %></description>
+        <onBehalfOf><%= prop[:onBehalfOf] %></onBehalfOf>
+        <body><%=h prop[:body] %></body>
+      </proposition>
+      <%- end -%>
+    </propositions>
+  </vote>
+  <%- end -%>
+</votes>

@@ -1,39 +1,32 @@
 module Hdo
   module StortingImporter
     class RepresentativeBuilder
-      def initialize(builder, node)
-        @builder = builder
+      def initialize(node)
         @node = node
       end
 
-      def external_id
-        @node.css("id").first.text
-      end
-
       def build
-        @builder.representative do |rep|
-          # required
-          rep.externalId   external_id
-          rep.firstName    @node.css("fornavn").first.text
-          rep.lastName     @node.css("etternavn").first.text
-          rep.dateOfBirth  @node.css("foedselsdato").first.text
-          rep.dateOfDeath  @node.css("doedsdato").first.text
+        rep = { 
+          externalId:  @node.css("id").first.text,
+          firstName:   @node.css("fornavn").first.text,
+          lastName:    @node.css("etternavn").first.text,
+          dateOfBirth: @node.css("foedselsdato").first.text,
+          dateOfDeath: @node.css("doedsdato").first.text,
 
           # not required
-          rep.district     fetch_if_exists("fylke navn")
-          rep.party        fetch_if_exists("parti navn")
-
-          rep.committees do |coms|
-            @node.css("komite").each do |xcom|
-              coms.committee xcom.css("navn").text
-            end
-          end
-
-          rep.period("2011-2012") # FIXME
-
-          yield rep if block_given?
-        end
+          district:    fetch_if_exists("fylke navn"),
+          party:       fetch_if_exists("parti navn"),
+          period:      '2011-2012' # FIXME
+        }
+          
+        rep[:committees] = @node.css("komite").map { |c| c.css("navn").text }
+          
+        yield rep if block_given?
+        
+        rep
       end
+      
+      private
 
       def fetch_if_exists(selector)
         subnode = @node.css(selector).first
