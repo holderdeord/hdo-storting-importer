@@ -26,7 +26,7 @@ module Hdo
       def finished_builder
         case @doc.name
         when 'partier_oversikt'
-          convert_parties
+          PartyConverter.new(@doc)
         when 'dagensrepresentanter_oversikt', 'representanter_oversikt'
           convert_representatives
         when 'komiteer_oversikt'
@@ -132,20 +132,6 @@ module Hdo
       def add_topic(builder, node)
         builder.externalId node.css("id").first.text
         builder.name node.css("navn").first.text
-      end
-
-      def convert_parties
-        xml = create_builder
-        xml.parties do |parties|
-          @doc.css("partier_liste parti").each do |xp|
-            parties.party do |party|
-              party.externalId xp.css("id").first.text
-              party.name xp.css("navn").first.text
-            end
-          end
-        end
-
-        xml
       end
 
       def convert_representatives

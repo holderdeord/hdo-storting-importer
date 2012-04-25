@@ -10,9 +10,14 @@ require 'nokogiri'
 require 'builder'
 require 'tempfile'
 require 'open-uri'
+require 'erb'
 
 require 'hdo/storting_importer/converter'
 require 'hdo/storting_importer/representative_builder'
 require 'hdo/storting_importer/importer'
 require 'hdo/storting_importer/promise_converter'
+
+require 'hdo/storting_importer/party_converter'
+
+
 
