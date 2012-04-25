@@ -58,8 +58,6 @@ module Hdo
         end
       end
 
-
-
       def import_dld
         run_import File.join(StortingImporter.root, 'data/dld-issues.xml')
         run_import File.join(StortingImporter.root, 'folketingparser/data/votering-2011-04-04-dld-hdo.xml')
@@ -98,6 +96,11 @@ module Hdo
 
       def import_votes
         issue_paths = Dir[File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/voteringer/index.html*")]
+
+        if ENV['VOTE_COUNT'] # temporarily for testing
+          issue_paths = issue_paths.first(ENV['VOTE_COUNT'].to_i)
+        end
+
         issue_paths.each_slice(5) do |paths|
           xml, vote_count = build_votes_xml(paths)
 
