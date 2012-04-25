@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<districts>
+  <%- districts.each do |district| -%>
+  <district>
+    <externalId><%= district[:externalId] %></externalId>
+    <name><%= district[:name] %></name>
+  </district>
+  <%- end -%>
+</districts>

@@ -34,7 +34,7 @@ module Hdo
         when 'emne_oversikt'
           TopicConverter.new @doc
         when 'fylker_oversikt'
-          convert_districts
+          DistrictConverter.new @doc
         when 'saker_oversikt'
           convert_issues
         else
@@ -78,11 +78,6 @@ module Hdo
         end
 
         xml
-      end
-
-      def add_topic(builder, node)
-        builder.externalId node.css("id").first.text
-        builder.name node.css("navn").first.text
       end
 
       def create_builder

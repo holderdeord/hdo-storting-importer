@@ -21,6 +21,7 @@ require 'hdo/storting_importer/party_converter'
 require 'hdo/storting_importer/representative_converter'
 require 'hdo/storting_importer/committee_converter'
 require 'hdo/storting_importer/topic_converter'
+require 'hdo/storting_importer/district_converter'
 
 
 
