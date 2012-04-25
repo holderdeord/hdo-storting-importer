@@ -64,7 +64,7 @@ module Hdo
       end
 
       def import_promises
-        csvs = Dir[File.join(StortingImporter.root, 'data/promises-*.csv')]
+        csvs = Dir[File.join(StortingImporter.root, 'data/promises-*.csv')].sort_by { |e| File.basename(e) }
         csvs.each do |path|
           with_tmp_file(PromiseConverter.new(path).to_xml) { |f| print_or_import f }
         end
