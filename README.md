@@ -6,7 +6,7 @@ Convert and import XML from data.stortinget.no
 Usage
 =====
 
-    $ bin/hdo-converter --app /src/hdo-site all
+    $ bin/hdo-converter --app-root /src/hdo-site all
 
 Caveats
 =======
