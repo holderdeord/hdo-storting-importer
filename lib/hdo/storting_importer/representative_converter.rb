@@ -1,13 +1,9 @@
 module Hdo
   module StortingImporter
-    class RepresentativeConverter
+    class RepresentativeConverter < Converter
 
-      def initialize(doc)
-        @doc = doc
-      end
-
-      def xml
-        ERB.new(template, 0, "%-<>").result(binding)
+      def self.handles?(name)
+        %w[dagensrepresentanter_oversikt representanter_oversikt].include? name
       end
 
       def representatives
@@ -19,14 +15,10 @@ module Hdo
         end
       end
 
-      def template
-        File.read(File.expand_path("../templates/representatives.xml.erb", __FILE__))
+      def template_name
+        'representatives'
       end
 
-      def fetch_if_exists(node, selector)
-        subnode = node.css(selector).first
-        subnode ? subnode.text : ''
-      end
     end
   end
 end

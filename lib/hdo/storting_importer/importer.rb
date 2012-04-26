@@ -45,7 +45,7 @@ module Hdo
       def import_promises
         csvs = Dir[File.join(StortingImporter.root, 'data/promises-*.csv')].sort_by { |e| File.basename(e) }
         csvs.each do |path|
-          print_or_import PromiseConverter.new(path).to_xml
+          print_or_import PromiseConverter.new(path).xml
         end
       end
 
@@ -53,26 +53,7 @@ module Hdo
         docs = [docs] unless docs.kind_of?(Array)
 
         docs.each do |doc|
-          print_or_import convert(doc)
-        end
-      end
-
-      def convert(doc)
-        case doc.name
-        when 'partier_oversikt'
-          PartyConverter.new(doc).xml
-        when 'dagensrepresentanter_oversikt', 'representanter_oversikt'
-          RepresentativeConverter.new(doc).xml
-        when 'komiteer_oversikt'
-          CommitteeConverter.new(doc).xml
-        when 'emne_oversikt'
-          TopicConverter.new(doc).xml
-        when 'fylker_oversikt'
-          DistrictConverter.new(doc).xml
-        when 'saker_oversikt'
-          IssueConverter.new(doc).xml
-        else
-          raise NotImplementedError, doc.name
+          print_or_import Converter.for(doc).xml
         end
       end
 

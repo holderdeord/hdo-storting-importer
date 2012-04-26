@@ -1,8 +1,9 @@
 module Hdo
   module StortingImporter
-    class TopicConverter
-      def initialize(doc)
-        @doc = doc
+    class TopicConverter < Converter
+
+      def self.handles?(name)
+        name == 'emne_oversikt'
       end
 
       def topics
@@ -24,12 +25,8 @@ module Hdo
         }
       end
 
-      def xml
-        ERB.new(template, 0, "%-<>").result(binding)
-      end
-
-      def template
-        File.read(File.expand_path("../templates/topics.xml.erb", __FILE__))
+      def template_name
+        'topics'
       end
 
     end

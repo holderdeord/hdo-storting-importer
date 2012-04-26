@@ -1,13 +1,9 @@
 module Hdo
   module StortingImporter
+    class IssueConverter < Converter
 
-    class IssueConverter
-      def initialize(doc)
-        @doc = doc
-      end
-
-      def xml
-        ERB.new(template, 0, "%-<>").result(binding)
+      def self.handles?(name)
+        name == 'saker_oversikt'
       end
 
       def issues
@@ -37,10 +33,10 @@ module Hdo
         end
       end
 
-      def template
-        File.read(File.expand_path("../templates/issues.xml.erb", __FILE__))
+      def template_name
+        'issues'
       end
-    end
 
+    end
   end
 end

@@ -18,7 +18,7 @@ module Hdo
         )
       end
 
-      def to_xml
+      def xml
         builder = Builder::XmlMarkup.new :indent => 2
         builder.instruct!
 

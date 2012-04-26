@@ -1,18 +1,15 @@
 module Hdo
   module StortingImporter
-    class PartyConverter
+    class PartyConverter < Converter
 
-      def initialize(doc)
-        @doc = doc
+      def self.handles?(name)
+        name == 'partier_oversikt'
       end
 
-      def xml
-        ERB.new(template, 0, "%-<>").result(binding)
+      def template_name
+        'parties'
       end
 
-      def template
-        File.read(File.expand_path("../templates/parties.xml.erb", __FILE__))
-      end
 
       def parties
         @doc.css("partier_liste parti").map do |node|

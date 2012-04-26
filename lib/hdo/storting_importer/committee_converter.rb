@@ -1,8 +1,9 @@
 module Hdo
   module StortingImporter
-    class CommitteeConverter
-      def initialize(doc)
-        @doc = doc
+    class CommitteeConverter < Converter
+
+      def self.handles?(name)
+        name == 'komiteer_oversikt'
       end
 
       def committees
@@ -14,12 +15,8 @@ module Hdo
         end
       end
 
-      def xml
-        ERB.new(template, 0, "%-<>").result(binding)
-      end
-
-      def template
-        File.read(File.expand_path("../templates/committees.xml.erb", __FILE__))
+      def template_name
+        'committees'
       end
 
     end

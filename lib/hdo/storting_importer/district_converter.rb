@@ -1,13 +1,9 @@
 module Hdo
   module StortingImporter
+    class DistrictConverter < Converter
 
-    class DistrictConverter
-      def initialize(doc)
-        @doc = doc
-      end
-
-      def xml
-        ERB.new(template, 0, "%-<>").result(binding)
+      def self.handles?(name)
+        name == 'fylker_oversikt'
       end
 
       def districts
@@ -19,9 +15,10 @@ module Hdo
         end
       end
 
-      def template
-        File.read(File.expand_path("../templates/districts.xml.erb", __FILE__))
+      def template_name
+        'districts'
       end
+
     end
   end
 end

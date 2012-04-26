@@ -1,18 +1,14 @@
 module Hdo
   module StortingImporter
-    class VoteConverter
+    class VoteConverter < Converter
       include ERB::Util
 
       def initialize(vote_data)
         @vote_data = vote_data
       end
 
-      def xml
-        ERB.new(template, 0, "%-<>").result(binding)
-      end
-
-      def template
-        File.read(File.expand_path("../templates/votes.xml.erb", __FILE__))
+      def template_name
+        'votes'
       end
 
       def votes
