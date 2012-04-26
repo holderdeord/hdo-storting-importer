@@ -7,8 +7,7 @@ require 'optparse'
 importer = Hdo::StortingImporter::Importer.new
 
 OptionParser.new do |opt|
-  valid_commands = (Hdo::StortingImporter::Importer::FILES.keys + Hdo::StortingImporter::Importer::CUSTOM_COMMANDS).join('|')
-  opt.banner = "Usage: #{$0} <#{valid_commands}> [options]"
+  opt.banner = "Usage: #{$0} <import-type> [options]"
 
   opt.on("--help", "You're looking at it.") { puts opt; exit; }
   opt.on("--only-print", "Don't run import, only print generated XML.") { importer.only_print = true }
