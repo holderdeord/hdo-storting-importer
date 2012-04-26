@@ -90,6 +90,7 @@ module Hdo
       end
 
       def run_import(path)
+        # TODO: this could happen over (authenticated) HTTP
         Dir.chdir(app_root) { system "script/import", path }
       end
 
