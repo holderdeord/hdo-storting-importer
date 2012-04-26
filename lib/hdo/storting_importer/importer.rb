@@ -58,19 +58,30 @@ module Hdo
         end
       end
 
-      def import_files(paths)
-        Array(paths).each do |path|
-          xml = Converter.from_file(path).to_xml
-          with_tmp_file(xml) { |f| print_or_import f }
-        end
-      end
-
       def import_docs(docs)
         docs = [docs] unless docs.kind_of?(Array)
 
         docs.each do |doc|
-          xml = Converter.new(doc).to_xml
-          with_tmp_file(xml) { |f| print_or_import f }
+          with_tmp_file(convert(doc)) { |f| print_or_import f }
+        end
+      end
+
+      def convert(doc)
+        case doc.name
+        when 'partier_oversikt'
+          PartyConverter.new(doc).xml
+        when 'dagensrepresentanter_oversikt', 'representanter_oversikt'
+          RepresentativeConverter.new(doc).xml
+        when 'komiteer_oversikt'
+          CommitteeConverter.new(doc).xml
+        when 'emne_oversikt'
+          TopicConverter.new(doc).xml
+        when 'fylker_oversikt'
+          DistrictConverter.new(doc).xml
+        when 'saker_oversikt'
+          IssueConverter.new(doc).xml
+        else
+          raise NotImplementedError, doc.name
         end
       end
 
@@ -136,7 +147,7 @@ module Hdo
           end
         end
 
-        [VoteConverter.new(vote_data).target!, vote_data.size]
+        [VoteConverter.new(vote_data).xml, vote_data.size]
       end
 
     end

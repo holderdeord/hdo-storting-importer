@@ -14,7 +14,7 @@ module Hdo
         end
       end
 
-      def target!
+      def xml
         ERB.new(template, 0, "%-<>").result(binding)
       end
 

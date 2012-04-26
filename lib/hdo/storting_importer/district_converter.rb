@@ -1,15 +1,15 @@
 module Hdo
   module StortingImporter
-    
+
     class DistrictConverter
       def initialize(doc)
         @doc = doc
       end
-      
-      def target!
+
+      def xml
         ERB.new(template, 0, "%-<>").result(binding)
       end
-      
+
       def districts
         @doc.css("fylker_liste fylke").map do |node|
           {
@@ -18,7 +18,7 @@ module Hdo
           }
         end
       end
-      
+
       def template
         File.read(File.expand_path("../templates/districts.xml.erb", __FILE__))
       end

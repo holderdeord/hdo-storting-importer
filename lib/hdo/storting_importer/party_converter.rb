@@ -6,7 +6,7 @@ module Hdo
         @doc = doc
       end
 
-      def target!
+      def xml
         ERB.new(template, 0, "%-<>").result(binding)
       end
 

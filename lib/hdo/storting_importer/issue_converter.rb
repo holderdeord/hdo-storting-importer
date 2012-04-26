@@ -6,7 +6,7 @@ module Hdo
         @doc = doc
       end
 
-      def target!
+      def xml
         ERB.new(template, 0, "%-<>").result(binding)
       end
 
@@ -22,7 +22,7 @@ module Hdo
             reference: xi.css("henvisning").first.text,
             documentGroup: xi.css("dokumentgruppe").first.text,
           }
-          
+
           committee = xi.css("komite").first
           if committee && committee['nil'] != "true"
             issue[:committee] = committee.css("navn").first.text
@@ -32,7 +32,7 @@ module Hdo
           if xtopics.any?
             issue[:topics] = xtopics.map { |xt| xt.css("navn").first.text }
           end
-          
+
           issue
         end
       end
