@@ -26,18 +26,6 @@ module Hdo
         @root = Pathname.new(root)
       end
 
-      FILES = {
-        :parties         => File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/partier/index.html?sesjonid=2011-2012"),
-        :committees      => File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/komiteer/index.html?SesjonId=2011-2012"),
-        :districts       => File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/fylker/index.html"),
-        :topics          => File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/emner/index.html"),
-        :issues          => File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/saker/index.html?sesjonid=2011-2012"),
-        :representatives => [
-          File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/representanter/index.html?StortingsPeriodeId=2009-2013"),
-          File.join(StortingImporter.root, "folketingparser/rawdata/data.stortinget.no/eksport/dagensrepresentanter/index.html")
-        ]
-      }
-
       def parties(session_id = DEFAULT_SESSION)
         parse @root.join("eksport/partier/index.html?sesjonid=#{session_id}").read
       end
