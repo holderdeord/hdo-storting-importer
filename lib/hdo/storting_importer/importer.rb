@@ -37,14 +37,6 @@ module Hdo
         import_promises unless @ignore.include?(:promises)
       end
 
-      def with_tmp_file(str)
-        Tempfile.open("storting2hdo") do |f|
-          f << str
-
-          yield f
-        end
-      end
-
       def import_dld
         run_import File.join(StortingImporter.root, 'data/dld-issues.xml')
         run_import File.join(StortingImporter.root, 'folketingparser/data/votering-2011-04-04-dld-hdo.xml')
@@ -53,8 +45,7 @@ module Hdo
       def import_promises
         csvs = Dir[File.join(StortingImporter.root, 'data/promises-*.csv')].sort_by { |e| File.basename(e) }
         csvs.each do |path|
-          xml = PromiseConverter.new(path).to_xml
-          with_tmp_file(xml) { |f| print_or_import f }
+          print_or_import PromiseConverter.new(path).to_xml
         end
       end
 
@@ -62,7 +53,7 @@ module Hdo
         docs = [docs] unless docs.kind_of?(Array)
 
         docs.each do |doc|
-          with_tmp_file(convert(doc)) { |f| print_or_import f }
+          print_or_import convert(doc)
         end
       end
 
@@ -85,13 +76,16 @@ module Hdo
         end
       end
 
-      def print_or_import(f)
+      def print_or_import(xml)
         if only_print
-          f.rewind
-          puts f.read
+          puts xml
         else
-          f.close
-          run_import f.path
+          Tempfile.open("storting2hdo") do |f|
+            f << xml
+            f.close
+
+            run_import f.path
+          end
         end
       end
 
@@ -114,7 +108,7 @@ module Hdo
           xml, vote_count = build_votes_xml(docs)
 
           if vote_count > 0 # no need to invoke this if we're passing empty XML
-            with_tmp_file(xml) { |f| print_or_import(f) }
+            print_or_import(xml)
           end
         end
       end
