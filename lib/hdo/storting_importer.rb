@@ -24,5 +24,6 @@ require 'hdo/storting_importer/district_converter'
 require 'hdo/storting_importer/issue_converter'
 require 'hdo/storting_importer/vote_converter'
 
+require 'hdo/storting_importer/cli'
 
 

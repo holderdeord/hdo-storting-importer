@@ -4,8 +4,8 @@ module Hdo
     class Importer
       attr_accessor :only_print, :ignore, :app_root
 
-      def initialize
-        @data_source = DiskDataSource.new(File.join(StortingImporter.root, 'folketingparser/rawdata/data.stortinget.no'))
+      def initialize(data_source)
+        @data_source = data_source
         @ignore = []
       end
 
