@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<voteringsforslag_oversikt xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://data.stortinget.no">
+  <versjon>1.0</versjon>
+  <votering_id>2176</votering_id>
+  <voteringsforslag_liste>
+    <voteringsforslag>
+      <versjon>1.0</versjon>
+      <forslag_betegnelse>Forslag nr. 19 fra Borghild Tenden på vegne av Venstre</forslag_betegnelse>
+      <forslag_betegnelse_kort>nr. 19 på vegne av V</forslag_betegnelse_kort>
+      <forslag_id>40037982</forslag_id>
+      <forslag_levert_av_representant>
+        <versjon>1.0</versjon>
+        <doedsdato>0001-01-01T00:00:00</doedsdato>
+        <etternavn>Tenden</etternavn>
+        <foedselsdato>1951-06-23T00:00:00</foedselsdato>
+        <fornavn>Borghild</fornavn>
+        <id>BT</id>
+        <kjoenn>kvinne</kjoenn>
+      </forslag_levert_av_representant>
+      <forslag_paa_vegne_av_tekst>Venstre:</forslag_paa_vegne_av_tekst>
+      <forslag_sorteringsnummer>0</forslag_sorteringsnummer>
+      <forslag_tekst>&lt;p&gt;Stortinget ber regjeringen om å gjennomgå hele jordbruksavtaleinstituttet, med den hensikt å forenkle forhandlingene til utelukkende å omhandle tilskuddsordninger som har direkte innvirkning på bøndenes inntektsmulighet.&lt;\p&gt;</forslag_tekst>
+      <forslag_type>loest_forslag</forslag_type>
+    </voteringsforslag>
+    <voteringsforslag>
+      <versjon>1.0</versjon>
+      <forslag_betegnelse>Forslag nr. 21 fra Borghild Tenden på vegne av Venstre</forslag_betegnelse>
+      <forslag_betegnelse_kort>nr. 21 på vegne av V</forslag_betegnelse_kort>
+      <forslag_id>40037984</forslag_id>
+      <forslag_levert_av_representant>
+        <versjon>1.0</versjon>
+        <doedsdato>0001-01-01T00:00:00</doedsdato>
+        <etternavn>Tenden</etternavn>
+        <foedselsdato>1951-06-23T00:00:00</foedselsdato>
+        <fornavn>Borghild</fornavn>
+        <id>BT</id>
+        <kjoenn>kvinne</kjoenn>
+      </forslag_levert_av_representant>
+      <forslag_paa_vegne_av_tekst>Venstre:</forslag_paa_vegne_av_tekst>
+      <forslag_sorteringsnummer>0</forslag_sorteringsnummer>
+      <forslag_tekst>&lt;p&gt;Stortinget ber regjeringen aktivt bidra til en framtidig WTO-avtale bl.a. gjennom tydelige innrømmelser når det gjelder fjerning av alle former for eksportsubsidier.&lt;\p&gt;</forslag_tekst>
+      <forslag_type>loest_forslag</forslag_type>
+    </voteringsforslag>
+    <voteringsforslag>
+      <versjon>1.0</versjon>
+      <forslag_betegnelse>Forslag nr. 22 fra Borghild Tenden på vegne av Venstre</forslag_betegnelse>
+      <forslag_betegnelse_kort>nr. 22 på vegne av V</forslag_betegnelse_kort>
+      <forslag_id>40037985</forslag_id>
+      <forslag_levert_av_representant>
+        <versjon>1.0</versjon>
+        <doedsdato>0001-01-01T00:00:00</doedsdato>
+        <etternavn>Tenden</etternavn>
+        <foedselsdato>1951-06-23T00:00:00</foedselsdato>
+        <fornavn>Borghild</fornavn>
+        <id>BT</id>
+        <kjoenn>kvinne</kjoenn>
+      </forslag_levert_av_representant>
+      <forslag_paa_vegne_av_tekst>Venstre:</forslag_paa_vegne_av_tekst>
+      <forslag_sorteringsnummer>0</forslag_sorteringsnummer>
+      <forslag_tekst>&lt;p&gt;Stortinget ber regjeringen foreta en styrt avvikling av pelsdyrhold i Norge.&lt;\p&gt;</forslag_tekst>
+      <forslag_type>loest_forslag</forslag_type>
+    </voteringsforslag>
+  </voteringsforslag_liste>
+</voteringsforslag_oversikt>

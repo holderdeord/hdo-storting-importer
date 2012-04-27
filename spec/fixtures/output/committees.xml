@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<committees>
+  <committee>
+    <externalId>ARBSOS</externalId>
+    <name>Arbeids- og sosialkomiteen</name>
+  </committee>
+  <committee>
+    <externalId>SÆRKOM</externalId>
+    <name>Den særskilte komité til å behandle redegjørelse fra justisministeren og forsvarsministeren i Stortingets møte 10. november 2011 om angrepene 22. juli</name>
+  </committee>
+  <committee>
+    <externalId>UUFK</externalId>
+    <name>Den utvidede utenriks- og forsvarskomité</name>
+  </committee>
+  <committee>
+    <externalId>ENERGI</externalId>
+    <name>Energi- og miljøkomiteen</name>
+  </committee>
+  <committee>
+    <externalId>FAMKULT</externalId>
+    <name>Familie- og kulturkomiteen</name>
+  </committee>
+  <committee>
+    <externalId>FINANS</externalId>
+    <name>Finanskomiteen</name>
+  </committee>
+  <committee>
+    <externalId>FULLMAKT</externalId>
+    <name>Fullmaktskomiteen</name>
+  </committee>
+  <committee>
+    <externalId>HELSEOMS</externalId>
+    <name>Helse- og omsorgskomiteen</name>
+  </committee>
+  <committee>
+    <externalId>JUSTIS</externalId>
+    <name>Justiskomiteen</name>
+  </committee>
+  <committee>
+    <externalId>KIRKE</externalId>
+    <name>Kirke-, utdannings- og forskningskomiteen</name>
+  </committee>
+  <committee>
+    <externalId>KOMMFORV</externalId>
+    <name>Kommunal- og forvaltningskomiteen</name>
+  </committee>
+  <committee>
+    <externalId>KONTROLL</externalId>
+    <name>Kontroll- og konstitusjonskomiteen</name>
+  </committee>
+  <committee>
+    <externalId>NÆRING</externalId>
+    <name>Næringskomiteen</name>
+  </committee>
+  <committee>
+    <externalId>PRES</externalId>
+    <name>Stortingets presidentskap</name>
+  </committee>
+  <committee>
+    <externalId>TRANSKOM</externalId>
+    <name>Transport- og kommunikasjonskomiteen</name>
+  </committee>
+  <committee>
+    <externalId>UFK</externalId>
+    <name>Utenriks- og forsvarskomiteen</name>
+  </committee>
+  <committee>
+    <externalId>VALG</externalId>
+    <name>Valgkomiteen</name>
+  </committee>
+</committees>

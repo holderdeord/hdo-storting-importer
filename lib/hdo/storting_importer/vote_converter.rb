@@ -8,16 +8,13 @@ module Hdo
       end
 
       def votes
-        vote_docs = data_source.votes
+        vote_docs = docs
 
         if ENV['VOTE_COUNT'] # temporarily for testing
           vote_docs = vote_docs.first(ENV['VOTE_COUNT'].to_i)
         end
 
-        res = vote_docs.map { |doc| build_vote(doc) }.compact.flatten
-        p res
-
-        res
+        vote_docs.map { |doc| build_vote(doc) }.compact.flatten
       end
 
       def build_vote(doc)
