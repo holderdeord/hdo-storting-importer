@@ -84,8 +84,8 @@ module Hdo
       end
 
       def import_dld
-        run_import File.join(StortingImporter.root, 'data/dld-issues.xml')
-        run_import File.join(StortingImporter.root, 'folketingparser/data/votering-2011-04-04-dld-hdo.xml')
+        print_or_import File.read(File.join(StortingImporter.root, 'data/dld-issues.xml'))
+        print_or_import File.read(File.join(StortingImporter.root, 'folketingparser/data/votering-2011-04-04-dld-hdo.xml'))
       end
 
       def import_promises
