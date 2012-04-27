@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parties>
+  <party>
+    <externalId>A</externalId>
+    <name>Arbeiderpartiet</name>
+  </party>
+  <party>
+    <externalId>FrP</externalId>
+    <name>Fremskrittspartiet</name>
+  </party>
+  <party>
+    <externalId>H</externalId>
+    <name>Høyre</name>
+  </party>
+  <party>
+    <externalId>Sp</externalId>
+    <name>Senterpartiet</name>
+  </party>
+  <party>
+    <externalId>SV</externalId>
+    <name>Sosialistisk Venstreparti</name>
+  </party>
+  <party>
+    <externalId>KrF</externalId>
+    <name>Kristelig Folkeparti</name>
+  </party>
+  <party>
+    <externalId>V</externalId>
+    <name>Venstre</name>
+  </party>
+</parties>
