@@ -3,19 +3,49 @@ module Hdo
     class VoteConverter < Converter
       include ERB::Util
 
-      def initialize(vote_data)
-        @vote_data = vote_data
-      end
-
-      def template_name
-        'votes'
+      def self.type_name
+        :votes
       end
 
       def votes
-        @vote_data.map { |data| build_vote(*data) }
+        vote_docs = data_source.votes
+
+        if ENV['VOTE_COUNT'] # temporarily for testing
+          vote_docs = vote_docs.first(ENV['VOTE_COUNT'].to_i)
+        end
+
+        res = vote_docs.map { |doc| build_vote(doc) }.compact.flatten
+        p res
+
+        res
       end
 
-      def build_vote(issue_id, vote_id, vote_node, result_node, propositions_node)
+      def build_vote(doc)
+        return unless doc.css("sak_votering").any? # ignore issues with no votes
+
+        issue_id = doc.css("sak_id").first.text
+        vote_nodes = doc.css("sak_votering")
+
+        vote_nodes.map do |vote_node|
+          vote_id = vote_node.css("votering_id").text
+
+          propositions_doc = data_source.propositions_for(vote_id)
+          propositions_node = propositions_doc.css("voteringsforslag_liste").first
+          propositions_node or raise "no propositions in #{propositions_path}"
+
+          if vote_node.css("personlig_votering").text == "true"
+            result_doc = data_source.vote_results_for(vote_id)
+            result_node = result_doc.css("voteringsresultat_liste").first
+            result_node or raise "no vote result in #{vote_result_path.inspect}"
+          else
+            result_node = nil
+          end
+
+          vote_from(issue_id, vote_id, vote_node, result_node, propositions_node)
+        end
+      end
+
+      def vote_from(issue_id, vote_id, vote_node, result_node, propositions_node)
         vote = {
           externalId: vote_id,
           externalIssueId: issue_id,

@@ -2,20 +2,21 @@ module Hdo
   module StortingImporter
     class TopicConverter < Converter
 
-      def self.handles?(name)
-        name == 'emne_oversikt'
+      def self.type_name
+        :topics
       end
 
       def topics
-        @doc.css("emne_liste > emne").map do |xt|
-          topic = build_topic(xt)
+        docs.map { |doc|
+          doc.css("emne_liste > emne").map do |xt|
+            topic = build_topic(xt)
 
-          topic[:subTopics] = xt.css("underemne_liste > emne").map do |st|
-            build_topic(st)
+            subnodes = xt.css("underemne_liste > emne")
+            topic[:subTopics] = subnodes.map { |st| build_topic(st) }
+
+            topic
           end
-
-          topic
-        end
+        }.flatten
       end
 
       def build_topic(node)
@@ -23,10 +24,6 @@ module Hdo
           externalId: node.css("id").first.text,
           name: node.css("navn").first.text
         }
-      end
-
-      def template_name
-        'topics'
       end
 
     end

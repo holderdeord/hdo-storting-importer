@@ -2,21 +2,17 @@ module Hdo
   module StortingImporter
     class RepresentativeConverter < Converter
 
-      def self.handles?(name)
-        %w[dagensrepresentanter_oversikt representanter_oversikt].include? name
+      def self.type_name
+        :representatives
       end
 
       def representatives
-        nodes = @doc.css("dagensrepresentant")
-        nodes += @doc.css("representant")
+        docs.map do |doc|
+          nodes = doc.css("dagensrepresentant")
+          nodes += doc.css("representant")
 
-        nodes.map do |node|
-          RepresentativeBuilder.new(node).build
-        end
-      end
-
-      def template_name
-        'representatives'
+          nodes.map { |node| RepresentativeBuilder.new(node).build }
+        end.flatten
       end
 
     end

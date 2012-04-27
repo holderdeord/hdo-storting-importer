@@ -2,39 +2,37 @@ module Hdo
   module StortingImporter
     class IssueConverter < Converter
 
-      def self.handles?(name)
-        name == 'saker_oversikt'
+      def self.type_name
+        :issues
       end
 
       def issues
-        @doc.css("saker_liste sak").map do |xi|
-          issue = {
-            externalId: xi.xpath("./id").first.text,
-            summary: xi.css("korttittel").first.text,
-            description: xi.css("tittel").first.text,
-            type: xi.css("type").first.text,
-            status: xi.css("status").first.text,
-            lastUpdate: xi.css("sist_oppdatert_dato").first.text,
-            reference: xi.css("henvisning").first.text,
-            documentGroup: xi.css("dokumentgruppe").first.text,
-          }
+        docs.map do |doc|
+          doc.css("saker_liste sak").map do |xi|
+            issue = {
+              externalId: xi.xpath("./id").first.text,
+              summary: xi.css("korttittel").first.text,
+              description: xi.css("tittel").first.text,
+              type: xi.css("type").first.text,
+              status: xi.css("status").first.text,
+              lastUpdate: xi.css("sist_oppdatert_dato").first.text,
+              reference: xi.css("henvisning").first.text,
+              documentGroup: xi.css("dokumentgruppe").first.text,
+            }
 
-          committee = xi.css("komite").first
-          if committee && committee['nil'] != "true"
-            issue[:committee] = committee.css("navn").first.text
+            committee = xi.css("komite").first
+            if committee && committee['nil'] != "true"
+              issue[:committee] = committee.css("navn").first.text
+            end
+
+            xtopics = xi.css("emne")
+            if xtopics.any?
+              issue[:topics] = xtopics.map { |xt| xt.css("navn").first.text }
+            end
+
+            issue
           end
-
-          xtopics = xi.css("emne")
-          if xtopics.any?
-            issue[:topics] = xtopics.map { |xt| xt.css("navn").first.text }
-          end
-
-          issue
-        end
-      end
-
-      def template_name
-        'issues'
+        end.flatten
       end
 
     end

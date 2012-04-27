@@ -13,7 +13,7 @@ module Hdo
 
       def parse(args)
         options = {}
-        
+
         OptionParser.new do |opt|
           opt.banner = "Usage: #{$0} <import-type> [options]"
 
@@ -29,16 +29,16 @@ module Hdo
             TCPSocket.socks_port = Integer(port)
           end
         end.parse!(args)
-        
+
         cmd = args.shift or raise "no command given"
-        
+
         [cmd, options]
       end
-      
+
       def data_source
         @data_source ||= DiskDataSource.new(File.join(StortingImporter.root, 'folketingparser/rawdata/data.stortinget.no'))
       end
-      
+
       def importer
         @importer ||= (
           if @options[:app_root]
@@ -53,8 +53,6 @@ module Hdo
 
       def import(what)
         case what
-        when :votes
-          import_votes
         when :dld
           import_dld
         when :promises
@@ -62,23 +60,21 @@ module Hdo
         when :all
           import_all
         else
-          import_docs data_source.__send__(what)
+          import_docs Converter.for(what).new(data_source).xml
         end
       end
 
       def import_all
         ignore = Array(@options[:ignore])
-        
-        import_docs data_source.parties unless ignore.include?(:parties)
-        import_docs data_source.committees unless ignore.include?(:committees)
-        import_docs data_source.districts unless ignore.include?(:districts)
-        import_docs data_source.representatives unless ignore.include?(:representatives)
-        import_docs data_source.topics unless ignore.include?(:topics)
-        import_docs data_source.issues unless ignore.include?(:issues)
 
-        # for votes, the output XML is not mapped 1:1 with the types in the input data,
-        # so we handle them as a special case
-        import_votes unless ignore.include?(:votes)
+        import_docs PartyConverter.new(data_source).xml unless ignore.include?(:parties)
+        import_docs CommitteeConverter.new(data_source).xml unless ignore.include?(:committees)
+        import_docs DistrictConverter.new(data_source).xml unless ignore.include?(:districts)
+        import_docs RepresentativeConverter.new(data_source).xml unless ignore.include?(:representatives)
+        import_docs TopicConverter.new(data_source).xml unless ignore.include?(:topics)
+        import_docs IssueConverter.new(data_source).xml unless ignore.include?(:issues)
+        import_docs VoteConverter.new(data_source).xml unless ignore.include?(:votes)
+
         import_dld unless ignore.include?(:dld)
         import_promises unless ignore.include?(:promises)
       end
@@ -99,7 +95,7 @@ module Hdo
         docs = [docs] unless docs.kind_of?(Array)
 
         docs.each do |doc|
-          print_or_import Converter.for(doc).xml
+          print_or_import doc.to_s
         end
       end
 
@@ -111,54 +107,6 @@ module Hdo
         end
       end
 
-      def import_votes
-        vote_docs = data_source.votes
-
-        if ENV['VOTE_COUNT'] # temporarily for testing
-          vote_docs = vote_docs.first(ENV['VOTE_COUNT'].to_i)
-        end
-
-        vote_docs.each_slice(5) do |docs|
-          xml, vote_count = build_votes_xml(docs)
-
-          if vote_count > 0 # no need to invoke this if we're passing empty XML
-            print_or_import(xml)
-          end
-        end
-      end
-
-      def build_votes_xml(docs)
-        # TODO: move to VoteConverter
-        vote_data = []
-
-        docs.each do |doc|
-          next unless doc.css("sak_votering").any? # ignore issues with no votes
-
-          issue_id = doc.css("sak_id").first.text
-          vote_nodes = doc.css("sak_votering")
-
-          vote_nodes.each do |vote_node|
-            vote_id = vote_node.css("votering_id").text
-
-            propositions_doc = data_source.propositions_for(vote_id)
-            propositions_node = propositions_doc.css("voteringsforslag_liste").first
-            propositions_node or raise "no propositions in #{propositions_path}"
-
-            if vote_node.css("personlig_votering").text == "true"
-              result_doc = data_source.vote_results_for(vote_id)
-              result_node = result_doc.css("voteringsresultat_liste").first
-              result_node or raise "no vote result in #{vote_result_path.inspect}"
-            else
-              result_node = nil
-            end
-
-            vote_data << [issue_id, vote_id, vote_node, result_node, propositions_node]
-          end
-        end
-
-        [VoteConverter.new(vote_data).xml, vote_data.size]
-      end
-      
     end
   end
 end

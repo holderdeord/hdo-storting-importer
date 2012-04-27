@@ -2,22 +2,21 @@ module Hdo
   module StortingImporter
     class DistrictConverter < Converter
 
-      def self.handles?(name)
-        name == 'fylker_oversikt'
+      def self.type_name
+        :districts
       end
 
       def districts
-        @doc.css("fylker_liste fylke").map do |node|
-          {
-            externalId: node.css("id").first.text,
-            name:       node.css("navn").first.text
-          }
-        end
+        docs.map do |doc|
+          doc.css("fylker_liste fylke").map do |node|
+            {
+              externalId: node.css("id").first.text,
+              name:       node.css("navn").first.text
+            }
+          end
+        end.flatten
       end
 
-      def template_name
-        'districts'
-      end
 
     end
   end

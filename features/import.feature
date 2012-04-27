@@ -2034,9 +2034,6 @@ Feature: Import data
         </committees>
         <period>2011-2012</period>
       </representative>
-    </representatives>
-    <?xml version="1.0" encoding="UTF-8"?>
-    <representatives>
       <representative>
         <externalId>FR</externalId>
         <firstName>Freddy</firstName>
@@ -4238,8 +4235,8 @@ Feature: Import data
         <period>2011-2012</period>
       </representative>
     </representatives>
-   """    
-    
+   """
+
   Scenario: Import promises
     When I run `hdo-converter --only-print promises`
     Then the output should contain:
@@ -7828,7 +7825,7 @@ Feature: Import data
       </promise>
     </promises>
     """
-    
+
     Scenario: Import parties
       When I run `hdo-converter --only-print parties`
       Then the output should contain:
@@ -7865,7 +7862,7 @@ Feature: Import data
         </party>
       </parties>
       """
-      
+
     Scenario: Import committees
       When I run `hdo-converter --only-print committees`
       Then the output should contain:
@@ -7942,7 +7939,7 @@ Feature: Import data
         </committee>
       </committees>
       """
-      
+
     Scenario: Import districts
       When I run `hdo-converter --only-print districts`
       Then the output should contain:
@@ -8027,7 +8024,7 @@ Feature: Import data
         </district>
       </districts>
       """
-      
+
     Scenario: Import topics
       When I run `hdo-converter --only-print topics`
       Then the output should contain:
@@ -10875,7 +10872,7 @@ Feature: Import data
         <issue>
           <externalId>52346</externalId>
           <summary>Samtykke til å setje i kraft ein overeinskomst mellom Kongeriket Noreg og Republikken Mauritius om opplysningar i skattesaker</summary>
-          <description>Samtykke til å setje i kraft ein overeinskomst mellom Kongeriket Noreg og Republikken Mauritius om opplysningar i skattesaker underskriven i Paris 
+          <description>Samtykke til å setje i kraft ein overeinskomst mellom Kongeriket Noreg og Republikken Mauritius om opplysningar i skattesaker underskriven i Paris
       1. desember 2011</description>
           <type>alminneligsak</type>
           <status>behandlet</status>
@@ -14569,7 +14566,7 @@ Feature: Import data
         <issue>
           <externalId>51455</externalId>
           <summary>Samtykke til ratifikasjon av avtale mellom EFTA-statene og Ukraina</summary>
-          <description>Samtykke til ratifikasjon av en frihandelsavtale mellom EFTA-statene og Ukraina og en avtale om handel med landbruksvarer mellom 
+          <description>Samtykke til ratifikasjon av en frihandelsavtale mellom EFTA-statene og Ukraina og en avtale om handel med landbruksvarer mellom
       Norge og Ukraina, begge av 24. juni 2010</description>
           <type>alminneligsak</type>
           <status>behandlet</status>
@@ -16113,7 +16110,7 @@ Feature: Import data
         </issue>
       </issues>
       """
-      
+
       Scenario: Import votes
         When I run `hdo-converter --only-print votes`
         Then the output should contain:
