@@ -12,7 +12,7 @@ module Hdo
             issue = {
               externalId: xi.xpath("./id").first.text,
               summary: xi.css("korttittel").first.text,
-              description: xi.css("tittel").first.text.gsub(/\r?\n/, ''),
+              description: remove_newlines(xi.css("tittel").first.text),
               type: xi.css("type").first.text,
               status: xi.css("status").first.text,
               lastUpdate: xi.css("sist_oppdatert_dato").first.text,

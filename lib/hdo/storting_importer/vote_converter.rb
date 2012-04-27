@@ -87,7 +87,7 @@ module Hdo
           externalId: node.css("forslag_id").first.text,
           description: node.css("forslag_betegnelse").first.text,
           onBehalfOf: node.css("forslag_paa_vegne_av_tekst").first.text,
-          body: node.css("forslag_tekst").first.text.gsub("<\\p>", "")
+          body: remove_invalid_html(node.css("forslag_tekst").first.text)
         }
 
         rep_node = node.css("forslag_levert_av_representant").first
