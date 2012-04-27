@@ -9109,8 +9109,7 @@ Feature: Import data
         <issue>
           <externalId>52719</externalId>
           <summary>Endringer i utlendingsloven m.m. (delegering av avslagskompetanse i visumsaker til andre Schengenland mv.)</summary>
-          <description>Endringer i utlendingsloven m.m. (delegering av avslagskompetanse i visumsaker til andre Schengenland mv.)
-      </description>
+          <description>Endringer i utlendingsloven m.m. (delegering av avslagskompetanse i visumsaker til andre Schengenland mv.)</description>
           <type>lovsak</type>
           <status>til_behandling</status>
           <lastUpdate>2012-04-16T00:00:00</lastUpdate>
@@ -9664,8 +9663,7 @@ Feature: Import data
         <issue>
           <externalId>53294</externalId>
           <summary>Rapport til Stortinget fra Norges Banks representantskap for 2011</summary>
-          <description>Rapport til Stortinget fra Norges Banks representantskap for 2011
-      </description>
+          <description>Rapport til Stortinget fra Norges Banks representantskap for 2011</description>
           <type>alminneligsak</type>
           <status>til_behandling</status>
           <lastUpdate>2012-03-29T00:00:00</lastUpdate>
@@ -10872,8 +10870,7 @@ Feature: Import data
         <issue>
           <externalId>52346</externalId>
           <summary>Samtykke til å setje i kraft ein overeinskomst mellom Kongeriket Noreg og Republikken Mauritius om opplysningar i skattesaker</summary>
-          <description>Samtykke til å setje i kraft ein overeinskomst mellom Kongeriket Noreg og Republikken Mauritius om opplysningar i skattesaker underskriven i Paris
-      1. desember 2011</description>
+          <description>Samtykke til å setje i kraft ein overeinskomst mellom Kongeriket Noreg og Republikken Mauritius om opplysningar i skattesaker underskriven i Paris 1. desember 2011</description>
           <type>alminneligsak</type>
           <status>behandlet</status>
           <lastUpdate>2012-03-01T00:00:00</lastUpdate>
@@ -14531,8 +14528,7 @@ Feature: Import data
         <issue>
           <externalId>49351</externalId>
           <summary>Eksport av forsvarsmateriell i 2010, eksportkontroll og internasjonalt ikke-spredningssamarbeid</summary>
-          <description>Eksport av forsvarsmateriell fra Norge i 2010, eksportkontroll og internasjonalt ikke-spredningssamarbeid
-      </description>
+          <description>Eksport av forsvarsmateriell fra Norge i 2010, eksportkontroll og internasjonalt ikke-spredningssamarbeid</description>
           <type>alminneligsak</type>
           <status>behandlet</status>
           <lastUpdate>2011-11-29T00:00:00</lastUpdate>
@@ -14566,8 +14562,7 @@ Feature: Import data
         <issue>
           <externalId>51455</externalId>
           <summary>Samtykke til ratifikasjon av avtale mellom EFTA-statene og Ukraina</summary>
-          <description>Samtykke til ratifikasjon av en frihandelsavtale mellom EFTA-statene og Ukraina og en avtale om handel med landbruksvarer mellom
-      Norge og Ukraina, begge av 24. juni 2010</description>
+          <description>Samtykke til ratifikasjon av en frihandelsavtale mellom EFTA-statene og Ukraina og en avtale om handel med landbruksvarer mellom Norge og Ukraina, begge av 24. juni 2010</description>
           <type>alminneligsak</type>
           <status>behandlet</status>
           <lastUpdate>2011-11-29T00:00:00</lastUpdate>
@@ -15793,8 +15788,7 @@ Feature: Import data
         <issue>
           <externalId>51091</externalId>
           <summary>Felles ansvar for eit godt og anstendig arbeidsliv</summary>
-          <description>Felles ansvar for eit godt og anstendig arbeidsliv. Arbeidsforhold, arbeidsmiljø og sikkerheit
-      </description>
+          <description>Felles ansvar for eit godt og anstendig arbeidsliv. Arbeidsforhold, arbeidsmiljø og sikkerheit</description>
           <type>alminneligsak</type>
           <status>til_behandling</status>
           <lastUpdate>2011-09-30T00:00:00</lastUpdate>
