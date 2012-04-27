@@ -8,10 +8,13 @@ end
 
 require 'nokogiri'
 require 'tempfile'
+require 'pathname'
 require 'open-uri'
 require 'erb'
 
 require 'hdo/storting_importer/data_source'
+require 'hdo/storting_importer/disk_data_source'
+require 'hdo/storting_importer/http_data_source'
 require 'hdo/storting_importer/script_importer'
 require 'hdo/storting_importer/http_importer'
 
