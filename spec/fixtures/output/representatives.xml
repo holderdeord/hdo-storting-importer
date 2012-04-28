@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <representatives>
   <representative>
+    <externalId>AAST</externalId>
+    <firstName>Arild</firstName>
+    <lastName>Stokkan-Grande</lastName>
+    <dateOfBirth>1978-04-05T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Nord-Trøndelag</district>
+    <party>Arbeiderpartiet</party>
+    <committees>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
+    <externalId>AC</externalId>
+    <firstName>Akhtar</firstName>
+    <lastName>Chaudhry</lastName>
+    <dateOfBirth>1961-07-23T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Oslo</district>
+    <party>Sosialistisk Venstreparti</party>
+    <committees>
+      <committee>Justiskomiteen</committee>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
     <externalId>ADA</externalId>
     <firstName>André Oktay</firstName>
     <lastName>Dahl</lastName>
@@ -133,6 +158,19 @@
     <period>2011-2012</period>
   </representative>
   <representative>
+    <externalId>AREH</externalId>
+    <firstName>Are</firstName>
+    <lastName>Helseth</lastName>
+    <dateOfBirth>1955-01-11T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Akershus</district>
+    <party>Arbeiderpartiet</party>
+    <committees>
+      <committee>Helse- og omsorgskomiteen</committee>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
     <externalId>ARK</externalId>
     <firstName>Arve</firstName>
     <lastName>Kambe</lastName>
@@ -141,6 +179,19 @@
     <district>Rogaland</district>
     <party>Høyre</party>
     <committees>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
+    <externalId>ARLH</externalId>
+    <firstName>Arne L.</firstName>
+    <lastName>Haugen</lastName>
+    <dateOfBirth>1939-07-25T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Sør-Trøndelag</district>
+    <party>Arbeiderpartiet</party>
+    <committees>
+      <committee>Næringskomiteen</committee>
     </committees>
     <period>2011-2012</period>
   </representative>
@@ -277,6 +328,19 @@
     <period>2011-2012</period>
   </representative>
   <representative>
+    <externalId>CNR</externalId>
+    <firstName>Christina Nilsson</firstName>
+    <lastName>Ramsøy</lastName>
+    <dateOfBirth>1986-11-04T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Nord-Trøndelag</district>
+    <party>Senterpartiet</party>
+    <committees>
+      <committee>Familie- og kulturkomiteen</committee>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
     <externalId>CT</externalId>
     <firstName>Christian</firstName>
     <lastName>Tybring-Gjedde</lastName>
@@ -409,6 +473,19 @@
     <period>2011-2012</period>
   </representative>
   <representative>
+    <externalId>ESAN</externalId>
+    <firstName>Erling</firstName>
+    <lastName>Sande</lastName>
+    <dateOfBirth>1978-11-08T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Sogn og Fjordane</district>
+    <party>Senterpartiet</party>
+    <committees>
+      <committee>Energi- og miljøkomiteen</committee>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
     <externalId>EVH</externalId>
     <firstName>Eva Kristin</firstName>
     <lastName>Hansen</lastName>
@@ -529,6 +606,19 @@
     <period>2011-2012</period>
   </representative>
   <representative>
+    <externalId>GP</externalId>
+    <firstName>Geir</firstName>
+    <lastName>Pollestad</lastName>
+    <dateOfBirth>1978-08-13T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Rogaland</district>
+    <party>Senterpartiet</party>
+    <committees>
+      <committee>Arbeids- og sosialkomiteen</committee>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
     <externalId>GUE</externalId>
     <firstName>Gunvor</firstName>
     <lastName>Eldegard</lastName>
@@ -565,6 +655,19 @@
     <period>2011-2012</period>
   </representative>
   <representative>
+    <externalId>HAKH</externalId>
+    <firstName>Håkon</firstName>
+    <lastName>Haugli</lastName>
+    <dateOfBirth>1969-05-21T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Oslo</district>
+    <party>Arbeiderpartiet</party>
+    <committees>
+      <committee>Kommunal- og forvaltningskomiteen</committee>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
     <externalId>HEH</externalId>
     <firstName>Heikki</firstName>
     <lastName>Holmås</lastName>
@@ -573,6 +676,19 @@
     <district>Oslo</district>
     <party>Sosialistisk Venstreparti</party>
     <committees>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
+    <externalId>HEIG</externalId>
+    <firstName>Heidi</firstName>
+    <lastName>Greni</lastName>
+    <dateOfBirth>1962-07-03T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Sør-Trøndelag</district>
+    <party>Senterpartiet</party>
+    <committees>
+      <committee>Kommunal- og forvaltningskomiteen</committee>
     </committees>
     <period>2011-2012</period>
   </representative>
@@ -853,6 +969,19 @@
     <period>2011-2012</period>
   </representative>
   <representative>
+    <externalId>JFC</externalId>
+    <firstName>Jette F.</firstName>
+    <lastName>Christensen</lastName>
+    <dateOfBirth>1983-06-01T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Hordaland</district>
+    <party>Arbeiderpartiet</party>
+    <committees>
+      <committee>Kontroll- og konstitusjonskomiteen</committee>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
     <externalId>JGS</externalId>
     <firstName>Jonas Gahr</firstName>
     <lastName>Støre</lastName>
@@ -920,6 +1049,18 @@
     <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
     <district>Akershus</district>
     <party>Høyre</party>
+    <committees>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
+    <externalId>KAAN</externalId>
+    <firstName>Karin</firstName>
+    <lastName>Andersen</lastName>
+    <dateOfBirth>1952-12-16T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Hedmark</district>
+    <party>Sosialistisk Venstreparti</party>
     <committees>
     </committees>
     <period>2011-2012</period>
@@ -1057,14 +1198,15 @@
     <period>2011-2012</period>
   </representative>
   <representative>
-    <externalId>KAAN</externalId>
-    <firstName>Karin</firstName>
-    <lastName>Andersen</lastName>
-    <dateOfBirth>1952-12-16T00:00:00</dateOfBirth>
+    <externalId>LAE</externalId>
+    <firstName>Lars</firstName>
+    <lastName>Egeland</lastName>
+    <dateOfBirth>1957-12-06T00:00:00</dateOfBirth>
     <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
-    <district>Hedmark</district>
+    <district>Vestfold</district>
     <party>Sosialistisk Venstreparti</party>
     <committees>
+      <committee>Energi- og miljøkomiteen</committee>
     </committees>
     <period>2011-2012</period>
   </representative>
@@ -1189,6 +1331,18 @@
     <period>2011-2012</period>
   </representative>
   <representative>
+    <externalId>MAAA</externalId>
+    <firstName>Marianne</firstName>
+    <lastName>Aasen</lastName>
+    <dateOfBirth>1967-02-21T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Akershus</district>
+    <party>Arbeiderpartiet</party>
+    <committees>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
     <externalId>MAGR</externalId>
     <firstName>Magne</firstName>
     <lastName>Rommetveit</lastName>
@@ -1249,6 +1403,19 @@
     <period>2011-2012</period>
   </representative>
   <representative>
+    <externalId>MLA</externalId>
+    <firstName>Mari Lund</firstName>
+    <lastName>Arnem</lastName>
+    <dateOfBirth>1986-01-27T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Oslo</district>
+    <party>Sosialistisk Venstreparti</party>
+    <committees>
+      <committee>Kirke-, utdannings- og forskningskomiteen</committee>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
     <externalId>MMK</externalId>
     <firstName>Magnhild Meltveit</firstName>
     <lastName>Kleppa</lastName>
@@ -1292,18 +1459,6 @@
     <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
     <district>Akershus</district>
     <party>Fremskrittspartiet</party>
-    <committees>
-    </committees>
-    <period>2011-2012</period>
-  </representative>
-  <representative>
-    <externalId>MAAA</externalId>
-    <firstName>Marianne</firstName>
-    <lastName>Aasen</lastName>
-    <dateOfBirth>1967-02-21T00:00:00</dateOfBirth>
-    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
-    <district>Akershus</district>
-    <party>Arbeiderpartiet</party>
     <committees>
     </committees>
     <period>2011-2012</period>
@@ -1485,6 +1640,19 @@
     <district>Troms</district>
     <party>Fremskrittspartiet</party>
     <committees>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
+    <externalId>RAA</externalId>
+    <firstName>Rannveig Kvifte</firstName>
+    <lastName>Andresen</lastName>
+    <dateOfBirth>1967-05-19T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Akershus</district>
+    <party>Sosialistisk Venstreparti</party>
+    <committees>
+      <committee>Familie- og kulturkomiteen</committee>
     </committees>
     <period>2011-2012</period>
   </representative>
@@ -1681,6 +1849,19 @@
     <period>2011-2012</period>
   </representative>
   <representative>
+    <externalId>STRH</externalId>
+    <firstName>Stine Renate</firstName>
+    <lastName>Håheim</lastName>
+    <dateOfBirth>1984-05-13T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Oppland</district>
+    <party>Arbeiderpartiet</party>
+    <committees>
+      <committee>Kirke-, utdannings- og forskningskomiteen</committee>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
     <externalId>SUB</externalId>
     <firstName>Susanne</firstName>
     <lastName>Bratli</lastName>
@@ -1797,6 +1978,19 @@
     <district>Troms</district>
     <party>Arbeiderpartiet</party>
     <committees>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
+    <externalId>TLB</externalId>
+    <firstName>Tove Linnea</firstName>
+    <lastName>Brandvik</lastName>
+    <dateOfBirth>1968-11-15T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Hordaland</district>
+    <party>Arbeiderpartiet</party>
+    <committees>
+      <committee>Arbeids- og sosialkomiteen</committee>
     </committees>
     <period>2011-2012</period>
   </representative>
@@ -1933,6 +2127,19 @@
     <period>2011-2012</period>
   </representative>
   <representative>
+    <externalId>TRUW</externalId>
+    <firstName>Truls</firstName>
+    <lastName>Wickholm</lastName>
+    <dateOfBirth>1978-10-15T00:00:00</dateOfBirth>
+    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+    <district>Oslo</district>
+    <party>Arbeiderpartiet</party>
+    <committees>
+      <committee>Kirke-, utdannings- og forskningskomiteen</committee>
+    </committees>
+    <period>2011-2012</period>
+  </representative>
+  <representative>
     <externalId>TSG</externalId>
     <firstName>Trine Skei</firstName>
     <lastName>Grande</lastName>
@@ -2012,18 +2219,6 @@
     <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
     <district>Hordaland</district>
     <party>Høyre</party>
-    <committees>
-    </committees>
-    <period>2011-2012</period>
-  </representative>
-  <representative>
-    <externalId>AAST</externalId>
-    <firstName>Arild</firstName>
-    <lastName>Stokkan-Grande</lastName>
-    <dateOfBirth>1978-04-05T00:00:00</dateOfBirth>
-    <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
-    <district>Nord-Trøndelag</district>
-    <party>Arbeiderpartiet</party>
     <committees>
     </committees>
     <period>2011-2012</period>

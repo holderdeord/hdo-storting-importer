@@ -6,13 +6,30 @@ module Hdo
         :representatives
       end
 
+      def docs
+        [
+          data_source.representatives,
+          data_source.representatives_today # TODO: should be imported separately.
+        ]
+      end
+
       def representatives
-        docs.map do |doc|
+        seen = []
+
+        result = docs.map do |doc|
           nodes = doc.css("dagensrepresentant")
           nodes += doc.css("representant")
 
-          nodes.map { |node| RepresentativeBuilder.new(node).build }
-        end.flatten
+          nodes.map do |node|
+            rb = RepresentativeBuilder.new(node)
+            unless seen.include? rb.external_id
+              seen << rb.external_id
+              rb.build
+            end
+          end
+        end
+
+        result.flatten.compact.sort_by { |e| e[:externalId] }
       end
 
     end

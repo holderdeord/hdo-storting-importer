@@ -7,56 +7,51 @@ module Hdo
       end
 
       def parties(session_id = DEFAULT_SESSION)
-        parse @root.join("eksport/partier/index.html?sesjonid=#{session_id}").read
+        fetch "eksport/partier/index.html?sesjonid=#{session_id}"
       end
 
       def committees(session_id = DEFAULT_SESSION)
-        parse @root.join("eksport/komiteer/index.html?SesjonId=#{session_id}").read
+        fetch "eksport/komiteer/index.html?SesjonId=#{session_id}"
       end
 
       def districts
-        parse @root.join("eksport/fylker/index.html").read
+        fetch "eksport/fylker/index.html"
       end
 
       def topics
-        parse @root.join("eksport/emner/index.html").read
+        fetch "eksport/emner/index.html"
       end
 
       def issues(session_id = DEFAULT_SESSION)
-        parse @root.join("eksport/saker/index.html?sesjonid=#{session_id}").read
+        fetch "eksport/saker/index.html?sesjonid=#{session_id}"
       end
 
       def representatives(period = DEFAULT_PERIOD)
-        %W[
-          eksport/representanter/index.html?StortingsPeriodeId=#{period}
-          eksport/dagensrepresentanter/index.html
-        ].map { |path| parse @root.join(path).read }
+        fetch "eksport/representanter/index.html?StortingsPeriodeId=#{period}"
+      end
+
+      def representatives_today
+        fetch 'eksport/dagensrepresentanter/index.html'
       end
 
       def votes_for(issue_id)
-        parse @root.join("eksport/voteringer/index.html?sakid=#{issue_id}").read
+        fetch "eksport/voteringer/index.html?sakid=#{issue_id}"
       end
 
       def propositions_for(vote_id)
-        propositions_path = @root.join("eksport/voteringsforslag/index.html?voteringid=#{vote_id}")
-
-        unless propositions_path.exist?
-          raise NotFoundError, "propositions data not found at #{propositions_path}"
-        end
-
-        parse propositions_path.read
+        fetch "eksport/voteringsforslag/index.html?voteringid=#{vote_id}"
       end
 
       def vote_results_for(vote_id)
-        vote_result_path = @root.join("eksport/voteringsresultat/index.html?voteringid=#{vote_id}")
-
-        unless vote_result_path.exist?
-          raise NotFoundError, "vote result file not found at #{vote_result_path.inspect}"
-        end
-
-        parse vote_result_path.read
+        fetch "eksport/voteringsresultat/index.html?voteringid=#{vote_id}"
       end
-      
+
+      private
+
+      def fetch(path)
+        parse @root.join(path).read
+      end
+
     end
   end
 end

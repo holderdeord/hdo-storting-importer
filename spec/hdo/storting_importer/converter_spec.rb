@@ -21,7 +21,6 @@ module Hdo
         :parties,
         :committees,
         :districts,
-        :representatives,
         :topics,
         :issues,
       ].each { |name|
@@ -30,6 +29,13 @@ module Hdo
           Converter.for(name).new(data_source).xml.should == output_for(name)
         end
       }
+
+      it "converts representatives" do
+        data_source.should_receive(:representatives).and_return(input_for(:representatives))
+        data_source.should_receive(:representatives_today).and_return(input_for(:representatives_today))
+
+        Converter.for(:representatives).new(data_source).xml.should == output_for(:representatives)
+      end
 
       it "converts votes" do
         data_source.should_receive(:votes_for).with('1').and_return(input_for(:votes))
@@ -41,7 +47,7 @@ module Hdo
 
         VoteConverter.new(data_source, %w[1]).xml.should == output_for(:votes)
       end
-      
+
       it "converts promises" do
         PromiseConverter.new(input_path('promises-a.csv')).xml.should == output_path('promises-a.xml').read
       end
