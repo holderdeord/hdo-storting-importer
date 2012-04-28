@@ -33,9 +33,8 @@ module Hdo
         ].map { |path| parse @root.join(path).read }
       end
 
-      def votes
-        glob = @root.join("eksport/voteringer/index.html*")
-        Pathname.glob(glob).sort.map { |e| parse e.read }
+      def votes_for(issue_id)
+        parse @root.join("eksport/voteringer/index.html?sakid=#{issue_id}").read
       end
 
       def propositions_for(vote_id)

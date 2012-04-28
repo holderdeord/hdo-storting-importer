@@ -5,6 +5,10 @@ module Hdo
       def self.type_name
         :issues
       end
+      
+      def external_ids
+        issues.map { |i| i[:externalId] }
+      end
 
       def issues
         docs.map do |doc|

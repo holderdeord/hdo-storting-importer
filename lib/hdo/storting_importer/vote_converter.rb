@@ -6,6 +6,16 @@ module Hdo
       def self.type_name
         :votes
       end
+      
+      def initialize(data_source, issue_ids)
+        super(data_source)
+        
+        @issue_ids = issue_ids
+      end
+      
+      def docs
+        @issue_ids.map { |iid| data_source.votes_for(iid) }
+      end
 
       def votes
         vote_docs = docs
@@ -19,7 +29,7 @@ module Hdo
 
       def build_vote(doc)
         return unless doc.css("sak_votering").any? # ignore issues with no votes
-
+        
         issue_id = doc.css("sak_id").first.text
         vote_nodes = doc.css("sak_votering")
 

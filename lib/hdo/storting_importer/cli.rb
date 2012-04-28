@@ -22,6 +22,7 @@ module Hdo
           opt.on("--except WHAT", 'Ignore this comma separated list of entities from import.') { |s| options[:ignore] = s.split(",").map(&:strip).map(&:to_sym) }
           opt.on("--app-root APP_ROOT", 'Path to clone of git://github.com/holderdeord/hdo-site.git') { |path| options[:app_root] = path }
           opt.on("--app-url APP_URL", 'URL to hdo-site') { |url| options[:app_url] = url }
+          opt.on("--source SOURCE ", 'Where to take data from [disk|api]') { |source| options[:source] = source }
           opt.on("--socks PROXY", 'host:port for SOCKS proxy') do |proxy|
             require 'socksify'
             host, port = proxy.split ":"
@@ -36,7 +37,15 @@ module Hdo
       end
 
       def data_source
-        @data_source ||= DiskDataSource.new(File.join(StortingImporter.root, 'folketingparser/rawdata/data.stortinget.no'))
+        @data_source ||= (
+          if @options[:source].nil? || @options[:source] == "disk"
+            DiskDataSource.new(File.join(StortingImporter.root, 'folketingparser/rawdata/data.stortinget.no'))
+          elsif @options[:source] == "api"
+            ApiDataSource.new("http://data.stortinget.no/")
+          else
+            raise ArgumentError, "invalid source: #{@options[:source].inspect}"
+          end
+        )
       end
 
       def importer
@@ -46,7 +55,7 @@ module Hdo
           elsif @options[:app_url]
             HttpImporter.new(@options[:app_url])
           else
-            raise "neither app-root or app-url given, can't import"
+            raise ArgumentError, "neither app-root or app-url given, can't import"
           end
         )
       end
@@ -59,21 +68,51 @@ module Hdo
           import_promises
         when :all
           import_all
+        when :votes
+          import_docs VoteConverter.new(data_source, issue_converter.external_ids).xml
         else
           import_docs Converter.for(what).new(data_source).xml
         end
+      end
+      
+      def issue_converter
+        @issue_converter ||= IssueConverter.new(data_source)
+      end
+      
+      def party_converter
+        @party_converter ||= PartyConverter.new(data_source)
+      end
+      
+      def committee_converter
+        @committee_converter ||= CommitteeConverter.new(data_source)
+      end
+      
+      def district_converter
+        @district_converter ||= DistrictConverter.new(data_source)
+      end
+      
+      def representative_converter
+        @representative_converter ||= RepresentativeConverter.new(data_source)
+      end
+      
+      def topic_converter
+        @topic_converter ||= TopicConverter.new(data_source)
+      end
+      
+      def vote_converter
+        @vote_converter ||= VoteConverter.new(data_source, issue_converter.external_ids)
       end
 
       def import_all
         ignore = Array(@options[:ignore])
 
-        import_docs PartyConverter.new(data_source).xml unless ignore.include?(:parties)
-        import_docs CommitteeConverter.new(data_source).xml unless ignore.include?(:committees)
-        import_docs DistrictConverter.new(data_source).xml unless ignore.include?(:districts)
-        import_docs RepresentativeConverter.new(data_source).xml unless ignore.include?(:representatives)
-        import_docs TopicConverter.new(data_source).xml unless ignore.include?(:topics)
-        import_docs IssueConverter.new(data_source).xml unless ignore.include?(:issues)
-        import_docs VoteConverter.new(data_source).xml unless ignore.include?(:votes)
+        import_docs party_converter.xml unless ignore.include?(:parties)
+        import_docs committee_converter.xml unless ignore.include?(:committees)
+        import_docs district_converter.xml unless ignore.include?(:districts)
+        import_docs representative_converter.xml unless ignore.include?(:representatives)
+        import_docs topic_converter.xml unless ignore.include?(:topics)
+        import_docs issue_converter.xml unless ignore.include?(:issues)
+        import_docs vote_converter.xml unless ignore.include?(:votes)
 
         import_dld unless ignore.include?(:dld)
         import_promises unless ignore.include?(:promises)
