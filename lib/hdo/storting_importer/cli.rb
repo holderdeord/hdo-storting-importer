@@ -74,31 +74,31 @@ module Hdo
           import_docs Converter.for(what).new(data_source).xml
         end
       end
-      
+
       def issue_converter
         @issue_converter ||= IssueConverter.new(data_source)
       end
-      
+
       def party_converter
         @party_converter ||= PartyConverter.new(data_source)
       end
-      
+
       def committee_converter
         @committee_converter ||= CommitteeConverter.new(data_source)
       end
-      
+
       def district_converter
         @district_converter ||= DistrictConverter.new(data_source)
       end
-      
+
       def representative_converter
         @representative_converter ||= RepresentativeConverter.new(data_source)
       end
-      
+
       def topic_converter
         @topic_converter ||= TopicConverter.new(data_source)
       end
-      
+
       def vote_converter
         @vote_converter ||= VoteConverter.new(data_source, issue_converter.external_ids)
       end
@@ -119,8 +119,12 @@ module Hdo
       end
 
       def import_dld
-        print_or_import File.read(File.join(StortingImporter.root, 'data/dld-issues.xml'))
-        print_or_import File.read(File.join(StortingImporter.root, 'folketingparser/data/votering-2011-04-04-dld-hdo.xml'))
+        if File.exist?(File.join(StortingImporter.root, 'folketingparser'))
+          print_or_import File.read(File.join(StortingImporter.root, 'data/dld-issues.xml'))
+          print_or_import File.read(dld_vote_path)
+        else
+          $stderr.puts "folketingparser not found, skipping DLD votes and issues (run `git submodule update --init` if you need this)"
+        end
       end
 
       def import_promises
