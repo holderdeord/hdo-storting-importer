@@ -14,7 +14,7 @@ module Hdo
       def parse(args)
         options = {}
 
-        OptionParser.new do |opt|
+        parser = OptionParser.new do |opt|
           opt.banner = "Usage: #{$0} <import-type> [options]"
 
           opt.on("--help", "You're looking at it.") { puts opt; exit; }
@@ -29,9 +29,16 @@ module Hdo
             TCPSocket.socks_server = host
             TCPSocket.socks_port = Integer(port)
           end
-        end.parse!(args)
+        end
 
-        cmd = args.shift or raise "no command given"
+        parser.parse!(args)
+
+        cmd = args.shift
+
+        unless cmd
+          puts(parser)
+          exit 1
+        end
 
         [cmd, options]
       end
