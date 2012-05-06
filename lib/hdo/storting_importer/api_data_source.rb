@@ -3,7 +3,7 @@ module Hdo
     class ApiDataSource < DataSource
 
       def initialize(url)
-        RestClient.log = STDERR
+        @log = Logger.new(STDERR)
         @resource = RestClient::Resource.new(URI.parse(url))
       end
 
@@ -50,7 +50,10 @@ module Hdo
       private
 
       def fetch(path)
-        parse @resource[path].get
+        sub_resource = @resource[path]
+        @log.info "parsing #{sub_resource}"
+
+        parse sub_resource.get
       end
 
     end

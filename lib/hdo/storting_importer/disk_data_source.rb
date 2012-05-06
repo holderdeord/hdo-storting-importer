@@ -4,6 +4,7 @@ module Hdo
 
       def initialize(root)
         @root = Pathname.new(root)
+        @log = Logger.new(STDERR)
       end
 
       def parties(session_id = DEFAULT_SESSION)
@@ -49,7 +50,10 @@ module Hdo
       private
 
       def fetch(path)
-        parse @root.join(path).read
+        subpath = @root.join(path)
+        @log.info "parsing #{subpath}"
+
+        parse subpath.read
       end
 
     end

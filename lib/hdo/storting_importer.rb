@@ -12,6 +12,7 @@ require 'tempfile'
 require 'pathname'
 require 'open-uri'
 require 'erb'
+require 'logger'
 
 require 'hdo/storting_importer/data_source'
 require 'hdo/storting_importer/disk_data_source'

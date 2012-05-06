@@ -2,6 +2,7 @@ module Hdo
   module StortingImporter
     class CLI
       def initialize(args)
+        @log = Logger.new(STDERR)
         @cmd, @options = parse(args)
       end
 
@@ -12,7 +13,7 @@ module Hdo
       private
 
       def parse(args)
-        options = {}
+        options = {:source => (has_submodule? ? 'disk' : 'api')}
 
         parser = OptionParser.new do |opt|
           opt.banner = "Usage: #{$0} <import-type> [options]"
@@ -45,7 +46,7 @@ module Hdo
 
       def data_source
         @data_source ||= (
-          if @options[:source].nil? || @options[:source] == "disk"
+          if @options[:source] == "disk"
             DiskDataSource.new(File.join(StortingImporter.root, 'folketingparser/rawdata/data.stortinget.no'))
           elsif @options[:source] == "api"
             ApiDataSource.new("http://data.stortinget.no/")
@@ -126,9 +127,9 @@ module Hdo
       end
 
       def import_dld
-        if File.exist?(File.join(StortingImporter.root, 'folketingparser'))
+        if has_submodule?
           print_or_import File.read(File.join(StortingImporter.root, 'data/dld-issues.xml'))
-          print_or_import File.read(dld_vote_path)
+          print_or_import File.read(File.join(StortingImporter.root, 'folketingparser/data/votering-2011-04-04-dld-hdo.xml'))
         else
           $stderr.puts "folketingparser not found, skipping DLD votes and issues (run `git submodule update --init` if you need this)"
         end
@@ -155,6 +156,10 @@ module Hdo
         else
           importer.import xml
         end
+      end
+
+      def has_submodule?
+        File.exist?(File.join(StortingImporter.root, 'folketingparser/data'))
       end
 
     end
