@@ -26,7 +26,9 @@ module Hdo
       ].each { |name|
         it "converts #{name}" do
           data_source.should_receive(name).and_return(input_for(name))
-          Converter.for(name).new(data_source).xml.should == output_for(name)
+
+          actual_output = Converter.for(name).new(data_source).xml
+          actual_output.should == output_for(name)
         end
       }
 

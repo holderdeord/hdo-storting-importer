@@ -14,7 +14,7 @@ module Hdo
               name:       node.css("navn").first.text
             }
           end
-        end.flatten
+        end.flatten.sort_by { |e| e[:name] }
       end
 
 

@@ -1,13 +1,17 @@
 Feature: Import data
     Scenario: Import districts
       When I run `hdo-converter --only-print districts`
-      Then the output should contain:
+      Then the stdout should contain:
       """
       <?xml version="1.0" encoding="UTF-8"?>
       <districts>
         <district>
           <externalId>Ak</externalId>
           <name>Akershus</name>
+        </district>
+        <district>
+          <externalId>AA</externalId>
+          <name>Aust-Agder</name>
         </district>
         <district>
           <externalId>Bu</externalId>
@@ -30,12 +34,12 @@ Feature: Import data
           <name>Møre og Romsdal</name>
         </district>
         <district>
-          <externalId>No</externalId>
-          <name>Nordland</name>
-        </district>
-        <district>
           <externalId>NT</externalId>
           <name>Nord-Trøndelag</name>
+        </district>
+        <district>
+          <externalId>No</externalId>
+          <name>Nordland</name>
         </district>
         <district>
           <externalId>Op</externalId>
@@ -76,10 +80,6 @@ Feature: Import data
         <district>
           <externalId>Øs</externalId>
           <name>Østfold</name>
-        </district>
-        <district>
-          <externalId>AA</externalId>
-          <name>Aust-Agder</name>
         </district>
       </districts>
       """

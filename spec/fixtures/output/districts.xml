@@ -5,6 +5,10 @@
     <name>Akershus</name>
   </district>
   <district>
+    <externalId>AA</externalId>
+    <name>Aust-Agder</name>
+  </district>
+  <district>
     <externalId>Bu</externalId>
     <name>Buskerud</name>
   </district>
@@ -25,12 +29,12 @@
     <name>Møre og Romsdal</name>
   </district>
   <district>
-    <externalId>No</externalId>
-    <name>Nordland</name>
-  </district>
-  <district>
     <externalId>NT</externalId>
     <name>Nord-Trøndelag</name>
+  </district>
+  <district>
+    <externalId>No</externalId>
+    <name>Nordland</name>
   </district>
   <district>
     <externalId>Op</externalId>
@@ -71,9 +75,5 @@
   <district>
     <externalId>Øs</externalId>
     <name>Østfold</name>
-  </district>
-  <district>
-    <externalId>AA</externalId>
-    <name>Aust-Agder</name>
   </district>
 </districts>
