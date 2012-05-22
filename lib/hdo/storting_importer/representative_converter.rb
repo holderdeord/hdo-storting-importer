@@ -8,8 +8,8 @@ module Hdo
 
       def docs
         [
-          data_source.representatives,
-          data_source.representatives_today # TODO: should be imported separately.
+          data_source.representatives_today, # TODO: should be imported separately.
+          data_source.representatives
         ]
       end
 
