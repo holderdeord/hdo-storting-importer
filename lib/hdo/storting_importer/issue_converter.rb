@@ -5,7 +5,7 @@ module Hdo
       def self.type_name
         :issues
       end
-      
+
       def external_ids
         issues.map { |i| i[:externalId] }
       end
@@ -29,9 +29,9 @@ module Hdo
               issue[:committee] = committee.css("navn").first.text
             end
 
-            xtopics = xi.css("emne")
-            if xtopics.any?
-              issue[:topics] = xtopics.map { |xt| xt.css("navn").first.text }
+            xcategories = xi.css("emne")
+            if xcategories.any?
+              issue[:categories] = xcategories.map { |xt| xt.css("navn").first.text }
             end
 
             issue

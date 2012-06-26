@@ -9,11 +9,11 @@
     <lastUpdate>2012-04-20T00:00:00</lastUpdate>
     <reference>Prop. 90 S (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
-    <topics>
-      <topic>UTENRIKSSAKER</topic>
-      <topic>TRAKTATER</topic>
-      <topic>NORDISK SAMARBEID</topic>
-    </topics>
+    <categories>
+      <category>UTENRIKSSAKER</category>
+      <category>TRAKTATER</category>
+      <category>NORDISK SAMARBEID</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53521</externalId>
@@ -24,10 +24,10 @@
     <lastUpdate>2012-04-20T00:00:00</lastUpdate>
     <reference>Prop. 93 S (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
-    <topics>
-      <topic>FORSVAR</topic>
-      <topic>FORSVARSMATERIELL</topic>
-    </topics>
+    <categories>
+      <category>FORSVAR</category>
+      <category>FORSVARSMATERIELL</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53522</externalId>
@@ -101,10 +101,10 @@
     <reference>Dokument 8:91 S (2011-2012)</reference>
     <documentGroup>representantforslag</documentGroup>
     <committee>Helse- og omsorgskomiteen</committee>
-    <topics>
-      <topic>HELSEVESEN</topic>
-      <topic>SYKEHUS</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+      <category>SYKEHUS</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53429</externalId>
@@ -138,12 +138,12 @@
     <reference>Dokument 8:93 S (2011-2012)</reference>
     <documentGroup>representantforslag</documentGroup>
     <committee>Finanskomiteen</committee>
-    <topics>
-      <topic>FYLKER</topic>
-      <topic>KOMMUNER</topic>
-      <topic>STATSFORVALTNING</topic>
-      <topic>LOKALFORVALTNING</topic>
-    </topics>
+    <categories>
+      <category>FYLKER</category>
+      <category>KOMMUNER</category>
+      <category>STATSFORVALTNING</category>
+      <category>LOKALFORVALTNING</category>
+    </categories>
   </issue>
   <issue>
     <externalId>51464</externalId>
@@ -155,18 +155,18 @@
     <reference>Meld. St. 7 (2011-2012), Innst. 236 S (2011-2012)</reference>
     <documentGroup>melding</documentGroup>
     <committee>Utenriks- og forsvarskomiteen</committee>
-    <topics>
-      <topic>ENERGI</topic>
-      <topic>FISKERIER</topic>
-      <topic>INTERNASJONALT SAMARBEID</topic>
-      <topic>FORSKNING</topic>
-      <topic>FORSVAR</topic>
-      <topic>MILJØVERN</topic>
-      <topic>UTENRIKSSAKER</topic>
-      <topic>GRENSESPØRSMÅL</topic>
-      <topic>POLAROMRÅDER</topic>
-      <topic>OLJEUTVINNING</topic>
-    </topics>
+    <categories>
+      <category>ENERGI</category>
+      <category>FISKERIER</category>
+      <category>INTERNASJONALT SAMARBEID</category>
+      <category>FORSKNING</category>
+      <category>FORSVAR</category>
+      <category>MILJØVERN</category>
+      <category>UTENRIKSSAKER</category>
+      <category>GRENSESPØRSMÅL</category>
+      <category>POLAROMRÅDER</category>
+      <category>OLJEUTVINNING</category>
+    </categories>
   </issue>
   <issue>
     <externalId>51670</externalId>
@@ -178,11 +178,11 @@
     <reference>Dokument 14 (2011-2012), Innst. 235 S (2011-2012)</reference>
     <documentGroup>dokumentserien</documentGroup>
     <committee>Utenriks- og forsvarskomiteen</committee>
-    <topics>
-      <topic>INTERNASJONALT SAMARBEID</topic>
-      <topic>UTENRIKSSAKER</topic>
-      <topic>POLAROMRÅDER</topic>
-    </topics>
+    <categories>
+      <category>INTERNASJONALT SAMARBEID</category>
+      <category>UTENRIKSSAKER</category>
+      <category>POLAROMRÅDER</category>
+    </categories>
   </issue>
   <issue>
     <externalId>51434</externalId>
@@ -194,10 +194,10 @@
     <reference>Meld. St. 6 (2011-2012), Innst. 164 S (2011-2012)</reference>
     <documentGroup>melding</documentGroup>
     <committee>Kommunal- og forvaltningskomiteen</committee>
-    <topics>
-      <topic>RETTSVESEN</topic>
-      <topic>PERSONVERN</topic>
-    </topics>
+    <categories>
+      <category>RETTSVESEN</category>
+      <category>PERSONVERN</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53457</externalId>
@@ -209,10 +209,10 @@
     <reference>Prop. 79 S (2011-2012), kap. 2445</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Kommunal- og forvaltningskomiteen</committee>
-    <topics>
-      <topic>STATSFORVALTNING</topic>
-      <topic>STATSEIENDOMMER</topic>
-    </topics>
+    <categories>
+      <category>STATSFORVALTNING</category>
+      <category>STATSEIENDOMMER</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53458</externalId>
@@ -224,12 +224,12 @@
     <reference>Prop. 84 L (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Kirke-, utdannings- og forskningskomiteen</committee>
-    <topics>
-      <topic>SKOLER</topic>
-      <topic>UTDANNING</topic>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-      <topic>GRUNNSKOLE</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+      <category>UTDANNING</category>
+      <category>VIDEREGÅENDE SKOLER</category>
+      <category>GRUNNSKOLE</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53459</externalId>
@@ -241,10 +241,10 @@
     <reference>Prop. 88 S (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Energi- og miljøkomiteen</committee>
-    <topics>
-      <topic>ENERGI</topic>
-      <topic>OLJEUTVINNING</topic>
-    </topics>
+    <categories>
+      <category>ENERGI</category>
+      <category>OLJEUTVINNING</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53463</externalId>
@@ -256,13 +256,13 @@
     <reference>Prop. 79 S (2011-2012), kap. 410, 430, 440, 441 og 473</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Justiskomiteen</committee>
-    <topics>
-      <topic>RETTSVESEN</topic>
-      <topic>DOMSTOLER</topic>
-      <topic>SIVILRETT</topic>
-      <topic>FENGSLER</topic>
-      <topic>POLITI OG PÅTALEMYNDIGHET</topic>
-    </topics>
+    <categories>
+      <category>RETTSVESEN</category>
+      <category>DOMSTOLER</category>
+      <category>SIVILRETT</category>
+      <category>FENGSLER</category>
+      <category>POLITI OG PÅTALEMYNDIGHET</category>
+    </categories>
   </issue>
   <issue>
     <externalId>52719</externalId>
@@ -274,10 +274,10 @@
     <reference>Prop. 87 L (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Kommunal- og forvaltningskomiteen</committee>
-    <topics>
-      <topic>UTENRIKSSAKER</topic>
-      <topic>EFTA/EU</topic>
-    </topics>
+    <categories>
+      <category>UTENRIKSSAKER</category>
+      <category>EFTA/EU</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53357</externalId>
@@ -289,13 +289,13 @@
     <reference>Dokument 8:92 S (2011-2012)</reference>
     <documentGroup>representantforslag</documentGroup>
     <committee>Finanskomiteen</committee>
-    <topics>
-      <topic>ENERGI</topic>
-      <topic>BOLIGSAKER</topic>
-      <topic>MERVERDIAVGIFT</topic>
-      <topic>LOKALFORVALTNING</topic>
-      <topic>FINANSER</topic>
-    </topics>
+    <categories>
+      <category>ENERGI</category>
+      <category>BOLIGSAKER</category>
+      <category>MERVERDIAVGIFT</category>
+      <category>LOKALFORVALTNING</category>
+      <category>FINANSER</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53358</externalId>
@@ -307,12 +307,12 @@
     <reference>Dokument 8:94 S (2011-2012)</reference>
     <documentGroup>representantforslag</documentGroup>
     <committee>Transport- og kommunikasjonskomiteen</committee>
-    <topics>
-      <topic>KOMMUNIKASJON</topic>
-      <topic>RETTSVESEN</topic>
-      <topic>PERSONVERN</topic>
-      <topic>TELEKOMMUNIKASJONER</topic>
-    </topics>
+    <categories>
+      <category>KOMMUNIKASJON</category>
+      <category>RETTSVESEN</category>
+      <category>PERSONVERN</category>
+      <category>TELEKOMMUNIKASJONER</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53359</externalId>
@@ -324,10 +324,10 @@
     <reference>Dokument 8:95 S (2011-2012)</reference>
     <documentGroup>representantforslag</documentGroup>
     <committee>Finanskomiteen</committee>
-    <topics>
-      <topic>SKATTEFRADRAG</topic>
-      <topic>FINANSER</topic>
-    </topics>
+    <categories>
+      <category>SKATTEFRADRAG</category>
+      <category>FINANSER</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53295</externalId>
@@ -339,10 +339,10 @@
     <reference>Dokument 8:86 S (2011-2012)</reference>
     <documentGroup>representantforslag</documentGroup>
     <committee>Kirke-, utdannings- og forskningskomiteen</committee>
-    <topics>
-      <topic>SOSIALVESEN</topic>
-      <topic>TRYGDER</topic>
-    </topics>
+    <categories>
+      <category>SOSIALVESEN</category>
+      <category>TRYGDER</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53296</externalId>
@@ -354,10 +354,10 @@
     <reference>Dokument 8:87 S (2011-2012)</reference>
     <documentGroup>representantforslag</documentGroup>
     <committee>Kirke-, utdannings- og forskningskomiteen</committee>
-    <topics>
-      <topic>UTDANNING</topic>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>UTDANNING</category>
+      <category>HØYERE UTDANNING</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53324</externalId>
@@ -369,10 +369,10 @@
     <reference>Dokument 8:89 S (2011-2012)</reference>
     <documentGroup>representantforslag</documentGroup>
     <committee>Finanskomiteen</committee>
-    <topics>
-      <topic>SKATTER</topic>
-      <topic>FINANSER</topic>
-    </topics>
+    <categories>
+      <category>SKATTER</category>
+      <category>FINANSER</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53325</externalId>
@@ -384,10 +384,10 @@
     <reference>Dokument 8:88 S (2011-2012)</reference>
     <documentGroup>representantforslag</documentGroup>
     <committee>Finanskomiteen</committee>
-    <topics>
-      <topic>BANKER</topic>
-      <topic>FINANSER</topic>
-    </topics>
+    <categories>
+      <category>BANKER</category>
+      <category>FINANSER</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53329</externalId>
@@ -399,10 +399,10 @@
     <reference>Dokument 8:90 S (2011-2012)</reference>
     <documentGroup>representantforslag</documentGroup>
     <committee>Transport- og kommunikasjonskomiteen</committee>
-    <topics>
-      <topic>KOMMUNIKASJON</topic>
-      <topic>SAMFERDSEL</topic>
-    </topics>
+    <categories>
+      <category>KOMMUNIKASJON</category>
+      <category>SAMFERDSEL</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53335</externalId>
@@ -414,10 +414,10 @@
     <reference>Innst. 221 S (2011-2012)</reference>
     <documentGroup>innstillingssaker</documentGroup>
     <committee>Stortingets presidentskap</committee>
-    <topics>
-      <topic>RETTSVESEN</topic>
-      <topic>PERSONVERN</topic>
-    </topics>
+    <categories>
+      <category>RETTSVESEN</category>
+      <category>PERSONVERN</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53352</externalId>
@@ -429,14 +429,14 @@
     <reference>Dokument 7:1 (2011-2012)</reference>
     <documentGroup>dokumentserien</documentGroup>
     <committee>Kontroll- og konstitusjonskomiteen</committee>
-    <topics>
-      <topic>RETTSVESEN</topic>
-      <topic>PERSONVERN</topic>
-      <topic>FORSVAR</topic>
-      <topic>POLITI OG PÅTALEMYNDIGHET</topic>
-      <topic>STATSFORFATNING</topic>
-      <topic>STORTINGET</topic>
-    </topics>
+    <categories>
+      <category>RETTSVESEN</category>
+      <category>PERSONVERN</category>
+      <category>FORSVAR</category>
+      <category>POLITI OG PÅTALEMYNDIGHET</category>
+      <category>STATSFORFATNING</category>
+      <category>STORTINGET</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53366</externalId>
@@ -448,13 +448,13 @@
     <reference>Prop. 75 S (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Næringskomiteen</committee>
-    <topics>
-      <topic>UTENRIKSHANDEL</topic>
-      <topic>NÆRINGSLIV</topic>
-      <topic>UTENRIKSSAKER</topic>
-      <topic>TRAKTATER</topic>
-      <topic>EFTA/EU</topic>
-    </topics>
+    <categories>
+      <category>UTENRIKSHANDEL</category>
+      <category>NÆRINGSLIV</category>
+      <category>UTENRIKSSAKER</category>
+      <category>TRAKTATER</category>
+      <category>EFTA/EU</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53367</externalId>
@@ -466,13 +466,13 @@
     <reference>Prop. 77 S (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Energi- og miljøkomiteen</committee>
-    <topics>
-      <topic>FORURENSNING</topic>
-      <topic>NÆRINGSLIV</topic>
-      <topic>MILJØVERN</topic>
-      <topic>UTENRIKSSAKER</topic>
-      <topic>EFTA/EU</topic>
-    </topics>
+    <categories>
+      <category>FORURENSNING</category>
+      <category>NÆRINGSLIV</category>
+      <category>MILJØVERN</category>
+      <category>UTENRIKSSAKER</category>
+      <category>EFTA/EU</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53368</externalId>
@@ -495,11 +495,11 @@
     <reference>Prop. 78 L (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Finanskomiteen</committee>
-    <topics>
-      <topic>SKATTER</topic>
-      <topic>TOLL</topic>
-      <topic>FINANSER</topic>
-    </topics>
+    <categories>
+      <category>SKATTER</category>
+      <category>TOLL</category>
+      <category>FINANSER</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53370</externalId>
@@ -511,15 +511,15 @@
     <reference>Meld. St. 17 (2011-2012)</reference>
     <documentGroup>melding</documentGroup>
     <committee>Finanskomiteen</committee>
-    <topics>
-      <topic>ENERGI</topic>
-      <topic>SOSIALVESEN</topic>
-      <topic>OLJE</topic>
-      <topic>NORGES BANK</topic>
-      <topic>TRYGDER</topic>
-      <topic>FINANSER</topic>
-      <topic>AKSJER</topic>
-    </topics>
+    <categories>
+      <category>ENERGI</category>
+      <category>SOSIALVESEN</category>
+      <category>OLJE</category>
+      <category>NORGES BANK</category>
+      <category>TRYGDER</category>
+      <category>FINANSER</category>
+      <category>AKSJER</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53371</externalId>
@@ -531,10 +531,10 @@
     <reference>Meld. St. 16 (2011-2012)</reference>
     <documentGroup>melding</documentGroup>
     <committee>Næringskomiteen</committee>
-    <topics>
-      <topic>FISKERIER</topic>
-      <topic>FISKEOMSETNING</topic>
-    </topics>
+    <categories>
+      <category>FISKERIER</category>
+      <category>FISKEOMSETNING</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53372</externalId>
@@ -546,10 +546,10 @@
     <reference>Prop. 76 L (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Kommunal- og forvaltningskomiteen</committee>
-    <topics>
-      <topic>HUSBANKEN</topic>
-      <topic>LOKALFORVALTNING</topic>
-    </topics>
+    <categories>
+      <category>HUSBANKEN</category>
+      <category>LOKALFORVALTNING</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53373</externalId>
@@ -561,11 +561,11 @@
     <reference>Prop. 86 L (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Energi- og miljøkomiteen</committee>
-    <topics>
-      <topic>FISKERIER</topic>
-      <topic>SAMER</topic>
-      <topic>LOKALFORVALTNING</topic>
-    </topics>
+    <categories>
+      <category>FISKERIER</category>
+      <category>SAMER</category>
+      <category>LOKALFORVALTNING</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53374</externalId>
@@ -577,10 +577,10 @@
     <reference>Prop. 82 L (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Energi- og miljøkomiteen</committee>
-    <topics>
-      <topic>NATURVERN</topic>
-      <topic>MILJØVERN</topic>
-    </topics>
+    <categories>
+      <category>NATURVERN</category>
+      <category>MILJØVERN</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53375</externalId>
@@ -592,11 +592,11 @@
     <reference>Prop. 85 S (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Energi- og miljøkomiteen</committee>
-    <topics>
-      <topic>ENERGI</topic>
-      <topic>OLJEOMSETNING</topic>
-      <topic>OLJEUTVINNING</topic>
-    </topics>
+    <categories>
+      <category>ENERGI</category>
+      <category>OLJEOMSETNING</category>
+      <category>OLJEUTVINNING</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53376</externalId>
@@ -608,12 +608,12 @@
     <reference>Meld. St. 15 (2011-2012)</reference>
     <documentGroup>melding</documentGroup>
     <committee>Energi- og miljøkomiteen</committee>
-    <topics>
-      <topic>RETTSVESEN</topic>
-      <topic>NATURSKADER</topic>
-      <topic>MILJØVERN</topic>
-      <topic>SIVIL BEREDSKAP</topic>
-    </topics>
+    <categories>
+      <category>RETTSVESEN</category>
+      <category>NATURSKADER</category>
+      <category>MILJØVERN</category>
+      <category>SIVIL BEREDSKAP</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53377</externalId>
@@ -625,10 +625,10 @@
     <reference>Prop. 80 S (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Transport- og kommunikasjonskomiteen</committee>
-    <topics>
-      <topic>KOMMUNIKASJON</topic>
-      <topic>VEGVESEN</topic>
-    </topics>
+    <categories>
+      <category>KOMMUNIKASJON</category>
+      <category>VEGVESEN</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53378</externalId>
@@ -640,13 +640,13 @@
     <reference>Prop. 81 L (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Transport- og kommunikasjonskomiteen</committee>
-    <topics>
-      <topic>KOMMUNIKASJON</topic>
-      <topic>FORURENSNING</topic>
-      <topic>VEGTRAFIKK</topic>
-      <topic>MILJØVERN</topic>
-      <topic>VEGVESEN</topic>
-    </topics>
+    <categories>
+      <category>KOMMUNIKASJON</category>
+      <category>FORURENSNING</category>
+      <category>VEGTRAFIKK</category>
+      <category>MILJØVERN</category>
+      <category>VEGVESEN</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53379</externalId>
@@ -658,10 +658,10 @@
     <reference>Prop. 83 L (2011-2012)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Justiskomiteen</committee>
-    <topics>
-      <topic>KOMMUNIKASJON</topic>
-      <topic>LUFTFART</topic>
-    </topics>
+    <categories>
+      <category>KOMMUNIKASJON</category>
+      <category>LUFTFART</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53398</externalId>
@@ -673,11 +673,11 @@
     <reference>Dokument 4 (2011-2012)</reference>
     <documentGroup>dokumentserien</documentGroup>
     <committee>Kontroll- og konstitusjonskomiteen</committee>
-    <topics>
-      <topic>STATSFORFATNING</topic>
-      <topic>STORTINGETS OMBUDSMANN FOR FORVALTNINGEN</topic>
-      <topic>STATSFORVALTNING</topic>
-    </topics>
+    <categories>
+      <category>STATSFORFATNING</category>
+      <category>STORTINGETS OMBUDSMANN FOR FORVALTNINGEN</category>
+      <category>STATSFORVALTNING</category>
+    </categories>
   </issue>
   <issue>
     <externalId>51448</externalId>
@@ -689,13 +689,13 @@
     <reference>Meld. St. 9 (2011-2012), Innst. 234 S (2011-2012)</reference>
     <documentGroup>melding</documentGroup>
     <committee>Næringskomiteen</committee>
-    <topics>
-      <topic>LANDBRUK</topic>
-      <topic>LANDBRUKSPRODUKTER</topic>
-      <topic>JORDBRUK</topic>
-      <topic>REINDRIFT</topic>
-      <topic>SKOGBRUK</topic>
-    </topics>
+    <categories>
+      <category>LANDBRUK</category>
+      <category>LANDBRUKSPRODUKTER</category>
+      <category>JORDBRUK</category>
+      <category>REINDRIFT</category>
+      <category>SKOGBRUK</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53428</externalId>
@@ -727,11 +727,11 @@
     <reference>Innberetning 4 (2011-2012)</reference>
     <documentGroup>innberetning</documentGroup>
     <committee>Valgkomiteen</committee>
-    <topics>
-      <topic>STORTINGSREPRESENTANTER</topic>
-      <topic>STATSFORFATNING</topic>
-      <topic>STORTINGET</topic>
-    </topics>
+    <categories>
+      <category>STORTINGSREPRESENTANTER</category>
+      <category>STATSFORFATNING</category>
+      <category>STORTINGET</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53284</externalId>
@@ -743,12 +743,12 @@
     <reference>Innst. 223 S (2011-2012)</reference>
     <documentGroup>innstillingssaker</documentGroup>
     <committee>Valgkomiteen</committee>
-    <topics>
-      <topic>STORTINGSREPRESENTANTER</topic>
-      <topic>STATSFORFATNING</topic>
-      <topic>UTENRIKSSAKER</topic>
-      <topic>EFTA/EU</topic>
-    </topics>
+    <categories>
+      <category>STORTINGSREPRESENTANTER</category>
+      <category>STATSFORFATNING</category>
+      <category>UTENRIKSSAKER</category>
+      <category>EFTA/EU</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53285</externalId>
@@ -760,12 +760,12 @@
     <reference>Innst. 224 S (2011-2012)</reference>
     <documentGroup>innstillingssaker</documentGroup>
     <committee>Valgkomiteen</committee>
-    <topics>
-      <topic>STORTINGSREPRESENTANTER</topic>
-      <topic>STATSFORFATNING</topic>
-      <topic>UTENRIKSSAKER</topic>
-      <topic>NATO</topic>
-    </topics>
+    <categories>
+      <category>STORTINGSREPRESENTANTER</category>
+      <category>STATSFORFATNING</category>
+      <category>UTENRIKSSAKER</category>
+      <category>NATO</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53286</externalId>
@@ -777,12 +777,12 @@
     <reference>Innst. 225 S (2011-2012)</reference>
     <documentGroup>innstillingssaker</documentGroup>
     <committee>Valgkomiteen</committee>
-    <topics>
-      <topic>STORTINGSREPRESENTANTER</topic>
-      <topic>STATSFORFATNING</topic>
-      <topic>UTENRIKSSAKER</topic>
-      <topic>EUROPARÅDET</topic>
-    </topics>
+    <categories>
+      <category>STORTINGSREPRESENTANTER</category>
+      <category>STATSFORFATNING</category>
+      <category>UTENRIKSSAKER</category>
+      <category>EUROPARÅDET</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53287</externalId>
@@ -794,11 +794,11 @@
     <reference>Innst. 226 S (2011-2012)</reference>
     <documentGroup>innstillingssaker</documentGroup>
     <committee>Valgkomiteen</committee>
-    <topics>
-      <topic>STORTINGSREPRESENTANTER</topic>
-      <topic>STATSFORFATNING</topic>
-      <topic>UTENRIKSSAKER</topic>
-    </topics>
+    <categories>
+      <category>STORTINGSREPRESENTANTER</category>
+      <category>STATSFORFATNING</category>
+      <category>UTENRIKSSAKER</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53288</externalId>
@@ -810,13 +810,13 @@
     <reference>Innst. 227 S (2011-2012)</reference>
     <documentGroup>innstillingssaker</documentGroup>
     <committee>Valgkomiteen</committee>
-    <topics>
-      <topic>INTERNASJONALT SAMARBEID</topic>
-      <topic>STORTINGSREPRESENTANTER</topic>
-      <topic>STATSFORFATNING</topic>
-      <topic>UTENRIKSSAKER</topic>
-      <topic>POLAROMRÅDER</topic>
-    </topics>
+    <categories>
+      <category>INTERNASJONALT SAMARBEID</category>
+      <category>STORTINGSREPRESENTANTER</category>
+      <category>STATSFORFATNING</category>
+      <category>UTENRIKSSAKER</category>
+      <category>POLAROMRÅDER</category>
+    </categories>
   </issue>
   <issue>
     <externalId>53294</externalId>
@@ -828,9 +828,9 @@
     <reference>Dokument 9 (2011-2012)</reference>
     <documentGroup>dokumentserien</documentGroup>
     <committee>Finanskomiteen</committee>
-    <topics>
-      <topic>NORGES BANK</topic>
-      <topic>FINANSER</topic>
-    </topics>
+    <categories>
+      <category>NORGES BANK</category>
+      <category>FINANSER</category>
+    </categories>
   </issue>
 </issues>

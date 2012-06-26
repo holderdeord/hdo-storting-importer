@@ -13,12 +13,12 @@
     <%- if issue[:committee] -%>
     <committee><%= issue[:committee] %></committee>
     <%- end -%>
-    <%- if issue[:topics] -%>
-    <topics>
-      <%- issue[:topics].each do |topic| -%>
-      <topic><%= topic %></topic>
+    <%- if issue[:categories] -%>
+    <categories>
+      <%- issue[:categories].each do |category| -%>
+      <category><%= category %></category>
       <%- end -%>
-    </topics>
+    </categories>
     <%- end -%>
   </issue>
   <%- end -%>

@@ -3,3221 +3,3221 @@
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LØNN</topic>
-      <topic>SYSSELSETTING</topic>
-    </topics>
+    <categories>
+      <category>LØNN</category>
+      <category>SYSSELSETTING</category>
+    </categories>
     <source>PP:10</source>
     <body>Ha et inntektspolitisk samarbeid og en økonomisk politikk som sikrer arbeid til alle. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FINANSER</topic>
-    </topics>
+    <categories>
+      <category>FINANSER</category>
+    </categories>
     <source>PP:10</source>
     <body>Følge handlingsregelen for en forsvarlig bruk av oljepenger.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FINANSER</topic>
-    </topics>
+    <categories>
+      <category>FINANSER</category>
+    </categories>
     <source>PP:10</source>
     <body>Bruke penger slik at det bidrar til å utjevne svingninger i økonomien.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>FINANSER</topic>
-    </topics>
+    <categories>
+      <category>FINANSER</category>
+    </categories>
     <source>PP:10</source>
     <body>Sette ned et utvalg som skal gjennomgå årsakene til finanskrisen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FINANSER</topic>
-    </topics>
+    <categories>
+      <category>FINANSER</category>
+    </categories>
     <source>PP:10</source>
     <body>Gjennomføre de tiltak som er nødvendig for å sikre et stabilt og fungerende finansmarked.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FINANSER</topic>
-    </topics>
+    <categories>
+      <category>FINANSER</category>
+    </categories>
     <source>PP:10</source>
     <body>Stille etiske krav til forvaltning av statlig kapital. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>SKATTER</topic>
-    </topics>
+    <categories>
+      <category>SKATTER</category>
+    </categories>
     <source>PP:10</source>
     <body>Holde de samlede skattene og avgiftene på samme nivå som i dag.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKATTER</topic>
-    </topics>
+    <categories>
+      <category>SKATTER</category>
+    </categories>
     <source>PP:10</source>
     <body>Ha en grundig evaluering av skattereformen av 2006, med særlig blikk på fordelingsvirkningene. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKATTER</topic>
-    </topics>
+    <categories>
+      <category>SKATTER</category>
+    </categories>
     <source>PP:10</source>
     <body>Opprettholde formueskatten, men gjøre den mer rettferdig.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKATTER</topic>
-      <topic>NÆRINGSLIV</topic>
-    </topics>
+    <categories>
+      <category>SKATTER</category>
+      <category>NÆRINGSLIV</category>
+    </categories>
     <source>PP:10</source>
     <body>Ha stabile og konkurransedyktige skattemessige rammevilkår for næringslivet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKATTER</topic>
-    </topics>
+    <categories>
+      <category>SKATTER</category>
+    </categories>
     <source>PP:10</source>
     <body>Styrke arbeidet for å hindre svart økonomi og skatteundragelser både nasjonalt og internasjonalt. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKATTER</topic>
-      <topic>MILJØVERN</topic>
-    </topics>
+    <categories>
+      <category>SKATTER</category>
+      <category>MILJØVERN</category>
+    </categories>
     <source>PP:10</source>
     <body>Forsere arbeidet med grønn skatteveksling.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKATTER</topic>
-      <topic>ØKONOMISK SAMARBEID</topic>
-    </topics>
+    <categories>
+      <category>SKATTER</category>
+      <category>ØKONOMISK SAMARBEID</category>
+    </categories>
     <source>PP:10</source>
     <body>Arbeide internasjonalt mot skattekonkurranse.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>STATSFORVALTNING</topic>
-    </topics>
+    <categories>
+      <category>STATSFORVALTNING</category>
+    </categories>
     <source>PP:11</source>
     <body>Fornye offentlig sektor ved å tilby bedre kvalitet, økt tilgjengelighet, større valgfrihet, større innflytelse, bedre samordning og kortere behandlingstid. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SOSIALVESEN</topic>
-    </topics>
+    <categories>
+      <category>SOSIALVESEN</category>
+    </categories>
     <source>PP:11</source>
     <body>Styrke samarbeidet med frivillig og ideell virksomhet i velferdstilbudet. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>STATENS PERSONALPOLITIKK</topic>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>STATENS PERSONALPOLITIKK</category>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:11</source>
     <body>Satse på etter- og videreutdanning av offentlig ansatte.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>KOMMUNENES ØKONOMI</topic>
-    </topics>
+    <categories>
+      <category>KOMMUNENES ØKONOMI</category>
+    </categories>
     <source>PP:11</source>
     <body>At nye statlige pålegg eller reformer til kommunene fullfinansieres.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>FORBRUKERSAKER</topic>
-    </topics>
+    <categories>
+      <category>FORBRUKERSAKER</category>
+    </categories>
     <source>PP:11</source>
     <body>Opprettholde Forbrukerrådet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>PRISER OG KONKURRANSEFORHOLD</topic>
-      <topic>STATSFORVALTNING</topic>
-      <topic>ARBEIDSVILKÅR</topic>
-      <topic>MILJØVERN</topic>
-    </topics>
+    <categories>
+      <category>PRISER OG KONKURRANSEFORHOLD</category>
+      <category>STATSFORVALTNING</category>
+      <category>ARBEIDSVILKÅR</category>
+      <category>MILJØVERN</category>
+    </categories>
     <source>PP:11</source>
     <body>Stille krav om forhold som etikk, antall lærlinger, arbeidstakerrettigheter og klimasertifisering ved offentlige innkjøp og anbud, og sikre at konkurransen er reell.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>STATSFORVALTNING</topic>
-    </topics>
+    <categories>
+      <category>STATSFORVALTNING</category>
+    </categories>
     <source>PP:11</source>
     <body>Effektivisere rapporteringssystemer innen offentlig sektor for å frigjøre tid til tjenesteproduksjon. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>STATENS PERSONALPOLITIKK</topic>
-      <topic>STATSFORVALTNING</topic>
-    </topics>
+    <categories>
+      <category>STATENS PERSONALPOLITIKK</category>
+      <category>STATSFORVALTNING</category>
+    </categories>
     <source>PP:11</source>
     <body>Styrke lederkompetansen i det offentlige gjennom blant annet god rekruttering, lederevaluering, kompetanse og økt bruk av åremål. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>STATSFORVALTNING</topic>
-      <topic>TELEKOMMUNIKASJONER</topic>
-    </topics>
+    <categories>
+      <category>STATSFORVALTNING</category>
+      <category>TELEKOMMUNIKASJONER</category>
+    </categories>
     <source>PP:11</source>
     <body>At IT-løsninger i offentlig sektor i større grad skal basere seg på åpne standarder.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-      <topic>STATSFORVALTNING</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+      <category>STATSFORVALTNING</category>
+    </categories>
     <source>PP:11</source>
     <body>Gjennomføre tiltak som øker innflytelsen til elevene i skolen og til brukere av offentlige tjenester.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSLIV</topic>
-      <topic>ARBEIDSMILJØ</topic>
-      <topic>NÆRINGSUTVIKLING</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSLIV</category>
+      <category>ARBEIDSMILJØ</category>
+      <category>NÆRINGSUTVIKLING</category>
+    </categories>
     <source>PP:11</source>
     <body>Styrke den reelle medvirkningen for de ansatte, tillitsvalgte og organisasjonene i arbeidslivet for å sikre arbeidsmiljøet og virksomhetenes utvikling</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VALG</topic>
-    </topics>
+    <categories>
+      <category>VALG</category>
+    </categories>
     <source>PP:11</source>
     <body>Øke tilgjengeligheten for forhåndsstemming, og gi større mulighet til å avgi stemme ved offentlige institusjoner som sykehus, omsorgsboliger, høyere utdanningsinstitusjoner og videregående skoler</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VALG</topic>
-    </topics>
+    <categories>
+      <category>VALG</category>
+    </categories>
     <source>PP:11</source>
     <body>Avskaffe prøveordningen med direkte ordførervalg</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>GRUNNLOVEN</topic>
-      <topic>REGJERINGEN</topic>
-      <topic>STORTINGET</topic>
-    </topics>
+    <categories>
+      <category>GRUNNLOVEN</category>
+      <category>REGJERINGEN</category>
+      <category>STORTINGET</category>
+    </categories>
     <source>PP:12</source>
     <body>Endre Grunnloven, slik at Stortinget skal gi tiltredende regjeringer uttrykkelig tillit (investitur), og slik at Regjeringen gis mulighet til oppløsingsrett og utlyse nyvalg. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>MASSEMEDIER</topic>
-    </topics>
+    <categories>
+      <category>MASSEMEDIER</category>
+    </categories>
     <source>PP:12</source>
     <body>Videreføre og øke pressestøtten</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NORSK RIKSKRINGKASTING</topic>
-    </topics>
+    <categories>
+      <category>NORSK RIKSKRINGKASTING</category>
+    </categories>
     <source>PP:12</source>
     <body>Styrke NRK som allmennkringkaster og beholde lisensfinansieringen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VALG</topic>
-    </topics>
+    <categories>
+      <category>VALG</category>
+    </categories>
     <source>PP:12</source>
     <body>Arbeide for å forenkle stemmegivningen, og gjennomføre forsøk med elektronisk valg</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSLIV</topic>
-      <topic>TRYGDER</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSLIV</category>
+      <category>TRYGDER</category>
+    </categories>
     <source>PP:12</source>
     <body>Opprettholde arbeidstakernes rettigheter i sykelønnsordningen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSLIV</topic>
-      <topic>SYSSELSETTING</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSLIV</category>
+      <category>SYSSELSETTING</category>
+    </categories>
     <source>PP:12</source>
     <body>Styrke oppfølgingen av avtalen om inkluderende arbeidsliv (IA-avtalen). </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SYSSELSETTING</topic>
-    </topics>
+    <categories>
+      <category>SYSSELSETTING</category>
+    </categories>
     <source>PP:12</source>
     <body>Ha et høyt nivå på arbeidsmarkedstiltak</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SYSSELSETTING</topic>
-    </topics>
+    <categories>
+      <category>SYSSELSETTING</category>
+    </categories>
     <source>PP:12</source>
     <body>Satse på særskilt oppfølging av utsatte grupper på arbeidsmarkedet, herunder langtidsledige, personer med nedsatt funksjonsevne og innvandrerkvinner.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SYSSELSETTING</topic>
-      <topic>TRYGD</topic>
-    </topics>
+    <categories>
+      <category>SYSSELSETTING</category>
+      <category>TRYGD</category>
+    </categories>
     <source>PP:13</source>
     <body>Bruke trygd som lønnstilskudd for å få folk i arbeid. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSLIV</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSLIV</category>
+    </categories>
     <source>PP:13</source>
     <body>Ha gunstige finansieringsordninger for å dekke behovet for varig tilrettelagte arbeidsplasser. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SYSSELSETTING</topic>
-    </topics>
+    <categories>
+      <category>SYSSELSETTING</category>
+    </categories>
     <source>PP:13</source>
     <body>Styrke arbeidsrettede tiltak og sikre forutsigbare og stabile rammebetingelser for vekst- og attføringsbedriftene. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSMILJØ</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSMILJØ</category>
+    </categories>
     <source>PP:13</source>
     <body>Styrke ansattes rett til vern av personlig integritet i arbeidsforhold.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:13</source>
     <body>Forenkle og effektivisere godkjenningsprosedyrer for utdanning tatt i utlandet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSMILJØ</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSMILJØ</category>
+    </categories>
     <source>PP:13</source>
     <body>Skjerpe innsatsen for et godt arbeidsmiljø både nasjonalt og i den enkelte virksomhet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSMILJØ</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSMILJØ</category>
+    </categories>
     <source>PP:13</source>
     <body>Styrke Arbeidstilsynet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LØNN</topic>
-    </topics>
+    <categories>
+      <category>LØNN</category>
+    </categories>
     <source>PP:13</source>
     <body>Innføre solidaransvar for lønn i hele kontraktskjeden der lønnsnivået i tariffavtale er allmenngjort.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSLIV</topic>
-      <topic>VOKSENOPPLÆRING</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSLIV</category>
+      <category>VOKSENOPPLÆRING</category>
+    </categories>
     <source>PP:13</source>
     <body>Sikre mulighet for kompetanseheving/opplæring</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSMILJØ</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSMILJØ</category>
+    </categories>
     <source>PP:13</source>
     <body>Gjennomføre og styrke felleskontroller fra offentlige myndigheter for å forebygge brann, trygdemisbruk, sosial dumping, skatteunndragelser, ulovlig alkoholomsetning og andre straffbare forhold.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSVILKÅR</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSVILKÅR</category>
+    </categories>
     <source>PP:13</source>
     <body>Redusere ufrivillig deltidsarbeid i offentlige virksomheter. Gjennom samarbeid med arbeidstakernes organisasjoner arbeide for å finne løsninger som har som mål å avskaffe uønsket deltidsarbeid.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSVILKÅR</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSVILKÅR</category>
+    </categories>
     <source>PP:13</source>
     <body>At staten skal gjennomgå sin ansettelsespolitikk for å redusere bruk av midlertidig ansatte.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSVILKÅR</topic>
-      <topic>FAMILIE</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSVILKÅR</category>
+      <category>FAMILIE</category>
+    </categories>
     <source>PP:13</source>
     <body>Gå inn for reformer som gir arbeidstakerne mer tid til omsorg for sine barn og sine eldre, og redusert arbeidstid for enkelte arbeidstakere.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SYSSELSETTING</topic>
-    </topics>
+    <categories>
+      <category>SYSSELSETTING</category>
+    </categories>
     <source>PP:14</source>
     <body>Bevisstgjøre arbeidsgivere både i offentlig og privat sektor på en inkluderende rekrutteringspolitikk</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LIKESTILLING</topic>
-      <topic>MENNESKERETTIGHETER</topic>
-    </topics>
+    <categories>
+      <category>LIKESTILLING</category>
+      <category>MENNESKERETTIGHETER</category>
+    </categories>
     <source>PP:14</source>
     <body>Styrke likestillings- og diskrimineringsombudet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>STATENS PERSONALPOLITIKK</topic>
-      <topic>INNVANDRERE</topic>
-    </topics>
+    <categories>
+      <category>STATENS PERSONALPOLITIKK</category>
+      <category>INNVANDRERE</category>
+    </categories>
     <source>PP:14</source>
     <body>At ved stillinger i det offentlige hvor det finnes kvalifiserte søkere med minoritetsbakgrunn, skal minst én kalles inn til intervju.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>INNVANDRERE</topic>
-      <topic>ARBEIDSLIV</topic>
-    </topics>
+    <categories>
+      <category>INNVANDRERE</category>
+      <category>ARBEIDSLIV</category>
+    </categories>
     <source>PP:14</source>
     <body>At innvandrere informeres om rettigheter og plikter i norsk arbeidsliv og velferdssystem.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SYSSELSETTING</topic>
-    </topics>
+    <categories>
+      <category>SYSSELSETTING</category>
+    </categories>
     <source>PP:14</source>
     <body>Fjerne barrierer og sørge for universell utforming og tilgjengelighet for alle til å delta i samfunnet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>INNVANDRERE</topic>
-      <topic>SPRÅK</topic>
-      <topic>VOKSENOPPLÆRING</topic>
-    </topics>
+    <categories>
+      <category>INNVANDRERE</category>
+      <category>SPRÅK</category>
+      <category>VOKSENOPPLÆRING</category>
+    </categories>
     <source>PP:14</source>
     <body>Gjennomgå det pedagogiske innholdet i språkopplæring for innvandrere.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>MENNESKERETTIGHETER</topic>
-    </topics>
+    <categories>
+      <category>MENNESKERETTIGHETER</category>
+    </categories>
     <source>PP:14</source>
     <body>Motarbeide fanatisme og antidemokratiske holdninger i Norge.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-      <topic>FAMILIE</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+      <category>FAMILIE</category>
+    </categories>
     <source>PP:14</source>
     <body>Intensivere forskningen på homofiles levekår. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>MENNESKERETTIGHETER</topic>
-      <topic>POLITI OG PÅTALEMYNDIGHET</topic>
-    </topics>
+    <categories>
+      <category>MENNESKERETTIGHETER</category>
+      <category>POLITI OG PÅTALEMYNDIGHET</category>
+    </categories>
     <source>PP:14</source>
     <body>Arbeide mot hatkriminalitet</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LIKESTILLING</topic>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>LIKESTILLING</category>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:15</source>
     <body>At det iverksettes et program i skolen for å oppnå mindre kjønnsdelte utdanningsutvalg, blant annet gjennom bedre yrkesrådgivning.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSVILKÅR</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSVILKÅR</category>
+    </categories>
     <source>PP:15</source>
     <body>Styrke retten til heltid, og vurdere nye lovendringer for å få til dette.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSVILKÅR</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSVILKÅR</category>
+    </categories>
     <source>PP:15</source>
     <body>Endre arbeidsmiljøloven slik at de som arbeider tredelt turnus får redusert arbeidstid. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSVILKÅR</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSVILKÅR</category>
+    </categories>
     <source>PP:15</source>
     <body>Arbeide for at deltidssansatte i private og offentlige pensjonskasser får rettferdig pensjon.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSVILKÅR</topic>
-      <topic>LIKESTILLING</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSVILKÅR</category>
+      <category>LIKESTILLING</category>
+    </categories>
     <source>PP:15</source>
     <body>Motvirke kjønnsdelt arbeidsmarked ved kvotering og andre tiltak til utdanning, tilsetting og ledelse.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LIKESTILLING</topic>
-      <topic>HØYERE UTDANNING</topic>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-    </topics>
+    <categories>
+      <category>LIKESTILLING</category>
+      <category>HØYERE UTDANNING</category>
+      <category>VIDEREGÅENDE SKOLER</category>
+    </categories>
     <source>PP:15</source>
     <body>Bevisst bygge miljøer rundt det underrepresenterte kjønn ved høyere utdanningsinstitusjoner og videregående skoler som er tradisjonelt kjønnsdelt.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>LIKESTILLING</topic>
-      <topic>INNVANDRERE</topic>
-      <topic>SPRÅK</topic>
-      <topic>ARBEIDSLIV</topic>
-    </topics>
+    <categories>
+      <category>LIKESTILLING</category>
+      <category>INNVANDRERE</category>
+      <category>SPRÅK</category>
+      <category>ARBEIDSLIV</category>
+    </categories>
     <source>PP:15</source>
     <body>Gi innvandrerkvinner tilbud om kvalifiseringsprogram der arbeidsrettet norskopplæring kombineres med ordinær arbeidspraksis</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-      <topic>LIKESTILLING</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+      <category>LIKESTILLING</category>
+    </categories>
     <source>PP:15</source>
     <body>Arbeide for å styrke forskning rettet mot likestilling i samfunnet generelt.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-      <topic>SAMER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+      <category>SAMER</category>
+    </categories>
     <source>PP:15</source>
     <body>Sikre at samiske læremidler i skolen er tilgjengelig.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>KOMMUNENES ØKONOMI</topic>
-      <topic>SPRÅK</topic>
-      <topic>SKOLER</topic>
-      <topic>MENNESKERETTIGHETER</topic>
-      <topic>SAMER</topic>
-    </topics>
+    <categories>
+      <category>KOMMUNENES ØKONOMI</category>
+      <category>SPRÅK</category>
+      <category>SKOLER</category>
+      <category>MENNESKERETTIGHETER</category>
+      <category>SAMER</category>
+    </categories>
     <source>PP:15</source>
     <body>Sikre kommunene tilstrekkelig med ressurser til å gi undervisning i samisk og nasjonale minoritetsspråk, og legge til rette for tospråklighet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>SAMER</topic>
-      <topic>SKOLER</topic>
-      <topic>SPRÅK</topic>
-    </topics>
+    <categories>
+      <category>SAMER</category>
+      <category>SKOLER</category>
+      <category>SPRÅK</category>
+    </categories>
     <source>PP:15</source>
     <body>At skoleelever i de samiske områdene skal kunne velge samisk i stedet for sidemål.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMER</topic>
-      <topic>SPRÅK</topic>
-    </topics>
+    <categories>
+      <category>SAMER</category>
+      <category>SPRÅK</category>
+    </categories>
     <source>PP:15</source>
     <body>Styrke medie- og litteraturtilbudet på samisk. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMER</topic>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>SAMER</category>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:15</source>
     <body>Utdanne flere samiske lærere, førskolelærere og helse-og sosialarbeidere.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMER</topic>
-      <topic>KULTUR</topic>
-    </topics>
+    <categories>
+      <category>SAMER</category>
+      <category>KULTUR</category>
+    </categories>
     <source>PP:15</source>
     <body>Styrke det samiske kulturlivet ved å øke bevilgningene til Sametinget.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMER</topic>
-      <topic>FORSKNING</topic>
-    </topics>
+    <categories>
+      <category>SAMER</category>
+      <category>FORSKNING</category>
+    </categories>
     <source>PP:15</source>
     <body>Styrke samisk forskning og forskning om samiske forhold.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMER</topic>
-      <topic>REISELIVSNÆRING</topic>
-      <topic>HANDEL</topic>
-    </topics>
+    <categories>
+      <category>SAMER</category>
+      <category>REISELIVSNÆRING</category>
+      <category>HANDEL</category>
+    </categories>
     <source>PP:15</source>
     <body>Satse på samisk reiselivsutvikling og design/duodji. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMER</topic>
-      <topic>REINDRIFT</topic>
-    </topics>
+    <categories>
+      <category>SAMER</category>
+      <category>REINDRIFT</category>
+    </categories>
     <source>PP:15</source>
     <body>Utforme rovdyrpolitikken slik at eksistensgrunnlaget for samiske næringer sikres. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMER</topic>
-      <topic>MILJØVERN</topic>
-    </topics>
+    <categories>
+      <category>SAMER</category>
+      <category>MILJØVERN</category>
+    </categories>
     <source>PP:15</source>
     <body>At Sametinget skal tas med i utviklingen av klimapolitikken.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMER</topic>
-      <topic>KULTUR</topic>
-    </topics>
+    <categories>
+      <category>SAMER</category>
+      <category>KULTUR</category>
+    </categories>
     <source>PP:15</source>
     <body>Bedre rammebetingelsene for samiske kunstnere og kulturutøvere og bidra til internasjonal profilering av samisk kultur.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMER</topic>
-      <topic>BARNEHAGER</topic>
-    </topics>
+    <categories>
+      <category>SAMER</category>
+      <category>BARNEHAGER</category>
+    </categories>
     <source>PP:15</source>
     <body>Øke antallet samiske barnehageplasser.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>MASSEMEDIER</topic>
-      <topic>SAMER</topic>
-      <topic>MENNESKERETTIGHETER</topic>
-    </topics>
+    <categories>
+      <category>MASSEMEDIER</category>
+      <category>SAMER</category>
+      <category>MENNESKERETTIGHETER</category>
+    </categories>
     <source>PP:16</source>
     <body>Sikre landsdekkende samiske aviser, og medier for ulike nasjonale minoriteter. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-      <topic>MENNESKERETTIGHETER</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+      <category>MENNESKERETTIGHETER</category>
+    </categories>
     <source>PP:16</source>
     <body>Styrke forskningen og kunnskapsutviklingen rundt nasjonale minoriteter.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>MENNESKERETTIGHETER</topic>
-      <topic>KULTUR</topic>
-    </topics>
+    <categories>
+      <category>MENNESKERETTIGHETER</category>
+      <category>KULTUR</category>
+    </categories>
     <source>PP:16</source>
     <body>Støtte tiltak som setter fokus på nasjonale minoriteters kultur.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>BARNEHAGER</topic>
-    </topics>
+    <categories>
+      <category>BARNEHAGER</category>
+    </categories>
     <source>PP:18</source>
     <body>Innføre tilbud om førskole i barnehage for alle 5-åringer som ikke har barnehageplass.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>BARNEHAGER</topic>
-      <topic>INNVANDRERE</topic>
-    </topics>
+    <categories>
+      <category>BARNEHAGER</category>
+      <category>INNVANDRERE</category>
+    </categories>
     <source>PP:18</source>
     <body>Tilby gratis kjernetid i barnehage for alle 3-5-åringer i områder med mange minoritetsspråklige, og utvide ordningen til flere områder enn i dag. Det er viktig å drive oppsøkende virksomhet for å øke bruken av tilbudet i målgruppen. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARNEHAGER</topic>
-    </topics>
+    <categories>
+      <category>BARNEHAGER</category>
+    </categories>
     <source>PP:18</source>
     <body>Holde maksimalprisen for barnehager på et lavt nivå.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARNEHAGER</topic>
-      <topic>INNVANDRERE</topic>
-    </topics>
+    <categories>
+      <category>BARNEHAGER</category>
+      <category>INNVANDRERE</category>
+    </categories>
     <source>PP:18</source>
     <body>Legge til rette for å øke andelen ansatte med minoritetsbakgrunn i barnehage og skole.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARNEHAGER</topic>
-    </topics>
+    <categories>
+      <category>BARNEHAGER</category>
+    </categories>
     <source>PP:18</source>
     <body>Arbeide for at flere menn ansettes i barnehagene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSVILKÅR</topic>
-      <topic>BARNEHAGER</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSVILKÅR</category>
+      <category>BARNEHAGER</category>
+    </categories>
     <source>PP:18</source>
     <body>Sikre likeverdige lønns- og arbeidsforhold for ansatte i private og kommunale barnehager.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARNEHAGER</topic>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>BARNEHAGER</category>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:18</source>
     <body>Utdanne og rekruttere nok førskolelærere, sikre tilfredsstillende voksentetthet og styrke de øvrige ansattes kompetanse for å gi barnehagene bedre kvalitet. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:19</source>
     <body>At alle elever skal ha sin primære tilhørighet til én fast klasse eller basisgruppe hvor hoveddelen av felles opplevelser skjer.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:19</source>
     <body>Gi elevene rett til å gå på den skolen som ligger nærmest eller den de sokner til, og mulighet til å tas inn på en annen skole dersom de ønsker det.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:19</source>
     <body>At lærestoffet og læremidlene skal gjenspeile mangfoldet i samfunnet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:19</source>
     <body>Sikre at læremidlene er tilgjengelige for alle elever fra skolestart, uansett målform eller tilretteleggingsbehov.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+      <category>VIDEREGÅENDE SKOLER</category>
+    </categories>
     <source>PP:19</source>
     <body>Videreutvikle nasjonale kartleggingsprøver og innføre slike prøver i videregående opplæring</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:19</source>
     <body>Legge til rette for at resultatene fra nasjonale prøver ikke kan brukes til å rangere elever, klasser eller skoler, men til å heve det faglige nivået for hver enkelt elev.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:19</source>
     <body>Utarbeide konkrete læringsmål for hvert trinn til hjelp i lærernes læreplanarbeid.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:19</source>
     <body>Styrke arbeidet med elev- og lærlingvurdering, og sikre at hver enkelt får tilbakemeldinger som fremmer læring og mestring.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:19</source>
     <body>Opprette en nasjonal database med blant annet undervisningsopplegg, planarbeid og materiale til bruk i kontakten mellom skole og hjem.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:19</source>
     <body>Utvikle nettbaserte læremidler til bruk i undervisningen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-      <topic>BIBLIOTEK OG LITTERATUR</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+      <category>BIBLIOTEK OG LITTERATUR</category>
+    </categories>
     <source>PP:19</source>
     <body>Satse på bemannede, utviklingsorienterte og dynamiske skolebibliotek som læringssentra i grunnskolen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>GRUNNSKOLE</topic>
-    </topics>
+    <categories>
+      <category>GRUNNSKOLE</category>
+    </categories>
     <source>PP:20</source>
     <body>Utvide timeantallet til 28 skoletimer i uka på barnetrinnet og videreutvikle heldagsskolen med fokus på grunnleggende ferdigheter og leksehjelp. Vi vil ha én time gratis SFO med fysisk aktivitet hver dag i de første fire årene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SPESIALUNDERVISNING</topic>
-    </topics>
+    <categories>
+      <category>SPESIALUNDERVISNING</category>
+    </categories>
     <source>PP:20</source>
     <body>Gi spesialundervisning og oppfølging så tidlig som mulig i skoleløpet. Der en elev ligger under kritisk grense i grunnleggende ferdigheter, skal det umiddelbart iverksettes særskilt oppfølging</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>GRUNNSKOLE</topic>
-    </topics>
+    <categories>
+      <category>GRUNNSKOLE</category>
+    </categories>
     <source>PP:20</source>
     <body>At privatøkonomi ikke skal utelukke noen fra å delta på aktiviteter i skolens regi.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>GRUNNSKOLE</topic>
-    </topics>
+    <categories>
+      <category>GRUNNSKOLE</category>
+    </categories>
     <source>PP:20</source>
     <body>Motivere flere til å velge 2. fremmedspråk, og øke motivasjonen for realfag.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>GRUNNSKOLE</topic>
-    </topics>
+    <categories>
+      <category>GRUNNSKOLE</category>
+    </categories>
     <source>PP:20</source>
     <body>Ha en gjennomgang av morsmålsopplæringen for å sikre god kvalitet og at den går til de elever som har behov for det. Vi vil at flere får tilbud om morsmålsopplæring som 2. fremmedspråk.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>GRUNNSKOLE</topic>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-    </topics>
+    <categories>
+      <category>GRUNNSKOLE</category>
+      <category>VIDEREGÅENDE SKOLER</category>
+    </categories>
     <source>PP:20</source>
     <body>Sørge for nært samarbeid mellom ungdomsskolene og de videregående skolene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>GRUNNSKOLE</topic>
-    </topics>
+    <categories>
+      <category>GRUNNSKOLE</category>
+    </categories>
     <source>PP:20</source>
     <body>Legge til rette for tilbud om ungdomssbedrift på ungdomsskoler.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>GRUNNSKOLE</topic>
-    </topics>
+    <categories>
+      <category>GRUNNSKOLE</category>
+    </categories>
     <source>PP:20</source>
     <body>Sikre leksehjelp for alle som ønsker det.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:20</source>
     <body>Styrke både den sosialpedagogiske  rådgivningen og yrkesveiledningen ved å doble rådgivningsressursene og innføre kompetansekrav for rådgivere.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>GRUNNSKOLE</topic>
-    </topics>
+    <categories>
+      <category>GRUNNSKOLE</category>
+    </categories>
     <source>PP:20</source>
     <body>Legge til rette for at elevene i grunnskolen skal ha daglig  fysisk aktivitet</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:20</source>
     <body>Forsterke samarbeidet mellom hjem og skole</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:20</source>
     <body>Jobbe aktivt mot mobbing i skolen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>VIDEREGÅENDE SKOLER</category>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:21</source>
     <body>Sørge for at elever på studieforberedende program kan ta deler av fag innenfor høyere utdanning</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-      <topic>NÆRINGSLIV</topic>
-    </topics>
+    <categories>
+      <category>VIDEREGÅENDE SKOLER</category>
+      <category>NÆRINGSLIV</category>
+    </categories>
     <source>PP:21</source>
     <body>Styrke rekrutteringen til realfag og språkfag i samarbeid med lokalt arbeids- og næringsliv.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-    </topics>
+    <categories>
+      <category>VIDEREGÅENDE SKOLER</category>
+    </categories>
     <source>PP:21</source>
     <body>Gjøre de teoretiske fagene i yrkesfaglige studieprogram mer praksisnære, og legge opp til mer varierte undervisningsformer</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-    </topics>
+    <categories>
+      <category>VIDEREGÅENDE SKOLER</category>
+    </categories>
     <source>PP:21</source>
     <body>Øke antall læreplasser både i offentlig og privat sektor, blant annet gjennom å lovfeste retten til læreplass.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-    </topics>
+    <categories>
+      <category>VIDEREGÅENDE SKOLER</category>
+    </categories>
     <source>PP:21</source>
     <body>Gi tilbud om alternative løp i videregående opplæring som er mer praktisk rettet, samt gi flere tilbud der hele eller større deler av opplæringen foregår i arbeidslivet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-    </topics>
+    <categories>
+      <category>VIDEREGÅENDE SKOLER</category>
+    </categories>
     <source>PP:21</source>
     <body>Overføre god praksis i arbeidet mot frafall og sette inn tiltak der problemet er størst.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-      <topic>STUDIEFINANSIERING</topic>
-    </topics>
+    <categories>
+      <category>VIDEREGÅENDE SKOLER</category>
+      <category>STUDIEFINANSIERING</category>
+    </categories>
     <source>PP:21</source>
     <body>At ingen med ungdomsrett skal måtte ta opp studielån for å gjennomføre videregående opplæring.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-      <topic>INNVANDRERE</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+      <category>INNVANDRERE</category>
+    </categories>
     <source>PP:21</source>
     <body>Videreutvikle ordningen med minoritetsrådigvere på  skoler med flere enn 25 prosent elever med innvandrerbakgrunn.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>VIDEREGÅENDE SKOLER</category>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:21</source>
     <body>At elever med fagbrev skal gis større mulighet til å søke høyere utdanning innenfor sitt fagområde.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-    </topics>
+    <categories>
+      <category>VIDEREGÅENDE SKOLER</category>
+    </categories>
     <source>PP:21</source>
     <body>Videreutvikle lærekandidatordningen og forsøkene med praksisbrev.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-    </topics>
+    <categories>
+      <category>VIDEREGÅENDE SKOLER</category>
+    </categories>
     <source>PP:21</source>
     <body>Gjennomføre forsøk med mentorordninger der ressurspersoner fra skoler og arbeidsliv følger opp enkeltelever som står i fare for avbryte opplæringen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-      <topic>KOMMUNER</topic>
-    </topics>
+    <categories>
+      <category>VIDEREGÅENDE SKOLER</category>
+      <category>KOMMUNER</category>
+    </categories>
     <source>PP:21</source>
     <body>Samarbeide med kommunene om miljøkontakter på de videregående skolene som kan bidra til å løse sosial problemer.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-    </topics>
+    <categories>
+      <category>VIDEREGÅENDE SKOLER</category>
+    </categories>
     <source>PP:21</source>
     <body>Gi tilbud om intensiv undervisning før ny eksamen i fag eleven har strøket i.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:22</source>
     <body>Differansiere lærerutdanningene ved i større grad å spesialisere inn mot trinn og fag.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:22</source>
     <body>Etablere systematiske ordninger for etter- og videreutdanning av lærere, og innføre en rett og en plikt til å holde seg faglig oppdatert.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:22</source>
     <body>Utvikle nasjonalt rammeverk som sikrer økt lærertetthet i skolen og likeverdighet i opplæringstilbudet. Vi vil ha flere yrkesgrupper inn i skolen for å avlaste lærere og frigjøre tid til undervisning.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:22</source>
     <body>Gjennomføre tiltak som bidrar til å heve lærernes status og kompetanse i dialog med lærernes organisasjoner og KS. Målet er en bedre organisert skolehverdag hvor lærernes rolle styrkes. Fokuset må være på arbeidet i undervisningssituasjonen, og på at de samlede lærerressursene brukes best mulig.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:22</source>
     <body>Sikre rekruttering og tilgang på lærere og annet fagpersonell gjennom blant annet seniortiltak, ordninger for avskriving av studielån for språk- og realfagslærere og tilbud om pedagogisk utdannning for annet fagpersonell som tar jobb i skolen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:22</source>
     <body>Innføre sentralgitte prøver og sensur i sentrale undervisningsfag ved lærerhøyskolene for å sikre en jevn og høy faglig standard.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:22</source>
     <body>Gjennomgå plan- og rapporteringskravene med det formål å frigi lærertid til undervisning og oppfølging av den enkelte elev.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-      <topic>FORSKNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+      <category>FORSKNING</category>
+    </categories>
     <source>PP:22</source>
     <body>Styrke pedagogikk, klasseledelse og undervisningspraksis i lærerutdanningen. Vi vil styrke undervisningsforskningen og øke forskningskompetanse.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>BARNEHAGE</topic>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>BARNEHAGE</category>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:22</source>
     <body>Innføre inntektsgraderte satser, søskenmoderasjon og samordning mellom betaling i barnehage og skolefritidsordning.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:22</source>
     <body>Øke kvaliteten og ha flere ansatte med fagutdanning i skolefritidsordningen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSVILKÅR</topic>
-      <topic>VOKSENOPPLÆRING</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSVILKÅR</category>
+      <category>VOKSENOPPLÆRING</category>
+    </categories>
     <source>PP:23</source>
     <body>Legge til rette for en ordning hvor egne tillitsvalgte jobber spesielt med motivering og tilrettelegging av opplæring for ansatte.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VOKSENOPPLÆRING</topic>
-    </topics>
+    <categories>
+      <category>VOKSENOPPLÆRING</category>
+    </categories>
     <source>PP:23</source>
     <body>Styrke voksenopplæringsorganisasjonene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:23</source>
     <body>Evaluere effekten av tiltakene som er gjennomført etter  gjennomgangen av etter- og videreutdanningspolitikken i 1990-årene, og vurdere behover for en ny helhetlig innsats.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VOKSENOPPLÆRING</topic>
-    </topics>
+    <categories>
+      <category>VOKSENOPPLÆRING</category>
+    </categories>
     <source>PP:23</source>
     <body>Gjennomgå og styrke voksnes rettigheter og støtteordninger til grunnopplæring.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>VIDEREGÅENDE SKOLER</topic>
-      <topic>VOKSENOPPLÆRING</topic>
-    </topics>
+    <categories>
+      <category>VIDEREGÅENDE SKOLER</category>
+      <category>VOKSENOPPLÆRING</category>
+    </categories>
     <source>PP:23</source>
     <body>At alle som ikke har videregående utdanning får mulighet til å ta dette - uavhengig av alder.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>UTDANNING</category>
+    </categories>
     <source>PP:23</source>
     <body>Senke aldersgrensen for realkompetansevurdering.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>INNVANDRERE</topic>
-      <topic>UTDANNING</topic>
-      <topic>LIKESTILLING</topic>
-    </topics>
+    <categories>
+      <category>INNVANDRERE</category>
+      <category>UTDANNING</category>
+      <category>LIKESTILLING</category>
+    </categories>
     <source>PP:23</source>
     <body>Gi tilbud om språkopplæring også til innvandrere - særlig kvinner - som har bodd i Norge lenge.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>UTDANNING</topic>
-      <topic>ARBIEDSLIV</topic>
-    </topics>
+    <categories>
+      <category>UTDANNING</category>
+      <category>ARBIEDSLIV</category>
+    </categories>
     <source>PP:23</source>
     <body>Sørge for at bedre ferdigheter i å lese og skrive er en del av arbeidsmarkedspolitikken.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:24</source>
     <body>Ha sterkere nasjonal styring for å sikre økt samarbeid, mer spesialisering og bedre arbeidsdeling mellom de høyere utdanningsinstitusjonene</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:24</source>
     <body>Styrke kvaliteten og relevansen til bachelorutdanningene, slik at de er mer tilpasset arbeidslivets behov</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:24</source>
     <body>Lage en nasjonal handlingsplan for næringsrettede utdanninger.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-      <topic>VOKSENOPPLÆRING</topic>
-      <topic>ARBEIDSLIV</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+      <category>VOKSENOPPLÆRING</category>
+      <category>ARBEIDSLIV</category>
+    </categories>
     <source>PP:24</source>
     <body>At utdanningsinstitusjonene i større grad enn i dag tilpasser sine tilbud for livslang læring og arbeidslivets behov.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:24</source>
     <body>Styrke det pedagogiske utviklingsarbeidet ved de høyere utdanningsinstitusjonene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:24</source>
     <body>Legge til rette for økt studentutveksling med andre land.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:24</source>
     <body>Styrke studentvelferden blant annet ved å sikre studentsamskipnadene gode vilkår.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>STUDIEFINANSIERING</topic>
-    </topics>
+    <categories>
+      <category>STUDIEFINANSIERING</category>
+    </categories>
     <source>PP:24</source>
     <body>At studielån og stipend reguleres i takt med prisstigningen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>STUDIEFINANSIERING</topic>
-    </topics>
+    <categories>
+      <category>STUDIEFINANSIERING</category>
+    </categories>
     <source>PP:24</source>
     <body>Øke bevilgningene og legge om utbetalingsstrukturen for studielån, slik at studiefinansiering betales ut over 11 måneder.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:24</source>
     <body>Evaluere dagens ordning med stykkprisfinansiering knyttet til antall uteksaminerte kandidater.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>UTDANNING</category>
+    </categories>
     <source>PP:24</source>
     <body>At flere av fagskolene bør ha offentlig finansiering, herunder de helsefaglige.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:24</source>
     <body>Bidra til at studentmedvirkning skal ivaretas på alle nivåer.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:24</source>
     <body>Gjøre entreprenørskap til en større del av flere utdanninger.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:24</source>
     <body>Videreutvikle fjernopplæringstilbud og desentralisere utdanningstilbud.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+    </categories>
     <source>PP:25</source>
     <body>At den samlede norske forskningen økes.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-      <topic>MILJØVERN</topic>
-      <topic>ENERGI</topic>
-      <topic>POLAROMRÅDER</topic>
-      <topic></topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+      <category>MILJØVERN</category>
+      <category>ENERGI</category>
+      <category>POLAROMRÅDER</category>
+      <category></category>
+    </categories>
     <source>PP:25</source>
     <body>Satse spesielt på forskning innenfor områdene energi, miljø, maritim og marin sektor, samt på nordområdespørsmål.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-      <topic>DISTRIKTSPOLITIKK</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+      <category>DISTRIKTSPOLITIKK</category>
+    </categories>
     <source>PP:25</source>
     <body>Innrette forskning mot regionale satsingsområder og underbygge utviklingen av regionale fortrinn og regionale verdiskapingsmiljøer.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+    </categories>
     <source>PP:25</source>
     <body>Øke grunnforskningen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>UTDANNING</topic>
-      <topic>FORSKNING</topic>
-    </topics>
+    <categories>
+      <category>UTDANNING</category>
+      <category>FORSKNING</category>
+    </categories>
     <source>PP:25</source>
     <body>Sikre vitenskapsteoretisk og etisk kompetanse i forskerutdanningen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+    </categories>
     <source>PP:25</source>
     <body>Styrke forskerrekrutteringen og innføre flere post.doc-stillinger og faste stillinger.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-      <topic>INTERNASJONALT SAMARBEID</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+      <category>INTERNASJONALT SAMARBEID</category>
+    </categories>
     <source>PP:25</source>
     <body>Legge til rette for økt forskerutveksling med andre land og for at norske forskere deltar mer i EUs rammeprogrammer.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-      <topic>NÆRINGSLIV</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+      <category>NÆRINGSLIV</category>
+    </categories>
     <source>PP:25</source>
     <body>Styrke virkemidler som utløser økt forskning i næringslivet, som brukerstyrte program og nærings-ph.d.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+    </categories>
     <source>PP:25</source>
     <body>At forskere, studenter og bedrifter har tilgang til relevant moderne utstyr.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:25</source>
     <body>Arbeide for å fremme en kultur for entreprenørskap i høyere utdanning.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NÆRINGSLIV</topic>
-      <topic>FORSKNING</topic>
-    </topics>
+    <categories>
+      <category>NÆRINGSLIV</category>
+      <category>FORSKNING</category>
+    </categories>
     <source>PP:26</source>
     <body>Satse videre på de områdene der vi har spesielle forutsetninger for å være gode, som energi og miljø, reiseliv, maritim og marin sektor, blant annet gjennom satsing på forskning og utvikling.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>SKULLE</topic>
-    </topics>
+    <categories>
+      <category>SKULLE</category>
+    </categories>
     <source>PP:26</source>
     <body>Si nei til salg av StatoilHydro og til delprivatisering eller salg av Statkraft og Statnett.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>ENERGI</topic>
-      <topic>STATSBEDRIFTER</topic>
-    </topics>
+    <categories>
+      <category>ENERGI</category>
+      <category>STATSBEDRIFTER</category>
+    </categories>
     <source>PP:26</source>
     <body>Fortsatt sikre hjemfallsinstituttet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>STATSBEDRIFTER</topic>
-    </topics>
+    <categories>
+      <category>STATSBEDRIFTER</category>
+    </categories>
     <source>PP:27</source>
     <body>At bedrifter som staten eier skal ta samfunnsansvar både lokalt, regionalt, nasjonalt og internasjonalt.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NÆRINGSUTVIKLING</topic>
-    </topics>
+    <categories>
+      <category>NÆRINGSUTVIKLING</category>
+    </categories>
     <source>PP:27</source>
     <body>Sørge for tilgang til kapital gjennom bevilgninger til såkornkapital og etableringsstipend til gründere.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NÆRINGSUTVIKLING</topic>
-    </topics>
+    <categories>
+      <category>NÆRINGSUTVIKLING</category>
+    </categories>
     <source>PP:27</source>
     <body>At virkemiddelapparatet skal treffe bedriftenes behov.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NÆRINGSUTVIKLING</topic>
-    </topics>
+    <categories>
+      <category>NÆRINGSUTVIKLING</category>
+    </categories>
     <source>PP:27</source>
     <body>At virkemiddelapparatet skal ha spesielt fokus på behovene til små og mellomstore bedrifter.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NÆRINGSUTVIKLING</topic>
-    </topics>
+    <categories>
+      <category>NÆRINGSUTVIKLING</category>
+    </categories>
     <source>PP:27</source>
     <body>Bruke statens kapitalstyrke som kapitalkilde til konkurransedyktige nyskapingsprosjekter.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NÆRINGSUTVIKLING</topic>
-      <topic>FORSKNING</topic>
-    </topics>
+    <categories>
+      <category>NÆRINGSUTVIKLING</category>
+      <category>FORSKNING</category>
+    </categories>
     <source>PP:27</source>
     <body>At det offentlige i større grad bruker sin stilling som stor innkjøper for å bidra til teknologiutvikling i næringslivet, og øke satsingen på på offentlige forsknings- og utviklingskontrakter.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>SKATTEFRADRAG</topic>
-      <topic>NÆRINGSUTVIKLING</topic>
-      <topic>FORSKNING</topic>
-    </topics>
+    <categories>
+      <category>SKATTEFRADRAG</category>
+      <category>NÆRINGSUTVIKLING</category>
+      <category>FORSKNING</category>
+    </categories>
     <source>PP:27</source>
     <body>Videreføre Skattefunn-ordningen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NÆRINGSLIV</topic>
-    </topics>
+    <categories>
+      <category>NÆRINGSLIV</category>
+    </categories>
     <source>PP:27</source>
     <body>Forenkle næringslivets krav til rapportering gjennom et kontinuerlig forenklingsarbeid.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LIKESTILLING</topic>
-      <topic>NÆRINGSUTVIKLING</topic>
-    </topics>
+    <categories>
+      <category>LIKESTILLING</category>
+      <category>NÆRINGSUTVIKLING</category>
+    </categories>
     <source>PP:27</source>
     <body>Arbeide for at flere kvinner etablerer og videreutvikler bedrifter gjennom oppfølging av handlingsplan for mer entreprenørskap blant kvinner.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ENERGI</topic>
-    </topics>
+    <categories>
+      <category>ENERGI</category>
+    </categories>
     <source>PP:27</source>
     <body>Fortsette å skaffe til veie ny kraft gjennom Enova og ny nettutbygging, og så langt som mulig innenfor EØS-regelverket, utvikle garanti- og finansordninger for kraftkjøp til konsortium.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NÆRINGSUTVIKLING</topic>
-    </topics>
+    <categories>
+      <category>NÆRINGSUTVIKLING</category>
+    </categories>
     <source>PP:27</source>
     <body>Fortsette styrkingen av designdrevet næringsutvikling.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>KULTUR</topic>
-      <topic>NÆRING</topic>
-    </topics>
+    <categories>
+      <category>KULTUR</category>
+      <category>NÆRING</category>
+    </categories>
     <source>PP:27</source>
     <body>Stimulere til næringsvirksomhet i skjæringspunktet mellom kultur og næring.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NÆRINGSLIV</topic>
-      <topic>STATSFORVALTNING</topic>
-    </topics>
+    <categories>
+      <category>NÆRINGSLIV</category>
+      <category>STATSFORVALTNING</category>
+    </categories>
     <source>PP:27</source>
     <body>At det offentlige som byggherre, regulator og kontrollmyndighet bidrar til at bygge- og anleggsbransjen utvikler seg som en produktiv, innovativ og kompetanseutviklende næring.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>REISELIVSNÆRING</topic>
-    </topics>
+    <categories>
+      <category>REISELIVSNÆRING</category>
+    </categories>
     <source>PP:27</source>
     <body>Videreutvikle reiselivsnæringen med fokus på kvalitet og markedsføringen av Norge i utlandet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NÆRINGSLIV</topic>
-      <topic>MILJØVERN</topic>
-    </topics>
+    <categories>
+      <category>NÆRINGSLIV</category>
+      <category>MILJØVERN</category>
+    </categories>
     <source>PP:27</source>
     <body>Videreutvikle den maritime næringen med fokus på forskning og innovasjon rettet mot utvikling av mer miljøvennlige løsninger.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NÆRINGSLIV</topic>
-      <topic>MILJØVERN</topic>
-    </topics>
+    <categories>
+      <category>NÆRINGSLIV</category>
+      <category>MILJØVERN</category>
+    </categories>
     <source>PP:27</source>
     <body>Legge til rette for fremtidig verdiskapning gjennom økt utvikling og bruk av norsk miljøteknologi.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>NÆRINGSLIV</topic>
-    </topics>
+    <categories>
+      <category>NÆRINGSLIV</category>
+    </categories>
     <source>PP:27</source>
     <body>Utarbeide en nasjonal næringspolitisk strategi for privat tjenesteytende sektor.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LANDBRUK</topic>
-      <topic>SYSSELSETTING</topic>
-    </topics>
+    <categories>
+      <category>LANDBRUK</category>
+      <category>SYSSELSETTING</category>
+    </categories>
     <source>PP:28</source>
     <body>Prioritere bønder som henter en vesentlig del av sysselsetting og inntekt fra gården og annen primærnæringsvirksomhet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LANDBRUK</topic>
-    </topics>
+    <categories>
+      <category>LANDBRUK</category>
+    </categories>
     <source>PP:28</source>
     <body>Stimulere til samdrifter og samarbeidstiltak, gjennom et fremtidsrettet og fleksibelt regelverk.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LANDBRUK</topic>
-      <topic>SKOGBRUK</topic>
-      <topic>REINDRIFT</topic>
-    </topics>
+    <categories>
+      <category>LANDBRUK</category>
+      <category>SKOGBRUK</category>
+      <category>REINDRIFT</category>
+    </categories>
     <source>PP:28</source>
     <body>Videreutvikle verdiskapingsprogrammene for mat, trevirke, reindrift og bioenergi.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>REISELIVSNÆRING</topic>
-      <topic>DISTRIKTSPOLITIKK</topic>
-    </topics>
+    <categories>
+      <category>REISELIVSNÆRING</category>
+      <category>DISTRIKTSPOLITIKK</category>
+    </categories>
     <source>PP:28</source>
     <body>Satse på grønt reiseliv og bygdeutviklingstiltak.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LANDBRUK</topic>
-    </topics>
+    <categories>
+      <category>LANDBRUK</category>
+    </categories>
     <source>PP:28</source>
     <body>Satse på økologisk landbruk, og stimulere til utvikling av nisjeprodukter.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LANDBRUKSPRODUKTER</topic>
-    </topics>
+    <categories>
+      <category>LANDBRUKSPRODUKTER</category>
+    </categories>
     <source>PP:28</source>
     <body>At norsk matproduksjon skal verdsettes og fortsatt være en viktig del av den totale verdikjeden.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>REINDRIFT</topic>
-    </topics>
+    <categories>
+      <category>REINDRIFT</category>
+    </categories>
     <source>PP:28</source>
     <body>Stimulere til økologisk og økonomisk bærekraftig reindrift.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LANDBRUK</topic>
-    </topics>
+    <categories>
+      <category>LANDBRUK</category>
+    </categories>
     <source>PP:28</source>
     <body>Sikre rekrutteringen til landbruket, samt stimulere til mangfold i landbruket.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LANDBRUK</topic>
-    </topics>
+    <categories>
+      <category>LANDBRUK</category>
+    </categories>
     <source>PP:28</source>
     <body>Sikre jordbruksarealer for framtiden som grunnlag til matproduksjon og for å holde kulturlandskapet i hevd.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HUSDYR</topic>
-    </topics>
+    <categories>
+      <category>HUSDYR</category>
+    </categories>
     <source>PP:28</source>
     <body>At håndtering av dyr skal skje med omsorg og respekt for dyrets egenart. Arbeiderpartiet mener at dyr har egenverdi.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HAVBRUK</topic>
-    </topics>
+    <categories>
+      <category>HAVBRUK</category>
+    </categories>
     <source>PP:29</source>
     <body>Sikre en bærekraftig forvaltning av de marine ressursene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FISKERIER</topic>
-    </topics>
+    <categories>
+      <category>FISKERIER</category>
+    </categories>
     <source>PP:29</source>
     <body>Sikre god ressurskontroll i fiskeriene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FANGST</topic>
-    </topics>
+    <categories>
+      <category>FANGST</category>
+    </categories>
     <source>PP:29</source>
     <body>Bekjempe ulovlig, uregulert og urapportert fiske.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-      <topic>HAVBRUK</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+      <category>HAVBRUK</category>
+    </categories>
     <source>PP:29</source>
     <body>Styrke den marine forskningen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HAVBRUK</topic>
-      <topic>MILJØVERN</topic>
-    </topics>
+    <categories>
+      <category>HAVBRUK</category>
+      <category>MILJØVERN</category>
+    </categories>
     <source>PP:29</source>
     <body>Styrke kunnskapen om hvilke effekter klimaendringer vil ha på havets økosystemer og det kystbaserte næringslivet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HAVBRUK</topic>
-      <topic>FORURENSNING</topic>
-    </topics>
+    <categories>
+      <category>HAVBRUK</category>
+      <category>FORURENSNING</category>
+    </categories>
     <source>PP:29</source>
     <body>Arbeide for å redusere utslipp av miljøgifter og klimagasser fra fiskeflåten og landindustrien.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HAVBRUK</topic>
-    </topics>
+    <categories>
+      <category>HAVBRUK</category>
+    </categories>
     <source>PP:29</source>
     <body>Forebygge arealkonflikter og legge til rette for sameksistens mellom de ulike aktørene som benytter kystsonen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HAVBRUK</topic>
-      <topic>REISELIVSNÆRING</topic>
-    </topics>
+    <categories>
+      <category>HAVBRUK</category>
+      <category>REISELIVSNÆRING</category>
+    </categories>
     <source>PP:29</source>
     <body>Utvikle mulighetene i samspillet mellom marin sektor og reiselivsnæringen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HAVBRUK</topic>
-    </topics>
+    <categories>
+      <category>HAVBRUK</category>
+    </categories>
     <source>PP:29</source>
     <body>Styrke den nasjonale satsingen på fangstbasert havbruk og oppdrett av nye arter.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>HAVBRUK</topic>
-      <topic>FORSKNING</topic>
-    </topics>
+    <categories>
+      <category>HAVBRUK</category>
+      <category>FORSKNING</category>
+    </categories>
     <source>PP:29</source>
     <body>Utarbeide en nasjonal strategi for marin bioprospektering.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FISKEOMSETNING</topic>
-    </topics>
+    <categories>
+      <category>FISKEOMSETNING</category>
+    </categories>
     <source>PP:29</source>
     <body>Styrke innelands markedsføring av sjømat. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>FANGST</topic>
-    </topics>
+    <categories>
+      <category>FANGST</category>
+    </categories>
     <source>PP:29</source>
     <body>Utarbeide en strategi som har til hensikt å beskytte og bygge opp lokale kystbestander av fisk.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HAVBRUK</topic>
-    </topics>
+    <categories>
+      <category>HAVBRUK</category>
+    </categories>
     <source>PP:29</source>
     <body>Styrke økosystembasert forvaltning for å sikre at bestander som i dag indirekte bidrar til verdiskaping som fôr og mat til andre arter, også forvaltes bærekraftig.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VEGTRAFIKK</topic>
-      <topic>JERNBANER</topic>
-      <topic>HAVNER</topic>
-    </topics>
+    <categories>
+      <category>VEGTRAFIKK</category>
+      <category>JERNBANER</category>
+      <category>HAVNER</category>
+    </categories>
     <source>PP:30</source>
     <body>Gjennomføre et løft for transport og kommunikasjon gjennom å øke satsingen på vei, jernbane og havner og farleder.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VEGTRAFIKK</topic>
-      <topic>JERNBANER</topic>
-    </topics>
+    <categories>
+      <category>VEGTRAFIKK</category>
+      <category>JERNBANER</category>
+    </categories>
     <source>PP:30</source>
     <body>Prioritere vedlikehold og trafikksikkerhet vesentlig høyere innenfor bevilgningene til vei og bane.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VEGTRAFIKK</topic>
-      <topic>FORURENSNING</topic>
-    </topics>
+    <categories>
+      <category>VEGTRAFIKK</category>
+      <category>FORURENSNING</category>
+    </categories>
     <source>PP:30</source>
     <body>Fortsette å legge om bilavgifter slik at det lønner seg å ha en bil som forurenser lite.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VEGTRAFIKK</topic>
-    </topics>
+    <categories>
+      <category>VEGTRAFIKK</category>
+    </categories>
     <source>PP:30</source>
     <body>Satse på sammenhengende sykkelveinett i byområder.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VEGTRAFIKK</topic>
-      <topic>SAMFERDSEL</topic>
-    </topics>
+    <categories>
+      <category>VEGTRAFIKK</category>
+      <category>SAMFERDSEL</category>
+    </categories>
     <source>PP:30</source>
     <body>Støtte bypakker med tiltak for å redusere biltrafikken og øke kollektivsatsing.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>JERNBANER</topic>
-    </topics>
+    <categories>
+      <category>JERNBANER</category>
+    </categories>
     <source>PP:30</source>
     <body>Satse spesielt i det såkalte Intercity-triangelet for å få en rask økning i kapasiteten til godstransport med jernbane.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>JERNBANER</topic>
-    </topics>
+    <categories>
+      <category>JERNBANER</category>
+    </categories>
     <source>PP:30</source>
     <body>Prioritere kraftig opprustning og forbedring av dagens jernbanenett, noe som vil redusere reisetiden og øke avgangsfrekvensen for jernbane.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMFERDSEL</topic>
-    </topics>
+    <categories>
+      <category>SAMFERDSEL</category>
+    </categories>
     <source>PP:30</source>
     <body>Øke innsatsen på kollektivtransport gjennom økt togtilbud og en vesentlig økning av belønningsordningen til kollektivtrafikk.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>JERNBANER</topic>
-    </topics>
+    <categories>
+      <category>JERNBANER</category>
+    </categories>
     <source>PP:30</source>
     <body>Vurdere hvordan mulige konsepter for høyhastighetsbaner kan tilpasses norske forhold.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMFERDSEL</topic>
-    </topics>
+    <categories>
+      <category>SAMFERDSEL</category>
+    </categories>
     <source>PP:30</source>
     <body>Utvikle ungdomsrabatter i kollektivtransporten slik at ungdom, elever, lærlinger og studenter får rett til 50 prosent rabatt.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMFERDSEL</topic>
-    </topics>
+    <categories>
+      <category>SAMFERDSEL</category>
+    </categories>
     <source>PP:30</source>
     <body>Støtte bybaneløsninger.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>JERNBANER</topic>
-      <topic>HAVNER</topic>
-    </topics>
+    <categories>
+      <category>JERNBANER</category>
+      <category>HAVNER</category>
+    </categories>
     <source>PP:30</source>
     <body>Tilrettelegge havner og godsterminaler for å få gods over på tog og bane.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SJØFART</topic>
-    </topics>
+    <categories>
+      <category>SJØFART</category>
+    </categories>
     <source>PP:30</source>
     <body>Øke innsatsen til merking og utbedring av farledene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SIKKERHET TIL SJØS</topic>
-    </topics>
+    <categories>
+      <category>SIKKERHET TIL SJØS</category>
+    </categories>
     <source>PP:30</source>
     <body>Styrke oljevernberedskapen og slepebåtkapasiteten.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FERGER</topic>
-    </topics>
+    <categories>
+      <category>FERGER</category>
+    </categories>
     <source>PP:30</source>
     <body>Arbeide for fornyelse av fergeflåten.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMFERDSEL</topic>
-      <topic>DISTRIKTSPOLITIKK</topic>
-    </topics>
+    <categories>
+      <category>SAMFERDSEL</category>
+      <category>DISTRIKTSPOLITIKK</category>
+    </categories>
     <source>PP:30</source>
     <body>Se syketransport og drosjetilbud og evt. andre transporttilbud i sammenheng for å sikre et godt tilbud.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>POST</topic>
-    </topics>
+    <categories>
+      <category>POST</category>
+    </categories>
     <source>PP:31</source>
     <body>Opprettholde likeverdige tilbud av posttjenester til lik pris over hele landet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>KOMMUNIKASJON</topic>
-      <topic>STATSEIENDOMMER</topic>
-    </topics>
+    <categories>
+      <category>KOMMUNIKASJON</category>
+      <category>STATSEIENDOMMER</category>
+    </categories>
     <source>PP:31</source>
     <body>Beholde NSB, Posten og Avinor i statlig eie og si nei til salg av Telenor.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SAMFERDSEL</topic>
-      <topic>MILJØVERN</topic>
-    </topics>
+    <categories>
+      <category>SAMFERDSEL</category>
+      <category>MILJØVERN</category>
+    </categories>
     <source>PP:31</source>
     <body>Arbeide for å bruke biogass i kollektivtrafikken.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VEGTRAFIKK</topic>
-      <topic>JERNBANER</topic>
-    </topics>
+    <categories>
+      <category>VEGTRAFIKK</category>
+      <category>JERNBANER</category>
+    </categories>
     <source>PP:31</source>
     <body>For å sikre rasjonell framdrift av større samferdselsprosjekter vil Arbeiderpartiet gå inn for prosjektfinansiering av vei- og jernbanestrekninger.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>AVGIFTER</topic>
-      <topic>DISTRIKTSPOLITIKK</topic>
-    </topics>
+    <categories>
+      <category>AVGIFTER</category>
+      <category>DISTRIKTSPOLITIKK</category>
+    </categories>
     <source>PP:31</source>
     <body>Beholde differensiert arbeidsgiveravgift.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LOKALFORVALTNING</topic>
-    </topics>
+    <categories>
+      <category>LOKALFORVALTNING</category>
+    </categories>
     <source>PP:31</source>
     <body>Følge opp satsingsområdene i Groruddalen og i Oslo Sør, og ha satsinger i andre byområder med tilsvarende utfordringer.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>STATSBEDRIFTER</topic>
-      <topic>DISTRIKTSPOLITIKK</topic>
-    </topics>
+    <categories>
+      <category>STATSBEDRIFTER</category>
+      <category>DISTRIKTSPOLITIKK</category>
+    </categories>
     <source>PP:31</source>
     <body>At ny statslig virksomhet skal lokaliseres ut fra regionale og distriktspolitiske hensyn. Vi vil ikke foreta omfattende utflytting av eksisterende statlige virksomheter.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>LOKALFORVALTNING</topic>
-    </topics>
+    <categories>
+      <category>LOKALFORVALTNING</category>
+    </categories>
     <source>PP:31</source>
     <body>Bidra til omstilling i lokalsamfunn med særskilte utfordringer.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FYLKESKOMMUNENES ØKONOMI</topic>
-    </topics>
+    <categories>
+      <category>FYLKESKOMMUNENES ØKONOMI</category>
+    </categories>
     <source>PP:31</source>
     <body>At alle fylker sikres tilstrekkelig med midler til å skjøtte sitt ansvar for regional utvikling. Vi vil utvikle virkemidler for å sikre at også fylker med flere eller alle kommuner det distriktspolitiske virkeområdet skal ha grunnlag for å drive regionalt utviklingsarbeid i hele fylket.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>FORSKNING</topic>
-      <topic>MILJØVERN</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+      <category>MILJØVERN</category>
+    </categories>
     <source>PP:33</source>
     <body>Etablere et storstilt og langsiktig forskningsprogram for fornybar energi, herunder offshore vindkraft.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ENERGI</topic>
-    </topics>
+    <categories>
+      <category>ENERGI</category>
+    </categories>
     <source>PP:34</source>
     <body>Ha en betydelig økning av bevilgningene til vindkraft og andre fornybare energikilder. Disse skal ha rammebetingelser som er langsiktige og forutsigbare.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ENERGI</topic>
-    </topics>
+    <categories>
+      <category>ENERGI</category>
+    </categories>
     <source>PP:34</source>
     <body>Styrke innsatsen for å øke bruken av bioenergi</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ELEKTRISITET</topic>
-    </topics>
+    <categories>
+      <category>ELEKTRISITET</category>
+    </categories>
     <source>PP:34</source>
     <body>Bidra til flere fjernvarmeanlegg og biokraftanlegg gjennom støtteordninger og effektiv konsesjonsbehandling.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ELEKTRISITET</topic>
-    </topics>
+    <categories>
+      <category>ELEKTRISITET</category>
+    </categories>
     <source>PP:34</source>
     <body>Arbeide for et grønt sertifikatmarked som omfatter Sverige og på sikt også de øvrige nordiske og europeiske landene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ENERGI</topic>
-    </topics>
+    <categories>
+      <category>ENERGI</category>
+    </categories>
     <source>PP:34</source>
     <body>Styrke kapasiteten i NVE.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>VASSDRAGSREGULERING</topic>
-    </topics>
+    <categories>
+      <category>VASSDRAGSREGULERING</category>
+    </categories>
     <source>PP:34</source>
     <body>Legge til rette for opprustning av eksisterende vannkraftverk.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ELEKTRISITET</topic>
-    </topics>
+    <categories>
+      <category>ELEKTRISITET</category>
+    </categories>
     <source>PP:34</source>
     <body>Vurdere forenklinger i regelverket for konsesjonsbehandling.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ENERGI</topic>
-      <topic>STATSBEDRIFTER</topic>
-    </topics>
+    <categories>
+      <category>ENERGI</category>
+      <category>STATSBEDRIFTER</category>
+    </categories>
     <source>PP:34</source>
     <body>Bidra til å utvikle de regionale kraftselskapene gjennom et langsiktig offentlig og regionalt eierskap.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>ELEKTRISITET</topic>
-    </topics>
+    <categories>
+      <category>ELEKTRISITET</category>
+    </categories>
     <source>PP:34</source>
     <body>Utarbeide en nasjonal strategi for energieffektivisering.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>OLJEUTVINNING</topic>
-    </topics>
+    <categories>
+      <category>OLJEUTVINNING</category>
+    </categories>
     <source>PP:34</source>
     <body>Ha åpenhet i forvaltningen av norsk petroleumsvirksomhet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>OLJEOMSETNING</topic>
-    </topics>
+    <categories>
+      <category>OLJEOMSETNING</category>
+    </categories>
     <source>PP:34</source>
     <body>Legge til rette for at en større andel av gass fra norsk sokkel kan benyttes til innenlandsk industriell verdiskaping ved blant annet å bidra til utbygging av infrastruktur for gasstransport.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>ELEKTRISITET</topic>
-    </topics>
+    <categories>
+      <category>ELEKTRISITET</category>
+    </categories>
     <source>PP:34</source>
     <body>At de gitte konsesjoner for gasskraft skal stå ved lag. Nye konsesesjoner skal basere seg på CO2-fjerning.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-      <topic>FORURENSNING</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+      <category>FORURENSNING</category>
+    </categories>
     <source>PP:34</source>
     <body>Utvikle Mongstad til et permanent internasjonalt forskingssenter for fangst og lagring av C02.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>OLJEUTVINNING</topic>
-    </topics>
+    <categories>
+      <category>OLJEUTVINNING</category>
+    </categories>
     <source>PP:34</source>
     <body>Gi petroleumsindustrien tilgang til interessante leteområder for olje og gass.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FISKERIER</topic>
-      <topic>OLJEUTVINNING</topic>
-    </topics>
+    <categories>
+      <category>FISKERIER</category>
+      <category>OLJEUTVINNING</category>
+    </categories>
     <source>PP:34</source>
     <body>Bidra til god sameksistens mellom petroleumsvirksomhet og fiskeriinteresser.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SJØFART</topic>
-      <topic>OLJE</topic>
-    </topics>
+    <categories>
+      <category>SJØFART</category>
+      <category>OLJE</category>
+    </categories>
     <source>PP:34</source>
     <body>Bidra til økt bruk av naturgass som drivstoff på skip.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>MILJØVERN</topic>
-    </topics>
+    <categories>
+      <category>MILJØVERN</category>
+    </categories>
     <source>PP:34</source>
     <body>Nordland VI og VII og Troms II er i dag ikke åpent for petroleumsvirksomhet. Arbeiderpartiet vil ta stilling til leteboring i disse områdene ved behandling av forvaltningsplanen i 2010. Vi vil basere beslutningen på føre-var-prinsippet og på ny kunnskap, og hvorvidt utvinning kan skje på en forsvarlig måte for miljø og fiskeriressurser, og med lokale ringvirkninger. </body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-      <topic>OLJEUTVINNING</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+      <category>OLJEUTVINNING</category>
+    </categories>
     <source>PP:34</source>
     <body>Øke forskning på utslippsberedskap innenfor petroleumsvirksomhet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>INTERNASJONALT SAMARBEID</topic>
-      <topic>MILJØVERN</topic>
-    </topics>
+    <categories>
+      <category>INTERNASJONALT SAMARBEID</category>
+      <category>MILJØVERN</category>
+    </categories>
     <source>PP:35</source>
     <body>Oppfylle våre forpliktelser i internasjonale miljøavtaler.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NATURVERN</topic>
-    </topics>
+    <categories>
+      <category>NATURVERN</category>
+    </categories>
     <source>PP:35</source>
     <body>Stanse tapet av biologisk mangfold og øke barskogvernet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>NATURVERN</topic>
-    </topics>
+    <categories>
+      <category>NATURVERN</category>
+    </categories>
     <source>PP:35</source>
     <body>Fullføre vernepelanen for nasjonalparker.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NATURVERN</topic>
-    </topics>
+    <categories>
+      <category>NATURVERN</category>
+    </categories>
     <source>PP:35</source>
     <body>Ha levedyktige rovdyrstammer i Norge, og utøve en aktiv og målrettet rovdyrforvaltning slik at konfliktnivået blir redusert. Vi vil ha gode erstatningsordnigner.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NATURVERN</topic>
-    </topics>
+    <categories>
+      <category>NATURVERN</category>
+    </categories>
     <source>PP:35</source>
     <body>Trappe opp kalking av vassdrag.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>NATURVERN</topic>
-    </topics>
+    <categories>
+      <category>NATURVERN</category>
+    </categories>
     <source>PP:35</source>
     <body>Etablere en nasjonal hovedregel om forbud mot bygging av hytter og fritidsboliger på snaufjellet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>NATURVERN</topic>
-      <topic>DISTRIKTSPOLITIKK</topic>
-    </topics>
+    <categories>
+      <category>NATURVERN</category>
+      <category>DISTRIKTSPOLITIKK</category>
+    </categories>
     <source>PP:35</source>
     <body>Øke kunnskapen om konsekvensene av vern og sikre lokal medvirkning i vernesaker. Det er viktig at det legges til rette for verdiskaping i tilknytning til verneområdene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FAMILIE</topic>
-    </topics>
+    <categories>
+      <category>FAMILIE</category>
+    </categories>
     <source>PP:37</source>
     <body>Er imot konstantstøtten og vil gradvis avvikle denne når full barnehagedekning er oppnådd og alternative ordninger etablert.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>FAMILIE</topic>
-    </topics>
+    <categories>
+      <category>FAMILIE</category>
+    </categories>
     <source>PP:37</source>
     <body>Utvide foreldrepermisjonen til 48 uker med 100 prosent lønn, og at 14 av disse ukene skal forbeholdes far.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FAMILIE</topic>
-    </topics>
+    <categories>
+      <category>FAMILIE</category>
+    </categories>
     <source>PP:37</source>
     <body>Styrke fars selvstendige permisjonsrettigheter. Hver av foreldrene skal gis foreldrepenger på basis av egen opptjening.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>FAMILIE</topic>
-    </topics>
+    <categories>
+      <category>FAMILIE</category>
+    </categories>
     <source>PP:37</source>
     <body>Utrede hvordan ordningen med den to uker lange omsorgspermisjonen for far ved fødsel eller omsorgsovertakelse kan gjøres bedre.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FAMILIE</topic>
-    </topics>
+    <categories>
+      <category>FAMILIE</category>
+    </categories>
     <source>PP:37</source>
     <body>Innføre tiltak mot samværssabotasje og manglende betaling av bidrag.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>FAMILIE</topic>
-    </topics>
+    <categories>
+      <category>FAMILIE</category>
+    </categories>
     <source>PP:37</source>
     <body>At adopsjonsstøtten skal knyttes til folketrygden og settes til 1 G.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FAMILIE</topic>
-    </topics>
+    <categories>
+      <category>FAMILIE</category>
+    </categories>
     <source>PP:37</source>
     <body>Arbeide for å åpne for adopsjon fra flere land.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARNEVERN</topic>
-    </topics>
+    <categories>
+      <category>BARNEVERN</category>
+    </categories>
     <source>PP:37</source>
     <body>Ha en opptrappingsplan for styrking av barnevernet i kommunene gjennom kompetanseheving og å øke antall ansatte.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARNEVERN</topic>
-      <topic>INNVANDRERE</topic>
-    </topics>
+    <categories>
+      <category>BARNEVERN</category>
+      <category>INNVANDRERE</category>
+    </categories>
     <source>PP:38</source>
     <body>Målrette atferdsprogrammer brukt i barnevernet, slik at de bedre kan brukes i familier med innvandrerbakgrunn.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARN</topic>
-    </topics>
+    <categories>
+      <category>BARN</category>
+    </categories>
     <source>PP:38</source>
     <body>Bedre oversikten over antall norske barn som til enhver tid oppholder seg i utlandet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARN</topic>
-    </topics>
+    <categories>
+      <category>BARN</category>
+    </categories>
     <source>PP:38</source>
     <body>Følge opp barn som har mangler i norskkunnskaper ved 4-årskontroll, samt deres foreldre.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARN</topic>
-      <topic>INNVANDRERE</topic>
-    </topics>
+    <categories>
+      <category>BARN</category>
+      <category>INNVANDRERE</category>
+    </categories>
     <source>PP:38</source>
     <body>Gi tilbud om sommerskole, inkludert fritidsaktiviteter, for barn i områder med mange minoritetsspråklige familier.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARN</topic>
-      <topic>FUNKSJONSHEMMEDE</topic>
-    </topics>
+    <categories>
+      <category>BARN</category>
+      <category>FUNKSJONSHEMMEDE</category>
+    </categories>
     <source>PP:38</source>
     <body>Gi tilskudd til nødvendige ombygginger av bolig med hensyn til barn med nedsatt funksjonsevne.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARN</topic>
-      <topic>TRYGDER</topic>
-    </topics>
+    <categories>
+      <category>BARN</category>
+      <category>TRYGDER</category>
+    </categories>
     <source>PP:38</source>
     <body>At barn i familier som lever på sosialstønad skal ha selvstendig rett til aktivitetsutøvelse.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARN</topic>
-      <topic>SOSIALVESEN</topic>
-    </topics>
+    <categories>
+      <category>BARN</category>
+      <category>SOSIALVESEN</category>
+    </categories>
     <source>PP:38</source>
     <body>At avlastningstilbud for familier med barn med spesielt krevende behov må bygges ut.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARN</topic>
-    </topics>
+    <categories>
+      <category>BARN</category>
+    </categories>
     <source>PP:38</source>
     <body>Gi domstolen en mulighet for å idømme delt bosted dersom det er barnets beste.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SYKEHUS</topic>
-    </topics>
+    <categories>
+      <category>SYKEHUS</category>
+    </categories>
     <source>PP:39</source>
     <body>Sikre et sykehustilbud med nærhet til akuttfunksjoner og fødetilbud.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEPERSONELL</topic>
-    </topics>
+    <categories>
+      <category>HELSEPERSONELL</category>
+    </categories>
     <source>PP:39</source>
     <body>Samle høyspesialisert medisin for å sikre sterke fagmiljøer.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:39</source>
     <body>Gjennomføre en samhandlingsreform i helsevesenet, hvor de økonomiske, juridiske og organisatoriske ordningene tilpasses slik at pasienten opplever et helsetilbud som henger sammen, og ressursene utnyttes best mulig.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SYKEHUS</topic>
-    </topics>
+    <categories>
+      <category>SYKEHUS</category>
+    </categories>
     <source>PP:39</source>
     <body>At sykehusene i det vesentlige skal være eid og drevet av det offentlige.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-      <topic>INNVANDRERE</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+      <category>INNVANDRERE</category>
+    </categories>
     <source>PP:39</source>
     <body>Arbeide for at minoritetsbefolkningen får likeverdige helsetjenester ved å styrke tolketjenesten og øke kunnskapen i helsevesenet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:39</source>
     <body>Holde egenandeler i helsevesenet på et lavt nivå.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEINSTITUSJONER</topic>
-      <topic>DISTRIKTSPOLITIKK</topic>
-    </topics>
+    <categories>
+      <category>HELSEINSTITUSJONER</category>
+      <category>DISTRIKTSPOLITIKK</category>
+    </categories>
     <source>PP:39</source>
     <body>Opprette flere distrikts- og lokalmedisinske sentra.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:39</source>
     <body>Forbedre den elektroniske informasjonsflyten i alle deler av helsevesenet, og innføre kvalitetsregistre.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:39</source>
     <body>Sikre god politisk styring gjennom ny nasjonal helseplan som skal være et strategisk styringsdokument for helse- og omsorgstjenesten. Planen skal behandles av Stortinget.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-      <topic>NÆRINGSUTVIKLING</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+      <category>NÆRINGSUTVIKLING</category>
+    </categories>
     <source>PP:39</source>
     <body>Forlenge satsingen på behovsdrevet innovasjon og næringsutvikling i helsesektoren, og utvide denne til også å omfatte forskningsbasert innovasjon.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:39</source>
     <body>Forbedre det kommunale tilbudet for psykisk syke, og gjennomgå tilbudet til de sykeste av disse.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:39</source>
     <body>Bedre tilgjengeligheten til akutte tjenester for psykisk syke, og gi et oppfølgingstilbud til pårørende</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:39</source>
     <body>Ha tilrettelagt bo- og aktivitetstilbud for psykisk syke.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>BARN</topic>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>BARN</category>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:39</source>
     <body>At barn med alvorlig syke foreldre må følges opp på en god måte i sykehusene og kommunene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEINSTITUSJONER</topic>
-    </topics>
+    <categories>
+      <category>HELSEINSTITUSJONER</category>
+    </categories>
     <source>PP:39</source>
     <body>Opprette lindrende enheter for pasienter med inkurabel kreftsykdom og andre alvorlige kroniske diagnoser.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SYKDOMMER</topic>
-    </topics>
+    <categories>
+      <category>SYKDOMMER</category>
+    </categories>
     <source>PP:39</source>
     <body>Støtte forskning på ME / kronisk utmattelssyndrom, og la ME-pasienter få dekket utgifter til medisinsk behandling i utlandet fram til tilfredsstillende medisinsk  behandling er etablert i Norge.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SVANGERSKAP</topic>
-    </topics>
+    <categories>
+      <category>SVANGERSKAP</category>
+    </categories>
     <source>PP:39</source>
     <body>Øke antallet forsøk ved assistert befruktning.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SVANGERSKAP</topic>
-    </topics>
+    <categories>
+      <category>SVANGERSKAP</category>
+    </categories>
     <source>PP:39</source>
     <body>At gravide skal ha tilbud om tidlig ultralyd.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:40</source>
     <body>Styrke rehabiliterings- og habiliteringstjenestene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FOLKEHELSE</topic>
-    </topics>
+    <categories>
+      <category>FOLKEHELSE</category>
+    </categories>
     <source>PP:40</source>
     <body>At en større del av helsekronene brukes på helsefremmende og forebyggende helsearbeid i kommune.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:40</source>
     <body>At skolehelsetjenesten må bli et tilgjengelig tilbud for alle elever fra barneskoletrinnet opp til videregående skole. Nasjonale standarder må settes i forhold til utbredelse og innhold. Skolene må ha tilgang på psykisk helsepersonell.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ARBEIDSLIV</topic>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>ARBEIDSLIV</category>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:40</source>
     <body>Styrke arbeidsmedisinske avdelinger, og øke kapasiteten slik at det kan bli bedre samordning for forebygging og behandling av yrkesrelaterte sykdommer og helseplager.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEINSTITUSJONER</topic>
-    </topics>
+    <categories>
+      <category>HELSEINSTITUSJONER</category>
+    </categories>
     <source>PP:40</source>
     <body>Styrke bedriftshelsetjenesten.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FOLKEHELSE</topic>
-      <topic>ARBEIDSMILJØ</topic>
-    </topics>
+    <categories>
+      <category>FOLKEHELSE</category>
+      <category>ARBEIDSMILJØ</category>
+    </categories>
     <source>PP:40</source>
     <body>Samarbeide med arbeidslivets parter slik at den enkelte arbeidsplass kan gi tilbud om fysisk aktivitet, tobakksluttkurs og utvikler godt arbeidsmiljø.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FOLKEHELSE</topic>
-      <topic>INNVANDRERE</topic>
-    </topics>
+    <categories>
+      <category>FOLKEHELSE</category>
+      <category>INNVANDRERE</category>
+    </categories>
     <source>PP:40</source>
     <body>Ha konkrete sykdomsforebyggende og kunnskapsøkende tiltak rettet mot minoritetsmiljøer som er særlig utsatt for enkelte livsstilssykdommer.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FOLKEHELSE</topic>
-      <topic>LOKALFORVALTNING</topic>
-    </topics>
+    <categories>
+      <category>FOLKEHELSE</category>
+      <category>LOKALFORVALTNING</category>
+    </categories>
     <source>PP:40</source>
     <body>At kommuner og fylkeskommuner har en sentral rolle i arbeidet med folkehelse og mot sosiale helseforskjeller.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:41</source>
     <body>At det offentlige gradvis tar et større ansvar på tannhelsefeltet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-      <topic>ELDREOMSORG</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+      <category>ELDREOMSORG</category>
+    </categories>
     <source>PP:41</source>
     <body>I perioden 2009-2013 vil vi etablere gratis årlig tannhelsekontroll for eldre over 75 år.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-      <topic>HELSEINSTITUSJONER</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+      <category>HELSEINSTITUSJONER</category>
+    </categories>
     <source>PP:41</source>
     <body>I perioden 2009-2013 vil vi forbedre tannhelsetilbudet for dem som bor i institusjon og utvide det til også å gjelde heldøgns omsorgstilbud utenfor institusjon.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:41</source>
     <body>I perioden 2009-2013 vil vi utvide tannhelsetilbudet for psykisk syke med en alvorlig diagnose.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-      <topic>SKOLER</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+      <category>SKOLER</category>
+    </categories>
     <source>PP:41</source>
     <body>I perioden 2009-2013 vil vi ta bor egenandelen for 19- og 20-åringer hos skoletannlege.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-      <topic>SOSIALVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+      <category>SOSIALVESEN</category>
+    </categories>
     <source>PP:41</source>
     <body>I perioden 2009-2013 vil vi at de som deltar i NAVs kvalifiseringsprogram skal ha gratis tannbehandling på linje med dem som har sosialhjelp som hovedinntektskilde eller omfattes av kommunale rustiltak.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:41</source>
     <body>I perioden 2009-2013 vil vi at det settes tak for hvor mye den enkelte selv skal dekke av utgifter til nødvendig tannbehandling, slik at alle får råd til å ivareta sin tannhelse på en god måte.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:41</source>
     <body>Etablere flere oppsøkende tilbud til dem som ikke ellers oppsøker tannhelsetjenester.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-      <topic>HØYERE UTDANNING</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+      <category>HØYERE UTDANNING</category>
+    </categories>
     <source>PP:41</source>
     <body>Øke utdanningskapasiteten for tannpleiere.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:41</source>
     <body>Legge til rette for desentralisert spesialistutdanning og regionale kompetansesentra innen tannhelse.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:41</source>
     <body>Arbeide for at det skal være tannlegevakt i alle fylker.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>RUSMIDLER</topic>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>RUSMIDLER</category>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:42</source>
     <body>Trappe opp tilbudet og kapasiteten innenfor alle deler av rusomsorgen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>RUSMIDLER</topic>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>RUSMIDLER</category>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:42</source>
     <body>At ventetiden for behandling av rusavhengighet skal reduseres, og at behandlingstilbudene er differensierte og individuelt tilpasset.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>RUSMIDLER</topic>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>RUSMIDLER</category>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:42</source>
     <body>At de som ber om hjelp for sin rusavhengighet skal få oppfølging fra første dag.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>RUSMIDLER</topic>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>RUSMIDLER</category>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:42</source>
     <body>Etablere rusakutt i Oslo, og vurdere etablering også i de andre store byene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FOLKEHELSE</topic>
-      <topic>RUSMIDLER</topic>
-    </topics>
+    <categories>
+      <category>FOLKEHELSE</category>
+      <category>RUSMIDLER</category>
+    </categories>
     <source>PP:42</source>
     <body>Øke den forebyggende innsatsen på skoler og arbeidsplasser for å forhindre rusmisbruk og avhengighet.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>RUSMIDLER</topic>
-    </topics>
+    <categories>
+      <category>RUSMIDLER</category>
+    </categories>
     <source>PP:42</source>
     <body>Overvåke situasjonen med overdose- og rusrelaterte dødsfall og skaffe mer kunnskap om årsak til slike dødsfall med sikte på å forbedre overlevelsesprognosen for rusavhengige.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>RUSMIDLER</topic>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>RUSMIDLER</category>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:42</source>
     <body>At rusavhengige skal få innfridd sine pasientrettigheter og sikres rett til behandling på riktig nivå og til rett tid ut fra en individuell vurdering.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>RUSMIDLER</topic>
-      <topic>KOMMUNER</topic>
-    </topics>
+    <categories>
+      <category>RUSMIDLER</category>
+      <category>KOMMUNER</category>
+    </categories>
     <source>PP:42</source>
     <body>At alle kommuner utarbeider rusmiddelpolitiske handlingsplaner.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>RUSMIDLER</topic>
-    </topics>
+    <categories>
+      <category>RUSMIDLER</category>
+    </categories>
     <source>PP:42</source>
     <body>Ha sterkere statlig tilsyn og kontroll med skjenkepolitikken, samt vurdere innskrenkning i åpningstidenes maksimalgrense for utsalgs- og skjenkesteder.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>SKOLER</topic>
-      <topic>RUSMIDLER</topic>
-    </topics>
+    <categories>
+      <category>SKOLER</category>
+      <category>RUSMIDLER</category>
+    </categories>
     <source>PP:42</source>
     <body>Sikre et alkoholfritt miljø for barn og unge ved skoler og fritidsanlegg.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FORSKNING</topic>
-      <topic>RUSMIDLER</topic>
-    </topics>
+    <categories>
+      <category>FORSKNING</category>
+      <category>RUSMIDLER</category>
+    </categories>
     <source>PP:42</source>
     <body>Styrke rusmiddelforskningen.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FENGSLER</topic>
-      <topic>RUSMIDLER</topic>
-    </topics>
+    <categories>
+      <category>FENGSLER</category>
+      <category>RUSMIDLER</category>
+    </categories>
     <source>PP:42</source>
     <body>Fortsette å bygge ut rusbehandlingstiltak i fengslene, og jobbe for at alle landets fengsler skal bli rusfrie.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:42</source>
     <body>At personer med både rusavhengighet og psykiske problemer får et bedre og mer samordnet tilbud.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FAMILIE</topic>
-      <topic>RUSMIDLER</topic>
-    </topics>
+    <categories>
+      <category>FAMILIE</category>
+      <category>RUSMIDLER</category>
+    </categories>
     <source>PP:42</source>
     <body>At barn og unge som har foreldre med rusproblemer fanges bedre opp ved helsestasjoner, barnehager og skoler. Disse må gis tilstrekkelig kunnskap til å følge opp i forhold til barna og deres familier.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>FAMILIE</topic>
-      <topic>RUSMIDLER</topic>
-    </topics>
+    <categories>
+      <category>FAMILIE</category>
+      <category>RUSMIDLER</category>
+    </categories>
     <source>PP:42</source>
     <body>Følge opp pårørende til rusavhengige bedre.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HØYERE UTDANNING</topic>
-      <topic>RUSMIDLER</topic>
-    </topics>
+    <categories>
+      <category>HØYERE UTDANNING</category>
+      <category>RUSMIDLER</category>
+    </categories>
     <source>PP:42</source>
     <body>At utdanning om rus styrkes i pleie-, omsorgs- og helserelaterte utdanninger.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>HELSEVESEN</topic>
-      <topic>RUSMIDLER</topic>
-    </topics>
+    <categories>
+      <category>HELSEVESEN</category>
+      <category>RUSMIDLER</category>
+    </categories>
     <source>PP:42</source>
     <body>I større grad ta i bruk muligheten til tvangsbehandling, spesielt mot unge rusmisbrukere.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>ELDREOMSORG</topic>
-    </topics>
+    <categories>
+      <category>ELDREOMSORG</category>
+    </categories>
     <source>PP:43</source>
     <body>Bygge eller gi tilsagn om bygging av minst 12.000 sykehjemsplasser eller heldøgns omsorgsplasser innen 2015.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ELDREOMSORG</topic>
-    </topics>
+    <categories>
+      <category>ELDREOMSORG</category>
+    </categories>
     <source>PP:43</source>
     <body>Sørge for en god og faglig sterk legetjeneste i omsorgsboliger og sykehjem.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ELDREOMSORG</topic>
-    </topics>
+    <categories>
+      <category>ELDREOMSORG</category>
+    </categories>
     <source>PP:43</source>
     <body>Øke valgfriheten i pleie- og omsorgstilbudene. De som mottar hjemmetjenester skal ha faste hjemmehjelpere, innflytelse på hvem som kommer hjem til seg og medbestemmelse over hva som skal utføres.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>false</general>
-    <topics>
-      <topic>ELDREOMSORG</topic>
-    </topics>
+    <categories>
+      <category>ELDREOMSORG</category>
+    </categories>
     <source>PP:43</source>
     <body>Bedre tilbudet og lovfeste dagtilbud til demente.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>UTDANNING</topic>
-      <topic>SOSIALVESEN</topic>
-      <topic>HELSEVESEN</topic>
-    </topics>
+    <categories>
+      <category>UTDANNING</category>
+      <category>SOSIALVESEN</category>
+      <category>HELSEVESEN</category>
+    </categories>
     <source>PP:43</source>
     <body>Styrke etter- og videreutdanning av kommunalt ansatte i pleie og omsorg.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ELDREOMSORG</topic>
-    </topics>
+    <categories>
+      <category>ELDREOMSORG</category>
+    </categories>
     <source>PP:43</source>
     <body>At institusjoner for eldre skal ha lokaler og betjening som kan ivareta behovet for aktivisering.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ELDREOMSORG</topic>
-      <topic>FAMILIE</topic>
-    </topics>
+    <categories>
+      <category>ELDREOMSORG</category>
+      <category>FAMILIE</category>
+    </categories>
     <source>PP:43</source>
     <body>At det som ledd i tilbudet til eldre legges til rette for et nært samspill med pårørende og andre frivillige krefter.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ELDREOMSORG</topic>
-    </topics>
+    <categories>
+      <category>ELDREOMSORG</category>
+    </categories>
     <source>PP:43</source>
     <body>Etablere tilskuddsordninger for eldresentre, besøkstjenester og andre former for møteplasser.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ELDREOMSORG</topic>
-    </topics>
+    <categories>
+      <category>ELDREOMSORG</category>
+    </categories>
     <source>PP:43</source>
     <body>Trekke inn frivillige organisasjoner, biblioteker og eldresentra for å gi eldre muligheter til å lære bruk av IKT.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ELDREOMSORG</topic>
-    </topics>
+    <categories>
+      <category>ELDREOMSORG</category>
+    </categories>
     <source>PP:43</source>
     <body>Gjøre mer aktiv bruk av eldrerådene.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ELDREOMSORG</topic>
-    </topics>
+    <categories>
+      <category>ELDREOMSORG</category>
+    </categories>
     <source>PP:43</source>
     <body>Styrke satsingen på kultur for eldre.</body>
   </promise>
   <promise>
     <party>A</party>
     <general>true</general>
-    <topics>
-      <topic>ELDREOMSORG</topic>
-    </topics>
+    <categories>
+      <category>ELDREOMSORG</category>
+    </categories>
     <source>PP:43</source>
     <body>Utvikle tilbudene med senioruniversiteter slik at flere pensjonister får tilgang til ny kunnskap.</body>
   </promise>

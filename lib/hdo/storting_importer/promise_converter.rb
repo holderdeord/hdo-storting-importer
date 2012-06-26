@@ -11,7 +11,7 @@ module Hdo
         content = File.read(File.expand_path(exported_spreadsheet), encoding: "ISO-8859-1").encode("UTF-8")
         @table = CSV.parse(
           content,
-          headers: [:party, :body, :general, :topics, :source, :page],
+          headers: [:party, :body, :general, :categories, :source, :page],
           col_sep: ";",
           skip_blanks: true,
           return_headers: false
@@ -34,14 +34,14 @@ module Hdo
       end
 
       def add_promise(promises, data)
-        topic_names = data[:topics].split(",").map(&:upcase).map(&:strip)
+        category_names = data[:categories].split(",").map(&:upcase).map(&:strip)
 
         promises.promise do |promise|
           promise.party data[:party]
           promise.general data[:general].downcase.strip == "ja"
-          promise.topics do |topics|
-            topic_names.each do |name|
-              topics.topic name
+          promise.categories do |categories|
+            category_names.each do |name|
+              categories.category name
             end
           end
 

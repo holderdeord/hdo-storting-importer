@@ -19,7 +19,7 @@ module Hdo
         fetch "eksport/fylker/index.html"
       end
 
-      def topics
+      def categories
         fetch "eksport/emner/index.html"
       end
 

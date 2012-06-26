@@ -27,7 +27,7 @@ module Hdo
         fetch "eksport/fylker"
       end
 
-      def topics
+      def categories
         fetch "eksport/emner"
       end
 

@@ -21,7 +21,7 @@ module Hdo
         :parties,
         :committees,
         :districts,
-        :topics,
+        :categories,
         :issues,
       ].each { |name|
         it "converts #{name}" do

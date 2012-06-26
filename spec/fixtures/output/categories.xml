@@ -1,805 +1,805 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<topics>
-  <topic>
+<categories>
+  <category>
     <externalId>5</externalId>
     <name>ARBEIDSLIV</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>205</externalId>
         <name>ARBEIDSMILJØ</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>94</externalId>
         <name>ARBEIDSVILKÅR</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>95</externalId>
         <name>LØNN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>7</externalId>
         <name>SYSSELSETTING</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>173</externalId>
     <name>EFTA/EU</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>173</externalId>
         <name>EFTA/EU</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>170</externalId>
         <name>EUROPARÅDET</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>168</externalId>
         <name>FN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>169</externalId>
         <name>FN-STYRKER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>180</externalId>
         <name>FREDSARBEID</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>165</externalId>
         <name>GRENSESPØRSMÅL</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>200</externalId>
         <name>INTERNASJONAL RETT</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>22</externalId>
         <name>INTERNASJONALT SAMARBEID</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>167</externalId>
         <name>MENNESKERETTIGHETER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>177</externalId>
         <name>NATO</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>171</externalId>
         <name>NORDISK SAMARBEID</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>175</externalId>
         <name>POLAROMRÅDER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>176</externalId>
         <name>SVALBARD</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>166</externalId>
         <name>TRAKTATER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>174</externalId>
         <name>UTVIKLINGSHJELP</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>172</externalId>
         <name>ØKONOMISK SAMARBEID</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>4</externalId>
     <name>ENERGI</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>72</externalId>
         <name>ATOMKRAFT</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>71</externalId>
         <name>ELEKTRISITET</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>74</externalId>
         <name>OLJE</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>75</externalId>
         <name>OLJEOMSETNING</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>190</externalId>
         <name>OLJEUTVINNING</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>178</externalId>
         <name>STATOIL ASA</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>73</externalId>
         <name>VASSDRAGSREGULERING</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>40</externalId>
     <name>FAMILIE</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>41</externalId>
         <name>BARN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>42</externalId>
         <name>BARNEHAGER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>43</externalId>
         <name>BARNEVERN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>24</externalId>
         <name>LIKESTILLING</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>187</externalId>
     <name>FINANSER</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>192</externalId>
         <name>AKSJER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>80</externalId>
         <name>AVGIFTER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>87</externalId>
         <name>BANKER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>50</externalId>
         <name>FORSIKRING</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>81</externalId>
         <name>MERVERDIAVGIFT</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>88</externalId>
         <name>NORGES BANK</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>83</externalId>
         <name>PRISER OG KONKURRANSEFORHOLD</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>53</externalId>
         <name>SKATTEADMINISTRASJON</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>54</externalId>
         <name>SKATTEAVTALER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>57</externalId>
         <name>SKATTEFRADRAG</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>58</externalId>
         <name>SKATTER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>89</externalId>
         <name>STATSBANKER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>185</externalId>
         <name>STATSBUDSJETTET</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>86</externalId>
         <name>STATSLÅN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>191</externalId>
         <name>SÆRAVGIFTER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>82</externalId>
         <name>TOLL</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>8</externalId>
     <name>FISKERIER</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>9</externalId>
         <name>FANGST</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>91</externalId>
         <name>FISKEOMSETNING</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>92</externalId>
         <name>HAVBRUK</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>45</externalId>
     <name>FORSKNING</name>
-    <subtopics>
-    </subtopics>
-  </topic>
-  <topic>
+    <subcategories>
+    </subcategories>
+  </category>
+  <category>
     <externalId>59</externalId>
     <name>FORSVAR</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>93</externalId>
         <name>ATOMVÅPEN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>60</externalId>
         <name>FORSVARSMATERIELL</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>193</externalId>
         <name>MILITÆRT PERSONELL</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>61</externalId>
     <name>HELSEVESEN</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>188</externalId>
         <name>FOLKEHELSE</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>49</externalId>
         <name>FUNKSJONSHEMMEDE</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>62</externalId>
         <name>HELSEINSTITUSJONER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>64</externalId>
         <name>HELSEPERSONELL</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>65</externalId>
         <name>SVANGERSKAP</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>66</externalId>
         <name>SYKDOMMER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>63</externalId>
         <name>SYKEHUS</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>2</externalId>
     <name>KOMMUNIKASJON</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>111</externalId>
         <name>FERGER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>107</externalId>
         <name>JERNBANER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>109</externalId>
         <name>LUFTFART</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>3</externalId>
         <name>POST</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>106</externalId>
         <name>SAMFERDSEL</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>179</externalId>
         <name>TELEKOMMUNIKASJONER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>47</externalId>
         <name>VEGTRAFIKK</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>189</externalId>
         <name>VEGVESEN</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>6</externalId>
     <name>KULTUR</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>67</externalId>
         <name>BIBLIOTEK OG LITTERATUR</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>127</externalId>
         <name>IDRETT</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>70</externalId>
         <name>KRINGKASTING</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>121</externalId>
         <name>KULTURVERN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>68</externalId>
         <name>KUNST</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>142</externalId>
         <name>LOTTERI OG SPILL</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>122</externalId>
         <name>MASSEMEDIER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>126</externalId>
         <name>NORSK RIKSKRINGKASTING</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>124</externalId>
         <name>SPRÅK</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>125</externalId>
         <name>UNGDOMSARBEID</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>46</externalId>
     <name>LANDBRUK</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>129</externalId>
         <name>HUSDYR</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>128</externalId>
         <name>JORDBRUK</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>69</externalId>
         <name>LANDBRUKSPRODUKTER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>132</externalId>
         <name>REINDRIFT</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>196</externalId>
         <name>SKOGBRUK</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>133</externalId>
         <name>VETERINÆRVESEN</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>184</externalId>
     <name>LOKALFORVALTNING</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>38</externalId>
         <name>BOLIGSAKER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>136</externalId>
         <name>BYGNINGSVESEN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>220</externalId>
         <name>DISTRIKTSPOLITIKK</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>37</externalId>
         <name>FYLKER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>134</externalId>
         <name>FYLKESKOMMUNENES ØKONOMI</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>138</externalId>
         <name>HUSBANKEN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>18</externalId>
         <name>INNVANDRERE</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>135</externalId>
         <name>KOMMUNENES ØKONOMI</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>52</externalId>
         <name>KOMMUNER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>39</externalId>
         <name>SAMER</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>139</externalId>
     <name>MILJØVERN</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>21</externalId>
         <name>FORURENSNING</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>140</externalId>
         <name>KARTVERK</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>131</externalId>
         <name>NATURSKADER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>23</externalId>
         <name>NATURVERN</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>113</externalId>
     <name>NÆRINGSLIV</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>115</externalId>
         <name>BERGVERK</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>98</externalId>
         <name>FORBRUKERSAKER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>20</externalId>
         <name>HANDEL</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>223</externalId>
         <name>INDUSTRI</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>114</externalId>
         <name>NÆRINGSUTVIKLING</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>112</externalId>
         <name>REISELIVSNÆRING</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>119</externalId>
         <name>STATSBEDRIFTER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>99</externalId>
         <name>UTENRIKSHANDEL</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>97</externalId>
         <name>VAREHANDEL</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>195</externalId>
         <name>VERFTSINDUSTRI</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>11</externalId>
     <name>RETTSVESEN</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>12</externalId>
         <name>DOMSTOLER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>19</externalId>
         <name>FENGSLER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>16</externalId>
         <name>KRIMINALOMSORG</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>17</externalId>
         <name>PERSONVERN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>141</externalId>
         <name>POLITI OG PÅTALEMYNDIGHET</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>15</externalId>
         <name>REDNINGSTJENESTE</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>181</externalId>
         <name>SIVIL BEREDSKAP</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>198</externalId>
         <name>SIVILE VERNEPLIKTIGE</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>13</externalId>
         <name>SIVILRETT</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>14</externalId>
         <name>STRAFFERETT</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>143</externalId>
     <name>SJØFART</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>147</externalId>
         <name>HAVNER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>146</externalId>
         <name>SIKKERHET TIL SJØS</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>145</externalId>
         <name>SJØFOLK</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>10</externalId>
     <name>SOSIALVESEN</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>148</externalId>
         <name>BARNETRYGD</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>48</externalId>
         <name>ELDREOMSORG</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>211</externalId>
         <name>RUSMIDLER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>186</externalId>
         <name>TRYGDER</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>151</externalId>
     <name>STATSFORFATNING</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>221</externalId>
         <name>GRUNNLOVEN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>182</externalId>
         <name>KONGEN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>154</externalId>
         <name>POLITISKE PARTIER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>25</externalId>
         <name>REGJERINGEN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>28</externalId>
         <name>RETTFERDSVEDERLAG</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>29</externalId>
         <name>RIKSREVISJONEN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>203</externalId>
         <name>STORTINGET</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>222</externalId>
         <name>STORTINGETS FORRETNINGSORDEN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>153</externalId>
         <name>STORTINGETS OMBUDSMANN FOR FORVALTNINGEN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>26</externalId>
         <name>STORTINGSREPRESENTANTER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>30</externalId>
         <name>VALG</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>155</externalId>
     <name>STATSFORVALTNING</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>51</externalId>
         <name>DEPARTEMENTER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>44</externalId>
         <name>STATENS PERSONALPOLITIKK</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>157</externalId>
         <name>STATSEIENDOMMER</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>105</externalId>
     <name>TROSSAMFUNN</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>1</externalId>
         <name>DEN NORSKE KIRKE</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>32</externalId>
     <name>UTDANNING</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>183</externalId>
         <name>GRUNNSKOLE</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>160</externalId>
         <name>HØGSKOLER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>159</externalId>
         <name>HØYERE UTDANNING</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>33</externalId>
         <name>PRIVATSKOLER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>31</externalId>
         <name>SKOLER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>34</externalId>
         <name>SPESIALUNDERVISNING</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>36</externalId>
         <name>STUDIEFINANSIERING</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>35</externalId>
         <name>UNIVERSITETER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>158</externalId>
         <name>VIDEREGÅENDE SKOLER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>212</externalId>
         <name>VOKSENOPPLÆRING</name>
-      </topic>
-    </subtopics>
-  </topic>
-  <topic>
+      </category>
+    </subcategories>
+  </category>
+  <category>
     <externalId>163</externalId>
     <name>UTENRIKSSAKER</name>
-    <subtopics>
-      <topic>
+    <subcategories>
+      <category>
         <externalId>173</externalId>
         <name>EFTA/EU</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>170</externalId>
         <name>EUROPARÅDET</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>168</externalId>
         <name>FN</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>169</externalId>
         <name>FN-STYRKER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>180</externalId>
         <name>FREDSARBEID</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>165</externalId>
         <name>GRENSESPØRSMÅL</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>200</externalId>
         <name>INTERNASJONAL RETT</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>22</externalId>
         <name>INTERNASJONALT SAMARBEID</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>167</externalId>
         <name>MENNESKERETTIGHETER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>177</externalId>
         <name>NATO</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>171</externalId>
         <name>NORDISK SAMARBEID</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>175</externalId>
         <name>POLAROMRÅDER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>176</externalId>
         <name>SVALBARD</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>166</externalId>
         <name>TRAKTATER</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>174</externalId>
         <name>UTVIKLINGSHJELP</name>
-      </topic>
-      <topic>
+      </category>
+      <category>
         <externalId>172</externalId>
         <name>ØKONOMISK SAMARBEID</name>
-      </topic>
-    </subtopics>
-  </topic>
-</topics>
+      </category>
+    </subcategories>
+  </category>
+</categories>

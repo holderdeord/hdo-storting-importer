@@ -103,8 +103,8 @@ module Hdo
         @representative_converter ||= RepresentativeConverter.new(data_source)
       end
 
-      def topic_converter
-        @topic_converter ||= TopicConverter.new(data_source)
+      def category_converter
+        @category_converter ||= CategoryConverter.new(data_source)
       end
 
       def vote_converter
@@ -118,7 +118,7 @@ module Hdo
         import_docs committee_converter.xml unless ignore.include?(:committees)
         import_docs district_converter.xml unless ignore.include?(:districts)
         import_docs representative_converter.xml unless ignore.include?(:representatives)
-        import_docs topic_converter.xml unless ignore.include?(:topics)
+        import_docs category_converter.xml unless ignore.include?(:categories)
         import_docs issue_converter.xml unless ignore.include?(:issues)
         import_docs vote_converter.xml unless ignore.include?(:votes)
 

@@ -1,25 +1,25 @@
 module Hdo
   module StortingImporter
-    class TopicConverter < Converter
+    class CategoryConverter < Converter
 
       def self.type_name
-        :topics
+        :categories
       end
 
-      def topics
+      def categories
         docs.map { |doc|
           doc.css("emne_liste > emne").map do |xt|
-            topic = build_topic(xt)
+            cat = build_category(xt)
 
             subnodes = xt.css("underemne_liste > emne")
-            topic[:subTopics] = subnodes.map { |st| build_topic(st) }
+            cat[:subCategories] = subnodes.map { |st| build_category(st) }
 
-            topic
+            cat
           end
         }.flatten
       end
 
-      def build_topic(node)
+      def build_category(node)
         {
           externalId: node.css("id").first.text,
           name: node.css("navn").first.text

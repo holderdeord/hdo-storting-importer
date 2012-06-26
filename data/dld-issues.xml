@@ -10,16 +10,16 @@
     <reference>Prop. 49 L (2010-2011), Innst. 275 L (2010-2011), Lovvedtak 46 (2010-2011)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Transport- og kommunikasjonskomiteen</committee>
-    <topics>
-      <topic>KOMMUNIKASJON</topic>
-      <topic>RETTSVESEN</topic>
-      <topic>DOMSTOLER</topic>
-      <topic>PERSONVERN</topic>
-      <topic>POLITI OG PÅTALEMYNDIGHET</topic>
-      <topic>UTENRIKSSAKER</topic>
-      <topic>EFTA/EU</topic>
-      <topic>TELEKOMMUNIKASJONER</topic>
-    </topics>
+    <categories>
+      <category>KOMMUNIKASJON</category>
+      <category>RETTSVESEN</category>
+      <category>DOMSTOLER</category>
+      <category>PERSONVERN</category>
+      <category>POLITI OG PÅTALEMYNDIGHET</category>
+      <category>UTENRIKSSAKER</category>
+      <category>EFTA/EU</category>
+      <category>TELEKOMMUNIKASJONER</category>
+    </categories>
   </issue>
   <issue>
     <externalId>48650</externalId>
@@ -31,14 +31,14 @@
     <reference>Prop. 50 S (2010-2011), Innst. 292 S (2010-2011)</reference>
     <documentGroup>proposisjon</documentGroup>
     <committee>Utenriks- og forsvarskomiteen</committee>
-    <topics>
-      <topic>KOMMUNIKASJON</topic>
-      <topic>RETTSVESEN</topic>
-      <topic>PERSONVERN</topic>
-      <topic>POLITI OG PÅTALEMYNDIGHET</topic>
-      <topic>UTENRIKSSAKER</topic>
-      <topic>EFTA/EU</topic>
-      <topic>TELEKOMMUNIKASJONER</topic>
-    </topics>
+    <categories>
+      <category>KOMMUNIKASJON</category>
+      <category>RETTSVESEN</category>
+      <category>PERSONVERN</category>
+      <category>POLITI OG PÅTALEMYNDIGHET</category>
+      <category>UTENRIKSSAKER</category>
+      <category>EFTA/EU</category>
+      <category>TELEKOMMUNIKASJONER</category>
+    </categories>
   </issue>
 </issues>
