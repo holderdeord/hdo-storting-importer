@@ -5,16 +5,20 @@ require 'builder'
 
 module Hdo
   module StortingImporter
-
     class PromiseConverter
+
       def initialize(exported_spreadsheet)
         content = File.read(File.expand_path(exported_spreadsheet), encoding: "ISO-8859-1").encode("UTF-8")
+
+        # cleanup
+        content.gsub!(/\bFrp\b/, "FrP")
+
         @table = CSV.parse(
           content,
           headers: [:party, :body, :general, :categories, :source, :page],
           col_sep: ";",
           skip_blanks: true,
-          return_headers: false
+          return_headers: false,
         )
       end
 
@@ -38,7 +42,7 @@ module Hdo
 
         promises.promise do |promise|
           promise.party data[:party]
-          promise.general data[:general].downcase.strip == "ja"
+          promise.general data[:general].to_s.downcase.strip == "ja"
           promise.categories do |categories|
             category_names.each do |name|
               categories.category name
