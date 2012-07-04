@@ -41,7 +41,7 @@ module Hdo
         category_names = data[:categories].split(",").map(&:upcase).map(&:strip)
 
         promises.promise do |promise|
-          promise.party data[:party]
+          promise.party data[:party].strip
           promise.general data[:general].to_s.downcase.strip == "ja"
           promise.categories do |categories|
             category_names.each do |name|
@@ -50,7 +50,7 @@ module Hdo
           end
 
           promise.source [data[:source].strip, data[:page].to_s.strip].join(":")
-          promise.body data[:body]
+          promise.body data[:body].strip
         end
       rescue
         STDERR.puts data.inspect
