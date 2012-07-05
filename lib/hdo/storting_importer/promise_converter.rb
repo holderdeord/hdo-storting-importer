@@ -12,6 +12,8 @@ module Hdo
 
         # cleanup
         content.gsub!(/\bFrp\b/, "FrP")
+        content.gsub!(/\bKrf\b/, "KrF")
+        content.gsub!(/\bSP\b/, "Sp")
 
         @table = CSV.parse(
           content,
