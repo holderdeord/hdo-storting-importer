@@ -15,7 +15,7 @@ module Hdo
         end
 
         def xml
-          builder = StortingImporter.create_builder
+          builder = Util.builder
           builder.instruct!
 
           builder.categories do |cats|

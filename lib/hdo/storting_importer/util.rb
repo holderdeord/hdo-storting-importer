@@ -3,6 +3,10 @@ module Hdo
     module Util
       module_function
 
+      def builder
+        Builder::XmlMarkup.new :indent => 2
+      end
+
       def remove_newlines(str)
         str.gsub(/\r?\n/, '')
       end

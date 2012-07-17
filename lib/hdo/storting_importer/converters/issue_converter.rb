@@ -17,6 +17,15 @@ module Hdo
             Issue.from_storting_doc(doc)
           end.flatten
         end
+        
+        def xml
+          xml = Util.builder
+          xml.instruct!
+          
+          xml.issues do |is|
+            issues.each { |i| i.to_hdo_xml(is) }
+          end
+        end
       end
 
     end

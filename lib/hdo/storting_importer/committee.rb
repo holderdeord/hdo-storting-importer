@@ -18,7 +18,7 @@ module Hdo
         @name = name
       end
 
-      def to_hdo_xml(builder = StortingImporter.create_builder)
+      def to_hdo_xml(builder = Util.builder)
         builder.committee do |com|
           com.externalId external_id
           com.name name

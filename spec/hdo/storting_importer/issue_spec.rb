@@ -69,6 +69,40 @@ module Hdo
         issue.type.should == 'alminneligsak'
       end
 
+      it 'converts itself to HDO XML' do
+        issue = Issue.new(
+          "53520",
+          "Inngåelse av avtale om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
+          "Samtykke til inngåelse av avtale av 25. november 2011 om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
+          "alminneligsak",
+          "mottatt",
+          "2012-04-20T00:00:00",
+          "Prop. 90 S (2011-2012)",
+          "proposisjon",
+          "Transport- og kommunikasjonskomiteen",
+          ['UTENRIKSSAKER', 'TRAKTATER', 'NORDISK SAMARBEID']
+        )
+
+        issue.to_hdo_xml.should == <<-XML
+<issue>
+  <externalId>53520</externalId>
+  <summary>Inngåelse av avtale om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)</summary>
+  <description>Samtykke til inngåelse av avtale av 25. november 2011 om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)</description>
+  <type>alminneligsak</type>
+  <status>mottatt</status>
+  <lastUpdate>2012-04-20T00:00:00</lastUpdate>
+  <reference>Prop. 90 S (2011-2012)</reference>
+  <documentGroup>proposisjon</documentGroup>
+  <committee>Transport- og kommunikasjonskomiteen</committee>
+  <categories>
+    <category>UTENRIKSSAKER</category>
+    <category>TRAKTATER</category>
+    <category>NORDISK SAMARBEID</category>
+  </categories>
+</issue>
+XML
+      end
+
     end
   end
 end

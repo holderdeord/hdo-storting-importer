@@ -47,6 +47,27 @@ module Hdo
         @categories     = categories || []
       end
 
+      def to_hdo_xml(builder = Util.builder)
+        builder.issue do |i|
+          i.externalId external_id
+          i.summary summary
+          i.description description
+          i.type type
+          i.status status
+          i.lastUpdate last_update
+          i.reference reference
+          i.documentGroup document_group
+          i.committee(committee) if committee
+          
+          if categories.any?
+            i.categories do |cats|
+              categories.each { |e| cats.category e }
+            end
+          end
+        end
+
+      end
+
     end
   end
 end
