@@ -37,7 +37,13 @@ module Hdo
           data_source.should_receive(:representatives).and_return(input_for(:representatives))
           data_source.should_receive(:representatives_today).and_return(input_for(:representatives_today))
 
-          Converter.for(:representatives).new(data_source).xml.should == output_for(:representatives)
+          actual = Converter.for(:representatives).new(data_source).xml
+          expected = output_for(:representatives)
+
+          File.open("/tmp/actual.xml", "w") { |file| file << actual }
+          File.open("/tmp/expected.xml", "w") { |file| file << expected }
+
+          actual.should == expected
         end
 
         it "converts votes" do
@@ -54,7 +60,7 @@ module Hdo
         it "converts promises" do
           PromiseConverter.new(input_path('promises-a.csv')).xml.should == output_path('promises-a.xml').read
         end
-        
+
       end
     end
   end

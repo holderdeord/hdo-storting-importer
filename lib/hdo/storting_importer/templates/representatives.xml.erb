@@ -2,19 +2,19 @@
 <representatives>
   <%- representatives.each do |rep| -%>
   <representative>
-    <externalId><%= rep[:externalId] %></externalId>
-    <firstName><%= rep[:firstName] %></firstName>
-    <lastName><%= rep[:lastName] %></lastName>
-    <dateOfBirth><%= rep[:dateOfBirth] %></dateOfBirth>
-    <dateOfDeath><%= rep[:dateOfDeath] %></dateOfDeath>
-    <district><%= rep[:district] %></district>
-    <party><%= rep[:party] %></party>
+    <externalId><%= rep.external_id %></externalId>
+    <firstName><%= rep.first_name %></firstName>
+    <lastName><%= rep.last_name %></lastName>
+    <dateOfBirth><%= rep.date_of_birth %></dateOfBirth>
+    <dateOfDeath><%= rep.date_of_death %></dateOfDeath>
+    <district><%= rep.district %></district>
+    <party><%= rep.party %></party>
     <committees>
-      <%- rep[:committees].each do |committee| -%>
+      <%- rep.committees.each do |committee| -%>
       <committee><%= committee %></committee>
       <%- end -%>
     </committees>
-    <period><%= rep[:period] %></period>
+    <period><%= rep.period %></period>
   </representative>
   <%- end -%>
 </representatives>

@@ -1,7 +1,7 @@
 module Hdo
   module StortingImporter
     module Converters
-      
+
       class RepresentativeConverter < Converter
 
         def self.type_name
@@ -16,25 +16,10 @@ module Hdo
         end
 
         def representatives
-          seen = []
-
-          result = docs.map do |doc|
-            nodes = doc.css("dagensrepresentant")
-            nodes += doc.css("representant")
-
-            nodes.map do |node|
-              rb = RepresentativeBuilder.new(node)
-              unless seen.include? rb.external_id
-                seen << rb.external_id
-                rb.build
-              end
-            end
-          end
-
-          result.flatten.compact.sort_by { |e| e[:externalId] }
+          docs.map { |doc| Representative.from_storting_doc(doc) }.flatten.compact.uniq.sort_by { |e| e.external_id }
         end
       end
-      
+
     end
   end
 end

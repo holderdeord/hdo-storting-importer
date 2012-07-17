@@ -27,6 +27,7 @@ require 'hdo/storting_importer/district'
 require 'hdo/storting_importer/issue'
 require 'hdo/storting_importer/party'
 require 'hdo/storting_importer/promise'
+require 'hdo/storting_importer/representative'
 
 require 'hdo/storting_importer/representative_builder'
 require 'hdo/storting_importer/converters/converter'
