@@ -77,38 +77,38 @@ module Hdo
         when :all
           import_all
         when :votes
-          import_docs VoteConverter.new(data_source, issue_converter.external_ids).xml
+          import_docs Converters::VoteConverter.new(data_source, issue_converter.external_ids).xml
         else
-          import_docs Converter.for(what).new(data_source).xml
+          import_docs Converters::Converter.for(what).new(data_source).xml
         end
       end
 
       def issue_converter
-        @issue_converter ||= IssueConverter.new(data_source)
+        @issue_converter ||= Converters::IssueConverter.new(data_source)
       end
 
       def party_converter
-        @party_converter ||= PartyConverter.new(data_source)
+        @party_converter ||= Converters::PartyConverter.new(data_source)
       end
 
       def committee_converter
-        @committee_converter ||= CommitteeConverter.new(data_source)
+        @committee_converter ||= Converters::CommitteeConverter.new(data_source)
       end
 
       def district_converter
-        @district_converter ||= DistrictConverter.new(data_source)
+        @district_converter ||= Converters::DistrictConverter.new(data_source)
       end
 
       def representative_converter
-        @representative_converter ||= RepresentativeConverter.new(data_source)
+        @representative_converter ||= Converters::RepresentativeConverter.new(data_source)
       end
 
       def category_converter
-        @category_converter ||= CategoryConverter.new(data_source)
+        @category_converter ||= Converters::CategoryConverter.new(data_source)
       end
 
       def vote_converter
-        @vote_converter ||= VoteConverter.new(data_source, issue_converter.external_ids)
+        @vote_converter ||= Converters::VoteConverter.new(data_source, issue_converter.external_ids)
       end
 
       def import_all
@@ -138,7 +138,7 @@ module Hdo
       def import_promises
         csvs = Dir[File.join(StortingImporter.root, 'data/promises-*.csv')].sort_by { |e| File.basename(e) }
         csvs.each do |path|
-          print_or_import PromiseConverter.new(path).xml
+          print_or_import Converters::PromiseConverter.new(path).xml
         end
       end
 
