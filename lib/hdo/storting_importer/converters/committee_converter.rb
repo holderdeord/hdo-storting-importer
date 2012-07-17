@@ -12,18 +12,19 @@ module Hdo
             Committee.from_storting_doc(doc)
           end.flatten
         end
-      end
+        
+        def xml
+          builder = Util.builder
+          builder.instruct!
 
-      def xml
-        builder = Util.builder
-        builder.instruct!
+          builder.committees do |cats|
+            committees.each { |e| e.to_hdo_xml(cats) }
+          end
 
-        builder.committees do |cats|
-          committees.each { |e| e.to_hdo_xml(cats) }
+          builder.target!
         end
-
-        builder.target!
       end
+
     end
   end
 end

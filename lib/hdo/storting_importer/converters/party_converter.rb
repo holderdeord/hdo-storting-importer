@@ -10,6 +10,17 @@ module Hdo
         def parties
           docs.map { |doc| Party.from_storting_doc(doc) }.flatten
         end
+        
+        def xml
+          builder = Util.builder
+          builder.instruct!
+
+          builder.parties do |part|
+            parties.each { |e| e.to_hdo_xml(part) }
+          end
+
+          builder.target!
+        end
       end
       
     end

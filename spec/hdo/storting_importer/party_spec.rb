@@ -27,9 +27,18 @@ module Hdo
 
         parties = Party.from_storting_doc(parse(xml))
         parties.size.should == 2
-        
+
         parties.map(&:external_id).should == ['A', 'FrP']
         parties.map(&:name).should == ['Arbeiderpartiet', 'Fremskrittspartiet']
+      end
+
+      it 'converts itself to HDO XML' do
+        Party.new("A", "Arbeiderpartiet").to_hdo_xml.should == <<-XML
+<party>
+  <externalId>A</externalId>
+  <name>Arbeiderpartiet</name>
+</party>
+        XML
       end
 
     end

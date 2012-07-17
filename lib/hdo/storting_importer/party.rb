@@ -13,6 +13,13 @@ module Hdo
         @external_id = external_id
         @name        = name
       end
+      
+      def to_hdo_xml(builder = Util.builder)
+        builder.party do |party|
+          party.externalId external_id
+          party.name name
+        end
+      end
     end
   end
 end
