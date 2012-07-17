@@ -8,14 +8,7 @@ module Hdo
         end
 
         def parties
-          docs.map do |doc|
-            doc.css("partier_liste parti").map do |node|
-              {
-                externalId: node.css("id").first.text,
-                name: node.css("navn").first.text
-              }
-            end
-          end.flatten
+          docs.map { |doc| Party.from_storting_doc(doc) }.flatten
         end
       end
       

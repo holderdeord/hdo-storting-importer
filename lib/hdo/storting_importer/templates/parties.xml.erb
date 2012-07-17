@@ -2,8 +2,8 @@
 <parties>
 <%- parties.each do |party| -%>
   <party>
-    <externalId><%= party[:externalId] %></externalId>
-    <name><%= party[:name] %></name>
+    <externalId><%= party.external_id %></externalId>
+    <name><%= party.name %></name>
   </party>
 <%- end -%>
 </parties>
