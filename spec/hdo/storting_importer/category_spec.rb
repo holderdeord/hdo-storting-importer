@@ -41,7 +41,7 @@ module Hdo
         cat.children.first.name.should == "ARBEIDSMILJØ"
       end
 
-      it "converts a category to HDO XML" do
+      it "converts itself to HDO XML" do
         category = Category.new("5", "ARBEIDSLIV")
         category.children << Category.new("205", "ARBEIDSMILJØ")
         category.children << Category.new("94", "ARBEIDSVILKÅR")
