@@ -12,6 +12,17 @@ module Hdo
             District.from_storting_doc(doc)
           end.flatten.sort_by { |e| e.name }
         end
+        
+        def xml
+          builder = StortingImporter.create_builder
+          builder.instruct!
+
+          builder.districts do |ds|
+            districts.each { |e| e.to_hdo_xml(ds) }
+          end
+
+          builder.target!
+        end
       end
 
     end

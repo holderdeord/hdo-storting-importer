@@ -33,6 +33,15 @@ module Hdo
         district.name.should == 'Akershus'
         district.external_id.should == 'Ak'
       end
+      
+      it 'converts itself to HDO XML' do
+        District.new("Ak", "Akershus").to_hdo_xml.should == <<-XML
+<district>
+  <externalId>Ak</externalId>
+  <name>Akershus</name>
+</district>
+        XML
+      end
 
     end
   end

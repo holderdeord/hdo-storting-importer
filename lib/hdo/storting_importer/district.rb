@@ -17,6 +17,13 @@ module Hdo
         @external_id = external_id
         @name = name
       end
+      
+      def to_hdo_xml(builder = StortingImporter.create_builder)
+        builder.district do |d|
+          d.externalId external_id
+          d.name name
+        end
+      end
 
     end
   end
