@@ -13,6 +13,17 @@ module Hdo
             Category.from_storting_doc(doc)
           }.flatten
         end
+
+        def xml
+          builder = StortingImporter.create_builder
+          builder.instruct!
+
+          builder.categories do |cats|
+            categories.each { |e| e.to_hdo_xml(cats) }
+          end
+
+          builder.target!
+        end
       end
 
     end

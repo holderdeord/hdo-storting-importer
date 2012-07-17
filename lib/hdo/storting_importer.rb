@@ -3,6 +3,10 @@ module Hdo
     def self.root
       @root ||= File.expand_path("../../..", __FILE__)
     end
+
+    def self.create_builder
+      Builder::XmlMarkup.new :indent => 2
+    end
   end
 end
 

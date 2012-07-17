@@ -23,6 +23,20 @@ module Hdo
         @name        = name
         @children    = []
       end
+
+      def to_hdo_xml(builder = StortingImporter.create_builder)
+        builder.category do |cat|
+          cat.externalId external_id
+          cat.name name
+
+          if children.any?
+            cat.subcategories do |sub|
+              children.each { |child| child.to_hdo_xml(sub) }
+            end
+          end
+        end
+      end
+
     end
   end
 end
