@@ -9,11 +9,11 @@ module Hdo
       def input_fixture(name)
         FIXTURES.join(input_path("#{name}.xml")).read
       end
-      
+
       def output_fixture(name)
         FIXTURES.join(output_path("#{name}.xml")).read
       end
-      
+
       def input_path(filename)
         FIXTURES.join("input/#{filename}")
       end
@@ -21,9 +21,12 @@ module Hdo
       def output_path(filename)
         FIXTURES.join("output/#{filename}")
       end
-      
+
       def parse(str)
-        Nokogiri::XML.parse(str)
+        doc = Nokogiri::XML.parse(str)
+        doc.remove_namespaces!
+
+        doc
       end
 
     end
