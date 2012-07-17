@@ -1,5 +1,6 @@
 require 'rspec'
 require 'hdo/storting_importer'
+require 'pp'
 
 module Hdo
   module StortingImporter
