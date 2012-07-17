@@ -18,6 +18,7 @@
         <externalId>PTA</externalId>
         <firstName>Per-Willy</firstName>
         <lastName>Amundsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1971-01-21T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -31,6 +32,7 @@
         <externalId>DTA</externalId>
         <firstName>Dag Terje</firstName>
         <lastName>Andersen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1957-05-27T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -44,6 +46,7 @@
         <externalId>KAAN</externalId>
         <firstName>Karin</firstName>
         <lastName>Andersen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1952-12-16T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -57,6 +60,7 @@
         <externalId>RAA</externalId>
         <firstName>Rannveig Kvifte</firstName>
         <lastName>Andresen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1967-05-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -70,6 +74,7 @@
         <externalId>ANA</externalId>
         <firstName>Anders</firstName>
         <lastName>Anundsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1975-11-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -83,6 +88,7 @@
         <externalId>MLA</externalId>
         <firstName>Mari Lund</firstName>
         <lastName>Arnem</lastName>
+        <gender>F</gender>
         <dateOfBirth>1986-01-27T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -96,6 +102,7 @@
         <externalId>BEHA</externalId>
         <firstName>Bendiks H.</firstName>
         <lastName>Arnesen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1951-06-09T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -109,6 +116,7 @@
         <externalId>HAFA</externalId>
         <firstName>Hans Frode Kielland</firstName>
         <lastName>Asmyhr</lastName>
+        <gender>M</gender>
         <dateOfBirth>1970-02-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -122,6 +130,7 @@
         <externalId>EAS</externalId>
         <firstName>Elisabeth</firstName>
         <lastName>Aspaker</lastName>
+        <gender>F</gender>
         <dateOfBirth>1962-10-16T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -135,6 +144,7 @@
         <externalId>JASP</externalId>
         <firstName>Jorodd</firstName>
         <lastName>Asphjell</lastName>
+        <gender>M</gender>
         <dateOfBirth>1960-07-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -148,6 +158,7 @@
         <externalId>NA</externalId>
         <firstName>Nikolai</firstName>
         <lastName>Astrup</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-06-12T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -161,6 +172,7 @@
         <externalId>FBJ</externalId>
         <firstName>Frank</firstName>
         <lastName>Bakke-Jensen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1965-03-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Finnmark</district>
@@ -174,6 +186,7 @@
         <externalId>GJB</externalId>
         <firstName>Geir Jørgen</firstName>
         <lastName>Bekkevold</lastName>
+        <gender>M</gender>
         <dateOfBirth>1963-11-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Telemark</district>
@@ -187,6 +200,7 @@
         <externalId>ANMB</externalId>
         <firstName>Anne Marit</firstName>
         <lastName>Bjørnflaten</lastName>
+        <gender>F</gender>
         <dateOfBirth>1969-06-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -200,6 +214,7 @@
         <externalId>EBO</externalId>
         <firstName>Else-May</firstName>
         <lastName>Botten</lastName>
+        <gender>F</gender>
         <dateOfBirth>1973-08-16T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -213,6 +228,7 @@
         <externalId>TLB</externalId>
         <firstName>Tove Linnea</firstName>
         <lastName>Brandvik</lastName>
+        <gender>F</gender>
         <dateOfBirth>1968-11-15T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -226,6 +242,7 @@
         <externalId>SUB</externalId>
         <firstName>Susanne</firstName>
         <lastName>Bratli</lastName>
+        <gender>F</gender>
         <dateOfBirth>1966-06-10T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nord-Trøndelag</district>
@@ -239,6 +256,7 @@
         <externalId>PB</externalId>
         <firstName>Per Roar</firstName>
         <lastName>Bredvold</lastName>
+        <gender>M</gender>
         <dateOfBirth>1957-03-05T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -252,6 +270,7 @@
         <externalId>THB</externalId>
         <firstName>Thomas</firstName>
         <lastName>Breen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1972-09-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -265,6 +284,7 @@
         <externalId>TBRE</externalId>
         <firstName>Tor</firstName>
         <lastName>Bremer</lastName>
+        <gender>M</gender>
         <dateOfBirth>1955-02-09T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sogn og Fjordane</district>
@@ -278,6 +298,7 @@
         <externalId>JBO</externalId>
         <firstName>Jan</firstName>
         <lastName>Bøhler</lastName>
+        <gender>M</gender>
         <dateOfBirth>1952-03-01T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -291,6 +312,7 @@
         <externalId>AC</externalId>
         <firstName>Akhtar</firstName>
         <lastName>Chaudhry</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-07-23T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -304,6 +326,7 @@
         <externalId>JFC</externalId>
         <firstName>Jette F.</firstName>
         <lastName>Christensen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1983-06-01T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -317,6 +340,7 @@
         <externalId>LIC</externalId>
         <firstName>Lise</firstName>
         <lastName>Christoffersen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1955-08-05T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -330,6 +354,7 @@
         <externalId>ADA</externalId>
         <firstName>André Oktay</firstName>
         <lastName>Dahl</lastName>
+        <gender>M</gender>
         <dateOfBirth>1975-07-07T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -343,6 +368,7 @@
         <externalId>LD</externalId>
         <firstName>Laila</firstName>
         <lastName>Dåvøy</lastName>
+        <gender>F</gender>
         <dateOfBirth>1948-08-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -356,6 +382,7 @@
         <externalId>LAE</externalId>
         <firstName>Lars</firstName>
         <lastName>Egeland</lastName>
+        <gender>M</gender>
         <dateOfBirth>1957-12-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -369,6 +396,7 @@
         <externalId>SHEG</externalId>
         <firstName>Siri Hov</firstName>
         <lastName>Eggen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1969-12-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -382,6 +410,7 @@
         <externalId>RAE</externalId>
         <firstName>Rigmor Andersen</firstName>
         <lastName>Eide</lastName>
+        <gender>F</gender>
         <dateOfBirth>1954-06-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -395,6 +424,7 @@
         <externalId>GUE</externalId>
         <firstName>Gunvor</firstName>
         <lastName>Eldegard</lastName>
+        <gender>F</gender>
         <dateOfBirth>1963-04-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -408,6 +438,7 @@
         <externalId>JAE</externalId>
         <firstName>Jan Arild</firstName>
         <lastName>Ellingsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1958-10-09T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -421,6 +452,7 @@
         <externalId>DE</externalId>
         <firstName>Dagrun</firstName>
         <lastName>Eriksen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1971-06-28T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vest-Agder</district>
@@ -434,6 +466,7 @@
         <externalId>RE</externalId>
         <firstName>Robert</firstName>
         <lastName>Eriksson</lastName>
+        <gender>M</gender>
         <dateOfBirth>1974-04-23T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nord-Trøndelag</district>
@@ -447,6 +480,7 @@
         <externalId>SAF</externalId>
         <firstName>Svein</firstName>
         <lastName>Flåtten</lastName>
+        <gender>M</gender>
         <dateOfBirth>1944-10-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -460,6 +494,7 @@
         <externalId>TEF</externalId>
         <firstName>Thor Erik</firstName>
         <lastName>Forsberg</lastName>
+        <gender>M</gender>
         <dateOfBirth>1980-04-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -473,6 +508,7 @@
         <externalId>PKF</externalId>
         <firstName>Per-Kristian</firstName>
         <lastName>Foss</lastName>
+        <gender>M</gender>
         <dateOfBirth>1950-07-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -486,6 +522,7 @@
         <externalId>JF</externalId>
         <firstName>Jan-Henrik</firstName>
         <lastName>Fredriksen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1956-10-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Finnmark</district>
@@ -499,6 +536,7 @@
         <externalId>VKG</externalId>
         <firstName>Vigdis</firstName>
         <lastName>Giltun</lastName>
+        <gender>F</gender>
         <dateOfBirth>1952-03-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -512,6 +550,7 @@
         <externalId>PEG</externalId>
         <firstName>Peter Skovholt</firstName>
         <lastName>Gitmark</lastName>
+        <gender>M</gender>
         <dateOfBirth>1977-04-15T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vest-Agder</district>
@@ -525,6 +564,7 @@
         <externalId>SAG</externalId>
         <firstName>Svein</firstName>
         <lastName>Gjelseth</lastName>
+        <gender>M</gender>
         <dateOfBirth>1950-02-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -538,6 +578,7 @@
         <externalId>GKG</externalId>
         <firstName>Gunn Karin</firstName>
         <lastName>Gjul</lastName>
+        <gender>F</gender>
         <dateOfBirth>1967-07-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -551,6 +592,7 @@
         <externalId>IAG</externalId>
         <firstName>Ingebjørg</firstName>
         <lastName>Godskesen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1957-05-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Aust-Agder</district>
@@ -564,6 +606,7 @@
         <externalId>SYG</externalId>
         <firstName>Sylvi</firstName>
         <lastName>Graham</lastName>
+        <gender>F</gender>
         <dateOfBirth>1951-12-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -577,6 +620,7 @@
         <externalId>TSG</externalId>
         <firstName>Trine Skei</firstName>
         <lastName>Grande</lastName>
+        <gender>F</gender>
         <dateOfBirth>1969-10-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -590,6 +634,7 @@
         <externalId>HEIG</externalId>
         <firstName>Heidi</firstName>
         <lastName>Greni</lastName>
+        <gender>F</gender>
         <dateOfBirth>1962-07-03T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -603,6 +648,7 @@
         <externalId>OG</externalId>
         <firstName>Oskar J.</firstName>
         <lastName>Grimstad</lastName>
+        <gender>M</gender>
         <dateOfBirth>1954-11-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -616,6 +662,7 @@
         <externalId>STEG</externalId>
         <firstName>Steinar</firstName>
         <lastName>Gullvåg</lastName>
+        <gender>M</gender>
         <dateOfBirth>1946-10-27T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -629,6 +676,7 @@
         <externalId>GAG</externalId>
         <firstName>Gunnar</firstName>
         <lastName>Gundersen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1956-05-21T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -642,6 +690,7 @@
         <externalId>JONG</externalId>
         <firstName>Jon Jæger</firstName>
         <lastName>Gåsvatn</lastName>
+        <gender>M</gender>
         <dateOfBirth>1954-06-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -655,6 +704,7 @@
         <externalId>TOHA</externalId>
         <firstName>Tore</firstName>
         <lastName>Hagebakken</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-01-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -668,6 +718,7 @@
         <externalId>AKSH</externalId>
         <firstName>Aksel</firstName>
         <lastName>Hagen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1953-10-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -681,6 +732,7 @@
         <externalId>GJH</externalId>
         <firstName>Gjermund</firstName>
         <lastName>Hagesæter</lastName>
+        <gender>M</gender>
         <dateOfBirth>1960-12-12T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -694,6 +746,7 @@
         <externalId>ØYVH</externalId>
         <firstName>Øyvind</firstName>
         <lastName>Halleraker</lastName>
+        <gender>M</gender>
         <dateOfBirth>1951-10-27T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -707,6 +760,7 @@
         <externalId>METH</externalId>
         <firstName>Mette</firstName>
         <lastName>Hanekamhaug</lastName>
+        <gender>F</gender>
         <dateOfBirth>1987-06-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -720,6 +774,7 @@
         <externalId>EVH</externalId>
         <firstName>Eva Kristin</firstName>
         <lastName>Hansen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1973-03-05T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -733,6 +788,7 @@
         <externalId>GEHN</externalId>
         <firstName>Geir-Ketil</firstName>
         <lastName>Hansen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1956-03-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -746,6 +802,7 @@
         <externalId>LILH</externalId>
         <firstName>Lillian</firstName>
         <lastName>Hansen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1957-05-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -759,6 +816,7 @@
         <externalId>SOH</externalId>
         <firstName>Sigvald Oppebøen</firstName>
         <lastName>Hansen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1950-09-21T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Telemark</district>
@@ -772,6 +830,7 @@
         <externalId>SRH</externalId>
         <firstName>Svein Roald</firstName>
         <lastName>Hansen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1949-08-20T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -785,6 +844,7 @@
         <externalId>SHAR</externalId>
         <firstName>Svein</firstName>
         <lastName>Harberg</lastName>
+        <gender>M</gender>
         <dateOfBirth>1958-07-30T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Aust-Agder</district>
@@ -798,6 +858,7 @@
         <externalId>KNAH</externalId>
         <firstName>Knut Arild</firstName>
         <lastName>Hareide</lastName>
+        <gender>M</gender>
         <dateOfBirth>1972-11-23T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -811,6 +872,7 @@
         <externalId>ARLH</externalId>
         <firstName>Arne L.</firstName>
         <lastName>Haugen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1939-07-25T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -824,6 +886,7 @@
         <externalId>HAKH</externalId>
         <firstName>Håkon</firstName>
         <lastName>Haugli</lastName>
+        <gender>M</gender>
         <dateOfBirth>1969-05-21T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -837,6 +900,7 @@
         <externalId>IHE</externalId>
         <firstName>Ingrid</firstName>
         <lastName>Heggø</lastName>
+        <gender>F</gender>
         <dateOfBirth>1961-08-12T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sogn og Fjordane</district>
@@ -850,6 +914,7 @@
         <externalId>LCH</externalId>
         <firstName>Linda C. Hofstad</firstName>
         <lastName>Helleland</lastName>
+        <gender>F</gender>
         <dateOfBirth>1977-08-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -863,6 +928,7 @@
         <externalId>TROH</externalId>
         <firstName>Trond</firstName>
         <lastName>Helleland</lastName>
+        <gender>M</gender>
         <dateOfBirth>1962-07-10T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -876,6 +942,7 @@
         <externalId>AREH</externalId>
         <firstName>Are</firstName>
         <lastName>Helseth</lastName>
+        <gender>M</gender>
         <dateOfBirth>1955-01-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -889,6 +956,7 @@
         <externalId>KARH</externalId>
         <firstName>Kari</firstName>
         <lastName>Henriksen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1955-08-10T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vest-Agder</district>
@@ -902,6 +970,7 @@
         <externalId>LHH</externalId>
         <firstName>Line Henriette</firstName>
         <lastName>Hjemdal</lastName>
+        <gender>F</gender>
         <dateOfBirth>1971-10-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -915,6 +984,7 @@
         <externalId>BÅH</externalId>
         <firstName>Bård</firstName>
         <lastName>Hoksrud</lastName>
+        <gender>M</gender>
         <dateOfBirth>1973-03-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Telemark</district>
@@ -928,6 +998,7 @@
         <externalId>ALEH</externalId>
         <firstName>Alf Egil</firstName>
         <lastName>Holmelid</lastName>
+        <gender>M</gender>
         <dateOfBirth>1947-12-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vest-Agder</district>
@@ -941,6 +1012,7 @@
         <externalId>SHK</externalId>
         <firstName>Solveig</firstName>
         <lastName>Horne</lastName>
+        <gender>F</gender>
         <dateOfBirth>1969-01-12T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -954,6 +1026,7 @@
         <externalId>MORH</externalId>
         <firstName>Morten</firstName>
         <lastName>Høglund</lastName>
+        <gender>M</gender>
         <dateOfBirth>1965-07-16T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -967,6 +1040,7 @@
         <externalId>BENH</externalId>
         <firstName>Bent</firstName>
         <lastName>Høie</lastName>
+        <gender>M</gender>
         <dateOfBirth>1971-05-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -980,6 +1054,7 @@
         <externalId>ØH</externalId>
         <firstName>Øyvind</firstName>
         <lastName>Håbrekke</lastName>
+        <gender>M</gender>
         <dateOfBirth>1969-12-20T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -993,6 +1068,7 @@
         <externalId>STRH</externalId>
         <firstName>Stine Renate</firstName>
         <lastName>Håheim</lastName>
+        <gender>F</gender>
         <dateOfBirth>1984-05-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -1006,6 +1082,7 @@
         <externalId>TRI</externalId>
         <firstName>Torbjørn Røe</firstName>
         <lastName>Isaksen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-07-28T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Telemark</district>
@@ -1019,6 +1096,7 @@
         <externalId>SIVJ</externalId>
         <firstName>Siv</firstName>
         <lastName>Jensen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1969-06-01T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -1032,6 +1110,7 @@
         <externalId>IJ</externalId>
         <firstName>Irene</firstName>
         <lastName>Johansen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1961-01-07T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -1045,6 +1124,7 @@
         <externalId>MOJ</externalId>
         <firstName>Morten Ørsal</firstName>
         <lastName>Johansen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1964-09-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -1058,6 +1138,7 @@
         <externalId>ARK</externalId>
         <firstName>Arve</firstName>
         <lastName>Kambe</lastName>
+        <gender>M</gender>
         <dateOfBirth>1974-11-25T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -1071,6 +1152,7 @@
         <externalId>KKK</externalId>
         <firstName>Kari Kjønaas</firstName>
         <lastName>Kjos</lastName>
+        <gender>F</gender>
         <dateOfBirth>1962-01-25T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -1084,6 +1166,7 @@
         <externalId>JKL</externalId>
         <firstName>Jenny</firstName>
         <lastName>Klinge</lastName>
+        <gender>F</gender>
         <dateOfBirth>1975-11-28T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -1097,6 +1180,7 @@
         <externalId>UEK</externalId>
         <firstName>Ulf Erik</firstName>
         <lastName>Knudsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1964-12-20T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -1110,6 +1194,7 @@
         <externalId>TKK</externalId>
         <firstName>Tove Karoline</firstName>
         <lastName>Knutsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1951-01-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -1123,6 +1208,7 @@
         <externalId>MAKO</externalId>
         <firstName>Martin</firstName>
         <lastName>Kolberg</lastName>
+        <gender>M</gender>
         <dateOfBirth>1949-02-24T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -1136,6 +1222,7 @@
         <externalId>OYK</externalId>
         <firstName>Øyvind</firstName>
         <lastName>Korsberg</lastName>
+        <gender>M</gender>
         <dateOfBirth>1960-01-31T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -1149,6 +1236,7 @@
         <externalId>IVK</externalId>
         <firstName>Ivar</firstName>
         <lastName>Kristiansen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1956-02-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -1162,6 +1250,7 @@
         <externalId>GJK</externalId>
         <firstName>Gerd Janne</firstName>
         <lastName>Kristoffersen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1952-11-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nord-Trøndelag</district>
@@ -1175,6 +1264,7 @@
         <externalId>HHL</externalId>
         <firstName>Hallgeir H.</firstName>
         <lastName>Langeland</lastName>
+        <gender>M</gender>
         <dateOfBirth>1955-11-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -1188,6 +1278,7 @@
         <externalId>UIL</externalId>
         <firstName>Ulf</firstName>
         <lastName>Leirstein</lastName>
+        <gender>M</gender>
         <dateOfBirth>1973-06-30T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -1201,6 +1292,7 @@
         <externalId>ALJ</externalId>
         <firstName>Anna</firstName>
         <lastName>Ljunggren</lastName>
+        <gender>F</gender>
         <dateOfBirth>1984-06-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -1214,6 +1306,7 @@
         <externalId>POL</externalId>
         <firstName>Per Olaf</firstName>
         <lastName>Lundteigen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1953-04-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -1227,6 +1320,7 @@
         <externalId>ALYS</externalId>
         <firstName>Audun</firstName>
         <lastName>Lysbakken</lastName>
+        <gender>M</gender>
         <dateOfBirth>1977-09-30T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -1240,6 +1334,7 @@
         <externalId>BLO</externalId>
         <firstName>Bjørn</firstName>
         <lastName>Lødemel</lastName>
+        <gender>M</gender>
         <dateOfBirth>1958-08-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sogn og Fjordane</district>
@@ -1253,6 +1348,7 @@
         <externalId>HML</externalId>
         <firstName>Hilde</firstName>
         <lastName>Magnusson</lastName>
+        <gender>F</gender>
         <dateOfBirth>1970-06-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -1266,6 +1362,7 @@
         <externalId>SOM</externalId>
         <firstName>Sonja</firstName>
         <lastName>Mandt</lastName>
+        <gender>F</gender>
         <dateOfBirth>1960-03-29T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -1279,6 +1376,7 @@
         <externalId>MAM</externalId>
         <firstName>Marianne</firstName>
         <lastName>Marthinsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1980-08-25T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -1292,6 +1390,7 @@
         <externalId>SME</externalId>
         <firstName>Siri A.</firstName>
         <lastName>Meling</lastName>
+        <gender>F</gender>
         <dateOfBirth>1963-02-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -1305,6 +1404,7 @@
         <externalId>TMI</externalId>
         <firstName>Torgeir</firstName>
         <lastName>Micaelsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1979-05-20T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -1318,6 +1418,7 @@
         <externalId>ASC</externalId>
         <firstName>Åse</firstName>
         <lastName>Michaelsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1960-06-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vest-Agder</district>
@@ -1331,6 +1432,7 @@
         <externalId>NIMJ</externalId>
         <firstName>Nina</firstName>
         <lastName>Mjøberg</lastName>
+        <gender>F</gender>
         <dateOfBirth>1964-04-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -1344,6 +1446,7 @@
         <externalId>PEMY</externalId>
         <firstName>Peter N.</firstName>
         <lastName>Myhre</lastName>
+        <gender>M</gender>
         <dateOfBirth>1954-11-29T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -1357,6 +1460,7 @@
         <externalId>LMY</externalId>
         <firstName>Lars</firstName>
         <lastName>Myraune</lastName>
+        <gender>M</gender>
         <dateOfBirth>1944-08-05T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nord-Trøndelag</district>
@@ -1370,6 +1474,7 @@
         <externalId>SMY</externalId>
         <firstName>Sverre</firstName>
         <lastName>Myrli</lastName>
+        <gender>M</gender>
         <dateOfBirth>1971-08-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -1383,6 +1488,7 @@
         <externalId>HTN</externalId>
         <firstName>Harald T.</firstName>
         <lastName>Nesvik</lastName>
+        <gender>M</gender>
         <dateOfBirth>1966-05-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -1396,6 +1502,7 @@
         <externalId>IRLN</externalId>
         <firstName>Irene Lange</firstName>
         <lastName>Nordahl</lastName>
+        <gender>F</gender>
         <dateOfBirth>1968-02-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -1409,6 +1516,7 @@
         <externalId>TON</externalId>
         <firstName>Tore</firstName>
         <lastName>Nordtun</lastName>
+        <gender>M</gender>
         <dateOfBirth>1949-09-30T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -1422,6 +1530,7 @@
         <externalId>JSN</externalId>
         <firstName>Janne Sjelmo</firstName>
         <lastName>Nordås</lastName>
+        <gender>F</gender>
         <dateOfBirth>1964-05-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -1435,6 +1544,7 @@
         <externalId>MN</externalId>
         <firstName>Marit</firstName>
         <lastName>Nybakk</lastName>
+        <gender>F</gender>
         <dateOfBirth>1947-02-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -1448,6 +1558,7 @@
         <externalId>ELN</externalId>
         <firstName>Elisabeth Røbekk</firstName>
         <lastName>Nørve</lastName>
+        <gender>F</gender>
         <dateOfBirth>1951-03-29T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -1461,6 +1572,7 @@
         <externalId>IOL</externalId>
         <firstName>Ingalill</firstName>
         <lastName>Olsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1955-12-15T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Finnmark</district>
@@ -1474,6 +1586,7 @@
         <externalId>PO</externalId>
         <firstName>Per Arne</firstName>
         <lastName>Olsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-02-21T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -1487,6 +1600,7 @@
         <externalId>WO</externalId>
         <firstName>Wenche</firstName>
         <lastName>Olsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1965-11-30T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -1500,6 +1614,7 @@
         <externalId>TO</externalId>
         <firstName>Torfinn</firstName>
         <lastName>Opheim</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-04-12T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -1513,6 +1628,7 @@
         <externalId>HPED</externalId>
         <firstName>Helga</firstName>
         <lastName>Pedersen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1973-01-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Finnmark</district>
@@ -1526,6 +1642,7 @@
         <externalId>GP</externalId>
         <firstName>Geir</firstName>
         <lastName>Pollestad</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-08-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -1539,6 +1656,7 @@
         <externalId>CNR</externalId>
         <firstName>Christina Nilsson</firstName>
         <lastName>Ramsøy</lastName>
+        <gender>F</gender>
         <dateOfBirth>1986-11-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nord-Trøndelag</district>
@@ -1552,6 +1670,7 @@
         <externalId>LRE</externalId>
         <firstName>Laila Marie</firstName>
         <lastName>Reiertsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1960-10-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -1565,6 +1684,7 @@
         <externalId>MAGR</externalId>
         <firstName>Magne</firstName>
         <lastName>Rommetveit</lastName>
+        <gender>M</gender>
         <dateOfBirth>1956-04-27T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -1578,6 +1698,7 @@
         <externalId>KJR</externalId>
         <firstName>Kjell Ingolf</firstName>
         <lastName>Ropstad</lastName>
+        <gender>M</gender>
         <dateOfBirth>1985-06-01T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Aust-Agder</district>
@@ -1591,6 +1712,7 @@
         <externalId>TR</externalId>
         <firstName>Torstein</firstName>
         <lastName>Rudihagen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1951-08-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -1604,6 +1726,7 @@
         <externalId>JHR</externalId>
         <firstName>Jørund</firstName>
         <lastName>Rytman</lastName>
+        <gender>M</gender>
         <dateOfBirth>1977-05-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -1617,6 +1740,7 @@
         <externalId>PES</externalId>
         <firstName>Per</firstName>
         <lastName>Sandberg</lastName>
+        <gender>M</gender>
         <dateOfBirth>1960-02-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -1630,6 +1754,7 @@
         <externalId>ESAN</externalId>
         <firstName>Erling</firstName>
         <lastName>Sande</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-11-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sogn og Fjordane</district>
@@ -1643,6 +1768,7 @@
         <externalId>JTS</externalId>
         <firstName>Jan Tore</firstName>
         <lastName>Sanner</lastName>
+        <gender>M</gender>
         <dateOfBirth>1965-05-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -1656,6 +1782,7 @@
         <externalId>ISC</externalId>
         <firstName>Ingjerd</firstName>
         <lastName>Schou</lastName>
+        <gender>F</gender>
         <dateOfBirth>1955-01-20T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -1669,6 +1796,7 @@
         <externalId>KSIM</externalId>
         <firstName>Kåre</firstName>
         <lastName>Simensen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1955-08-30T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Finnmark</district>
@@ -1682,6 +1810,7 @@
         <externalId>EIRS</externalId>
         <firstName>Eirik</firstName>
         <lastName>Sivertsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1971-03-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -1695,6 +1824,7 @@
         <externalId>SONS</externalId>
         <firstName>Sonja Irene</firstName>
         <lastName>Sjøli</lastName>
+        <gender>F</gender>
         <dateOfBirth>1949-06-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -1708,6 +1838,7 @@
         <externalId>SSK</externalId>
         <firstName>Siv Aida Rui</firstName>
         <lastName>Skattem</lastName>
+        <gender>F</gender>
         <dateOfBirth>1970-04-09T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -1721,6 +1852,7 @@
         <externalId>HSK</externalId>
         <firstName>Henning</firstName>
         <lastName>Skumsvoll</lastName>
+        <gender>M</gender>
         <dateOfBirth>1947-03-15T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vest-Agder</district>
@@ -1734,6 +1866,7 @@
         <externalId>ES</externalId>
         <firstName>Erna</firstName>
         <lastName>Solberg</lastName>
+        <gender>F</gender>
         <dateOfBirth>1961-02-24T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -1747,6 +1880,7 @@
         <externalId>KETS</externalId>
         <firstName>Ketil</firstName>
         <lastName>Solvik-Olsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1972-02-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -1760,6 +1894,7 @@
         <externalId>AESO</externalId>
         <firstName>Arne</firstName>
         <lastName>Sortevik</lastName>
+        <gender>M</gender>
         <dateOfBirth>1947-03-12T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -1773,6 +1908,7 @@
         <externalId>AGES</externalId>
         <firstName>Åge</firstName>
         <lastName>Starheim</lastName>
+        <gender>M</gender>
         <dateOfBirth>1946-05-23T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sogn og Fjordane</district>
@@ -1786,6 +1922,7 @@
         <externalId>AAST</externalId>
         <firstName>Arild</firstName>
         <lastName>Stokkan-Grande</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-04-05T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nord-Trøndelag</district>
@@ -1799,6 +1936,7 @@
         <externalId>KNUS</externalId>
         <firstName>Knut</firstName>
         <lastName>Storberget</lastName>
+        <gender>M</gender>
         <dateOfBirth>1964-10-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -1812,6 +1950,7 @@
         <externalId>TAS</externalId>
         <firstName>Tor-Arne</firstName>
         <lastName>Strøm</lastName>
+        <gender>M</gender>
         <dateOfBirth>1952-05-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -1825,6 +1964,7 @@
         <externalId>EKS</externalId>
         <firstName>Eirin</firstName>
         <lastName>Sund</lastName>
+        <gender>F</gender>
         <dateOfBirth>1967-04-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -1838,6 +1978,7 @@
         <externalId>KES</externalId>
         <firstName>Kenneth</firstName>
         <lastName>Svendsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1954-08-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -1851,6 +1992,7 @@
         <externalId>KSV</externalId>
         <firstName>Kjell Arvid</firstName>
         <lastName>Svendsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1953-08-27T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -1864,6 +2006,7 @@
         <externalId>HOSY</externalId>
         <firstName>Hans Olav</firstName>
         <lastName>Syversen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1966-11-25T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -1877,6 +2020,7 @@
         <externalId>TMS</externalId>
         <firstName>Tone Merete</firstName>
         <lastName>Sønsterud</lastName>
+        <gender>F</gender>
         <dateOfBirth>1959-05-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -1890,6 +2034,7 @@
         <externalId>IME</externalId>
         <firstName>Ine M. Eriksen</firstName>
         <lastName>Søreide</lastName>
+        <gender>F</gender>
         <dateOfBirth>1976-05-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -1903,6 +2048,7 @@
         <externalId>HTA</externalId>
         <firstName>Hadia</firstName>
         <lastName>Tajik</lastName>
+        <gender>F</gender>
         <dateOfBirth>1983-07-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -1916,6 +2062,7 @@
         <externalId>DOT</externalId>
         <firstName>Dag Ole</firstName>
         <lastName>Teigen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1982-08-10T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -1929,6 +2076,7 @@
         <externalId>BT</externalId>
         <firstName>Borghild</firstName>
         <lastName>Tenden</lastName>
+        <gender>F</gender>
         <dateOfBirth>1951-06-23T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -1942,6 +2090,7 @@
         <externalId>MIT</externalId>
         <firstName>Michael</firstName>
         <lastName>Tetzschner</lastName>
+        <gender>M</gender>
         <dateOfBirth>1954-02-09T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -1955,6 +2104,7 @@
         <externalId>OLET</externalId>
         <firstName>Olemic</firstName>
         <lastName>Thommessen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1956-04-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -1968,6 +2118,7 @@
         <externalId>IBTH</externalId>
         <firstName>Ib</firstName>
         <lastName>Thomsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-10-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -1981,6 +2132,7 @@
         <externalId>BTH</externalId>
         <firstName>Bente</firstName>
         <lastName>Thorsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1958-10-31T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -1994,6 +2146,7 @@
         <externalId>KJT</externalId>
         <firstName>Kjersti</firstName>
         <lastName>Toppe</lastName>
+        <gender>F</gender>
         <dateOfBirth>1967-10-20T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -2007,6 +2160,7 @@
         <externalId>TOVT</externalId>
         <firstName>Tove-Lise</firstName>
         <lastName>Torve</lastName>
+        <gender>F</gender>
         <dateOfBirth>1964-06-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -2020,6 +2174,7 @@
         <externalId>ATR</externalId>
         <firstName>Anette</firstName>
         <lastName>Trettebergstuen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1981-05-25T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -2033,6 +2188,7 @@
         <externalId>TOT</externalId>
         <firstName>Torgeir</firstName>
         <lastName>Trældal</lastName>
+        <gender>M</gender>
         <dateOfBirth>1965-01-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -2046,6 +2202,7 @@
         <externalId>CT</externalId>
         <firstName>Christian</firstName>
         <lastName>Tybring-Gjedde</lastName>
+        <gender>M</gender>
         <dateOfBirth>1963-08-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -2059,6 +2216,7 @@
         <externalId>OVA</externalId>
         <firstName>Øyvind</firstName>
         <lastName>Vaksdal</lastName>
+        <gender>M</gender>
         <dateOfBirth>1955-10-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -2072,6 +2230,7 @@
         <externalId>SNV</externalId>
         <firstName>Snorre Serigstad</firstName>
         <lastName>Valen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1984-09-16T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -2085,6 +2244,7 @@
         <externalId>TMV</externalId>
         <firstName>Trygve Slagsvold</firstName>
         <lastName>Vedum</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-12-01T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -2098,6 +2258,7 @@
         <externalId>LVE</externalId>
         <firstName>Line</firstName>
         <lastName>Vennesland</lastName>
+        <gender>F</gender>
         <dateOfBirth>1985-02-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Aust-Agder</district>
@@ -2111,6 +2272,7 @@
         <externalId>LVA</externalId>
         <firstName>Lene</firstName>
         <lastName>Vågslid</lastName>
+        <gender>F</gender>
         <dateOfBirth>1986-03-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Telemark</district>
@@ -2124,6 +2286,7 @@
         <externalId>HEW</externalId>
         <firstName>Henning</firstName>
         <lastName>Warloe</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-03-24T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -2137,6 +2300,7 @@
         <externalId>AWE</externalId>
         <firstName>Anders B.</firstName>
         <lastName>Werp</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-12-16T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -2150,6 +2314,7 @@
         <externalId>TRUW</externalId>
         <firstName>Truls</firstName>
         <lastName>Wickholm</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-10-15T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -2163,6 +2328,7 @@
         <externalId>KSW</externalId>
         <firstName>Karin S.</firstName>
         <lastName>Woldseth</lastName>
+        <gender>F</gender>
         <dateOfBirth>1954-08-09T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -2176,6 +2342,7 @@
         <externalId>ATW</externalId>
         <firstName>Anne Tingelstad</firstName>
         <lastName>Wøien</lastName>
+        <gender>F</gender>
         <dateOfBirth>1965-06-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -2189,6 +2356,7 @@
         <externalId>MAAA</externalId>
         <firstName>Marianne</firstName>
         <lastName>Aasen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1967-02-21T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -2202,6 +2370,7 @@
         <externalId>TELA</externalId>
         <firstName>Terje</firstName>
         <lastName>Aasland</lastName>
+        <gender>M</gender>
         <dateOfBirth>1965-02-15T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Telemark</district>
@@ -2218,18 +2387,63 @@
         <description>Forslag nr. 24 fra Per Olaf Lundteigen på vegne av Senterpartiet</description>
         <onBehalfOf>Senterpartiet:</onBehalfOf>
         <body>&lt;p&gt;Stortinget ber regjeringa arbeide for å øke sjølforsyningsgraden av mat fra norsk jordbruk.</body>
+        <deliveredBy>
+          <representative>
+            <externalId>POL</externalId>
+            <firstName>Per Olaf</firstName>
+            <lastName>Lundteigen</lastName>
+            <gender>M</gender>
+            <dateOfBirth>1953-04-18T00:00:00</dateOfBirth>
+            <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+            <district></district>
+            <party></party>
+            <committees>
+            </committees>
+            <period>2011-2012</period>
+          </representative>
+        </deliveredBy>
       </proposition>
       <proposition>
         <externalId>40037988</externalId>
         <description>Forslag nr. 25 fra Per Olaf Lundteigen på vegne av Senterpartiet</description>
         <onBehalfOf>Senterpartiet:</onBehalfOf>
         <body>&lt;p&gt;Stortinget ber regjeringa arbeide for at Norge etter gjeldende WTO-avtale i hvert enkelt tilfelle benytter den tollsats som gir det høyeste tollbeløp ved innførsel av jordbruksvarer.</body>
+        <deliveredBy>
+          <representative>
+            <externalId>POL</externalId>
+            <firstName>Per Olaf</firstName>
+            <lastName>Lundteigen</lastName>
+            <gender>M</gender>
+            <dateOfBirth>1953-04-18T00:00:00</dateOfBirth>
+            <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+            <district></district>
+            <party></party>
+            <committees>
+            </committees>
+            <period>2011-2012</period>
+          </representative>
+        </deliveredBy>
       </proposition>
       <proposition>
         <externalId>40037989</externalId>
         <description>Forslag nr. 26 fra Per Olaf Lundteigen på vegne av Senterpartiet</description>
         <onBehalfOf>Senterpartiet:</onBehalfOf>
         <body>&lt;p&gt;Stortinget ber regjeringa føre en økonomisk politikk slik at inntektsgapet mellom arbeid i jordbruket og andre grupper tettes. Derved blir det attraktivt for ungdom å utdanne seg og gå inn i yrket på heltid eller deltid.</body>
+        <deliveredBy>
+          <representative>
+            <externalId>POL</externalId>
+            <firstName>Per Olaf</firstName>
+            <lastName>Lundteigen</lastName>
+            <gender>M</gender>
+            <dateOfBirth>1953-04-18T00:00:00</dateOfBirth>
+            <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+            <district></district>
+            <party></party>
+            <committees>
+            </committees>
+            <period>2011-2012</period>
+          </representative>
+        </deliveredBy>
       </proposition>
     </propositions>
   </vote>
@@ -2251,6 +2465,7 @@
         <externalId>PTA</externalId>
         <firstName>Per-Willy</firstName>
         <lastName>Amundsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1971-01-21T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -2264,6 +2479,7 @@
         <externalId>DTA</externalId>
         <firstName>Dag Terje</firstName>
         <lastName>Andersen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1957-05-27T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -2277,6 +2493,7 @@
         <externalId>KAAN</externalId>
         <firstName>Karin</firstName>
         <lastName>Andersen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1952-12-16T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -2290,6 +2507,7 @@
         <externalId>RAA</externalId>
         <firstName>Rannveig Kvifte</firstName>
         <lastName>Andresen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1967-05-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -2303,6 +2521,7 @@
         <externalId>ANA</externalId>
         <firstName>Anders</firstName>
         <lastName>Anundsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1975-11-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -2316,6 +2535,7 @@
         <externalId>MLA</externalId>
         <firstName>Mari Lund</firstName>
         <lastName>Arnem</lastName>
+        <gender>F</gender>
         <dateOfBirth>1986-01-27T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -2329,6 +2549,7 @@
         <externalId>BEHA</externalId>
         <firstName>Bendiks H.</firstName>
         <lastName>Arnesen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1951-06-09T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -2342,6 +2563,7 @@
         <externalId>HAFA</externalId>
         <firstName>Hans Frode Kielland</firstName>
         <lastName>Asmyhr</lastName>
+        <gender>M</gender>
         <dateOfBirth>1970-02-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -2355,6 +2577,7 @@
         <externalId>EAS</externalId>
         <firstName>Elisabeth</firstName>
         <lastName>Aspaker</lastName>
+        <gender>F</gender>
         <dateOfBirth>1962-10-16T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -2368,6 +2591,7 @@
         <externalId>JASP</externalId>
         <firstName>Jorodd</firstName>
         <lastName>Asphjell</lastName>
+        <gender>M</gender>
         <dateOfBirth>1960-07-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -2381,6 +2605,7 @@
         <externalId>NA</externalId>
         <firstName>Nikolai</firstName>
         <lastName>Astrup</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-06-12T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -2394,6 +2619,7 @@
         <externalId>FBJ</externalId>
         <firstName>Frank</firstName>
         <lastName>Bakke-Jensen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1965-03-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Finnmark</district>
@@ -2407,6 +2633,7 @@
         <externalId>GJB</externalId>
         <firstName>Geir Jørgen</firstName>
         <lastName>Bekkevold</lastName>
+        <gender>M</gender>
         <dateOfBirth>1963-11-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Telemark</district>
@@ -2420,6 +2647,7 @@
         <externalId>ANMB</externalId>
         <firstName>Anne Marit</firstName>
         <lastName>Bjørnflaten</lastName>
+        <gender>F</gender>
         <dateOfBirth>1969-06-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -2433,6 +2661,7 @@
         <externalId>EBO</externalId>
         <firstName>Else-May</firstName>
         <lastName>Botten</lastName>
+        <gender>F</gender>
         <dateOfBirth>1973-08-16T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -2446,6 +2675,7 @@
         <externalId>TLB</externalId>
         <firstName>Tove Linnea</firstName>
         <lastName>Brandvik</lastName>
+        <gender>F</gender>
         <dateOfBirth>1968-11-15T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -2459,6 +2689,7 @@
         <externalId>SUB</externalId>
         <firstName>Susanne</firstName>
         <lastName>Bratli</lastName>
+        <gender>F</gender>
         <dateOfBirth>1966-06-10T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nord-Trøndelag</district>
@@ -2472,6 +2703,7 @@
         <externalId>PB</externalId>
         <firstName>Per Roar</firstName>
         <lastName>Bredvold</lastName>
+        <gender>M</gender>
         <dateOfBirth>1957-03-05T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -2485,6 +2717,7 @@
         <externalId>THB</externalId>
         <firstName>Thomas</firstName>
         <lastName>Breen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1972-09-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -2498,6 +2731,7 @@
         <externalId>TBRE</externalId>
         <firstName>Tor</firstName>
         <lastName>Bremer</lastName>
+        <gender>M</gender>
         <dateOfBirth>1955-02-09T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sogn og Fjordane</district>
@@ -2511,6 +2745,7 @@
         <externalId>JBO</externalId>
         <firstName>Jan</firstName>
         <lastName>Bøhler</lastName>
+        <gender>M</gender>
         <dateOfBirth>1952-03-01T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -2524,6 +2759,7 @@
         <externalId>AC</externalId>
         <firstName>Akhtar</firstName>
         <lastName>Chaudhry</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-07-23T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -2537,6 +2773,7 @@
         <externalId>JFC</externalId>
         <firstName>Jette F.</firstName>
         <lastName>Christensen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1983-06-01T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -2550,6 +2787,7 @@
         <externalId>LIC</externalId>
         <firstName>Lise</firstName>
         <lastName>Christoffersen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1955-08-05T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -2563,6 +2801,7 @@
         <externalId>ADA</externalId>
         <firstName>André Oktay</firstName>
         <lastName>Dahl</lastName>
+        <gender>M</gender>
         <dateOfBirth>1975-07-07T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -2576,6 +2815,7 @@
         <externalId>LD</externalId>
         <firstName>Laila</firstName>
         <lastName>Dåvøy</lastName>
+        <gender>F</gender>
         <dateOfBirth>1948-08-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -2589,6 +2829,7 @@
         <externalId>LAE</externalId>
         <firstName>Lars</firstName>
         <lastName>Egeland</lastName>
+        <gender>M</gender>
         <dateOfBirth>1957-12-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -2602,6 +2843,7 @@
         <externalId>SHEG</externalId>
         <firstName>Siri Hov</firstName>
         <lastName>Eggen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1969-12-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -2615,6 +2857,7 @@
         <externalId>RAE</externalId>
         <firstName>Rigmor Andersen</firstName>
         <lastName>Eide</lastName>
+        <gender>F</gender>
         <dateOfBirth>1954-06-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -2628,6 +2871,7 @@
         <externalId>GUE</externalId>
         <firstName>Gunvor</firstName>
         <lastName>Eldegard</lastName>
+        <gender>F</gender>
         <dateOfBirth>1963-04-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -2641,6 +2885,7 @@
         <externalId>JAE</externalId>
         <firstName>Jan Arild</firstName>
         <lastName>Ellingsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1958-10-09T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -2654,6 +2899,7 @@
         <externalId>DE</externalId>
         <firstName>Dagrun</firstName>
         <lastName>Eriksen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1971-06-28T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vest-Agder</district>
@@ -2667,6 +2913,7 @@
         <externalId>RE</externalId>
         <firstName>Robert</firstName>
         <lastName>Eriksson</lastName>
+        <gender>M</gender>
         <dateOfBirth>1974-04-23T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nord-Trøndelag</district>
@@ -2680,6 +2927,7 @@
         <externalId>SAF</externalId>
         <firstName>Svein</firstName>
         <lastName>Flåtten</lastName>
+        <gender>M</gender>
         <dateOfBirth>1944-10-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -2693,6 +2941,7 @@
         <externalId>TEF</externalId>
         <firstName>Thor Erik</firstName>
         <lastName>Forsberg</lastName>
+        <gender>M</gender>
         <dateOfBirth>1980-04-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -2706,6 +2955,7 @@
         <externalId>PKF</externalId>
         <firstName>Per-Kristian</firstName>
         <lastName>Foss</lastName>
+        <gender>M</gender>
         <dateOfBirth>1950-07-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -2719,6 +2969,7 @@
         <externalId>JF</externalId>
         <firstName>Jan-Henrik</firstName>
         <lastName>Fredriksen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1956-10-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Finnmark</district>
@@ -2732,6 +2983,7 @@
         <externalId>VKG</externalId>
         <firstName>Vigdis</firstName>
         <lastName>Giltun</lastName>
+        <gender>F</gender>
         <dateOfBirth>1952-03-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -2745,6 +2997,7 @@
         <externalId>PEG</externalId>
         <firstName>Peter Skovholt</firstName>
         <lastName>Gitmark</lastName>
+        <gender>M</gender>
         <dateOfBirth>1977-04-15T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vest-Agder</district>
@@ -2758,6 +3011,7 @@
         <externalId>SAG</externalId>
         <firstName>Svein</firstName>
         <lastName>Gjelseth</lastName>
+        <gender>M</gender>
         <dateOfBirth>1950-02-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -2771,6 +3025,7 @@
         <externalId>GKG</externalId>
         <firstName>Gunn Karin</firstName>
         <lastName>Gjul</lastName>
+        <gender>F</gender>
         <dateOfBirth>1967-07-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -2784,6 +3039,7 @@
         <externalId>IAG</externalId>
         <firstName>Ingebjørg</firstName>
         <lastName>Godskesen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1957-05-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Aust-Agder</district>
@@ -2797,6 +3053,7 @@
         <externalId>SYG</externalId>
         <firstName>Sylvi</firstName>
         <lastName>Graham</lastName>
+        <gender>F</gender>
         <dateOfBirth>1951-12-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -2810,6 +3067,7 @@
         <externalId>TSG</externalId>
         <firstName>Trine Skei</firstName>
         <lastName>Grande</lastName>
+        <gender>F</gender>
         <dateOfBirth>1969-10-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -2823,6 +3081,7 @@
         <externalId>HEIG</externalId>
         <firstName>Heidi</firstName>
         <lastName>Greni</lastName>
+        <gender>F</gender>
         <dateOfBirth>1962-07-03T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -2836,6 +3095,7 @@
         <externalId>OG</externalId>
         <firstName>Oskar J.</firstName>
         <lastName>Grimstad</lastName>
+        <gender>M</gender>
         <dateOfBirth>1954-11-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -2849,6 +3109,7 @@
         <externalId>STEG</externalId>
         <firstName>Steinar</firstName>
         <lastName>Gullvåg</lastName>
+        <gender>M</gender>
         <dateOfBirth>1946-10-27T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -2862,6 +3123,7 @@
         <externalId>GAG</externalId>
         <firstName>Gunnar</firstName>
         <lastName>Gundersen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1956-05-21T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -2875,6 +3137,7 @@
         <externalId>JONG</externalId>
         <firstName>Jon Jæger</firstName>
         <lastName>Gåsvatn</lastName>
+        <gender>M</gender>
         <dateOfBirth>1954-06-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -2888,6 +3151,7 @@
         <externalId>TOHA</externalId>
         <firstName>Tore</firstName>
         <lastName>Hagebakken</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-01-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -2901,6 +3165,7 @@
         <externalId>AKSH</externalId>
         <firstName>Aksel</firstName>
         <lastName>Hagen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1953-10-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -2914,6 +3179,7 @@
         <externalId>GJH</externalId>
         <firstName>Gjermund</firstName>
         <lastName>Hagesæter</lastName>
+        <gender>M</gender>
         <dateOfBirth>1960-12-12T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -2927,6 +3193,7 @@
         <externalId>ØYVH</externalId>
         <firstName>Øyvind</firstName>
         <lastName>Halleraker</lastName>
+        <gender>M</gender>
         <dateOfBirth>1951-10-27T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -2940,6 +3207,7 @@
         <externalId>METH</externalId>
         <firstName>Mette</firstName>
         <lastName>Hanekamhaug</lastName>
+        <gender>F</gender>
         <dateOfBirth>1987-06-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -2953,6 +3221,7 @@
         <externalId>EVH</externalId>
         <firstName>Eva Kristin</firstName>
         <lastName>Hansen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1973-03-05T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -2966,6 +3235,7 @@
         <externalId>GEHN</externalId>
         <firstName>Geir-Ketil</firstName>
         <lastName>Hansen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1956-03-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -2979,6 +3249,7 @@
         <externalId>LILH</externalId>
         <firstName>Lillian</firstName>
         <lastName>Hansen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1957-05-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -2992,6 +3263,7 @@
         <externalId>SOH</externalId>
         <firstName>Sigvald Oppebøen</firstName>
         <lastName>Hansen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1950-09-21T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Telemark</district>
@@ -3005,6 +3277,7 @@
         <externalId>SRH</externalId>
         <firstName>Svein Roald</firstName>
         <lastName>Hansen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1949-08-20T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -3018,6 +3291,7 @@
         <externalId>SHAR</externalId>
         <firstName>Svein</firstName>
         <lastName>Harberg</lastName>
+        <gender>M</gender>
         <dateOfBirth>1958-07-30T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Aust-Agder</district>
@@ -3031,6 +3305,7 @@
         <externalId>KNAH</externalId>
         <firstName>Knut Arild</firstName>
         <lastName>Hareide</lastName>
+        <gender>M</gender>
         <dateOfBirth>1972-11-23T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -3044,6 +3319,7 @@
         <externalId>ARLH</externalId>
         <firstName>Arne L.</firstName>
         <lastName>Haugen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1939-07-25T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -3057,6 +3333,7 @@
         <externalId>HAKH</externalId>
         <firstName>Håkon</firstName>
         <lastName>Haugli</lastName>
+        <gender>M</gender>
         <dateOfBirth>1969-05-21T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -3070,6 +3347,7 @@
         <externalId>IHE</externalId>
         <firstName>Ingrid</firstName>
         <lastName>Heggø</lastName>
+        <gender>F</gender>
         <dateOfBirth>1961-08-12T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sogn og Fjordane</district>
@@ -3083,6 +3361,7 @@
         <externalId>LCH</externalId>
         <firstName>Linda C. Hofstad</firstName>
         <lastName>Helleland</lastName>
+        <gender>F</gender>
         <dateOfBirth>1977-08-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -3096,6 +3375,7 @@
         <externalId>TROH</externalId>
         <firstName>Trond</firstName>
         <lastName>Helleland</lastName>
+        <gender>M</gender>
         <dateOfBirth>1962-07-10T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -3109,6 +3389,7 @@
         <externalId>AREH</externalId>
         <firstName>Are</firstName>
         <lastName>Helseth</lastName>
+        <gender>M</gender>
         <dateOfBirth>1955-01-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -3122,6 +3403,7 @@
         <externalId>KARH</externalId>
         <firstName>Kari</firstName>
         <lastName>Henriksen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1955-08-10T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vest-Agder</district>
@@ -3135,6 +3417,7 @@
         <externalId>LHH</externalId>
         <firstName>Line Henriette</firstName>
         <lastName>Hjemdal</lastName>
+        <gender>F</gender>
         <dateOfBirth>1971-10-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -3148,6 +3431,7 @@
         <externalId>BÅH</externalId>
         <firstName>Bård</firstName>
         <lastName>Hoksrud</lastName>
+        <gender>M</gender>
         <dateOfBirth>1973-03-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Telemark</district>
@@ -3161,6 +3445,7 @@
         <externalId>ALEH</externalId>
         <firstName>Alf Egil</firstName>
         <lastName>Holmelid</lastName>
+        <gender>M</gender>
         <dateOfBirth>1947-12-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vest-Agder</district>
@@ -3174,6 +3459,7 @@
         <externalId>SHK</externalId>
         <firstName>Solveig</firstName>
         <lastName>Horne</lastName>
+        <gender>F</gender>
         <dateOfBirth>1969-01-12T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -3187,6 +3473,7 @@
         <externalId>MORH</externalId>
         <firstName>Morten</firstName>
         <lastName>Høglund</lastName>
+        <gender>M</gender>
         <dateOfBirth>1965-07-16T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -3200,6 +3487,7 @@
         <externalId>BENH</externalId>
         <firstName>Bent</firstName>
         <lastName>Høie</lastName>
+        <gender>M</gender>
         <dateOfBirth>1971-05-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -3213,6 +3501,7 @@
         <externalId>ØH</externalId>
         <firstName>Øyvind</firstName>
         <lastName>Håbrekke</lastName>
+        <gender>M</gender>
         <dateOfBirth>1969-12-20T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -3226,6 +3515,7 @@
         <externalId>STRH</externalId>
         <firstName>Stine Renate</firstName>
         <lastName>Håheim</lastName>
+        <gender>F</gender>
         <dateOfBirth>1984-05-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -3239,6 +3529,7 @@
         <externalId>TRI</externalId>
         <firstName>Torbjørn Røe</firstName>
         <lastName>Isaksen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-07-28T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Telemark</district>
@@ -3252,6 +3543,7 @@
         <externalId>SIVJ</externalId>
         <firstName>Siv</firstName>
         <lastName>Jensen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1969-06-01T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -3265,6 +3557,7 @@
         <externalId>IJ</externalId>
         <firstName>Irene</firstName>
         <lastName>Johansen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1961-01-07T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -3278,6 +3571,7 @@
         <externalId>MOJ</externalId>
         <firstName>Morten Ørsal</firstName>
         <lastName>Johansen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1964-09-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -3291,6 +3585,7 @@
         <externalId>ARK</externalId>
         <firstName>Arve</firstName>
         <lastName>Kambe</lastName>
+        <gender>M</gender>
         <dateOfBirth>1974-11-25T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -3304,6 +3599,7 @@
         <externalId>KKK</externalId>
         <firstName>Kari Kjønaas</firstName>
         <lastName>Kjos</lastName>
+        <gender>F</gender>
         <dateOfBirth>1962-01-25T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -3317,6 +3613,7 @@
         <externalId>JKL</externalId>
         <firstName>Jenny</firstName>
         <lastName>Klinge</lastName>
+        <gender>F</gender>
         <dateOfBirth>1975-11-28T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -3330,6 +3627,7 @@
         <externalId>UEK</externalId>
         <firstName>Ulf Erik</firstName>
         <lastName>Knudsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1964-12-20T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -3343,6 +3641,7 @@
         <externalId>TKK</externalId>
         <firstName>Tove Karoline</firstName>
         <lastName>Knutsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1951-01-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -3356,6 +3655,7 @@
         <externalId>MAKO</externalId>
         <firstName>Martin</firstName>
         <lastName>Kolberg</lastName>
+        <gender>M</gender>
         <dateOfBirth>1949-02-24T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -3369,6 +3669,7 @@
         <externalId>OYK</externalId>
         <firstName>Øyvind</firstName>
         <lastName>Korsberg</lastName>
+        <gender>M</gender>
         <dateOfBirth>1960-01-31T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -3382,6 +3683,7 @@
         <externalId>IVK</externalId>
         <firstName>Ivar</firstName>
         <lastName>Kristiansen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1956-02-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -3395,6 +3697,7 @@
         <externalId>GJK</externalId>
         <firstName>Gerd Janne</firstName>
         <lastName>Kristoffersen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1952-11-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nord-Trøndelag</district>
@@ -3408,6 +3711,7 @@
         <externalId>HHL</externalId>
         <firstName>Hallgeir H.</firstName>
         <lastName>Langeland</lastName>
+        <gender>M</gender>
         <dateOfBirth>1955-11-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -3421,6 +3725,7 @@
         <externalId>UIL</externalId>
         <firstName>Ulf</firstName>
         <lastName>Leirstein</lastName>
+        <gender>M</gender>
         <dateOfBirth>1973-06-30T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -3434,6 +3739,7 @@
         <externalId>ALJ</externalId>
         <firstName>Anna</firstName>
         <lastName>Ljunggren</lastName>
+        <gender>F</gender>
         <dateOfBirth>1984-06-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -3447,6 +3753,7 @@
         <externalId>POL</externalId>
         <firstName>Per Olaf</firstName>
         <lastName>Lundteigen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1953-04-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -3460,6 +3767,7 @@
         <externalId>ALYS</externalId>
         <firstName>Audun</firstName>
         <lastName>Lysbakken</lastName>
+        <gender>M</gender>
         <dateOfBirth>1977-09-30T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -3473,6 +3781,7 @@
         <externalId>BLO</externalId>
         <firstName>Bjørn</firstName>
         <lastName>Lødemel</lastName>
+        <gender>M</gender>
         <dateOfBirth>1958-08-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sogn og Fjordane</district>
@@ -3486,6 +3795,7 @@
         <externalId>HML</externalId>
         <firstName>Hilde</firstName>
         <lastName>Magnusson</lastName>
+        <gender>F</gender>
         <dateOfBirth>1970-06-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -3499,6 +3809,7 @@
         <externalId>SOM</externalId>
         <firstName>Sonja</firstName>
         <lastName>Mandt</lastName>
+        <gender>F</gender>
         <dateOfBirth>1960-03-29T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -3512,6 +3823,7 @@
         <externalId>MAM</externalId>
         <firstName>Marianne</firstName>
         <lastName>Marthinsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1980-08-25T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -3525,6 +3837,7 @@
         <externalId>SME</externalId>
         <firstName>Siri A.</firstName>
         <lastName>Meling</lastName>
+        <gender>F</gender>
         <dateOfBirth>1963-02-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -3538,6 +3851,7 @@
         <externalId>TMI</externalId>
         <firstName>Torgeir</firstName>
         <lastName>Micaelsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1979-05-20T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -3551,6 +3865,7 @@
         <externalId>ASC</externalId>
         <firstName>Åse</firstName>
         <lastName>Michaelsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1960-06-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vest-Agder</district>
@@ -3564,6 +3879,7 @@
         <externalId>NIMJ</externalId>
         <firstName>Nina</firstName>
         <lastName>Mjøberg</lastName>
+        <gender>F</gender>
         <dateOfBirth>1964-04-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -3577,6 +3893,7 @@
         <externalId>PEMY</externalId>
         <firstName>Peter N.</firstName>
         <lastName>Myhre</lastName>
+        <gender>M</gender>
         <dateOfBirth>1954-11-29T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -3590,6 +3907,7 @@
         <externalId>LMY</externalId>
         <firstName>Lars</firstName>
         <lastName>Myraune</lastName>
+        <gender>M</gender>
         <dateOfBirth>1944-08-05T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nord-Trøndelag</district>
@@ -3603,6 +3921,7 @@
         <externalId>SMY</externalId>
         <firstName>Sverre</firstName>
         <lastName>Myrli</lastName>
+        <gender>M</gender>
         <dateOfBirth>1971-08-26T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -3616,6 +3935,7 @@
         <externalId>HTN</externalId>
         <firstName>Harald T.</firstName>
         <lastName>Nesvik</lastName>
+        <gender>M</gender>
         <dateOfBirth>1966-05-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -3629,6 +3949,7 @@
         <externalId>IRLN</externalId>
         <firstName>Irene Lange</firstName>
         <lastName>Nordahl</lastName>
+        <gender>F</gender>
         <dateOfBirth>1968-02-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Troms</district>
@@ -3642,6 +3963,7 @@
         <externalId>TON</externalId>
         <firstName>Tore</firstName>
         <lastName>Nordtun</lastName>
+        <gender>M</gender>
         <dateOfBirth>1949-09-30T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -3655,6 +3977,7 @@
         <externalId>JSN</externalId>
         <firstName>Janne Sjelmo</firstName>
         <lastName>Nordås</lastName>
+        <gender>F</gender>
         <dateOfBirth>1964-05-11T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -3668,6 +3991,7 @@
         <externalId>MN</externalId>
         <firstName>Marit</firstName>
         <lastName>Nybakk</lastName>
+        <gender>F</gender>
         <dateOfBirth>1947-02-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -3681,6 +4005,7 @@
         <externalId>ELN</externalId>
         <firstName>Elisabeth Røbekk</firstName>
         <lastName>Nørve</lastName>
+        <gender>F</gender>
         <dateOfBirth>1951-03-29T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -3694,6 +4019,7 @@
         <externalId>IOL</externalId>
         <firstName>Ingalill</firstName>
         <lastName>Olsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1955-12-15T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Finnmark</district>
@@ -3707,6 +4033,7 @@
         <externalId>PO</externalId>
         <firstName>Per Arne</firstName>
         <lastName>Olsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-02-21T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vestfold</district>
@@ -3720,6 +4047,7 @@
         <externalId>WO</externalId>
         <firstName>Wenche</firstName>
         <lastName>Olsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1965-11-30T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -3733,6 +4061,7 @@
         <externalId>TO</externalId>
         <firstName>Torfinn</firstName>
         <lastName>Opheim</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-04-12T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -3746,6 +4075,7 @@
         <externalId>HPED</externalId>
         <firstName>Helga</firstName>
         <lastName>Pedersen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1973-01-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Finnmark</district>
@@ -3759,6 +4089,7 @@
         <externalId>GP</externalId>
         <firstName>Geir</firstName>
         <lastName>Pollestad</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-08-13T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -3772,6 +4103,7 @@
         <externalId>CNR</externalId>
         <firstName>Christina Nilsson</firstName>
         <lastName>Ramsøy</lastName>
+        <gender>F</gender>
         <dateOfBirth>1986-11-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nord-Trøndelag</district>
@@ -3785,6 +4117,7 @@
         <externalId>LRE</externalId>
         <firstName>Laila Marie</firstName>
         <lastName>Reiertsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1960-10-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -3798,6 +4131,7 @@
         <externalId>MAGR</externalId>
         <firstName>Magne</firstName>
         <lastName>Rommetveit</lastName>
+        <gender>M</gender>
         <dateOfBirth>1956-04-27T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -3811,6 +4145,7 @@
         <externalId>KJR</externalId>
         <firstName>Kjell Ingolf</firstName>
         <lastName>Ropstad</lastName>
+        <gender>M</gender>
         <dateOfBirth>1985-06-01T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Aust-Agder</district>
@@ -3824,6 +4159,7 @@
         <externalId>TR</externalId>
         <firstName>Torstein</firstName>
         <lastName>Rudihagen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1951-08-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -3837,6 +4173,7 @@
         <externalId>JHR</externalId>
         <firstName>Jørund</firstName>
         <lastName>Rytman</lastName>
+        <gender>M</gender>
         <dateOfBirth>1977-05-04T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -3850,6 +4187,7 @@
         <externalId>PES</externalId>
         <firstName>Per</firstName>
         <lastName>Sandberg</lastName>
+        <gender>M</gender>
         <dateOfBirth>1960-02-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -3863,6 +4201,7 @@
         <externalId>ESAN</externalId>
         <firstName>Erling</firstName>
         <lastName>Sande</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-11-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sogn og Fjordane</district>
@@ -3876,6 +4215,7 @@
         <externalId>JTS</externalId>
         <firstName>Jan Tore</firstName>
         <lastName>Sanner</lastName>
+        <gender>M</gender>
         <dateOfBirth>1965-05-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -3889,6 +4229,7 @@
         <externalId>ISC</externalId>
         <firstName>Ingjerd</firstName>
         <lastName>Schou</lastName>
+        <gender>F</gender>
         <dateOfBirth>1955-01-20T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Østfold</district>
@@ -3902,6 +4243,7 @@
         <externalId>KSIM</externalId>
         <firstName>Kåre</firstName>
         <lastName>Simensen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1955-08-30T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Finnmark</district>
@@ -3915,6 +4257,7 @@
         <externalId>EIRS</externalId>
         <firstName>Eirik</firstName>
         <lastName>Sivertsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1971-03-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -3928,6 +4271,7 @@
         <externalId>SONS</externalId>
         <firstName>Sonja Irene</firstName>
         <lastName>Sjøli</lastName>
+        <gender>F</gender>
         <dateOfBirth>1949-06-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -3941,6 +4285,7 @@
         <externalId>SSK</externalId>
         <firstName>Siv Aida Rui</firstName>
         <lastName>Skattem</lastName>
+        <gender>F</gender>
         <dateOfBirth>1970-04-09T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -3954,6 +4299,7 @@
         <externalId>HSK</externalId>
         <firstName>Henning</firstName>
         <lastName>Skumsvoll</lastName>
+        <gender>M</gender>
         <dateOfBirth>1947-03-15T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Vest-Agder</district>
@@ -3967,6 +4313,7 @@
         <externalId>ES</externalId>
         <firstName>Erna</firstName>
         <lastName>Solberg</lastName>
+        <gender>F</gender>
         <dateOfBirth>1961-02-24T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -3980,6 +4327,7 @@
         <externalId>KETS</externalId>
         <firstName>Ketil</firstName>
         <lastName>Solvik-Olsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1972-02-14T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -3993,6 +4341,7 @@
         <externalId>AESO</externalId>
         <firstName>Arne</firstName>
         <lastName>Sortevik</lastName>
+        <gender>M</gender>
         <dateOfBirth>1947-03-12T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -4006,6 +4355,7 @@
         <externalId>AGES</externalId>
         <firstName>Åge</firstName>
         <lastName>Starheim</lastName>
+        <gender>M</gender>
         <dateOfBirth>1946-05-23T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sogn og Fjordane</district>
@@ -4019,6 +4369,7 @@
         <externalId>AAST</externalId>
         <firstName>Arild</firstName>
         <lastName>Stokkan-Grande</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-04-05T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nord-Trøndelag</district>
@@ -4032,6 +4383,7 @@
         <externalId>KNUS</externalId>
         <firstName>Knut</firstName>
         <lastName>Storberget</lastName>
+        <gender>M</gender>
         <dateOfBirth>1964-10-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -4045,6 +4397,7 @@
         <externalId>TAS</externalId>
         <firstName>Tor-Arne</firstName>
         <lastName>Strøm</lastName>
+        <gender>M</gender>
         <dateOfBirth>1952-05-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -4058,6 +4411,7 @@
         <externalId>EKS</externalId>
         <firstName>Eirin</firstName>
         <lastName>Sund</lastName>
+        <gender>F</gender>
         <dateOfBirth>1967-04-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -4071,6 +4425,7 @@
         <externalId>KES</externalId>
         <firstName>Kenneth</firstName>
         <lastName>Svendsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1954-08-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -4084,6 +4439,7 @@
         <externalId>KSV</externalId>
         <firstName>Kjell Arvid</firstName>
         <lastName>Svendsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1953-08-27T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -4097,6 +4453,7 @@
         <externalId>HOSY</externalId>
         <firstName>Hans Olav</firstName>
         <lastName>Syversen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1966-11-25T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -4110,6 +4467,7 @@
         <externalId>TMS</externalId>
         <firstName>Tone Merete</firstName>
         <lastName>Sønsterud</lastName>
+        <gender>F</gender>
         <dateOfBirth>1959-05-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -4123,6 +4481,7 @@
         <externalId>IME</externalId>
         <firstName>Ine M. Eriksen</firstName>
         <lastName>Søreide</lastName>
+        <gender>F</gender>
         <dateOfBirth>1976-05-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -4136,6 +4495,7 @@
         <externalId>HTA</externalId>
         <firstName>Hadia</firstName>
         <lastName>Tajik</lastName>
+        <gender>F</gender>
         <dateOfBirth>1983-07-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -4149,6 +4509,7 @@
         <externalId>DOT</externalId>
         <firstName>Dag Ole</firstName>
         <lastName>Teigen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1982-08-10T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -4162,6 +4523,7 @@
         <externalId>BT</externalId>
         <firstName>Borghild</firstName>
         <lastName>Tenden</lastName>
+        <gender>F</gender>
         <dateOfBirth>1951-06-23T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -4175,6 +4537,7 @@
         <externalId>MIT</externalId>
         <firstName>Michael</firstName>
         <lastName>Tetzschner</lastName>
+        <gender>M</gender>
         <dateOfBirth>1954-02-09T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -4188,6 +4551,7 @@
         <externalId>OLET</externalId>
         <firstName>Olemic</firstName>
         <lastName>Thommessen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1956-04-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -4201,6 +4565,7 @@
         <externalId>IBTH</externalId>
         <firstName>Ib</firstName>
         <lastName>Thomsen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-10-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -4214,6 +4579,7 @@
         <externalId>BTH</externalId>
         <firstName>Bente</firstName>
         <lastName>Thorsen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1958-10-31T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -4227,6 +4593,7 @@
         <externalId>KJT</externalId>
         <firstName>Kjersti</firstName>
         <lastName>Toppe</lastName>
+        <gender>F</gender>
         <dateOfBirth>1967-10-20T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -4240,6 +4607,7 @@
         <externalId>TOVT</externalId>
         <firstName>Tove-Lise</firstName>
         <lastName>Torve</lastName>
+        <gender>F</gender>
         <dateOfBirth>1964-06-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Møre og Romsdal</district>
@@ -4253,6 +4621,7 @@
         <externalId>ATR</externalId>
         <firstName>Anette</firstName>
         <lastName>Trettebergstuen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1981-05-25T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -4266,6 +4635,7 @@
         <externalId>TOT</externalId>
         <firstName>Torgeir</firstName>
         <lastName>Trældal</lastName>
+        <gender>M</gender>
         <dateOfBirth>1965-01-02T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Nordland</district>
@@ -4279,6 +4649,7 @@
         <externalId>CT</externalId>
         <firstName>Christian</firstName>
         <lastName>Tybring-Gjedde</lastName>
+        <gender>M</gender>
         <dateOfBirth>1963-08-08T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -4292,6 +4663,7 @@
         <externalId>OVA</externalId>
         <firstName>Øyvind</firstName>
         <lastName>Vaksdal</lastName>
+        <gender>M</gender>
         <dateOfBirth>1955-10-19T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Rogaland</district>
@@ -4305,6 +4677,7 @@
         <externalId>SNV</externalId>
         <firstName>Snorre Serigstad</firstName>
         <lastName>Valen</lastName>
+        <gender>M</gender>
         <dateOfBirth>1984-09-16T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Sør-Trøndelag</district>
@@ -4318,6 +4691,7 @@
         <externalId>TMV</externalId>
         <firstName>Trygve Slagsvold</firstName>
         <lastName>Vedum</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-12-01T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hedmark</district>
@@ -4331,6 +4705,7 @@
         <externalId>LVE</externalId>
         <firstName>Line</firstName>
         <lastName>Vennesland</lastName>
+        <gender>F</gender>
         <dateOfBirth>1985-02-06T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Aust-Agder</district>
@@ -4344,6 +4719,7 @@
         <externalId>LVA</externalId>
         <firstName>Lene</firstName>
         <lastName>Vågslid</lastName>
+        <gender>F</gender>
         <dateOfBirth>1986-03-17T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Telemark</district>
@@ -4357,6 +4733,7 @@
         <externalId>HEW</externalId>
         <firstName>Henning</firstName>
         <lastName>Warloe</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-03-24T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -4370,6 +4747,7 @@
         <externalId>AWE</externalId>
         <firstName>Anders B.</firstName>
         <lastName>Werp</lastName>
+        <gender>M</gender>
         <dateOfBirth>1961-12-16T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Buskerud</district>
@@ -4383,6 +4761,7 @@
         <externalId>TRUW</externalId>
         <firstName>Truls</firstName>
         <lastName>Wickholm</lastName>
+        <gender>M</gender>
         <dateOfBirth>1978-10-15T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oslo</district>
@@ -4396,6 +4775,7 @@
         <externalId>KSW</externalId>
         <firstName>Karin S.</firstName>
         <lastName>Woldseth</lastName>
+        <gender>F</gender>
         <dateOfBirth>1954-08-09T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Hordaland</district>
@@ -4409,6 +4789,7 @@
         <externalId>ATW</externalId>
         <firstName>Anne Tingelstad</firstName>
         <lastName>Wøien</lastName>
+        <gender>F</gender>
         <dateOfBirth>1965-06-18T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Oppland</district>
@@ -4422,6 +4803,7 @@
         <externalId>MAAA</externalId>
         <firstName>Marianne</firstName>
         <lastName>Aasen</lastName>
+        <gender>F</gender>
         <dateOfBirth>1967-02-21T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Akershus</district>
@@ -4435,6 +4817,7 @@
         <externalId>TELA</externalId>
         <firstName>Terje</firstName>
         <lastName>Aasland</lastName>
+        <gender>M</gender>
         <dateOfBirth>1965-02-15T00:00:00</dateOfBirth>
         <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
         <district>Telemark</district>
@@ -4451,18 +4834,63 @@
         <description>Forslag nr. 19 fra Borghild Tenden på vegne av Venstre</description>
         <onBehalfOf>Venstre:</onBehalfOf>
         <body>&lt;p&gt;Stortinget ber regjeringen om å gjennomgå hele jordbruksavtaleinstituttet, med den hensikt å forenkle forhandlingene til utelukkende å omhandle tilskuddsordninger som har direkte innvirkning på bøndenes inntektsmulighet.</body>
+        <deliveredBy>
+          <representative>
+            <externalId>BT</externalId>
+            <firstName>Borghild</firstName>
+            <lastName>Tenden</lastName>
+            <gender>F</gender>
+            <dateOfBirth>1951-06-23T00:00:00</dateOfBirth>
+            <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+            <district></district>
+            <party></party>
+            <committees>
+            </committees>
+            <period>2011-2012</period>
+          </representative>
+        </deliveredBy>
       </proposition>
       <proposition>
         <externalId>40037984</externalId>
         <description>Forslag nr. 21 fra Borghild Tenden på vegne av Venstre</description>
         <onBehalfOf>Venstre:</onBehalfOf>
         <body>&lt;p&gt;Stortinget ber regjeringen aktivt bidra til en framtidig WTO-avtale bl.a. gjennom tydelige innrømmelser når det gjelder fjerning av alle former for eksportsubsidier.</body>
+        <deliveredBy>
+          <representative>
+            <externalId>BT</externalId>
+            <firstName>Borghild</firstName>
+            <lastName>Tenden</lastName>
+            <gender>F</gender>
+            <dateOfBirth>1951-06-23T00:00:00</dateOfBirth>
+            <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+            <district></district>
+            <party></party>
+            <committees>
+            </committees>
+            <period>2011-2012</period>
+          </representative>
+        </deliveredBy>
       </proposition>
       <proposition>
         <externalId>40037985</externalId>
         <description>Forslag nr. 22 fra Borghild Tenden på vegne av Venstre</description>
         <onBehalfOf>Venstre:</onBehalfOf>
         <body>&lt;p&gt;Stortinget ber regjeringen foreta en styrt avvikling av pelsdyrhold i Norge.</body>
+        <deliveredBy>
+          <representative>
+            <externalId>BT</externalId>
+            <firstName>Borghild</firstName>
+            <lastName>Tenden</lastName>
+            <gender>F</gender>
+            <dateOfBirth>1951-06-23T00:00:00</dateOfBirth>
+            <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+            <district></district>
+            <party></party>
+            <committees>
+            </committees>
+            <period>2011-2012</period>
+          </representative>
+        </deliveredBy>
       </proposition>
     </propositions>
   </vote>

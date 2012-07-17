@@ -72,6 +72,73 @@ module Hdo
         vote.counts.absent.should == 71
       end
 
+      it 'converts itself to HDO XML' do
+        vote = Vote.new('2175', '51448', true, false, 'Forslag 24 - 26 på vegne av Per Olaf Lundteigen', 'ikke_spesifisert', 'ikke_spesifisert', '2012-04-12T16:37:27.053', 2, 96, 71)
+
+        rep = Representative.new('PTA', 'Per-Willy', 'Amundsen', 'M', '1971-01-21T00:00:00', '0001-01-01T00:00:00', 'Troms', 'Fremskrittspartiet', [], '2011-2012')
+        rep.vote_result = 'against'
+
+        vote.propositions << Vote::Proposition.new('1234', 'description', 'on behalf of', 'body', rep)
+        vote.representatives << rep
+
+        vote.to_hdo_xml.should == <<-XML
+<vote>
+  <externalId>2175</externalId>
+  <externalIssueId>51448</externalIssueId>
+  <counts>
+    <for>2</for>
+    <against>96</against>
+    <absent>71</absent>
+  </counts>
+  <enacted>false</enacted>
+  <subject>Forslag 24 - 26 på vegne av Per Olaf Lundteigen</subject>
+  <method>ikke_spesifisert</method>
+  <resultType>ikke_spesifisert</resultType>
+  <time>2012-04-12T16:37:27.053</time>
+  <representatives>
+    <representative>
+      <externalId>PTA</externalId>
+      <firstName>Per-Willy</firstName>
+      <lastName>Amundsen</lastName>
+      <gender>M</gender>
+      <dateOfBirth>1971-01-21T00:00:00</dateOfBirth>
+      <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+      <district>Troms</district>
+      <party>Fremskrittspartiet</party>
+      <committees>
+      </committees>
+      <period>2011-2012</period>
+      <voteResult>against</voteResult>
+    </representative>
+  </representatives>
+  <propositions>
+    <proposition>
+      <externalId>1234</externalId>
+      <description>description</description>
+      <onBehalfOf>on behalf of</onBehalfOf>
+      <body>body</body>
+      <deliveredBy>
+        <representative>
+          <externalId>PTA</externalId>
+          <firstName>Per-Willy</firstName>
+          <lastName>Amundsen</lastName>
+          <gender>M</gender>
+          <dateOfBirth>1971-01-21T00:00:00</dateOfBirth>
+          <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+          <district>Troms</district>
+          <party>Fremskrittspartiet</party>
+          <committees>
+          </committees>
+          <period>2011-2012</period>
+          <voteResult>against</voteResult>
+        </representative>
+      </deliveredBy>
+    </proposition>
+  </propositions>
+</vote>
+        XML
+      end
+
     end
   end
 end

@@ -33,25 +33,6 @@ module Hdo
           @data_source = data_source
         end
 
-        def xml
-          ERB.new(template, 0, "%-<>").result(binding)
-        end
-
-        private
-
-        def template
-          File.read(File.expand_path("../../templates/#{self.class.type_name}.xml.erb", __FILE__))
-        end
-
-        # utility methods
-
-        def remove_newlines(str)
-          str.gsub(/\r?\n/, '')
-        end
-
-        def remove_invalid_html(str)
-          str.gsub("<\\p>", "")
-        end
       end
       
     end

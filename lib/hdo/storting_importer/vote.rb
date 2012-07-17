@@ -5,12 +5,25 @@ module Hdo
       end
 
       class Proposition < Struct.new(:external_id, :description, :on_behalf_of, :body, :delivered_by)
+        def to_hdo_xml(builder)
+          builder.proposition do |pr|
+            pr.externalId external_id
+            pr.description description
+            pr.onBehalfOf on_behalf_of
+            pr.body body
+
+            pr.deliveredBy do |db|
+              delivered_by.to_hdo_xml(db) if delivered_by
+            end
+          end
+        end
       end
 
       attr_reader :external_id, :external_issue_id, :personal, :enacted, :subject,
                   :method, :result_type, :time, :counts, :propositions, :representatives
 
       alias_method :personal?, :personal
+      alias_method :enacted?, :enacted
 
       def self.from_storting_doc(doc)
         issue_id = doc.css("sak_id").first.text
@@ -26,7 +39,7 @@ module Hdo
 
           forc     = Integer(vote_node.css("antall_for").text)
           againstc = Integer(vote_node.css("antall_mot").text)
-          absentc = Integer(vote_node.css("antall_ikke_tilstede").text)
+          absentc  = Integer(vote_node.css("antall_ikke_tilstede").text)
 
           # settes til -1 ved personlig_votering=false
           forc = 0 if forc < 0
@@ -85,6 +98,35 @@ module Hdo
                             end
 
           rep
+        end
+      end
+
+      def to_hdo_xml(builder = Util.builder)
+        builder.vote do |vote|
+          vote.externalId external_id
+          vote.externalIssueId external_issue_id
+          vote.counts do |c|
+            c.for counts.for
+            c.against counts.against
+            c.absent counts.absent
+          end
+          vote.enacted enacted
+          vote.subject subject
+          vote.method method
+          vote.resultType result_type
+          vote.time time
+
+          vote.representatives do |reps|
+            representatives.each do |rep|
+              rep.to_hdo_xml(reps)
+            end
+          end
+
+          vote.propositions do |props|
+            propositions.each do |prop|
+              prop.to_hdo_xml(props)
+            end
+          end
         end
       end
 

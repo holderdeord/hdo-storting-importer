@@ -51,7 +51,10 @@ module Hdo
           data_source.should_receive(:propositions_for).with('2176').and_return(input_for(:propositions_2176))
           data_source.should_receive(:vote_results_for).with('2176').and_return(input_for(:vote_results_2176))
 
-          VoteConverter.new(data_source, %w[1]).xml.should == output_for(:votes)
+          actual = VoteConverter.new(data_source, %w[1]).xml
+          expected = output_for(:votes)
+
+          actual.should == expected
         end
 
         it "converts promises" do
