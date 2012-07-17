@@ -1,7 +1,7 @@
 module Hdo
   module StortingImporter
     module Converters
-      
+
       class CategoryConverter < Converter
 
         def self.type_name
@@ -10,25 +10,11 @@ module Hdo
 
         def categories
           docs.map { |doc|
-            doc.css("emne_liste > emne").map do |xt|
-              cat = build_category(xt)
-
-              subnodes = xt.css("underemne_liste > emne")
-              cat[:subCategories] = subnodes.map { |st| build_category(st) }
-
-              cat
-            end
+            Category.from_storting_doc(doc)
           }.flatten
         end
-
-        def build_category(node)
-          {
-            externalId: node.css("id").first.text,
-            name: node.css("navn").first.text
-          }
-        end
       end
-      
+
     end
   end
 end

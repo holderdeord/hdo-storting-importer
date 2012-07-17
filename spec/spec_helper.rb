@@ -21,6 +21,10 @@ module Hdo
       def output_path(filename)
         FIXTURES.join("output/#{filename}")
       end
+      
+      def parse(str)
+        Nokogiri::XML.parse(str)
+      end
 
     end
   end

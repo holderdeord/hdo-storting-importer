@@ -2,13 +2,13 @@
 <categories>
   <%- categories.each do |category| -%>
   <category>
-    <externalId><%= category[:externalId] %></externalId>
-    <name><%= category[:name] %></name>
+    <externalId><%= category.external_id %></externalId>
+    <name><%= category.name %></name>
     <subcategories>
-      <%- category[:subCategories].each do |subcategory| -%>
+      <%- category.children.each do |subcategory| -%>
       <category>
-        <externalId><%= subcategory[:externalId] %></externalId>
-        <name><%= subcategory[:name] %></name>
+        <externalId><%= subcategory.external_id %></externalId>
+        <name><%= subcategory.name %></name>
       </category>
       <%- end -%>
     </subcategories>

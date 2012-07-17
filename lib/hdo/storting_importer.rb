@@ -20,6 +20,8 @@ require 'hdo/storting_importer/api_data_source'
 require 'hdo/storting_importer/script_importer'
 require 'hdo/storting_importer/http_importer'
 
+require 'hdo/storting_importer/category'
+
 require 'hdo/storting_importer/representative_builder'
 require 'hdo/storting_importer/converters/converter'
 require 'hdo/storting_importer/converters/promise_converter'
