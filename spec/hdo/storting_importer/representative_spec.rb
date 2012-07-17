@@ -46,6 +46,27 @@ module Hdo
         rep.date_of_birth.should == '1975-07-07T00:00:00'
         rep.date_of_death.should == '0001-01-01T00:00:00'
       end
+
+      it 'converts itself into HDO XML' do
+        rep = Representative.new('ADA', 'André Oktay', 'Dahl', 'M', '1975-07-07T00:00:00', '0001-01-01T00:00:00', 'Akershus', 'Høyre', ['Justiskomiteen'], '2011-2012')
+        rep.to_hdo_xml.should == <<-XML
+<representative>
+  <externalId>ADA</externalId>
+  <firstName>André Oktay</firstName>
+  <lastName>Dahl</lastName>
+  <gender>M</gender>
+  <dateOfBirth>1975-07-07T00:00:00</dateOfBirth>
+  <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
+  <district>Akershus</district>
+  <party>Høyre</party>
+  <committees>
+    <committee>Justiskomiteen</committee>
+  </committees>
+  <period>2011-2012</period>
+</representative>
+        XML
+      end
+
     end
   end
 end

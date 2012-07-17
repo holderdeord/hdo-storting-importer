@@ -61,6 +61,29 @@ module Hdo
         external_id.hash ^ self.class.hash
       end
 
+      def to_hdo_xml(builder = Util.builder)
+        builder.representative do |rep|
+          rep.externalId external_id
+          rep.firstName first_name
+          rep.lastName last_name
+          rep.gender gender
+          rep.dateOfBirth date_of_birth
+          rep.dateOfDeath date_of_death
+          rep.district district
+          rep.party party
+
+          rep.committees do |coms|
+            committees.each { |e| coms.committee e }
+          end
+
+          rep.period period
+
+          if vote_result
+            rep.voteResult vote_result
+          end
+        end
+      end
+
     end
   end
 end
