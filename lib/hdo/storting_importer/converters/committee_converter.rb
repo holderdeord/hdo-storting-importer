@@ -9,12 +9,7 @@ module Hdo
 
         def committees
           docs.map do |doc|
-            doc.css("komiteer_liste komite").map do |xc|
-              {
-                externalId: xc.css("id").first.text,
-                name: xc.css("navn").first.text
-              }
-            end
+            Committee.from_storting_doc(doc)
           end.flatten
         end
       end
