@@ -4,6 +4,8 @@ module Hdo
       attr_reader :external_id, :first_name, :last_name, :date_of_birth, :date_of_death,
                   :district, :party, :committees, :period, :gender
 
+      attr_accessor :vote_result
+
       def self.from_storting_doc(doc)
         nodes = doc.css("dagensrepresentant")
         nodes += doc.css("representant")
@@ -46,6 +48,8 @@ module Hdo
         @party         = party
         @committees    = committees
         @period        = period
+
+        @vote_result   = nil
       end
 
       def ==(other)

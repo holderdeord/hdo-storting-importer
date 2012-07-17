@@ -40,9 +40,6 @@ module Hdo
           actual = Converter.for(:representatives).new(data_source).xml
           expected = output_for(:representatives)
 
-          File.open("/tmp/actual.xml", "w") { |file| file << actual }
-          File.open("/tmp/expected.xml", "w") { |file| file << expected }
-
           actual.should == expected
         end
 
