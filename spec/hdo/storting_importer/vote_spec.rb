@@ -5,6 +5,18 @@ module Hdo
   module StortingImporter
     describe Vote do
 
+      def create_vote
+        vote = Vote.new('2175', '51448', true, false, 'Forslag 24 - 26 på vegne av Per Olaf Lundteigen', 'ikke_spesifisert', 'ikke_spesifisert', '2012-04-12T16:37:27.053', 2, 96, 71)
+
+        rep = Representative.new('PTA', 'Per-Willy', 'Amundsen', 'M', '1971-01-21T00:00:00', '0001-01-01T00:00:00', 'Troms', 'Fremskrittspartiet', [], '2011-2012')
+        rep.vote_result = 'against'
+
+        vote.propositions << Vote::Proposition.new('1234', 'description', 'on behalf of', 'body', rep)
+        vote.representatives << rep
+
+        vote
+      end
+
       it "builds votes from the Storting XML list" do
         xml = <<-XML
         <?xml version="1.0" encoding="utf-8"?>
@@ -73,14 +85,7 @@ module Hdo
       end
 
       it 'converts itself to HDO XML' do
-        vote = Vote.new('2175', '51448', true, false, 'Forslag 24 - 26 på vegne av Per Olaf Lundteigen', 'ikke_spesifisert', 'ikke_spesifisert', '2012-04-12T16:37:27.053', 2, 96, 71)
-
-        rep = Representative.new('PTA', 'Per-Willy', 'Amundsen', 'M', '1971-01-21T00:00:00', '0001-01-01T00:00:00', 'Troms', 'Fremskrittspartiet', [], '2011-2012')
-        rep.vote_result = 'against'
-
-        vote.propositions << Vote::Proposition.new('1234', 'description', 'on behalf of', 'body', rep)
-        vote.representatives << rep
-
+        vote = create_vote
         vote.to_hdo_xml.should == <<-XML
 <vote>
   <externalId>2175</externalId>
@@ -90,6 +95,7 @@ module Hdo
     <against>96</against>
     <absent>71</absent>
   </counts>
+  <personal>true</personal>
   <enacted>false</enacted>
   <subject>Forslag 24 - 26 på vegne av Per Olaf Lundteigen</subject>
   <method>ikke_spesifisert</method>
@@ -137,6 +143,11 @@ module Hdo
   </propositions>
 </vote>
         XML
+      end
+
+      it 'builds vote from HDO XML' do
+        orig = create_vote
+        Vote.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
       end
 
     end

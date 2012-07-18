@@ -4,6 +4,10 @@ module Hdo
   module StortingImporter
     describe Representative do
 
+      def create_representative
+        Representative.new('ADA', 'André Oktay', 'Dahl', 'M', '1975-07-07T00:00:00', '0001-01-01T00:00:00', 'Akershus', 'Høyre', ['Justiskomiteen'], '2011-2012')
+      end
+
       it "builds representatives from the Storting XML list" do
         xml = <<-XML
         <?xml version="1.0" encoding="utf-8"?>
@@ -48,7 +52,7 @@ module Hdo
       end
 
       it 'converts itself into HDO XML' do
-        rep = Representative.new('ADA', 'André Oktay', 'Dahl', 'M', '1975-07-07T00:00:00', '0001-01-01T00:00:00', 'Akershus', 'Høyre', ['Justiskomiteen'], '2011-2012')
+        rep = create_representative
         rep.to_hdo_xml.should == <<-XML
 <representative>
   <externalId>ADA</externalId>
@@ -65,6 +69,11 @@ module Hdo
   <period>2011-2012</period>
 </representative>
         XML
+      end
+
+      it 'builds itself from HDO XML' do
+        rep = create_representative
+        Representative.from_hdo_node(parse(rep.to_hdo_xml)).should == rep
       end
 
     end

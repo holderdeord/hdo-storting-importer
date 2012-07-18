@@ -17,7 +17,7 @@ module Hdo
 
         def representatives
           reps = docs.map { |doc| Representative.from_storting_doc(doc) }.flatten.compact
-          reps.uniq.sort_by { |e| e.external_id }
+          reps.uniq_by { |e| e.external_id }.sort_by { |e| e.external_id }
         end
 
         def xml

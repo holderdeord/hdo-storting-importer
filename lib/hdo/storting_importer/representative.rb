@@ -20,7 +20,7 @@ module Hdo
         party_node = node.css("parti navn").first
         party      = party_node ? party_node.text : ''
 
-        committees = node.css("komite").map { |c| c.css("navn").text }
+        committees = node.css("komite").map { |c| c.css("navn").text.strip }
         period     = '2011-2012' # FIXME
 
         new(
@@ -35,6 +35,30 @@ module Hdo
           committees,
           period
         )
+      end
+
+      def self.from_hdo_node(node)
+        district_node = node.css("district").first
+        district      = district_node ? district_node.text : ''
+
+        party_node = node.css("party").first
+        party      = party_node ? party_node.text : ''
+
+        rep = new node.css("externalId").first.text,
+                  node.css("firstName").first.text,
+                  node.css("lastName").first.text,
+                  node.css("gender").first.text,
+                  node.css("dateOfBirth").first.text,
+                  node.css("dateOfDeath").first.text,
+                  district,
+                  party,
+                  node.css("committees committee").map { |e| e.text.strip },
+                  node.css("period").first.text
+
+        result_node = node.css("voteResult").first
+        rep.vote_result = result_node.text if result_node
+
+        rep
       end
 
       def initialize(external_id, first_name, last_name, gender, date_of_birth, date_of_death, district, party, committees, period)
@@ -53,12 +77,7 @@ module Hdo
       end
 
       def ==(other)
-        other.kind_of?(self.class) && external_id == other.external_id
-      end
-      alias_method :eql?, :==
-
-      def hash
-        external_id.hash ^ self.class.hash
+        other.kind_of?(self.class) && to_hdo_xml == other.to_hdo_xml
       end
 
       def to_hdo_xml(builder = Util.builder)

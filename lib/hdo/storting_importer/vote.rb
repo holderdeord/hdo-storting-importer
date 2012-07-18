@@ -1,26 +1,9 @@
 module Hdo
   module StortingImporter
     class Vote
-      class Counts < Struct.new(:for, :against, :absent)
-      end
-
-      class Proposition < Struct.new(:external_id, :description, :on_behalf_of, :body, :delivered_by)
-        def to_hdo_xml(builder)
-          builder.proposition do |pr|
-            pr.externalId external_id
-            pr.description description
-            pr.onBehalfOf on_behalf_of
-            pr.body body
-
-            pr.deliveredBy do |db|
-              delivered_by.to_hdo_xml(db) if delivered_by
-            end
-          end
-        end
-      end
-
       attr_reader :external_id, :external_issue_id, :personal, :enacted, :subject,
-                  :method, :result_type, :time, :counts, :propositions, :representatives
+                  :method, :result_type, :time, :counts
+      attr_accessor :propositions, :representatives
 
       alias_method :personal?, :personal
       alias_method :enacted?, :enacted
@@ -48,6 +31,26 @@ module Hdo
 
           new vote_id, issue_id, personal, enacted, subject, method, result_type, time, forc, againstc, absentc
         end
+      end
+
+      def self.from_hdo_node(node)
+        external_id       = node.css("externalId").first.text
+        external_issue_id = node.css("externalIssueId").first.text
+        for_count         = node.css("counts for").first.text
+        against_count     = node.css("counts against").first.text
+        absent_count      = node.css("counts absent").first.text
+        personal          = node.css("personal").first.text == 'true'
+        enacted           = node.css("enacted").first.text == 'true'
+        subject           = node.css("subject").first.text
+        method            = node.css("method").first.text
+        result_type       = node.css("resultType").first.text
+        time              = node.css("time").first.text
+
+        vote = new external_id, external_issue_id, personal, enacted, subject, method, result_type, time, for_count, against_count, absent_count
+        vote.propositions = node.css("propositions proposition").map { |e| Proposition.from_hdo_node(e) }
+        vote.representatives = node.css("representatives representative").map { |e| Representative.from_hdo_node(e) }
+
+        vote
       end
 
       def initialize(external_id, external_issue_id, personal, enacted, subject, method, result_type, time, for_count, against_count, absent_count)
@@ -110,7 +113,8 @@ module Hdo
             c.against counts.against
             c.absent counts.absent
           end
-          vote.enacted enacted
+          vote.personal personal?
+          vote.enacted enacted?
           vote.subject subject
           vote.method method
           vote.resultType result_type
@@ -130,6 +134,45 @@ module Hdo
         end
       end
 
-    end
+      def ==(other)
+        other.kind_of?(self.class) && to_hdo_xml == other.to_hdo_xml
+      end
+      alias_method :eql?, :==
+
+      def hash
+        to_hdo_xml.hash ^ self.class.hash
+      end
+
+      class Counts < Struct.new(:for, :against, :absent)
+      end
+
+      class Proposition < Struct.new(:external_id, :description, :on_behalf_of, :body, :delivered_by)
+        def self.from_hdo_node(node)
+          external_id  = node.css("externalId").first.text
+          description  = node.css("description").first.text
+          on_behalf_of = node.css("onBehalfOf").first.text
+          body         = node.css("body").first.text
+
+          delivered_by_node = node.css("deliveredBy representative").first
+          delivered_by = Representative.from_hdo_node(delivered_by_node) if delivered_by_node
+
+          new external_id, description, on_behalf_of, body, delivered_by
+        end
+
+        def to_hdo_xml(builder)
+          builder.proposition do |pr|
+            pr.externalId external_id
+            pr.description description
+            pr.onBehalfOf on_behalf_of
+            pr.body body
+
+            pr.deliveredBy do |db|
+              delivered_by.to_hdo_xml(db) if delivered_by
+            end
+          end
+        end
+      end # Proposition
+
+    end # Vote
   end
 end
