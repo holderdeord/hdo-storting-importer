@@ -26,7 +26,7 @@ module Hdo
         committees.first.external_id.should == "ARBSOS"
       end
 
-      it 'converts itself to HDO XML' do
+      it 'can serialize as HDO XML' do
         Committee.new("ARBSOS", 'Arbeids- og sosialkomiteen').to_hdo_xml.should == <<-XML
 <committee>
   <externalId>ARBSOS</externalId>
@@ -34,6 +34,12 @@ module Hdo
 </committee>
         XML
       end
+
+      it 'can deserialize HDO XML' do
+        com = Committee.new("ARBSOS", 'Arbeids- og sosialkomiteen')
+        Committee.from_hdo_node(parse(com.to_hdo_xml)).should == com
+      end
+
 
     end
   end

@@ -1,6 +1,8 @@
 module Hdo
   module StortingImporter
     class District
+      include IvarEquality
+
       attr_reader :external_id, :name
 
       def self.from_storting_doc(doc)
@@ -11,6 +13,10 @@ module Hdo
 
       def self.from_storting_node(node)
         new node.css("id").first.text, node.css("navn").first.text
+      end
+
+      def self.from_hdo_node(node)
+        new node.css("externalId").first.text, node.css("name").first.text
       end
 
       def initialize(external_id, name)

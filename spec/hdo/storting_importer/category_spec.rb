@@ -41,7 +41,7 @@ module Hdo
         cat.children.first.name.should == "ARBEIDSMILJØ"
       end
 
-      it "converts itself to HDO XML" do
+      it "can serialize as HDO XML" do
         category = Category.new("5", "ARBEIDSLIV")
         category.children << Category.new("205", "ARBEIDSMILJØ")
         category.children << Category.new("94", "ARBEIDSVILKÅR")
@@ -62,6 +62,13 @@ module Hdo
   </subcategories>
 </category>
           XML
+      end
+
+      it 'can deserialize HDO XML' do
+        orig = Category.new("5", "ARBEIDSLIV")
+        orig.children << Category.new("3", "LØNN")
+
+        Category.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
       end
 
     end

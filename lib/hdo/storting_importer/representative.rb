@@ -1,6 +1,8 @@
 module Hdo
   module StortingImporter
     class Representative
+      include IvarEquality
+
       attr_reader :external_id, :first_name, :last_name, :date_of_birth, :date_of_death,
                   :district, :party, :committees, :period, :gender
 
@@ -74,10 +76,6 @@ module Hdo
         @period        = period
 
         @vote_result   = nil
-      end
-
-      def ==(other)
-        other.kind_of?(self.class) && to_hdo_xml == other.to_hdo_xml
       end
 
       def to_hdo_xml(builder = Util.builder)

@@ -32,7 +32,7 @@ module Hdo
         parties.map(&:name).should == ['Arbeiderpartiet', 'Fremskrittspartiet']
       end
 
-      it 'converts itself to HDO XML' do
+      it 'can serialize as HDO XML' do
         Party.new("A", "Arbeiderpartiet").to_hdo_xml.should == <<-XML
 <party>
   <externalId>A</externalId>
@@ -40,6 +40,12 @@ module Hdo
 </party>
         XML
       end
+
+      it 'can deserialize HDO XML' do
+        orig = Party.new('Sp', 'Senterpartiet')
+        Party.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
+      end
+
 
     end
   end

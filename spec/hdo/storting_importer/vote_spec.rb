@@ -84,7 +84,7 @@ module Hdo
         vote.counts.absent.should == 71
       end
 
-      it 'converts itself to HDO XML' do
+      it 'can serialize as HDO XML' do
         vote = create_vote
         vote.to_hdo_xml.should == <<-XML
 <vote>
@@ -145,7 +145,7 @@ module Hdo
         XML
       end
 
-      it 'builds vote from HDO XML' do
+      it 'can deserialize HDO XML' do
         orig = create_vote
         Vote.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
       end

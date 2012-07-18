@@ -71,7 +71,7 @@ module Hdo
         XML
       end
 
-      it 'builds itself from HDO XML' do
+      it 'can deserialize HDO XML' do
         rep = create_representative
         Representative.from_hdo_node(parse(rep.to_hdo_xml)).should == rep
       end

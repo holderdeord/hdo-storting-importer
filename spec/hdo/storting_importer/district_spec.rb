@@ -33,8 +33,8 @@ module Hdo
         district.name.should == 'Akershus'
         district.external_id.should == 'Ak'
       end
-      
-      it 'converts itself to HDO XML' do
+
+      it 'can serialize as HDO XML' do
         District.new("Ak", "Akershus").to_hdo_xml.should == <<-XML
 <district>
   <externalId>Ak</externalId>
@@ -42,6 +42,12 @@ module Hdo
 </district>
         XML
       end
+
+      it 'can deserialize HDO XML' do
+        orig = District.new("Ak", "Akershus")
+        District.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
+      end
+
 
     end
   end

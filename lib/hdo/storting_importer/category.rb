@@ -1,7 +1,10 @@
 module Hdo
   module StortingImporter
     class Category
-      attr_reader :external_id, :name, :children
+      include IvarEquality
+
+      attr_reader :external_id, :name
+      attr_accessor :children
 
       def self.from_storting_doc(doc)
         doc.css("emne_liste > emne").map { |xt| from_storting_node(xt) }
@@ -14,6 +17,16 @@ module Hdo
         subnodes.map do |subnode|
           cat.children << Category.new(subnode.css("id").first.text, subnode.css("navn").first.text)
         end
+
+        cat
+      end
+
+      def self.from_hdo_node(node)
+        external_id = node.css("externalId").first.text
+        name        = node.css("name").first.text
+
+        cat = new external_id, name
+        cat.children = node.css("subcategories category").map { |e| from_hdo_node(e) }
 
         cat
       end

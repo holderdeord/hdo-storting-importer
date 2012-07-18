@@ -1,6 +1,8 @@
 module Hdo
   module StortingImporter
     class Vote
+      include IvarEquality
+
       attr_reader :external_id, :external_issue_id, :personal, :enacted, :subject,
                   :method, :result_type, :time, :counts
       attr_accessor :propositions, :representatives
@@ -132,15 +134,6 @@ module Hdo
             end
           end
         end
-      end
-
-      def ==(other)
-        other.kind_of?(self.class) && to_hdo_xml == other.to_hdo_xml
-      end
-      alias_method :eql?, :==
-
-      def hash
-        to_hdo_xml.hash ^ self.class.hash
       end
 
       class Counts < Struct.new(:for, :against, :absent)

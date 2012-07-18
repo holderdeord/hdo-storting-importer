@@ -5,6 +5,21 @@ module Hdo
   module StortingImporter
     describe Issue do
 
+      def create_issue
+        Issue.new(
+          "53520",
+          "Inngåelse av avtale om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
+          "Samtykke til inngåelse av avtale av 25. november 2011 om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
+          "alminneligsak",
+          "mottatt",
+          "2012-04-20T00:00:00",
+          "Prop. 90 S (2011-2012)",
+          "proposisjon",
+          "Transport- og kommunikasjonskomiteen",
+          ['UTENRIKSSAKER', 'TRAKTATER', 'NORDISK SAMARBEID']
+        )
+      end
+
       it 'builds issues from Storting XML list' do
         xml = <<-XML
         <?xml version="1.0" encoding="utf-8"?>
@@ -69,21 +84,8 @@ module Hdo
         issue.type.should == 'alminneligsak'
       end
 
-      it 'converts itself to HDO XML' do
-        issue = Issue.new(
-          "53520",
-          "Inngåelse av avtale om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
-          "Samtykke til inngåelse av avtale av 25. november 2011 om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
-          "alminneligsak",
-          "mottatt",
-          "2012-04-20T00:00:00",
-          "Prop. 90 S (2011-2012)",
-          "proposisjon",
-          "Transport- og kommunikasjonskomiteen",
-          ['UTENRIKSSAKER', 'TRAKTATER', 'NORDISK SAMARBEID']
-        )
-
-        issue.to_hdo_xml.should == <<-XML
+      it 'can serialize as HDO XML' do
+        create_issue.to_hdo_xml.should == <<-XML
 <issue>
   <externalId>53520</externalId>
   <summary>Inngåelse av avtale om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)</summary>
@@ -101,6 +103,11 @@ module Hdo
   </categories>
 </issue>
 XML
+      end
+
+      it 'can deserialize HDO XML' do
+        orig = create_issue
+        Issue.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
       end
 
     end

@@ -1,6 +1,8 @@
 module Hdo
   module StortingImporter
     class Issue
+      include IvarEquality
+
       attr_reader :external_id, :summary, :description, :type, :status, :last_update,
                   :reference, :document_group, :committee, :categories
 
@@ -33,6 +35,21 @@ module Hdo
         new(external_id, summary, description, type, status, last_update, reference, document_group, committee, categories)
       end
 
+      def self.from_hdo_node(node)
+        external_id    = node.css("externalId").first.text
+        summary        = node.css("summary").first.text
+        description    = node.css("description").first.text
+        type           = node.css("type").first.text
+        status         = node.css("status").first.text
+        last_update    = node.css("lastUpdate").first.text
+        reference      = node.css("reference").first.text
+        document_group = node.css("documentGroup").first.text
+        committee      = node.css("committee").first.text
+        categories     = node.css("categories category").map { |e| e.text }
+
+        new external_id, summary, description, type, status, last_update, reference, document_group, committee, categories
+      end
+
       def initialize(external_id, summary, description, type, status, last_update,
                      reference, document_group, committee, categories)
         @external_id    = external_id
@@ -58,7 +75,7 @@ module Hdo
           i.reference reference
           i.documentGroup document_group
           i.committee(committee) if committee
-          
+
           if categories.any?
             i.categories do |cats|
               categories.each { |e| cats.category e }
