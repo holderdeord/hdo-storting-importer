@@ -41,9 +41,14 @@ module Hdo
         XML
       end
 
-      it 'can deserialize HDO XML' do
+      it 'can deserialize a HDO XML node' do
         orig = Party.new('Sp', 'Senterpartiet')
         Party.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
+      end
+
+      it 'can deserialize a HDO XML doc' do
+        orig = Party.new('Sp', 'Senterpartiet')
+        Party.from_hdo_doc(parse("<parties>#{orig.to_hdo_xml}</parties>")).should == [orig]
       end
 
 

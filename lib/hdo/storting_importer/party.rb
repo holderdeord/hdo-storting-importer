@@ -11,6 +11,10 @@ module Hdo
         end
       end
 
+      def self.from_hdo_doc(doc)
+        doc.css("parties > party").map { |e| from_hdo_node(e) }
+      end
+
       def self.from_hdo_node(node)
         new node.css("externalId").first.text, node.css("name").first.text
       end
