@@ -1,1 +1,16 @@
 Gemfile.lock
+*.gem
+*.rbc
+.bundle
+.config
+.yardoc
+InstalledFiles
+_yardoc
+coverage
+doc/
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp

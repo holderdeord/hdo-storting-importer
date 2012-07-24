@@ -7,3 +7,5 @@ require 'cucumber/rake/task'
 Cucumber::Rake::Task.new
 
 task :default => [:spec, :cucumber]
+
+require "bundler/gem_tasks"

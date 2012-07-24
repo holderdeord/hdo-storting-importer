@@ -1,0 +1,17 @@
+# -*- encoding: utf-8 -*-
+require File.expand_path('../lib/hdo/storting_importer/version', __FILE__)
+
+Gem::Specification.new do |gem|
+  gem.authors       = ["Jari Bakken"]
+  gem.email         = ["jari.bakken@gmail.com"]
+  gem.description   = %q{Gem to process data from data.stortinget.no}
+  gem.summary       = %q{Gem to process data from data.stortinget.no}
+  gem.homepage      = "http://github.com/holderdeord/hdo-storting-importer"
+
+  gem.files         = `git ls-files`.split($\)
+  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
+  gem.name          = "hdo-storting-importer"
+  gem.require_paths = ["lib"]
+  gem.version       = Hdo::StortingImporter::VERSION
+end
