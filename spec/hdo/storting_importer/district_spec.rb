@@ -43,9 +43,14 @@ module Hdo
         XML
       end
 
-      it 'can deserialize HDO XML' do
+      it 'can deserialize a HDO XML node' do
         orig = District.new("Ak", "Akershus")
         District.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
+      end
+
+      it 'can deserialize a HDO XML doc' do
+        orig = District.new("Ak", "Akershus")
+        District.from_hdo_doc(parse("<districts>#{orig.to_hdo_xml}</districts>")).should == [orig]
       end
 
 
