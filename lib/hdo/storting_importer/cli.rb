@@ -17,6 +17,8 @@ module Hdo
         else
           puts read_type(@type, class_for_type(@type))
         end
+      rescue Errno::EPIPE
+        # ignored
       end
 
       private

@@ -34,6 +34,21 @@ module Hdo
         example.to_hdo_xml(builder)
       end
 
+      def self.from_hdo_doc(doc)
+        doc.css("promises > promise").map { |e| from_hdo_node(e) }
+      end
+
+      def self.from_hdo_node(node)
+        source, page = node.css("source").first.text.split(":")
+
+        new node.css("party").first.text,
+            node.css("body").first.text,
+            node.css("general").first.text == "true",
+            node.css("categories > category").map { |e| e.text },
+            source,
+            page
+      end
+
       def self.from_csv(str)
         # cleanup
         str.gsub!(/\bFrp\b/, "FrP")

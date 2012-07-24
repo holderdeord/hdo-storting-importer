@@ -47,6 +47,32 @@ module Hdo
 XML
       end
 
+      it 'deserializes from HDO XML' do
+        promises = Promise.from_hdo_doc(parse(<<-XML))
+        <promises>
+          <promise>
+            <party>H</party>
+            <general>true</general>
+            <categories>
+              <category>GRUNNSKOLE</category>
+            </categories>
+            <source>PP:8</source>
+            <body>Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.</body>
+          </promise>
+        </promises>
+        XML
+
+        promises.size.should == 1
+        promise = promises.first
+
+        promise.party.should == "H"
+        promise.should be_general
+        promise.categories.should == ["GRUNNSKOLE"]
+        promise.source.should == "PP"
+        promise.page.should == "8"
+        promise.body.should == "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen."
+      end
+
       it 'has a description' do
         Promise.description.should be_kind_of(String)
       end
