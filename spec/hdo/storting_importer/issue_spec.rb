@@ -105,9 +105,14 @@ module Hdo
 XML
       end
 
-      it 'can deserialize HDO XML' do
+      it 'can deserialize an HDO XML node' do
         orig = create_issue
         Issue.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
+      end
+
+      it 'can deserialize an HDO XML doc' do
+        orig = create_issue
+        Issue.from_hdo_doc(parse("<issues>#{orig.to_hdo_xml}</issues>")).should == [orig]
       end
 
     end

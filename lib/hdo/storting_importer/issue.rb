@@ -35,6 +35,10 @@ module Hdo
         new(external_id, summary, description, type, status, last_update, reference, document_group, committee, categories)
       end
 
+      def self.from_hdo_doc(doc)
+        doc.css("issues > issue").map { |e| from_hdo_node(e) }
+      end
+
       def self.from_hdo_node(node)
         external_id    = node.css("externalId").first.text
         summary        = node.css("summary").first.text
