@@ -64,11 +64,18 @@ module Hdo
           XML
       end
 
-      it 'can deserialize HDO XML' do
+      it 'can deserialize a HDO XML node' do
         orig = Category.new("5", "ARBEIDSLIV")
         orig.children << Category.new("3", "LØNN")
 
         Category.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
+      end
+
+      it 'can deserialize a HDO XML doc' do
+        orig = Category.new("5", "ARBEIDSLIV")
+        orig.children << Category.new("3", "LØNN")
+
+        Category.from_hdo_doc(parse("<categories>#{orig.to_hdo_xml}</categories>")).should == [orig]
       end
 
     end

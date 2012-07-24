@@ -21,6 +21,10 @@ module Hdo
         cat
       end
 
+      def self.from_hdo_doc(doc)
+        doc.css("categories > category").map { |node| from_hdo_node(node) }
+      end
+
       def self.from_hdo_node(node)
         external_id = node.css("externalId").first.text
         name        = node.css("name").first.text
