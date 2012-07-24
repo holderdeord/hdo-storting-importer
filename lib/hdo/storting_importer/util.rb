@@ -4,7 +4,14 @@ module Hdo
       module_function
 
       def builder
-        Builder::XmlMarkup.new :indent => 2
+        xml = Builder::XmlMarkup.new :indent => 2
+
+        if block_given?
+          yield xml
+          return xml.target!
+        end
+
+        xml
       end
 
       def remove_newlines(str)

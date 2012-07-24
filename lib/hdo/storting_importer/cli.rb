@@ -46,13 +46,15 @@ module Hdo
 
       def data_source
         @data_source ||= (
-          if @options[:source] == "disk"
-            DiskDataSource.new(File.join(StortingImporter.root, 'folketingparser/rawdata/data.stortinget.no'))
-          elsif @options[:source] == "api"
-            ApiDataSource.new("http://data.stortinget.no/")
-          else
-            raise ArgumentError, "invalid source: #{@options[:source].inspect}"
-          end
+          ds = if @options[:source] == "disk"
+                 DiskDataSource.new(File.join(StortingImporter.root, 'folketingparser/rawdata/data.stortinget.no'))
+               elsif @options[:source] == "api"
+                 ApiDataSource.new("http://data.stortinget.no/")
+               else
+                 raise ArgumentError, "invalid source: #{@options[:source].inspect}"
+               end
+
+          ParsingDataSource.new(ds)
         )
       end
 
@@ -76,54 +78,28 @@ module Hdo
           import_promises
         when :all
           import_all
-        when :votes
-          import_docs Converters::VoteConverter.new(data_source, issue_converter.external_ids).xml
         else
-          import_docs Converters::Converter.for(what).new(data_source).xml
+          import_docs converter.xml_for(what.to_sym)
         end
-      end
-
-      def issue_converter
-        @issue_converter ||= Converters::IssueConverter.new(data_source)
-      end
-
-      def party_converter
-        @party_converter ||= Converters::PartyConverter.new(data_source)
-      end
-
-      def committee_converter
-        @committee_converter ||= Converters::CommitteeConverter.new(data_source)
-      end
-
-      def district_converter
-        @district_converter ||= Converters::DistrictConverter.new(data_source)
-      end
-
-      def representative_converter
-        @representative_converter ||= Converters::RepresentativeConverter.new(data_source)
-      end
-
-      def category_converter
-        @category_converter ||= Converters::CategoryConverter.new(data_source)
-      end
-
-      def vote_converter
-        @vote_converter ||= Converters::VoteConverter.new(data_source, issue_converter.external_ids)
       end
 
       def import_all
         ignore = Array(@options[:ignore])
 
-        import_docs party_converter.xml unless ignore.include?(:parties)
-        import_docs committee_converter.xml unless ignore.include?(:committees)
-        import_docs district_converter.xml unless ignore.include?(:districts)
-        import_docs representative_converter.xml unless ignore.include?(:representatives)
-        import_docs category_converter.xml unless ignore.include?(:categories)
-        import_docs issue_converter.xml unless ignore.include?(:issues)
-        import_docs vote_converter.xml unless ignore.include?(:votes)
+        import_docs converter.xml_for(:parties) unless ignore.include?(:parties)
+        import_docs converter.xml_for(:committees) unless ignore.include?(:committees)
+        import_docs converter.xml_for(:districts) unless ignore.include?(:districts)
+        import_docs converter.xml_for(:representatives) unless ignore.include?(:representatives)
+        import_docs converter.xml_for(:categories) unless ignore.include?(:categories)
+        import_docs converter.xml_for(:issues) unless ignore.include?(:issues)
+        import_docs converter.xml_for(:votes) unless ignore.include?(:votes)
 
         import_dld unless ignore.include?(:dld)
         import_promises unless ignore.include?(:promises)
+      end
+
+      def converter
+        @converter ||= Converters::Converter.new(data_source)
       end
 
       def import_dld
