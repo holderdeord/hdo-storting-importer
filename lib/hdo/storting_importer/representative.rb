@@ -39,6 +39,10 @@ module Hdo
         )
       end
 
+      def self.from_hdo_doc(doc)
+        doc.css("representatives > representative").map { |e| from_hdo_node e }
+      end
+
       def self.from_hdo_node(node)
         district_node = node.css("district").first
         district      = district_node ? district_node.text : ''

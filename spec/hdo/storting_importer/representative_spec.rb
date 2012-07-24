@@ -71,9 +71,14 @@ module Hdo
         XML
       end
 
-      it 'can deserialize HDO XML' do
+      it 'can deserialize a HDO XML node' do
         rep = create_representative
         Representative.from_hdo_node(parse(rep.to_hdo_xml)).should == rep
+      end
+
+      it 'can deserialize a HDO XML doc' do
+        rep = create_representative
+        Representative.from_hdo_doc(parse("<representatives>#{rep.to_hdo_xml}</representatives>")).should == [rep]
       end
 
     end
