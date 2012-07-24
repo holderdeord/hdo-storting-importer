@@ -15,6 +15,10 @@ module Hdo
         new node.css("id").first.text, node.css("navn").first.text
       end
 
+      def self.from_hdo_doc(doc)
+        doc.css("committees > committee").map { |e| from_hdo_node e }
+      end
+
       def self.from_hdo_node(node)
         new node.css("externalId").first.text, node.css("name").first.text
       end

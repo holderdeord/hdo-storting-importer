@@ -35,9 +35,14 @@ module Hdo
         XML
       end
 
-      it 'can deserialize HDO XML' do
+      it 'can deserialize a HDO XML node' do
         com = Committee.new("ARBSOS", 'Arbeids- og sosialkomiteen')
         Committee.from_hdo_node(parse(com.to_hdo_xml)).should == com
+      end
+
+      it 'can deserialize a HDO XML doc' do
+        com = Committee.new("ARBSOS", 'Arbeids- og sosialkomiteen')
+        Committee.from_hdo_doc(parse("<committees>#{com.to_hdo_xml}</committees>")).should == [com]
       end
 
 
