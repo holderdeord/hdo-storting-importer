@@ -23,7 +23,6 @@ require 'hdo/storting_importer/disk_data_source'
 require 'hdo/storting_importer/api_data_source'
 require 'hdo/storting_importer/parsing_data_source'
 require 'hdo/storting_importer/script_importer'
-require 'hdo/storting_importer/http_importer'
 
 require 'hdo/storting_importer/category'
 require 'hdo/storting_importer/committee'

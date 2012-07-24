@@ -62,10 +62,8 @@ module Hdo
         @importer ||= (
           if @options[:app_root]
             ScriptImporter.new(@options[:app_root])
-          elsif @options[:app_url]
-            HttpImporter.new(@options[:app_url])
           else
-            raise ArgumentError, "neither app-root or app-url given, can't import"
+            raise ArgumentError, "app-root not given, can't import"
           end
         )
       end
