@@ -14,4 +14,10 @@ Gem::Specification.new do |gem|
   gem.name          = "hdo-storting-importer"
   gem.require_paths = ["lib"]
   gem.version       = Hdo::StortingImporter::VERSION
+
+  gem.add_runtime_dependency "builder"
+  gem.add_runtime_dependency "nokogiri"
+  gem.add_runtime_dependency "aruba"
+  gem.add_runtime_dependency "rake"
+  gem.add_runtime_dependency "rest-client"
 end
