@@ -5,21 +5,6 @@ module Hdo
   module StortingImporter
     describe Issue do
 
-      def create_issue
-        Issue.new(
-          "53520",
-          "Inngåelse av avtale om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
-          "Samtykke til inngåelse av avtale av 25. november 2011 om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
-          "alminneligsak",
-          "mottatt",
-          "2012-04-20T00:00:00",
-          "Prop. 90 S (2011-2012)",
-          "proposisjon",
-          "Transport- og kommunikasjonskomiteen",
-          ['UTENRIKSSAKER', 'TRAKTATER', 'NORDISK SAMARBEID']
-        )
-      end
-
       it 'builds issues from Storting XML list' do
         xml = <<-XML
         <?xml version="1.0" encoding="utf-8"?>
@@ -85,7 +70,7 @@ module Hdo
       end
 
       it 'can serialize as HDO XML' do
-        create_issue.to_hdo_xml.should == <<-XML
+        Issue.example.to_hdo_xml.should == <<-XML
 <issue>
   <externalId>53520</externalId>
   <summary>Inngåelse av avtale om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)</summary>
@@ -106,13 +91,29 @@ XML
       end
 
       it 'can deserialize an HDO XML node' do
-        orig = create_issue
+        orig = Issue.example
         Issue.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
       end
 
       it 'can deserialize an HDO XML doc' do
-        orig = create_issue
+        orig = Issue.example
         Issue.from_hdo_doc(parse("<issues>#{orig.to_hdo_xml}</issues>")).should == [orig]
+      end
+
+      it 'has a type name' do
+        Issue.type_name.should == 'issue'
+      end
+
+      it 'has a description' do
+        Issue.description.should be_kind_of(String)
+      end
+
+      it 'has an XML example' do
+        Issue.xml_example.should be_kind_of(String)
+      end
+
+      it 'has a list of fields' do
+        Issue.fields.should_not be_empty
       end
 
     end

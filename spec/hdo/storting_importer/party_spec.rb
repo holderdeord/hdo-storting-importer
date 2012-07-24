@@ -51,6 +51,21 @@ module Hdo
         Party.from_hdo_doc(parse("<parties>#{orig.to_hdo_xml}</parties>")).should == [orig]
       end
 
+      it 'has a type name' do
+        Party.type_name.should == 'party'
+      end
+
+      it 'has a description' do
+        Party.description.should be_kind_of(String)
+      end
+
+      it 'has an XML example' do
+        Party.xml_example.should be_kind_of(String)
+      end
+
+      it 'has a list of fields' do
+        Party.fields.should_not be_empty
+      end
 
     end
   end

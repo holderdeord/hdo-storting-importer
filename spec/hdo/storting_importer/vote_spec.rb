@@ -5,18 +5,6 @@ module Hdo
   module StortingImporter
     describe Vote do
 
-      def create_vote
-        vote = Vote.new('2175', '51448', true, false, 'Forslag 24 - 26 på vegne av Per Olaf Lundteigen', 'ikke_spesifisert', 'ikke_spesifisert', '2012-04-12T16:37:27.053', 2, 96, 71)
-
-        rep = Representative.new('PTA', 'Per-Willy', 'Amundsen', 'M', '1971-01-21T00:00:00', '0001-01-01T00:00:00', 'Troms', 'Fremskrittspartiet', [], '2011-2012')
-        rep.vote_result = 'against'
-
-        vote.propositions << Vote::Proposition.new('1234', 'description', 'on behalf of', 'body', rep)
-        vote.representatives << rep
-
-        vote
-      end
-
       it "builds votes from the Storting XML list" do
         xml = <<-XML
         <?xml version="1.0" encoding="utf-8"?>
@@ -85,7 +73,7 @@ module Hdo
       end
 
       it 'can serialize as HDO XML' do
-        vote = create_vote
+        vote = Vote.example
         vote.to_hdo_xml.should == <<-XML
 <vote>
   <externalId>2175</externalId>
@@ -103,18 +91,19 @@ module Hdo
   <time>2012-04-12T16:37:27.053</time>
   <representatives>
     <representative>
-      <externalId>PTA</externalId>
-      <firstName>Per-Willy</firstName>
-      <lastName>Amundsen</lastName>
+      <externalId>ADA</externalId>
+      <firstName>André Oktay</firstName>
+      <lastName>Dahl</lastName>
       <gender>M</gender>
-      <dateOfBirth>1971-01-21T00:00:00</dateOfBirth>
+      <dateOfBirth>1975-07-07T00:00:00</dateOfBirth>
       <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
-      <district>Troms</district>
-      <party>Fremskrittspartiet</party>
+      <district>Akershus</district>
+      <party>Høyre</party>
       <committees>
+        <committee>Justiskomiteen</committee>
       </committees>
       <period>2011-2012</period>
-      <voteResult>against</voteResult>
+      <voteResult>for</voteResult>
     </representative>
   </representatives>
   <propositions>
@@ -125,18 +114,18 @@ module Hdo
       <body>body</body>
       <deliveredBy>
         <representative>
-          <externalId>PTA</externalId>
-          <firstName>Per-Willy</firstName>
-          <lastName>Amundsen</lastName>
+          <externalId>ADA</externalId>
+          <firstName>André Oktay</firstName>
+          <lastName>Dahl</lastName>
           <gender>M</gender>
-          <dateOfBirth>1971-01-21T00:00:00</dateOfBirth>
+          <dateOfBirth>1975-07-07T00:00:00</dateOfBirth>
           <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
-          <district>Troms</district>
-          <party>Fremskrittspartiet</party>
+          <district>Akershus</district>
+          <party>Høyre</party>
           <committees>
+            <committee>Justiskomiteen</committee>
           </committees>
           <period>2011-2012</period>
-          <voteResult>against</voteResult>
         </representative>
       </deliveredBy>
     </proposition>
@@ -145,9 +134,32 @@ module Hdo
         XML
       end
 
-      it 'can deserialize HDO XML' do
-        orig = create_vote
+      it 'can deserialize a HDO XML node' do
+        orig = Vote.example
         Vote.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
+      end
+
+      it 'can deserialize a HDO XML doc' do
+        orig = Vote.example
+        Vote.from_hdo_doc(parse("<votes>#{orig.to_hdo_xml}</votes>")).should == [orig]
+      end
+
+      it 'has a type name' do
+        Vote.type_name.should == 'vote'
+        Vote::Proposition.type_name.should == 'proposition'
+      end
+
+      it 'has a description' do
+        Vote.description.should be_kind_of(String)
+      end
+
+      it 'has an XML example' do
+        Vote.xml_example.should be_kind_of(String)
+        Vote::Proposition.xml_example.should be_kind_of(String)
+      end
+
+      it 'has a list of fields' do
+        Vote.fields.should_not be_empty
       end
 
     end

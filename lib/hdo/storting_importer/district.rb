@@ -5,6 +5,22 @@ module Hdo
 
       attr_reader :external_id, :name
 
+      def self.type_name
+        'district'
+      end
+
+      def self.description
+        'an electoral district'
+      end
+
+      def self.xml_example(builder = Util.builder)
+        new("Db", "Duckburg").to_hdo_xml(builder)
+      end
+
+      def self.fields
+        [EXTERNAL_ID_FIELD, Field.new(:name, true, :string, 'The name of the electoral district.')]
+      end
+
       def self.from_storting_doc(doc)
         doc.css("fylker_liste fylke").map do |node|
           from_storting_node(node)

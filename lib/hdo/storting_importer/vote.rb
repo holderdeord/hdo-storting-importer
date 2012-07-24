@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module Hdo
   module StortingImporter
     class Vote
@@ -9,6 +11,47 @@ module Hdo
 
       alias_method :personal?, :personal
       alias_method :enacted?, :enacted
+
+      def self.type_name
+        'vote'
+      end
+
+      def self.description
+        'a parliamentary vote'
+      end
+
+      def self.fields
+        [
+          EXTERNAL_ID_FIELD,
+          Field.new(:externalIssueId, true, :string, "The id (matching the issue's externalId) of the issue being voted on."),
+          Field.new(:counts, true, :element, "An element with <for>, <against> and <absent> counts (see example)."),
+          Field.new(:enacted, true, :boolean, "Whether the proposal was enacted."),
+          Field.new(:subject, true, :string, "The subject of the vote."),
+          Field.new(:method, true, :string, "??"),
+          Field.new(:resultType, true, :string, "??"),
+          Field.new(:time, true, :string, "The timestamp for the vote."),
+          Field.new(:representatives, true, :element, "An element with each representative's vote. The element should contain a set of <a href='#input-format-representative'>&lt;representative&gt;</a> elements with an extra subnode 'voteResult', where valid values are 'for', 'against', 'absent'. See example."),
+          Field.new(:propositions, false, :element, "An element with each proposition being voted over. The element should contain a set of <a href='#input-format-proposition'>&lt;proposition&gt;</a> elements. See example."),
+        ]
+      end
+
+      def self.example
+        vote = new('2175', '51448', true, false, 'Forslag 24 - 26 på vegne av Per Olaf Lundteigen', 'ikke_spesifisert', 'ikke_spesifisert', '2012-04-12T16:37:27.053', 2, 96, 71)
+
+        rep = Representative.example
+        rep.vote_result = 'for'
+        vote.representatives << rep
+
+        prop = Vote::Proposition.example
+
+        vote.propositions << prop
+
+        vote
+      end
+
+      def self.xml_example(builder = Util.builder)
+        example.to_hdo_xml(builder)
+      end
 
       def self.from_storting_doc(doc)
         issue_id = doc.css("sak_id").first.text
@@ -33,6 +76,10 @@ module Hdo
 
           new vote_id, issue_id, personal, enacted, subject, method, result_type, time, forc, againstc, absentc
         end
+      end
+
+      def self.from_hdo_doc(doc)
+        doc.css("votes > vote").map { |e| from_hdo_node(e) }
       end
 
       def self.from_hdo_node(node)
@@ -140,6 +187,32 @@ module Hdo
       end
 
       class Proposition < Struct.new(:external_id, :description, :on_behalf_of, :body, :delivered_by)
+        def self.type_name
+          'proposition'
+        end
+
+        def self.example
+          new('1234', 'description', 'on behalf of', 'body', Representative.example)
+        end
+
+        def self.description
+          'a proposition being voted over'
+        end
+
+        def self.fields
+          [
+            EXTERNAL_ID_FIELD,
+            Field.new(:description, true, :string, 'A short description of the proposition.'),
+            Field.new(:deliveredBy, true, :string, "The representative that delivered the proposition. The element should contain a <a href='#input-format-representative'>&lt;representative&gt;</a> element."),
+            Field.new(:onBehalfOf, true, :string, "Description of who is behind the proposition."),
+            Field.new(:body, true, :string, "The full text of the proposition."),
+          ]
+        end
+
+        def self.xml_example(builder = Util.builder)
+          example.to_hdo_xml(builder)
+        end
+
         def self.from_hdo_node(node)
           external_id  = node.css("externalId").first.text
           description  = node.css("description").first.text

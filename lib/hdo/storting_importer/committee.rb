@@ -5,6 +5,22 @@ module Hdo
 
       attr_reader :external_id, :name
 
+      def self.type_name
+        'committee'
+      end
+
+      def self.description
+        'a parliamentary committe'
+      end
+
+      def self.xml_example(builder = Util.builder)
+        new("ARBSOS", "Arbeids- og sosialkomiteen").to_hdo_xml(builder)
+      end
+
+      def self.fields
+        [EXTERNAL_ID_FIELD, Field.new(:name, true, :string, 'The name of the committee.')]
+      end
+
       def self.from_storting_doc(doc)
         doc.css("komiteer_liste komite").map do |node|
           from_storting_node(node)

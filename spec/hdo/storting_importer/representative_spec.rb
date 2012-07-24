@@ -4,10 +4,6 @@ module Hdo
   module StortingImporter
     describe Representative do
 
-      def create_representative
-        Representative.new('ADA', 'André Oktay', 'Dahl', 'M', '1975-07-07T00:00:00', '0001-01-01T00:00:00', 'Akershus', 'Høyre', ['Justiskomiteen'], '2011-2012')
-      end
-
       it "builds representatives from the Storting XML list" do
         xml = <<-XML
         <?xml version="1.0" encoding="utf-8"?>
@@ -52,7 +48,7 @@ module Hdo
       end
 
       it 'converts itself into HDO XML' do
-        rep = create_representative
+        rep = Representative.example
         rep.to_hdo_xml.should == <<-XML
 <representative>
   <externalId>ADA</externalId>
@@ -72,13 +68,29 @@ module Hdo
       end
 
       it 'can deserialize a HDO XML node' do
-        rep = create_representative
+        rep = Representative.example
         Representative.from_hdo_node(parse(rep.to_hdo_xml)).should == rep
       end
 
       it 'can deserialize a HDO XML doc' do
-        rep = create_representative
+        rep = Representative.example
         Representative.from_hdo_doc(parse("<representatives>#{rep.to_hdo_xml}</representatives>")).should == [rep]
+      end
+
+      it 'has a type name' do
+        Representative.type_name.should == 'representative'
+      end
+
+      it 'has a description' do
+        Representative.description.should be_kind_of(String)
+      end
+
+      it 'has an XML example' do
+        Representative.xml_example.should be_kind_of(String)
+      end
+
+      it 'has a list of fields' do
+        Representative.fields.should_not be_empty
       end
 
     end

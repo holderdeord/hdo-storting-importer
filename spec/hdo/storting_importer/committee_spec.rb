@@ -45,6 +45,22 @@ module Hdo
         Committee.from_hdo_doc(parse("<committees>#{com.to_hdo_xml}</committees>")).should == [com]
       end
 
+      it 'has a type name' do
+        Committee.type_name.should == 'committee'
+      end
+
+      it 'has a description' do
+        Committee.description.should be_kind_of(String)
+      end
+
+      it 'has an XML example' do
+        Committee.xml_example.should be_kind_of(String)
+      end
+
+      it 'has a list of fields' do
+        Committee.fields.should_not be_empty
+      end
+
 
     end
   end

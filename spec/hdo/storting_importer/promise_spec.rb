@@ -33,6 +33,36 @@ module Hdo
         prom.page.should == '10'
       end
 
+      it 'serializes to HDO XML' do
+        Promise.example.to_hdo_xml.should == <<-XML
+<promise>
+  <party>H</party>
+  <general>true</general>
+  <categories>
+    <category>GRUNNSKOLE</category>
+  </categories>
+  <source>PP:8</source>
+  <body>Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.</body>
+</promise>
+XML
+      end
+
+      it 'has a description' do
+        Promise.description.should be_kind_of(String)
+      end
+
+      it 'has fields' do
+        Promise.fields.should_not be_empty
+      end
+
+      it 'has a type name' do
+        Promise.type_name.should == 'promise'
+      end
+
+      it 'has a an XML example' do
+        Promise.xml_example.should be_kind_of(String)
+      end
+
     end
   end
 end

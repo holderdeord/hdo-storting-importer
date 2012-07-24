@@ -3,6 +3,9 @@ module Hdo
     def self.root
       @root ||= File.expand_path("../../..", __FILE__)
     end
+
+    Field = Struct.new(:name, :required, :type, :description)
+    EXTERNAL_ID_FIELD = Field.new(:externalId, false, :string, 'An optional external id, matching potential id fields in the input data. This is useful if you want to reimport previous data without creating duplicates.')
   end
 end
 

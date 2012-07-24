@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module Hdo
   module StortingImporter
     class Representative
@@ -7,6 +9,47 @@ module Hdo
                   :district, :party, :committees, :period, :gender
 
       attr_accessor :vote_result
+
+      def self.type_name
+        'representative'
+      end
+
+      def self.description
+        'a member of parliament'
+      end
+
+      def self.example
+        new(
+          'ADA',
+          'André Oktay',
+          'Dahl',
+          'M',
+          '1975-07-07T00:00:00',
+          '0001-01-01T00:00:00',
+          'Akershus',
+          'Høyre',
+          ['Justiskomiteen'],
+          '2011-2012'
+        )
+      end
+
+      def self.xml_example(builder = Util.builder)
+        example.to_hdo_xml(builder)
+      end
+
+      def self.fields
+        [
+          EXTERNAL_ID_FIELD,
+          Field.new(:firstName, true, :string, 'The first name of the representative.'),
+          Field.new(:lastName, true, :string, 'The last name of the representative.'),
+          Field.new(:period, true, :string, "An identifier for the period the representative is elected for."),
+          Field.new(:district, true, :string, "The electoral district the representative belongs to. Must match the 'name' field of the district type."),
+          Field.new(:party, true, :string, "The name of the representative's party."),
+          Field.new(:committee, true, :list, "A (possibly empty) list of committees the representative is a member of. This should match the 'name' field of the committee type."),
+          Field.new(:dateOfBirth, true, :string, "The representative's birth date."),
+          Field.new(:dateOfDeath, false, :string, "The representative's death date."),
+        ]
+      end
 
       def self.from_storting_doc(doc)
         nodes = doc.css("dagensrepresentant")

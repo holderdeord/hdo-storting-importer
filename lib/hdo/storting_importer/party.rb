@@ -5,6 +5,22 @@ module Hdo
 
       attr_reader :external_id, :name
 
+      def self.type_name
+        'party'
+      end
+
+      def self.description
+        'a political party'
+      end
+
+      def self.xml_example(builder = Util.builder)
+        new("DEM", "Democratic Party").to_hdo_xml(builder)
+      end
+
+      def self.fields
+        [EXTERNAL_ID_FIELD, Field.new(:name, true, :string, 'The name of the party.')]
+      end
+
       def self.from_storting_doc(doc)
         doc.css("partier_liste parti").map do |node|
           new node.css("id").first.text, node.css("navn").first.text

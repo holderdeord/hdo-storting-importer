@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 require 'csv'
 
 module Hdo
@@ -5,6 +7,32 @@ module Hdo
     class Promise
       attr_reader :party, :body, :general, :categories, :source, :page
       alias_method :general?, :general
+
+      def self.type_name
+        'promise'
+      end
+
+      def self.description
+        'a party promise'
+      end
+
+      def self.fields
+        [
+          Field.new(:party, true, :string, 'The external id of the party.'),
+          Field.new(:general, true, :boolean, "Whether this is considered a general promise (i.e. can be ambigious whether it has been fulfilled)."),
+          Field.new(:categories, true, :list, "List of category names (matching names imported in <a href='#input-format-category'>&lt;category&gt;</a>)"),
+          Field.new(:source, true, :string, "The source of the promise. (TODO: this should always be a URL)"),
+          Field.new(:body, true, :string, "The body text of the promise."),
+        ]
+      end
+
+      def self.example
+        new("H", "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.", true, ["GRUNNSKOLE"], "PP", 8)
+      end
+
+      def self.xml_example(builder = Util.builder)
+        example.to_hdo_xml(builder)
+      end
 
       def self.from_csv(str)
         # cleanup
@@ -42,6 +70,18 @@ module Hdo
         @categories = categories
         @source     = source
         @page       = page
+      end
+
+      def to_hdo_xml(builder = Util.builder)
+        builder.promise do |promise|
+          promise.party party
+          promise.general general?
+          promise.categories do |cats|
+            categories.each { |e| cats.category e }
+          end
+          promise.source [source, page].join(":")
+          promise.body body
+        end
       end
 
     end

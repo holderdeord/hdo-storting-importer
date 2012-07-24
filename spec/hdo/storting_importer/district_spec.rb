@@ -53,6 +53,22 @@ module Hdo
         District.from_hdo_doc(parse("<districts>#{orig.to_hdo_xml}</districts>")).should == [orig]
       end
 
+      it 'has a type name' do
+        District.type_name.should == 'district'
+      end
+
+      it 'has a description' do
+        District.description.should be_kind_of(String)
+      end
+
+      it 'has an XML example' do
+        District.xml_example.should be_kind_of(String)
+      end
+
+      it 'has a list of fields' do
+        District.fields.should_not be_empty
+      end
+
 
     end
   end

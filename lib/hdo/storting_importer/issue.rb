@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module Hdo
   module StortingImporter
     class Issue
@@ -5,6 +7,48 @@ module Hdo
 
       attr_reader :external_id, :summary, :description, :type, :status, :last_update,
                   :reference, :document_group, :committee, :categories
+
+      def self.type_name
+        'issue'
+      end
+
+      def self.description
+        'a parliament issue'
+      end
+
+      def self.example
+        new(
+          "53520",
+          "Inngåelse av avtale om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
+          "Samtykke til inngåelse av avtale av 25. november 2011 om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
+          "alminneligsak",
+          "mottatt",
+          "2012-04-20T00:00:00",
+          "Prop. 90 S (2011-2012)",
+          "proposisjon",
+          "Transport- og kommunikasjonskomiteen",
+          ['UTENRIKSSAKER', 'TRAKTATER', 'NORDISK SAMARBEID']
+        )
+      end
+
+      def self.xml_example(builder = Util.builder)
+        example.to_hdo_xml(builder)
+      end
+
+      def self.fields
+        [
+          EXTERNAL_ID_FIELD,
+          Field.new(:summary,       true,  :string, 'A (preferably one-line) summary of the issue.'),
+          Field.new(:description,   true,  :string, 'A longer description of the issue.'),
+          Field.new(:type,          true,  :string, 'The type of issue.'),
+          Field.new(:status,        true,  :string, 'The status of the issue.'),
+          Field.new(:lastUpdate,    true,  :string, 'The time the issue was last updated in the parliament.'),
+          Field.new(:reference,     true,  :string, 'A reference.'),
+          Field.new(:documentGroup, true,  :string, 'What document group this issue belongs to.'),
+          Field.new(:committee,     false, :string, "What committee this issue belongs to. Should match the 'name' field in the committee type."),
+          Field.new(:categories,    false, 'list',  "List of categories (matching the 'name' field of the category type).")
+        ]
+      end
 
       def self.from_storting_doc(doc)
         doc.css("saker_liste sak").map do |node|

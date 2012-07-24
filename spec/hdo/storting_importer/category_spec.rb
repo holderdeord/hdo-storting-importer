@@ -78,6 +78,23 @@ module Hdo
         Category.from_hdo_doc(parse("<categories>#{orig.to_hdo_xml}</categories>")).should == [orig]
       end
 
+      it 'has a type name' do
+        Category.type_name.should == 'category'
+      end
+
+      it 'has a description' do
+        Category.description.should be_kind_of(String)
+      end
+
+      it 'has an XML example' do
+        Category.xml_example.should be_kind_of(String)
+      end
+
+      it 'has a list of fields' do
+        Category.fields.should_not be_empty
+      end
+
+
     end
   end
 end
