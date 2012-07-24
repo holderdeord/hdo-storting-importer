@@ -3,137 +3,114 @@ module Hdo
     class CLI
       def initialize(args)
         @log = Logger.new(STDERR)
-        @cmd, @options = parse(args)
+        @type, @files, @options = parse(args)
       end
 
       def execute
-        import @cmd.to_sym
+        case @type
+        when :dld_issues
+          puts read_dld_issues
+        when :dld_votes
+          puts read_dld_votes
+        when :promises
+          puts read_promises
+        else
+          puts read_type(@type, class_for_type(@type))
+        end
       end
 
       private
 
+      TYPE_TO_CLASS = {
+        :categories      => Category,
+        :issues          => Issue,
+        :districts       => District,
+        :committees      => Committee,
+        :parties         => Party,
+        :representatives => Representative,
+        :votes           => Vote
+      }
+
+      def class_for_type(type)
+        TYPE_TO_CLASS[type] or raise ArgumentError, "unknown type: #{type.inspect}"
+      end
+
+      def read_type(plural, klass)
+        objs = @files.map do |e|
+          doc = Nokogiri::XML.parse(File.read(e))
+          doc.remove_namespaces!
+
+          klass.from_storting_doc(doc)
+        end.flatten
+
+        str = Util.builder do |xml|
+          xml.instruct!
+          xml.__send__(plural) do |builder|
+            objs.each { |e| e.to_hdo_xml(builder) }
+          end
+        end
+
+        str
+      end
+
       def parse(args)
-        options = {:source => (has_submodule? ? 'disk' : 'api')}
+        options = {}
 
         parser = OptionParser.new do |opt|
-          opt.banner = "Usage: #{$0} <import-type> [options]"
-
+          types = TYPE_TO_CLASS.keys + [:dld_issues, :dld_votes, :promises]
+          opt.banner = "Usage: #{$0} <#{types.join '|'}> <file(s)>"
           opt.on("--help", "You're looking at it.") { puts opt; exit; }
-          opt.on("--only-print", "Don't run import, only print generated XML.") { options[:only_print] = true }
-          opt.on("--except WHAT", 'Ignore this comma separated list of entities from import.') { |s| options[:ignore] = s.split(",").map(&:strip).map(&:to_sym) }
-          opt.on("--app-root APP_ROOT", 'Path to clone of git://github.com/holderdeord/hdo-site.git') { |path| options[:app_root] = path }
-          opt.on("--app-url APP_URL", 'URL to hdo-site') { |url| options[:app_url] = url }
-          opt.on("--source SOURCE ", 'Where to take data from [disk|api]') { |source| options[:source] = source }
-          opt.on("--socks PROXY", 'host:port for SOCKS proxy') do |proxy|
-            require 'socksify'
-            host, port = proxy.split ":"
-            TCPSocket.socks_server = host
-            TCPSocket.socks_port = Integer(port)
-          end
         end
 
         parser.parse!(args)
 
-        cmd = args.shift
+        type, files = args
 
-        unless cmd
+        if type.nil?
           puts(parser)
           exit 1
         end
 
-        [cmd, options]
+        [type.to_sym, Array(files), options]
       end
 
-      def data_source
-        @data_source ||= (
-          ds = if @options[:source] == "disk"
-                 DiskDataSource.new(File.join(StortingImporter.root, 'folketingparser/rawdata/data.stortinget.no'))
-               elsif @options[:source] == "api"
-                 ApiDataSource.new("http://data.stortinget.no/")
-               else
-                 raise ArgumentError, "invalid source: #{@options[:source].inspect}"
-               end
+      def read_dld_issues
+        doc = Nokogiri::XML.parse(File.read(File.join(StortingImporter.root, 'data/dld-issues.xml')))
+        issues = Issue.from_hdo_doc doc
 
-          ParsingDataSource.new(ds)
-        )
-      end
-
-      def importer
-        @importer ||= (
-          if @options[:app_root]
-            ScriptImporter.new(@options[:app_root])
-          else
-            raise ArgumentError, "app-root not given, can't import"
+        Util.builder do |xml|
+          xml.instruct!
+          xml.issues do |issues_builder|
+            issues.each { |i| i.to_hdo_xml(issues_builder) }
           end
-        )
-      end
-
-      def import(what)
-        case what
-        when :dld
-          import_dld
-        when :promises
-          import_promises
-        when :all
-          import_all
-        else
-          import_docs converter.xml_for(what.to_sym)
         end
       end
 
-      def import_all
-        ignore = Array(@options[:ignore])
+      def read_dld_votes
+        doc = Nokogiri::XML.parse(File.read(File.join(StortingImporter.root, 'folketingparser/data/votering-2011-04-04-dld-hdo.xml')))
+        votes = Vote.from_hdo_doc doc
 
-        import_docs converter.xml_for(:parties) unless ignore.include?(:parties)
-        import_docs converter.xml_for(:committees) unless ignore.include?(:committees)
-        import_docs converter.xml_for(:districts) unless ignore.include?(:districts)
-        import_docs converter.xml_for(:representatives) unless ignore.include?(:representatives)
-        import_docs converter.xml_for(:categories) unless ignore.include?(:categories)
-        import_docs converter.xml_for(:issues) unless ignore.include?(:issues)
-        import_docs converter.xml_for(:votes) unless ignore.include?(:votes)
-
-        import_dld unless ignore.include?(:dld)
-        import_promises unless ignore.include?(:promises)
-      end
-
-      def converter
-        @converter ||= Converter.new(data_source)
-      end
-
-      def import_dld
-        if has_submodule?
-          print_or_import File.read(File.join(StortingImporter.root, 'data/dld-issues.xml'))
-          print_or_import File.read(File.join(StortingImporter.root, 'folketingparser/data/votering-2011-04-04-dld-hdo.xml'))
-        else
-          $stderr.puts "folketingparser not found, skipping DLD votes and issues (run `git submodule update --init` if you need this)"
+        Util.builder do |xml|
+          xml.instruct!
+          xml.votes do |votes_builder|
+            votes.each { |v| v.to_hdo_xml(votes_builder) }
+          end
         end
       end
 
-      def import_promises
-        csvs = Dir[File.join(StortingImporter.root, 'data/promises-*.csv')].sort_by { |e| File.basename(e) }
-        csvs.each do |path|
-          print_or_import PromiseConverter.new(path).xml
+      def read_promises
+        csvs = @files.any? ? @files : Dir[File.join(StortingImporter.root, 'data/promises-*.csv')].sort_by { |e| File.basename(e) }
+        content = ''
+        csvs.each do |csv|
+          content << File.read(File.expand_path(csv), encoding: "ISO-8859-1").encode("UTF-8")
         end
-      end
 
-      def import_docs(docs)
-        docs = [docs] unless docs.kind_of?(Array)
-
-        docs.each do |doc|
-          print_or_import doc.to_s
+        Util.builder do |xml|
+          xml.instruct!
+          xml.promises do |promises|
+            Promise.from_csv(content).each { |e| e.to_hdo_xml(promises) }
+          end
         end
-      end
-
-      def print_or_import(xml)
-        if @options[:only_print]
-          puts xml
-        else
-          importer.import xml
-        end
-      end
-
-      def has_submodule?
-        File.exist?(File.join(StortingImporter.root, 'folketingparser/data'))
       end
 
     end

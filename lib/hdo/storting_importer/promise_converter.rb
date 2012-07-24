@@ -18,31 +18,12 @@ module Hdo
         builder.promises do |promises|
           @promises.each do |data|
             next if data.body == "Løftetekst" || data.body.nil? || data.body.empty?
-            add_promise(promises, data)
+            data.to_hdo_xml(promises)
           end
         end
 
         builder.target!
       end
-
-      def add_promise(promises, data)
-        promises.promise do |promise|
-          promise.party data.party.strip
-          promise.general data.general
-          promise.categories do |categories|
-            data.categories.each do |name|
-              categories.category name
-            end
-          end
-
-          promise.source [data.source, data.page].join(":")
-          promise.body data.body.strip
-        end
-      rescue
-        STDERR.puts data.inspect
-        raise
-      end
     end
-
   end
 end

@@ -77,6 +77,9 @@ module Hdo
         end
 
         new(external_id, summary, description, type, status, last_update, reference, document_group, committee, categories)
+      rescue
+        puts lnode
+        raise
       end
 
       def self.from_hdo_doc(doc)

@@ -1,14 +1,11 @@
 What
 ====
 
-Convert and import XML from data.stortinget.no
+Convert XML from data.stortinget.no to HDO XML
 
 Usage
 =====
 
-    $ bin/hdo-converter --app-root /src/hdo-site all
+    $ bin/hdo-converter --help
+    $ bin/hdo-converter categories folketingparser/rawdata/data.stortinget.no/eksport/emner/index.html
 
-Caveats
-=======
-
-Right now we're executing script/import from hdo-site to perform the import. That means running this with bundler may fail if the gems don't match. Don't do that.
