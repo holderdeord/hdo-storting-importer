@@ -34,8 +34,8 @@ require 'hdo/storting_importer/promise'
 require 'hdo/storting_importer/representative'
 require 'hdo/storting_importer/vote'
 
-require 'hdo/storting_importer/converters/converter'
-require 'hdo/storting_importer/converters/promise_converter'
+require 'hdo/storting_importer/converter'
+require 'hdo/storting_importer/promise_converter'
 
 require 'hdo/storting_importer/cli'
 

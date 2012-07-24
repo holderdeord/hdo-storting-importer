@@ -99,7 +99,7 @@ module Hdo
       end
 
       def converter
-        @converter ||= Converters::Converter.new(data_source)
+        @converter ||= Converter.new(data_source)
       end
 
       def import_dld
@@ -114,7 +114,7 @@ module Hdo
       def import_promises
         csvs = Dir[File.join(StortingImporter.root, 'data/promises-*.csv')].sort_by { |e| File.basename(e) }
         csvs.each do |path|
-          print_or_import Converters::PromiseConverter.new(path).xml
+          print_or_import PromiseConverter.new(path).xml
         end
       end
 
