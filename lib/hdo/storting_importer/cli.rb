@@ -39,7 +39,7 @@ module Hdo
 
       def read_type(plural, klass)
         objs = @files.map do |e|
-          doc = Nokogiri::XML.parse(File.read(e))
+          doc = Nokogiri::XML.parse(open(e).read)
           doc.remove_namespaces!
 
           klass.from_storting_doc(doc)
@@ -104,7 +104,12 @@ module Hdo
         csvs = @files.any? ? @files : Dir[File.join(StortingImporter.root, 'data/promises-*.csv')].sort_by { |e| File.basename(e) }
         content = ''
         csvs.each do |csv|
-          content << File.read(File.expand_path(csv), encoding: "ISO-8859-1").encode("UTF-8")
+          if csv =~ /^http/
+            content << open(csv).read
+          else
+            # local csv files are ISO-8859-1 for some reason.
+            content << File.read(File.expand_path(csv), encoding: "ISO-8859-1").encode("UTF-8")
+          end
         end
 
         Util.builder do |xml|
