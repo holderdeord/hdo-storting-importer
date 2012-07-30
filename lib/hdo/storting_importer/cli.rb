@@ -2,7 +2,6 @@ module Hdo
   module StortingImporter
     class CLI
       def initialize(args)
-        @log = Logger.new(STDERR)
         @type, @files, @options = parse(args)
       end
 
