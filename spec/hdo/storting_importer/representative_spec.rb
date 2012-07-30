@@ -100,6 +100,10 @@ module Hdo
         rep.external_id.should == "ÆØÅ"
       end
 
+      it 'has #short_inspect' do
+        Representative.example.short_inspect.should be_kind_of(String)
+      end
+
     end
   end
 end

@@ -94,6 +94,9 @@ module Hdo
         Category.fields.should_not be_empty
       end
 
+      it 'has #short_inspect' do
+        Category.example.short_inspect.should be_kind_of(String)
+      end
 
     end
   end

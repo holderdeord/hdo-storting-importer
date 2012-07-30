@@ -4,6 +4,7 @@ module Hdo
   module StortingImporter
     class Representative
       include IvarEquality
+      include Inspectable
 
       attr_reader :external_id, :first_name, :last_name, :date_of_birth, :date_of_death,
                   :district, :party, :committees, :period, :gender
@@ -123,6 +124,10 @@ module Hdo
         @period        = period
 
         @vote_result   = nil
+      end
+
+      def short_inspect
+        short_inspect_string :include => [:external_id, :first_name, :last_name, :party, :vote_result]
       end
 
       def external_id

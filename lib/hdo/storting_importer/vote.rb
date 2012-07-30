@@ -4,6 +4,7 @@ module Hdo
   module StortingImporter
     class Vote
       include IvarEquality
+      include Inspectable
 
       attr_reader :external_id, :external_issue_id, :personal, :enacted, :subject,
                   :method, :result_type, :time, :counts
@@ -117,6 +118,10 @@ module Hdo
         @representatives = []
       end
 
+      def short_inspect
+        short_inspect_string :include => [:external_id, :subject, :time, :counts]
+      end
+
       def add_storting_propositions(node)
         @propositions += node.css("voteringsforslag").map do |n|
           rep_node = n.css("forslag_levert_av_representant").first
@@ -187,6 +192,8 @@ module Hdo
       end
 
       class Proposition < Struct.new(:external_id, :description, :on_behalf_of, :body, :delivered_by)
+        include Inspectable
+
         def self.type_name
           'proposition'
         end
@@ -223,6 +230,10 @@ module Hdo
           delivered_by = Representative.from_hdo_node(delivered_by_node) if delivered_by_node
 
           new external_id, description, on_behalf_of, body, delivered_by
+        end
+
+        def short_inspect
+          short_inspect_string :include => [:external_id, :description, :on_behalf_of]
         end
 
         def to_hdo_xml(builder)

@@ -2,6 +2,7 @@ module Hdo
   module StortingImporter
     class Category
       include IvarEquality
+      include Inspectable
 
       attr_reader :external_id, :name
       attr_accessor :children
@@ -22,11 +23,15 @@ module Hdo
         ]
       end
 
-      def self.xml_example(builder = Util.builder)
+      def self.example
         cat = new("5", "Employment")
         cat.children << new("6", "Wages")
 
-        cat.to_hdo_xml(builder)
+        cat
+      end
+
+      def self.xml_example(builder = Util.builder)
+        example.to_hdo_xml(builder)
       end
 
       #
@@ -88,6 +93,10 @@ module Hdo
         @external_id = external_id
         @name        = name
         @children    = []
+      end
+
+      def short_inspect
+        short_inspect_string :include => [:external_id, :name]
       end
 
       #

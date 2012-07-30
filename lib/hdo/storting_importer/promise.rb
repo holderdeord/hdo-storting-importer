@@ -7,6 +7,7 @@ module Hdo
     class Promise
       attr_reader :party, :body, :general, :categories, :source, :page
       alias_method :general?, :general
+      alias_method :short_inspect, :inspect
 
       def self.type_name
         'promise'

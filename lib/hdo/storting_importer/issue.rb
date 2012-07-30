@@ -4,6 +4,7 @@ module Hdo
   module StortingImporter
     class Issue
       include IvarEquality
+      include Inspectable
 
       attr_reader :external_id, :summary, :description, :type, :status, :last_update,
                   :reference, :document_group, :committee, :categories
@@ -113,6 +114,10 @@ module Hdo
         @document_group = document_group
         @committee      = committee
         @categories     = categories || []
+      end
+
+      def short_inspect
+        short_inspect_string :include => [:external_id, :summary]
       end
 
       def to_hdo_xml(builder = Util.builder)

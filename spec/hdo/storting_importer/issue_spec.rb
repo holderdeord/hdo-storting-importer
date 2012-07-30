@@ -116,6 +116,10 @@ XML
         Issue.fields.should_not be_empty
       end
 
+      it 'has #short_inspect' do
+        Issue.example.short_inspect.should be_kind_of(String)
+      end
+
     end
   end
 end

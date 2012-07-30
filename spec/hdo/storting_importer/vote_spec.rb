@@ -162,6 +162,11 @@ module Hdo
         Vote.fields.should_not be_empty
       end
 
+      it 'has #short_inspect' do
+        Vote.example.short_inspect.should be_kind_of(String)
+        Vote::Proposition.example.short_inspect.should be_kind_of(String)
+      end
+
     end
   end
 end

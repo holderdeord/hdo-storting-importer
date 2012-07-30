@@ -4,6 +4,7 @@ module Hdo
       include IvarEquality
 
       attr_reader :external_id, :name
+      alias_method :short_inspect, :inspect
 
       def self.type_name
         'district'
@@ -13,8 +14,12 @@ module Hdo
         'an electoral district'
       end
 
+      def self.example
+        new("Db", "Duckburg")
+      end
+
       def self.xml_example(builder = Util.builder)
-        new("Db", "Duckburg").to_hdo_xml(builder)
+        example.to_hdo_xml(builder)
       end
 
       def self.fields

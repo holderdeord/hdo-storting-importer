@@ -69,6 +69,11 @@ module Hdo
         District.fields.should_not be_empty
       end
 
+      it 'has #short_inspect' do
+        District.example.short_inspect.should be_kind_of(String)
+      end
+
+
 
     end
   end

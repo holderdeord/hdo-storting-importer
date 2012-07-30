@@ -89,6 +89,10 @@ XML
         Promise.xml_example.should be_kind_of(String)
       end
 
+      it 'has #short_inspect' do
+        Promise.example.short_inspect.should be_kind_of(String)
+      end
+
     end
   end
 end

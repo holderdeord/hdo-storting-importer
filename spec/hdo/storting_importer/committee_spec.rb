@@ -61,6 +61,9 @@ module Hdo
         Committee.fields.should_not be_empty
       end
 
+      it 'has #short_inspect' do
+        Committee.example.short_inspect.should be_kind_of(String)
+      end
 
     end
   end
