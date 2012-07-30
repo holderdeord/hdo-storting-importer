@@ -93,6 +93,13 @@ module Hdo
         Representative.fields.should_not be_empty
       end
 
+      it 'unescapes non-ASCII characters in the external id' do
+        rep = Representative.example
+
+        rep.instance_variable_set("@external_id", '_AE_O_A')
+        rep.external_id.should == "ÆØÅ"
+      end
+
     end
   end
 end

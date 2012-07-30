@@ -40,6 +40,10 @@ module Hdo
         @name        = name
       end
 
+      def external_id
+        Util.unescape_param @external_id
+      end
+
       def to_hdo_xml(builder = Util.builder)
         builder.party do |party|
           party.externalId external_id

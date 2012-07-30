@@ -67,6 +67,11 @@ module Hdo
         Party.fields.should_not be_empty
       end
 
+      it 'unescapes non-ASCII characters in the external id' do
+        party = Party.new('_AE_O_A', "Senterpartiet")
+        party.external_id.should == "ÆØÅ"
+      end
+
     end
   end
 end

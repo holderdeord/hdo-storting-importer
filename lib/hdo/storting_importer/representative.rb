@@ -125,6 +125,10 @@ module Hdo
         @vote_result   = nil
       end
 
+      def external_id
+        Util.unescape_param @external_id
+      end
+
       def to_hdo_xml(builder = Util.builder)
         builder.representative do |rep|
           rep.externalId external_id
