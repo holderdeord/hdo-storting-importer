@@ -191,8 +191,11 @@ module Hdo
       class Counts < Struct.new(:for, :against, :absent)
       end
 
-      class Proposition < Struct.new(:external_id, :description, :on_behalf_of, :body, :delivered_by)
+      class Proposition
+        include IvarEquality
         include Inspectable
+
+        attr_reader :external_id, :description, :on_behalf_of, :body, :delivered_by
 
         def self.type_name
           'proposition'
@@ -230,6 +233,14 @@ module Hdo
           delivered_by = Representative.from_hdo_node(delivered_by_node) if delivered_by_node
 
           new external_id, description, on_behalf_of, body, delivered_by
+        end
+
+        def initialize(external_id, description, on_behalf_of, body, delivered_by)
+          @external_id  = external_id
+          @description  = description
+          @on_behalf_of = on_behalf_of
+          @body         = body
+          @delivered_by = delivered_by
         end
 
         def short_inspect

@@ -164,7 +164,10 @@ module Hdo
 
       it 'has #short_inspect' do
         Vote.example.short_inspect.should be_kind_of(String)
-        Vote::Proposition.example.short_inspect.should be_kind_of(String)
+
+        str = Vote::Proposition.example.short_inspect
+        str.should be_kind_of(String)
+        str.should_not include("nil")
       end
 
     end
