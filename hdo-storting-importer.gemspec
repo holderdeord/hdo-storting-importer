@@ -20,4 +20,5 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency "aruba"
   gem.add_runtime_dependency "rake"
   gem.add_runtime_dependency "rest-client"
+  gem.add_runtime_dependency "unicode_utils"
 end

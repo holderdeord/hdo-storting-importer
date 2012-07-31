@@ -93,6 +93,11 @@ XML
         Promise.example.short_inspect.should be_kind_of(String)
       end
 
+      it 'correctly upcases non-ASCII category names' do
+        promise = Promise.new("Party", "Body", true, ["æøå"], "PP", 8)
+        promise.categories.should == ["ÆØÅ"]
+      end
+
     end
   end
 end

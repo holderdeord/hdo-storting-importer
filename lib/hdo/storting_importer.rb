@@ -6,6 +6,7 @@ require 'open-uri'
 require 'erb'
 require 'logger'
 require 'builder'
+require 'unicode_utils'
 
 module Hdo
   module StortingImporter

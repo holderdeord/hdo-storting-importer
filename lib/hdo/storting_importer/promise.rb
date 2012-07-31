@@ -72,7 +72,7 @@ module Hdo
             pr[:party].to_s.strip,
             pr[:body].to_s.strip,
             pr[:general].to_s.downcase == 'ja',
-            pr[:categories].to_s.split(",").map(&:upcase).map(&:strip),
+            pr[:categories].to_s.split(","),
             pr[:source].to_s.strip,
             pr[:page].to_s.strip
             )
@@ -83,7 +83,7 @@ module Hdo
         @party      = party
         @body       = body
         @general    = general
-        @categories = categories
+        @categories = categories.map(&:strip).map { |e| UnicodeUtils.upcase(e) }
         @source     = source
         @page       = page
       end
