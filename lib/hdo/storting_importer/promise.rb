@@ -83,7 +83,7 @@ module Hdo
         @party      = party
         @body       = body
         @general    = general
-        @categories = categories.map(&:strip).map { |e| UnicodeUtils.upcase(e) }
+        @categories = clean_categories(categories)
         @source     = source
         @page       = page
       end
@@ -98,6 +98,14 @@ module Hdo
           promise.source [source, page].join(":")
           promise.body body
         end
+      end
+
+      private
+
+      def clean_categories(categories)
+        categories.map(&:strip).
+                   reject(&:empty?).
+                   map { |e| UnicodeUtils.upcase(e) }
       end
 
     end

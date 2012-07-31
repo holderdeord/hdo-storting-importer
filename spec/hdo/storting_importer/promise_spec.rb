@@ -98,6 +98,11 @@ XML
         promise.categories.should == ["ÆØÅ"]
       end
 
+      it 'ignores empty categories' do
+        promise = Promise.new("Party", "Body", true, ["FOO", ""], "PP", 8)
+        promise.categories.should == ["FOO"]
+      end
+
     end
   end
 end
