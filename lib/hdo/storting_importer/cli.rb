@@ -106,8 +106,7 @@ module Hdo
           if csv =~ /^http/
             content << open(csv).read
           else
-            # local csv files are ISO-8859-1 for some reason.
-            content << File.read(File.expand_path(csv), encoding: "ISO-8859-1").encode("UTF-8")
+            content << File.read(File.expand_path(csv))
           end
         end
 
