@@ -62,10 +62,6 @@ module Hdo
           actual.should == expected
         end
 
-        it "converts promises" do
-          PromiseConverter.new(input_path('promises-a.csv')).xml.should == output_path('promises-a.xml').read
-        end
-
       end
     end
   end

@@ -5,6 +5,7 @@ require 'pathname'
 require 'open-uri'
 require 'erb'
 require 'logger'
+require 'builder'
 
 module Hdo
   module StortingImporter
@@ -56,8 +57,6 @@ require 'hdo/storting_importer/representative'
 require 'hdo/storting_importer/vote'
 
 require 'hdo/storting_importer/converter'
-require 'hdo/storting_importer/promise_converter'
-
 require 'hdo/storting_importer/cli'
 
 
