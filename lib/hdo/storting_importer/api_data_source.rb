@@ -1,9 +1,10 @@
 module Hdo
   module StortingImporter
     class ApiDataSource < DataSource
+      USER_AGENT = "holderdeord-storting-importer"
 
       def initialize(url)
-        @resource = RestClient::Resource.new(URI.parse(url))
+        @resource = RestClient::Resource.new(URI.parse(url), )
       end
 
       def representatives(period = DEFAULT_PERIOD)
@@ -52,7 +53,7 @@ module Hdo
         sub_resource = @resource[path]
         Hdo::StortingImporter.logger.info "parsing #{sub_resource}"
 
-        parse sub_resource.get
+        parse sub_resource.get(:user_agent => USER_AGENT)
       end
 
     end
