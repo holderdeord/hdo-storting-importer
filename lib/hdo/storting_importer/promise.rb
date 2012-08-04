@@ -79,6 +79,15 @@ module Hdo
         end.compact
       end
 
+      def self.from_fusion_table(table_id, api_key)
+        url = "https://www.googleapis.com/fusiontables/v1/query"
+
+        resp = RestClient.get(url, :params => {:sql => "select * from #{table_id}", :key => api_key})
+        MultiJson.decode(resp).fetch('rows').map { |data| new(*data) }
+      rescue RestClient::RequestFailed => ex
+        raise "#{ex.message}: #{ex.http_body}"
+      end
+
       def initialize(party, body, general, categories, source, page)
         @party      = party
         @body       = body
@@ -103,6 +112,8 @@ module Hdo
       private
 
       def clean_categories(categories)
+        categories = categories.split(",") if categories.kind_of?(String)
+
         categories.map(&:strip).
                    reject(&:empty?).
                    map { |e| UnicodeUtils.upcase(e) }

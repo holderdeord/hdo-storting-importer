@@ -7,6 +7,8 @@ require 'erb'
 require 'logger'
 require 'builder'
 require 'unicode_utils'
+require 'uri'
+require 'multi_json'
 
 module Hdo
   module StortingImporter
