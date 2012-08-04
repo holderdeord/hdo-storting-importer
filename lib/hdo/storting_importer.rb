@@ -14,6 +14,63 @@ module Hdo
       @root ||= File.expand_path("../../..", __FILE__)
     end
 
+    def self.types
+      [
+        Party,
+        Committee,
+        District,
+        Representative,
+        Category,
+        Issue,
+        Vote,
+        Vote::Proposition,
+        Promise
+      ]
+    end
+
+    def self.print_types(opts = {})
+      out = opts[:io] || $stdout
+      xml = !!opts[:xml]
+
+      max_name_size = 0
+      max_type_size  = 0
+
+      type_strings = []
+
+
+      types.each do |type|
+        type.fields.each do |e|
+          required = 'required' if e.required
+          type_strings << (type_string = "#{required}:#{e.type}")
+
+          max_name_size = [e.name.size, max_name_size].max
+          max_type_size = [type_string.size, max_type_size].max
+        end
+      end
+
+      types.each_with_index do |type, type_idx|
+        out.puts "\x1b[1m#{type.type_name}\x1b[0m\n"
+
+        type.fields.each_with_index do |field, field_idx|
+
+          parts = [
+            field.name.to_s.rjust(max_name_size + 5),
+            type_strings[type_idx + field_idx].rjust(max_type_size),
+            "\t#{field.description}"
+          ]
+
+          out.puts parts.join ' '
+        end
+
+        out.puts "\n\n"
+
+        if xml
+          puts type.xml_example.split("\n")
+          puts "\n\n"
+        end
+      end
+    end
+
     def self.logger
       @logger ||= (
         out = $stderr # should be able to pipe output to a file
