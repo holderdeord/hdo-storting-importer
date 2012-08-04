@@ -27,6 +27,7 @@ module Hdo
           Field.new(:externalIssueId, true, :string, "The id (matching the issue's externalId) of the issue being voted on."),
           Field.new(:counts, true, :element, "An element with <for>, <against> and <absent> counts (see example)."),
           Field.new(:enacted, true, :boolean, "Whether the proposal was enacted."),
+          Field.new(:personal, true, :boolean, "Whether the vote was done using the voting system. If not, we attempt to infer the representative list from other votes on the same day."),
           Field.new(:subject, true, :string, "The subject of the vote."),
           Field.new(:method, true, :string, "??"),
           Field.new(:resultType, true, :string, "??"),
