@@ -5,7 +5,7 @@ require 'csv'
 module Hdo
   module StortingImporter
     class Promise
-      attr_reader :party, :body, :general, :categories, :source, :page
+      attr_reader :external_id, :party, :body, :general, :categories, :source, :page
       alias_method :general?, :general
       alias_method :short_inspect, :inspect
 
@@ -19,6 +19,7 @@ module Hdo
 
       def self.fields
         [
+          EXTERNAL_ID_FIELD,
           Field.new(:party, true, :string, 'The external id of the party.'),
           Field.new(:general, true, :boolean, "Whether this is considered a general promise (i.e. can be ambigious whether it has been fulfilled)."),
           Field.new(:categories, true, :list, "List of category names (matching names imported in <a href='#input-format-category'>&lt;category&gt;</a>)"),
@@ -28,7 +29,7 @@ module Hdo
       end
 
       def self.example
-        new("H", "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.", true, ["GRUNNSKOLE"], "PP", 8)
+        new("H", "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.", true, ["GRUNNSKOLE"], "PP", 8, 1)
       end
 
       def self.xml_example(builder = Util.builder)
@@ -80,25 +81,31 @@ module Hdo
       end
 
       def self.from_fusion_table(table_id, api_key)
-        url = "https://www.googleapis.com/fusiontables/v1/query"
+        table = FusionTable.new(api_key)
 
-        resp = RestClient.get(url, :params => {:sql => "select * from #{table_id}", :key => api_key})
-        MultiJson.decode(resp).fetch('rows').map { |data| new(*data) }
-      rescue RestClient::RequestFailed => ex
-        raise "#{ex.message}: #{ex.http_body}"
+        # TODO: deal with maxResults / pageTokens
+        # https://developers.google.com/fusiontables/docs/v1/using#query-params
+
+        table.query("select rowid from #{table_id}", :rows => true)
+
+
+        table.query("select * from #{table_id}")
+
       end
 
-      def initialize(party, body, general, categories, source, page)
-        @party      = party
-        @body       = body
-        @general    = general
-        @categories = clean_categories(categories)
-        @source     = source
-        @page       = page
+      def initialize(party, body, general, categories, source, page, external_id = nil)
+        @party       = party
+        @body        = body
+        @general     = general
+        @categories  = clean_categories(categories)
+        @source      = source
+        @page        = page
+        @external_id = external_id
       end
 
       def to_hdo_xml(builder = Util.builder)
         builder.promise do |promise|
+          promise.externalId external_id if external_id
           promise.party party
           promise.general general?
           promise.categories do |cats|

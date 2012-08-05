@@ -36,6 +36,7 @@ module Hdo
       it 'serializes to HDO XML' do
         Promise.example.to_hdo_xml.should == <<-XML
 <promise>
+  <externalId>1</externalId>
   <party>H</party>
   <general>true</general>
   <categories>
@@ -51,6 +52,7 @@ XML
         promises = Promise.from_hdo_doc(parse(<<-XML))
         <promises>
           <promise>
+            <externalId>1</externalId>
             <party>H</party>
             <general>true</general>
             <categories>
