@@ -80,17 +80,23 @@ module Hdo
         end.compact
       end
 
+      # doesn't really belong here - data source?
       def self.from_fusion_table(table_id, api_key)
         table = FusionTable.new(api_key)
 
-        # TODO: deal with maxResults / pageTokens
-        # https://developers.google.com/fusiontables/docs/v1/using#query-params
+        column_names = table.columns_for(table_id).map { |e| e['name'] }.map { |e| e.inspect }.join(",")
+        row_count = Integer(table.query("select count(rowid) from #{table_id}", :rows => true).flatten.first)
 
-        table.query("select rowid from #{table_id}", :rows => true)
+        # do this in batches of 100
+        limit = 100
+        result = []
 
+        (0..row_count).step(limit) do |offset|
+          sql = "SELECT #{column_names},\"rowid\" FROM #{table_id} OFFSET #{offset} LIMIT #{limit}"
+          result.concat table.query(sql, :rows => true).map { |data| new(*data) }
+        end
 
-        table.query("select * from #{table_id}")
-
+        result
       end
 
       def initialize(party, body, general, categories, source, page, external_id = nil)
