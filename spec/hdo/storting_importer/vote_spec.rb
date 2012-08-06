@@ -72,90 +72,92 @@ module Hdo
         vote.counts.absent.should == 71
       end
 
-      it 'can serialize as HDO XML' do
-        vote = Vote.example
-        vote.to_hdo_xml.should == <<-XML
-<vote>
-  <externalId>2175</externalId>
-  <externalIssueId>51448</externalIssueId>
-  <counts>
-    <for>2</for>
-    <against>96</against>
-    <absent>71</absent>
-  </counts>
-  <personal>true</personal>
-  <enacted>false</enacted>
-  <subject>Forslag 24 - 26 på vegne av Per Olaf Lundteigen</subject>
-  <method>ikke_spesifisert</method>
-  <resultType>ikke_spesifisert</resultType>
-  <time>2012-04-12T16:37:27.053</time>
-  <representatives>
-    <representative>
-      <externalId>ADA</externalId>
-      <firstName>André Oktay</firstName>
-      <lastName>Dahl</lastName>
-      <gender>M</gender>
-      <dateOfBirth>1975-07-07T00:00:00</dateOfBirth>
-      <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
-      <district>Akershus</district>
-      <party>Høyre</party>
-      <committees>
-        <committee>Justiskomiteen</committee>
-      </committees>
-      <period>2011-2012</period>
-      <voteResult>for</voteResult>
-    </representative>
-  </representatives>
-  <propositions>
-    <proposition>
-      <externalId>1234</externalId>
-      <description>description</description>
-      <onBehalfOf>on behalf of</onBehalfOf>
-      <body>body</body>
-      <deliveredBy>
-        <representative>
-          <externalId>ADA</externalId>
-          <firstName>André Oktay</firstName>
-          <lastName>Dahl</lastName>
-          <gender>M</gender>
-          <dateOfBirth>1975-07-07T00:00:00</dateOfBirth>
-          <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
-          <district>Akershus</district>
-          <party>Høyre</party>
-          <committees>
-            <committee>Justiskomiteen</committee>
-          </committees>
-          <period>2011-2012</period>
-        </representative>
-      </deliveredBy>
-    </proposition>
-  </propositions>
-</vote>
-        XML
+      it 'can serialize as JSON' do
+        Vote.example.to_json.should be_json <<-JSON
+        {
+          "kind": "hdo#vote",
+          "externalId": "2175",
+          "externalIssueId": "51448",
+          "counts": {
+            "for": 2,
+            "against": 96,
+            "absent": 71
+          },
+          "personal": true,
+          "enacted": false,
+          "subject": "Forslag 24 - 26 på vegne av Per Olaf Lundteigen",
+          "method": "ikke_spesifisert",
+          "resultType": "ikke_spesifisert",
+          "time": "2012-04-12T16:37:27.053",
+          "representatives": [
+            {
+              "kind": "hdo#representative",
+              "externalId": "ADA",
+              "firstName": "André Oktay",
+              "lastName": "Dahl",
+              "gender": "M",
+              "dateOfBirth": "1975-07-07T00:00:00",
+              "dateOfDeath": "0001-01-01T00:00:00",
+              "district": "Akershus",
+              "party": "Høyre",
+              "committees": ["Justiskomiteen"],
+              "period": "2011-2012",
+              "voteResult": "for"
+            }
+            ],
+          "propositions": [
+            {
+              "kind": "hdo#proposition",
+              "externalId": "1234",
+              "description": "description",
+              "onBehalfOf": "on behalf of",
+              "body": "body",
+              "deliveredBy": {
+                "kind": "hdo#representative",
+                "externalId": "ADA",
+                "firstName": "André Oktay",
+                "lastName": "Dahl",
+                "gender": "M",
+                "dateOfBirth": "1975-07-07T00:00:00",
+                "dateOfDeath": "0001-01-01T00:00:00",
+                "district": "Akershus",
+                "party": "Høyre",
+                "committees": ["Justiskomiteen"],
+                "period": "2011-2012"
+              }
+            }
+          ]
+        }
+        JSON
       end
 
-      it 'can deserialize a HDO XML node' do
+      it 'can deserialize JSON' do
         orig = Vote.example
-        Vote.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
+        Vote.from_json(orig.to_json).should == orig
       end
 
-      it 'can deserialize a HDO XML doc' do
-        orig = Vote.example
-        Vote.from_hdo_doc(parse("<votes>#{orig.to_hdo_xml}</votes>")).should == [orig]
+      it 'can deserialize a JSON array' do
+        orig = [Vote.example]
+        Vote.from_json(orig.to_json).should == orig
       end
 
-      it 'has a type name' do
-        Vote.type_name.should == 'vote'
-        Vote::Proposition.type_name.should == 'proposition'
+      it 'fails if the given JSON is invalid' do
+        json = Vote.example.to_hash
+        json.delete :personal
+
+        expect { Vote.from_json(json.to_json) }.to raise_error(ValidationError)
+      end
+
+      it 'has a kind' do
+        Vote.kind.should == 'hdo#vote'
       end
 
       it 'has a description' do
         Vote.description.should be_kind_of(String)
       end
 
-      it 'has an XML example' do
-        Vote.xml_example.should be_kind_of(String)
-        Vote::Proposition.xml_example.should be_kind_of(String)
+      it 'has a JSON example' do
+        Vote.json_example.should be_kind_of(String)
       end
 
       it 'has a list of fields' do
@@ -164,10 +166,6 @@ module Hdo
 
       it 'has #short_inspect' do
         Vote.example.short_inspect.should be_kind_of(String)
-
-        str = Vote::Proposition.example.short_inspect
-        str.should be_kind_of(String)
-        str.should_not include("nil")
       end
 
     end

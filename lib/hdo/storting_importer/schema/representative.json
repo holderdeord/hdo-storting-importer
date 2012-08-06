@@ -1,0 +1,61 @@
+{
+  "id": "hdo#representative",
+  "description": "a member of parliament",
+  "type":"object",
+  "properties": {
+    "kind": {
+      "type": "string",
+      "description": "This is always 'hdo#representative'",
+      "default": "hdo#representative",
+      "required": true
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "The first name of the representative",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "description": "The first name of the representative",
+      "required": true
+    },
+    "period": {
+      "type": "string",
+      "description": "An identifier for the period the representative is elected for.",
+      "required": true
+    },
+    "district": {
+      "type": "string",
+      "description": "The electoral district the representative belongs to. Must match the 'name' field of the district type.",
+      "required": true
+    },
+    "party": {
+      "type": "string",
+      "description": "The name of the representative's party.",
+      "required": true
+    },
+    "committees": {
+      "type": "array",
+      "description": "A list of committees the representative is a member of. This should match the 'name' field of the committee type.",
+      "items": { "type": "string"},
+      "required": true
+    },
+    "dateOfBirth": {
+      "type": "string",
+      "description": "The representative's birth date.",
+      "required": true
+    },
+    "dateOfDeath": {
+      "type": "string",
+      "description": "The representative's death date."
+    },
+    "voteResult": {
+      "type": "string",
+      "description": "If this representative object is part of a hdo#vote, this property describes how the representative voted. Valid values are for|against|absent.",
+      "format": "for|against|absent"
+    }
+  }
+}

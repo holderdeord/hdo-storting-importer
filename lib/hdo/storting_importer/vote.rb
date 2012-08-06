@@ -3,6 +3,7 @@
 module Hdo
   module StortingImporter
     class Vote
+      include HasJsonSchema
       include IvarEquality
       include Inspectable
 
@@ -13,29 +14,7 @@ module Hdo
       alias_method :personal?, :personal
       alias_method :enacted?, :enacted
 
-      def self.type_name
-        'vote'
-      end
-
-      def self.description
-        'a parliamentary vote'
-      end
-
-      def self.fields
-        [
-          EXTERNAL_ID_FIELD,
-          Field.new(:externalIssueId, true, :string, "The id (matching the issue's externalId) of the issue being voted on."),
-          Field.new(:counts, true, :element, "An element with <for>, <against> and <absent> counts (see example)."),
-          Field.new(:enacted, true, :boolean, "Whether the proposal was enacted."),
-          Field.new(:personal, true, :boolean, "Whether the vote was done using the voting system. If not, we attempt to infer the representative list from other votes on the same day."),
-          Field.new(:subject, true, :string, "The subject of the vote."),
-          Field.new(:method, true, :string, "??"),
-          Field.new(:resultType, true, :string, "??"),
-          Field.new(:time, true, :string, "The timestamp for the vote."),
-          Field.new(:representatives, true, :element, "An element with each representative's vote. The element should contain a set of <a href='#input-format-representative'>&lt;representative&gt;</a> elements with an extra subnode 'voteResult', where valid values are 'for', 'against', 'absent'. See example."),
-          Field.new(:propositions, false, :element, "An element with each proposition being voted over. The element should contain a set of <a href='#input-format-proposition'>&lt;proposition&gt;</a> elements. See example."),
-        ]
-      end
+      schema_path StortingImporter.lib.join("hdo/storting_importer/schema/vote.json").to_s
 
       def self.example
         vote = new('2175', '51448', true, false, 'Forslag 24 - 26 på vegne av Per Olaf Lundteigen', 'ikke_spesifisert', 'ikke_spesifisert', '2012-04-12T16:37:27.053', 2, 96, 71)
@@ -44,15 +23,15 @@ module Hdo
         rep.vote_result = 'for'
         vote.representatives << rep
 
-        prop = Vote::Proposition.example
+        prop = Proposition.example
 
         vote.propositions << prop
 
         vote
       end
 
-      def self.xml_example(builder = Util.builder)
-        example.to_hdo_xml(builder)
+      def self.json_example
+        Util.json_pretty example
       end
 
       def self.from_storting_doc(doc)
@@ -80,26 +59,26 @@ module Hdo
         end
       end
 
-      def self.from_hdo_doc(doc)
-        doc.css("votes > vote").map { |e| from_hdo_node(e) }
-      end
+      def self.from_hash(hash)
+        counts = hash.fetch("counts")
 
-      def self.from_hdo_node(node)
-        external_id       = node.css("externalId").first.text
-        external_issue_id = node.css("externalIssueId").first.text
-        for_count         = node.css("counts for").first.text
-        against_count     = node.css("counts against").first.text
-        absent_count      = node.css("counts absent").first.text
-        personal          = node.css("personal").first.text == 'true'
-        enacted           = node.css("enacted").first.text == 'true'
-        subject           = node.css("subject").first.text
-        method            = node.css("method").first.text
-        result_type       = node.css("resultType").first.text
-        time              = node.css("time").first.text
+        args = [
+          hash.fetch("externalId"),
+          hash.fetch("externalIssueId"),
+          hash.fetch("personal"),
+          hash.fetch("enacted"),
+          hash.fetch("subject"),
+          hash.fetch("method"),
+          hash.fetch("resultType"),
+          hash.fetch("time"),
+          counts.fetch("for"),
+          counts.fetch("against"),
+          counts.fetch("absent")
+        ]
 
-        vote = new external_id, external_issue_id, personal, enacted, subject, method, result_type, time, for_count, against_count, absent_count
-        vote.propositions = node.css("propositions proposition").map { |e| Proposition.from_hdo_node(e) }
-        vote.representatives = node.css("representatives representative").map { |e| Representative.from_hdo_node(e) }
+        vote = new(*args)
+        vote.representatives = hash.fetch('representatives').map { |e| Representative.from_hash(e) }
+        vote.propositions    = hash.fetch('propositions').map { |e| Proposition.from_hash(e) }
 
         vote
       end
@@ -159,108 +138,32 @@ module Hdo
         end
       end
 
-      def to_hdo_xml(builder = Util.builder)
-        builder.vote do |vote|
-          vote.externalId external_id
-          vote.externalIssueId external_issue_id
-          vote.counts do |c|
-            c.for counts.for
-            c.against counts.against
-            c.absent counts.absent
-          end
-          vote.personal personal?
-          vote.enacted enacted?
-          vote.subject subject
-          vote.method method
-          vote.resultType result_type
-          vote.time time
-
-          vote.representatives do |reps|
-            representatives.each do |rep|
-              rep.to_hdo_xml(reps)
-            end
-          end
-
-          vote.propositions do |props|
-            propositions.each do |prop|
-              prop.to_hdo_xml(props)
-            end
-          end
-        end
+      def to_hash
+        {
+          :kind             => self.class.kind,
+          :externalId       => @external_id,
+          :externalIssueId  => @external_issue_id,
+          :counts           => @counts.to_hash,
+          :personal         => @personal,
+          :enacted          => @enacted,
+          :subject          => @subject,
+          :method           => @method,
+          :resultType       => @result_type,
+          :time             => @time,
+          :representatives  => @representatives.map(&:to_hash),
+          :propositions     => @propositions.map(&:to_hash)
+        }
       end
 
       class Counts < Struct.new(:for, :against, :absent)
+        def to_hash
+          {
+            :for     => self.for,
+            :against => against,
+            :absent  => absent
+          }
+        end
       end
-
-      class Proposition
-        include IvarEquality
-        include Inspectable
-
-        attr_reader :external_id, :description, :on_behalf_of, :body, :delivered_by
-
-        def self.type_name
-          'proposition'
-        end
-
-        def self.example
-          new('1234', 'description', 'on behalf of', 'body', Representative.example)
-        end
-
-        def self.description
-          'a proposition being voted over'
-        end
-
-        def self.fields
-          [
-            EXTERNAL_ID_FIELD,
-            Field.new(:description, true, :string, 'A short description of the proposition.'),
-            Field.new(:deliveredBy, true, :string, "The representative that delivered the proposition. The element should contain a <a href='#input-format-representative'>&lt;representative&gt;</a> element."),
-            Field.new(:onBehalfOf, true, :string, "Description of who is behind the proposition."),
-            Field.new(:body, true, :string, "The full text of the proposition."),
-          ]
-        end
-
-        def self.xml_example(builder = Util.builder)
-          example.to_hdo_xml(builder)
-        end
-
-        def self.from_hdo_node(node)
-          external_id  = node.css("externalId").first.text
-          description  = node.css("description").first.text
-          on_behalf_of = node.css("onBehalfOf").first.text
-          body         = node.css("body").first.text
-
-          delivered_by_node = node.css("deliveredBy representative").first
-          delivered_by = Representative.from_hdo_node(delivered_by_node) if delivered_by_node
-
-          new external_id, description, on_behalf_of, body, delivered_by
-        end
-
-        def initialize(external_id, description, on_behalf_of, body, delivered_by)
-          @external_id  = external_id
-          @description  = description
-          @on_behalf_of = on_behalf_of
-          @body         = body
-          @delivered_by = delivered_by
-        end
-
-        def short_inspect
-          short_inspect_string :include => [:external_id, :description, :on_behalf_of]
-        end
-
-        def to_hdo_xml(builder)
-          builder.proposition do |pr|
-            pr.externalId external_id
-            pr.description description
-            pr.onBehalfOf on_behalf_of
-            pr.body body
-
-            pr.deliveredBy do |db|
-              delivered_by.to_hdo_xml(db) if delivered_by
-            end
-          end
-        end
-      end # Proposition
 
     end # Vote
   end

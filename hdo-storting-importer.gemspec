@@ -22,4 +22,9 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency "rest-client"
   gem.add_runtime_dependency "unicode_utils"
   gem.add_runtime_dependency "multi_json"
+  gem.add_runtime_dependency "yajl-ruby"
+  gem.add_runtime_dependency "jschematic"
+
+  gem.add_development_dependency 'pry'
+  gem.add_development_dependency 'rspec'
 end

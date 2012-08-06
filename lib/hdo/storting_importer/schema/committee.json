@@ -1,0 +1,21 @@
+{
+  "id": "hdo#committee",
+  "description": "a parliamentary committe",
+  "type":"object",
+  "properties": {
+    "kind": {
+        "type": "string",
+        "description": "This is always 'hdo#committee'",
+        "default": "hdo#committee",
+        "required": true
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the committee",
+      "type": "string",
+      "required": true
+    }
+  }
+}

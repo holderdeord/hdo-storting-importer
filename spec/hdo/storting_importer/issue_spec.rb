@@ -69,47 +69,64 @@ module Hdo
         issue.type.should == 'alminneligsak'
       end
 
-      it 'can serialize as HDO XML' do
-        Issue.example.to_hdo_xml.should == <<-XML
-<issue>
-  <externalId>53520</externalId>
-  <summary>Inngåelse av avtale om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)</summary>
-  <description>Samtykke til inngåelse av avtale av 25. november 2011 om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)</description>
-  <type>alminneligsak</type>
-  <status>mottatt</status>
-  <lastUpdate>2012-04-20T00:00:00</lastUpdate>
-  <reference>Prop. 90 S (2011-2012)</reference>
-  <documentGroup>proposisjon</documentGroup>
-  <committee>Transport- og kommunikasjonskomiteen</committee>
-  <categories>
-    <category>UTENRIKSSAKER</category>
-    <category>TRAKTATER</category>
-    <category>NORDISK SAMARBEID</category>
-  </categories>
-</issue>
-XML
+      it 'can serialize as JSON' do
+        Issue.example.to_json.should be_json <<-JSON
+        {
+          "kind": "hdo#issue",
+          "externalId" : "53520",
+          "summary": "Inngåelse av avtale om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
+          "description": "Samtykke til inngåelse av avtale av 25. november 2011 om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
+          "type": "alminneligsak",
+          "status": "mottatt",
+          "lastUpdate": "2012-04-20T00:00:00",
+          "reference": "Prop. 90 S (2011-2012)",
+          "documentGroup": "proposisjon",
+          "committee": "Transport- og kommunikasjonskomiteen",
+          "categories": ["UTENRIKSSAKER", "TRAKTATER", "NORDISK SAMARBEID"]
+        }
+        JSON
       end
 
-      it 'can deserialize an HDO XML node' do
+      it 'can deserialize JSON' do
         orig = Issue.example
-        Issue.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
+        Issue.from_json(orig.to_json).should == orig
       end
 
       it 'can deserialize an HDO XML doc' do
-        orig = Issue.example
-        Issue.from_hdo_doc(parse("<issues>#{orig.to_hdo_xml}</issues>")).should == [orig]
+        orig = [Issue.example]
+        Issue.from_json(orig.to_json).should == orig
       end
 
-      it 'has a type name' do
-        Issue.type_name.should == 'issue'
+      it 'fails if the given JSON is invalid' do
+        # summary is number.
+
+        json = '{
+          "kind": "hdo#issue",
+          "externalId" : "53520",
+          "summary": 1,
+          "description": "Samtykke til inngåelse av avtale av 25. november 2011 om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
+          "type": "alminneligsak",
+          "status": "mottatt",
+          "lastUpdate": "2012-04-20T00:00:00",
+          "reference": "Prop. 90 S (2011-2012)",
+          "documentGroup": "proposisjon",
+          "committee": "Transport- og kommunikasjonskomiteen",
+          "categories": ["UTENRIKSSAKER", "TRAKTATER", "NORDISK SAMARBEID"]
+        }'
+
+        expect { Issue.from_json(json) }.to raise_error(ValidationError)
+      end
+
+      it 'has a kind' do
+        Issue.kind.should == 'hdo#issue'
       end
 
       it 'has a description' do
         Issue.description.should be_kind_of(String)
       end
 
-      it 'has an XML example' do
-        Issue.xml_example.should be_kind_of(String)
+      it 'has a JSON example' do
+        Issue.json_example.should be_kind_of(String)
       end
 
       it 'has a list of fields' do

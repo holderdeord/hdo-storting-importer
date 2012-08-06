@@ -1,4 +1,5 @@
 # encoding: UTF-8
+require 'spec_helper'
 
 module Hdo
   module StortingImporter
@@ -47,46 +48,92 @@ module Hdo
         rep.date_of_death.should == '0001-01-01T00:00:00'
       end
 
-      it 'converts itself into HDO XML' do
+      it 'can be serialized to JSON' do
         rep = Representative.example
-        rep.to_hdo_xml.should == <<-XML
-<representative>
-  <externalId>ADA</externalId>
-  <firstName>André Oktay</firstName>
-  <lastName>Dahl</lastName>
-  <gender>M</gender>
-  <dateOfBirth>1975-07-07T00:00:00</dateOfBirth>
-  <dateOfDeath>0001-01-01T00:00:00</dateOfDeath>
-  <district>Akershus</district>
-  <party>Høyre</party>
-  <committees>
-    <committee>Justiskomiteen</committee>
-  </committees>
-  <period>2011-2012</period>
-</representative>
-        XML
+        rep.to_json.should be_json <<-JSON
+          {
+            "kind": "hdo#representative",
+            "externalId": "ADA",
+            "firstName": "André Oktay",
+            "lastName": "Dahl",
+            "gender": "M",
+            "dateOfBirth": "1975-07-07T00:00:00",
+            "dateOfDeath": "0001-01-01T00:00:00",
+            "district": "Akershus",
+            "party": "Høyre",
+            "committees": ["Justiskomiteen"],
+            "period": "2011-2012"
+          }
+        JSON
       end
 
-      it 'can deserialize a HDO XML node' do
+      it 'can deserialize JSON' do
         rep = Representative.example
-        Representative.from_hdo_node(parse(rep.to_hdo_xml)).should == rep
+        Representative.from_json(rep.to_json).should == rep
       end
 
-      it 'can deserialize a HDO XML doc' do
-        rep = Representative.example
-        Representative.from_hdo_doc(parse("<representatives>#{rep.to_hdo_xml}</representatives>")).should == [rep]
+      it 'can deserialize a JSON array' do
+        reps = [Representative.example]
+        Representative.from_json(reps.to_json).should == reps
       end
 
-      it 'has a type name' do
-        Representative.type_name.should == 'representative'
+      it 'raises if the JSON if voteResult is invalid' do
+        pending "find a validator that checks format"
+
+        invalid = <<-JSON
+        {
+          "kind": "hdo#representative",
+          "externalId": "ADA",
+          "firstName": "André Oktay",
+          "lastName": "Dahl",
+          "gender": "M",
+          "dateOfBirth": "1975-07-07T00:00:00",
+          "dateOfDeath": "0001-01-01T00:00:00",
+          "district": "Akershus",
+          "party": "Høyre",
+          "committees": ["Justiskomiteen"],
+          "period": "2011-2012",
+          "voteResult": "blah"
+        }
+
+        JSON
+
+        expect {
+          Representative.from_json(invalid)
+        }.to raise_error(ValidationError)
+      end
+
+      it 'raises if the JSON data is invalid' do
+        invalid = <<-JSON
+        {
+          "kind": "hdo#representative",
+          "externalId": "ADA",
+          "lastName": "Dahl",
+          "gender": "M",
+          "dateOfBirth": "1975-07-07T00:00:00",
+          "dateOfDeath": "0001-01-01T00:00:00",
+          "district": "Akershus",
+          "party": "Høyre",
+          "committees": ["Justiskomiteen"],
+          "period": "2011-2012"
+        }
+        JSON
+
+        expect {
+          Representative.from_json(invalid)
+        }.to raise_error(ValidationError)
+      end
+
+      it 'has a kind' do
+        Representative.kind.should == 'hdo#representative'
       end
 
       it 'has a description' do
         Representative.description.should be_kind_of(String)
       end
 
-      it 'has an XML example' do
-        Representative.xml_example.should be_kind_of(String)
+      it 'has an JSON example' do
+        Representative.json_example.should be_kind_of(String)
       end
 
       it 'has a list of fields' do

@@ -34,35 +34,46 @@ module Hdo
         district.external_id.should == 'Ak'
       end
 
-      it 'can serialize as HDO XML' do
-        District.new("Ak", "Akershus").to_hdo_xml.should == <<-XML
-<district>
-  <externalId>Ak</externalId>
-  <name>Akershus</name>
-</district>
-        XML
+      it 'can serialize as JSON' do
+        expected = <<-JSON
+        {
+          "kind": "hdo#district",
+          "externalId": "Ak",
+          "name": "Akershus"
+        }
+        JSON
+
+        District.new("Ak", "Akershus").to_json.should be_json(expected)
       end
 
-      it 'can deserialize a HDO XML node' do
+      it 'can deserialize JSON' do
         orig = District.new("Ak", "Akershus")
-        District.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
+        District.from_json(orig.to_json).should == orig
       end
 
-      it 'can deserialize a HDO XML doc' do
-        orig = District.new("Ak", "Akershus")
-        District.from_hdo_doc(parse("<districts>#{orig.to_hdo_xml}</districts>")).should == [orig]
+      it 'can deserialize a JSON array' do
+        orig = [ District.new("Ak", "Akershus") ]
+        District.from_json(orig.to_json).should == orig
       end
 
-      it 'has a type name' do
-        District.type_name.should == 'district'
+      it 'fails if the given JSON is invalid' do
+        json = '{
+          "externalId": "1"
+        }'
+
+        expect { District.from_json(json) }.to raise_error(ValidationError)
+      end
+
+      it 'has a kind' do
+        District.kind.should == 'hdo#district'
       end
 
       it 'has a description' do
         District.description.should be_kind_of(String)
       end
 
-      it 'has an XML example' do
-        District.xml_example.should be_kind_of(String)
+      it 'has a JSON example' do
+        District.json_example.should be_kind_of(String)
       end
 
       it 'has a list of fields' do
@@ -72,8 +83,6 @@ module Hdo
       it 'has #short_inspect' do
         District.example.short_inspect.should be_kind_of(String)
       end
-
-
 
     end
   end

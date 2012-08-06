@@ -3,19 +3,14 @@
 module Hdo
   module StortingImporter
     class Issue
+      include HasJsonSchema
       include IvarEquality
       include Inspectable
 
       attr_reader :external_id, :summary, :description, :type, :status, :last_update,
                   :reference, :document_group, :committee, :categories
 
-      def self.type_name
-        'issue'
-      end
-
-      def self.description
-        'a parliament issue'
-      end
+      schema_path StortingImporter.lib.join("hdo/storting_importer/schema/issue.json").to_s
 
       def self.example
         new(
@@ -32,23 +27,8 @@ module Hdo
         )
       end
 
-      def self.xml_example(builder = Util.builder)
-        example.to_hdo_xml(builder)
-      end
-
-      def self.fields
-        [
-          EXTERNAL_ID_FIELD,
-          Field.new(:summary,       true,  :string, 'A (preferably one-line) summary of the issue.'),
-          Field.new(:description,   true,  :string, 'A longer description of the issue.'),
-          Field.new(:type,          true,  :string, 'The type of issue.'),
-          Field.new(:status,        true,  :string, 'The status of the issue.'),
-          Field.new(:lastUpdate,    true,  :string, 'The time the issue was last updated in the parliament.'),
-          Field.new(:reference,     true,  :string, 'A reference.'),
-          Field.new(:documentGroup, true,  :string, 'What document group this issue belongs to.'),
-          Field.new(:committee,     false, :string, "What committee this issue belongs to. Should match the 'name' field in the committee type."),
-          Field.new(:categories,    false, 'list',  "List of categories (matching the 'name' field of the category type).")
-        ]
+      def self.json_example
+        Util.json_pretty example
       end
 
       def self.from_storting_doc(doc)
@@ -83,23 +63,17 @@ module Hdo
         raise
       end
 
-      def self.from_hdo_doc(doc)
-        doc.css("issues > issue").map { |e| from_hdo_node(e) }
-      end
-
-      def self.from_hdo_node(node)
-        external_id    = node.css("externalId").first.text
-        summary        = node.css("summary").first.text
-        description    = node.css("description").first.text
-        type           = node.css("type").first.text
-        status         = node.css("status").first.text
-        last_update    = node.css("lastUpdate").first.text
-        reference      = node.css("reference").first.text
-        document_group = node.css("documentGroup").first.text
-        committee      = node.css("committee").first.text
-        categories     = node.css("categories category").map { |e| e.text }
-
-        new external_id, summary, description, type, status, last_update, reference, document_group, committee, categories
+      def self.from_hash(hash)
+        new hash.fetch('externalId'),
+            hash.fetch('summary'),
+            hash.fetch('description'),
+            hash.fetch('type'),
+            hash.fetch('status'),
+            hash.fetch('lastUpdate'),
+            hash.fetch('reference'),
+            hash.fetch('documentGroup'),
+            hash.fetch('committee'),
+            hash.fetch('categories')
       end
 
       def initialize(external_id, summary, description, type, status, last_update,
@@ -120,25 +94,20 @@ module Hdo
         short_inspect_string :include => [:external_id, :summary]
       end
 
-      def to_hdo_xml(builder = Util.builder)
-        builder.issue do |i|
-          i.externalId external_id
-          i.summary summary
-          i.description description
-          i.type type
-          i.status status
-          i.lastUpdate last_update
-          i.reference reference
-          i.documentGroup document_group
-          i.committee(committee) if committee
-
-          if categories.any?
-            i.categories do |cats|
-              categories.each { |e| cats.category e }
-            end
-          end
-        end
-
+      def to_hash
+        {
+          :kind           => self.class.kind,
+          :externalId     => @external_id,
+          :summary        => @summary,
+          :description    => @description,
+          :type           => @type,
+          :status         => @status,
+          :lastUpdate     => @last_update,
+          :reference      => @reference,
+          :documentGroup  => @document_group,
+          :committee      => @committee,
+          :categories     => @categories
+        }
       end
 
     end

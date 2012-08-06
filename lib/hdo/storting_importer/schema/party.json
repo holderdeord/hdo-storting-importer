@@ -1,0 +1,21 @@
+{
+  "id": "hdo#party",
+  "description": "a political party",
+  "type":"object",
+  "properties": {
+    "kind": {
+        "type": "string",
+        "description": "This is always 'hdo#party'",
+        "default": "hdo#party",
+        "required": true
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the party",
+      "type": "string",
+      "required": true
+    }
+  }
+}

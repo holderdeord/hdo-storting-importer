@@ -5,50 +5,25 @@ require 'csv'
 module Hdo
   module StortingImporter
     class Promise
-      attr_reader :external_id, :party, :body, :general, :categories, :source, :page
+      include HasJsonSchema
+      include IvarEquality
+
+      attr_reader :party, :body, :general, :categories, :source, :page
+      attr_accessor :external_id
       alias_method :general?, :general
       alias_method :short_inspect, :inspect
 
-      def self.type_name
-        'promise'
-      end
-
-      def self.description
-        'a party promise'
-      end
-
-      def self.fields
-        [
-          EXTERNAL_ID_FIELD,
-          Field.new(:party, true, :string, 'The external id of the party.'),
-          Field.new(:general, true, :boolean, "Whether this is considered a general promise (i.e. can be ambigious whether it has been fulfilled)."),
-          Field.new(:categories, true, :list, "List of category names (matching names imported in <a href='#input-format-category'>&lt;category&gt;</a>)"),
-          Field.new(:source, true, :string, "The source of the promise. (TODO: this should always be a URL)"),
-          Field.new(:body, true, :string, "The body text of the promise."),
-        ]
-      end
+      schema_path StortingImporter.lib.join("hdo/storting_importer/schema/promise.json").to_s
 
       def self.example
-        new("H", "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.", true, ["GRUNNSKOLE"], "PP", 8, 1)
+        pr = new("H", "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.", true, ["GRUNNSKOLE"], "PP", 8)
+        pr.external_id = "1"
+
+        pr
       end
 
-      def self.xml_example(builder = Util.builder)
-        example.to_hdo_xml(builder)
-      end
-
-      def self.from_hdo_doc(doc)
-        doc.css("promises > promise").map { |e| from_hdo_node(e) }
-      end
-
-      def self.from_hdo_node(node)
-        source, page = node.css("source").first.text.split(":")
-
-        new node.css("party").first.text,
-            node.css("body").first.text,
-            node.css("general").first.text == "true",
-            node.css("categories > category").map { |e| e.text },
-            source,
-            page
+      def self.json_example
+        Util.json_pretty example
       end
 
       def self.from_csv(str)
@@ -99,27 +74,44 @@ module Hdo
         result
       end
 
-      def initialize(party, body, general, categories, source, page, external_id = nil)
-        @party       = party
-        @body        = body
-        @general     = general
-        @categories  = clean_categories(categories)
-        @source      = source
-        @page        = page
-        @external_id = external_id
+      def self.from_hash(hash)
+        pr = new hash.fetch('party'),
+                 hash.fetch('body'),
+                 hash.fetch('general'),
+                 hash.fetch('categories'),
+                 hash.fetch('source'),
+                 hash.fetch('page')
+
+        pr.external_id = hash['externalId']
+
+        pr
       end
 
-      def to_hdo_xml(builder = Util.builder)
-        builder.promise do |promise|
-          promise.externalId external_id if external_id
-          promise.party party
-          promise.general general?
-          promise.categories do |cats|
-            categories.each { |e| cats.category e }
-          end
-          promise.source [source, page].join(":")
-          promise.body body
-        end
+      def initialize(party, body, general, categories, source, page)
+        @party       = party.strip
+        @body        = body.strip
+        @general     = general
+        @categories  = clean_categories(categories)
+        @source      = source.strip
+        @page        = page
+
+        @external_id = nil
+      end
+
+      def to_hash
+        h = {
+          :kind       => self.class.kind,
+          :party      => @party,
+          :general    => @general,
+          :categories => @categories,
+          :source     => @source,
+          :page       => @page,
+          :body       => @body
+        }
+
+        h[:externalId] = @external_id if @external_id
+
+        h
       end
 
       private

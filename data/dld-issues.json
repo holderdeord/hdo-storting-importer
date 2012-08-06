@@ -1,0 +1,45 @@
+[
+  {
+    "kind": "hdo#issue",
+    "externalId": "48717",
+    "summary": "Endringer i ekomloven og straffeprosessloven mv. (gjennomføring av EUs datalagringsdirektiv i norsk rett)",
+    "description": "Endringer i ekomloven og straffeprosessloven mv. (gjennomføring av EUs datalagringsdirektiv i norsk rett)",
+    "type": "lovsak",
+    "status": "behandlet",
+    "lastUpdate": "2011-04-04T00:00:00",
+    "reference": "Prop. 49 L (2010-2011), Innst. 275 L (2010-2011), Lovvedtak 46 (2010-2011)",
+    "documentGroup": "proposisjon",
+    "committee": "Transport- og kommunikasjonskomiteen",
+    "categories": [
+      "KOMMUNIKASJON",
+      "RETTSVESEN",
+      "DOMSTOLER",
+      "PERSONVERN",
+      "POLITI OG PÅTALEMYNDIGHET",
+      "UTENRIKSSAKER",
+      "EFTA/EU",
+      "TELEKOMMUNIKASJONER"
+    ]
+  },
+  {
+    "kind": "hdo#issue",
+    "externalId": "48650",
+    "summary": "Samtykke til deltakelse i en beslutning i EØS-komiteen om innlemmelse i EØS-avtalen av direktiv 2006/24/EF om datalagring",
+    "description": "Samtykke til deltakelse i en beslutning i EØS-komiteen om innlemmelse i EØS-avtalen av direktiv 2006/24/EF om lagring av data fremkommet ved bruk av offentlig elektronisk kommunikasjonstjeneste eller offentlig elektronisk kommunikasjonsnett (datalagringsdirektivet))",
+    "type": "alminneligsak",
+    "status": "behandlet",
+    "lastUpdate": "2011-04-04T00:00:00",
+    "reference": "Prop. 50 S (2010-2011), Innst. 292 S (2010-2011)",
+    "documentGroup": "proposisjon",
+    "committee": "Utenriks- og forsvarskomiteen",
+    "categories": [
+      "KOMMUNIKASJON",
+      "RETTSVESEN",
+      "PERSONVERN",
+      "POLITI OG PÅTALEMYNDIGHET",
+      "UTENRIKSSAKER",
+      "EFTA/EU",
+      "TELEKOMMUNIKASJONER"
+    ]
+  }
+]

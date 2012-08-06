@@ -32,35 +32,44 @@ module Hdo
         parties.map(&:name).should == ['Arbeiderpartiet', 'Fremskrittspartiet']
       end
 
-      it 'can serialize as HDO XML' do
-        Party.new("A", "Arbeiderpartiet").to_hdo_xml.should == <<-XML
-<party>
-  <externalId>A</externalId>
-  <name>Arbeiderpartiet</name>
-</party>
-        XML
+      it 'can serialize as JSON' do
+        Party.new("A", "Arbeiderpartiet").to_json.should be_json <<-JSON
+        {
+          "kind": "hdo#party",
+          "externalId": "A",
+          "name": "Arbeiderpartiet"
+        }
+        JSON
       end
 
-      it 'can deserialize a HDO XML node' do
+      it 'can deserialize JSON' do
         orig = Party.new('Sp', 'Senterpartiet')
-        Party.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
+        Party.from_json(orig.to_json).should == orig
       end
 
-      it 'can deserialize a HDO XML doc' do
-        orig = Party.new('Sp', 'Senterpartiet')
-        Party.from_hdo_doc(parse("<parties>#{orig.to_hdo_xml}</parties>")).should == [orig]
+      it 'can deserialize a JSON array' do
+        orig = [Party.new('Sp', 'Senterpartiet')]
+        Party.from_json(orig.to_json).should == orig
       end
 
-      it 'has a type name' do
-        Party.type_name.should == 'party'
+      it 'fails if the given JSON is invalid' do
+        json = '{
+          "externalId": "1"
+        }'
+
+        expect { Party.from_json(json) }.to raise_error(ValidationError)
+      end
+
+      it 'has a kind' do
+        Party.kind.should == 'hdo#party'
       end
 
       it 'has a description' do
         Party.description.should be_kind_of(String)
       end
 
-      it 'has an XML example' do
-        Party.xml_example.should be_kind_of(String)
+      it 'has a JSON example' do
+        Party.json_example.should be_kind_of(String)
       end
 
       it 'has a list of fields' do

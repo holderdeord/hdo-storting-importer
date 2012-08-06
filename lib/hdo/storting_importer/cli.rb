@@ -44,21 +44,14 @@ module Hdo
           klass.from_storting_doc(doc)
         end.flatten
 
-        str = Util.builder do |xml|
-          xml.instruct!
-          xml.__send__(plural) do |builder|
-            objs.each { |e| e.to_hdo_xml(builder) }
-          end
-        end
-
-        str
+        Util.json_pretty objs
       end
 
       def parse(args)
         options = {}
 
         parser = OptionParser.new do |opt|
-          types = TYPE_TO_CLASS.keys + [:dld_issues, :dld_votes, :promises]
+          types = TYPE_TO_CLASS.keys + [:dld_issues, :dld_votes, :promises, :any]
           opt.banner = "Usage: #{$0} <#{types.join '|'}> <file(s)>"
           opt.on("--help", "You're looking at it.") { puts opt; exit; }
         end
@@ -76,31 +69,15 @@ module Hdo
       end
 
       def read_dld_issues
-        doc = Nokogiri::XML.parse(File.read(File.join(StortingImporter.root, 'data/dld-issues.xml')))
-        issues = Issue.from_hdo_doc doc
-
-        Util.builder do |xml|
-          xml.instruct!
-          xml.issues do |issues_builder|
-            issues.each { |i| i.to_hdo_xml(issues_builder) }
-          end
-        end
+        Util.json_pretty Issue.from_json(StortingImporter.root.join('data/dld-issues.json').read)
       end
 
       def read_dld_votes
-        doc = Nokogiri::XML.parse(File.read(File.join(StortingImporter.root, 'folketingparser/data/votering-2011-04-04-dld-hdo.xml')))
-        votes = Vote.from_hdo_doc doc
-
-        Util.builder do |xml|
-          xml.instruct!
-          xml.votes do |votes_builder|
-            votes.each { |v| v.to_hdo_xml(votes_builder) }
-          end
-        end
+        Util.json_pretty Vote.from_json StortingImporter.root.join('data/dld-votes.json').read
       end
 
       def read_promises
-        csvs = @files.any? ? @files : Dir[File.join(StortingImporter.root, 'data/promises-*.csv')].sort_by { |e| File.basename(e) }
+        csvs = @files.any? ? @files : Dir[StortingImporter.root.join('data/promises-*.csv').to_s].sort_by { |e| File.basename(e) }
         content = ''
         csvs.each do |csv|
           if csv =~ /^http/
@@ -110,12 +87,7 @@ module Hdo
           end
         end
 
-        Util.builder do |xml|
-          xml.instruct!
-          xml.promises do |promises|
-            Promise.from_csv(content).each { |e| e.to_hdo_xml(promises) }
-          end
-        end
+        Util.json_pretty Promise.from_csv(content)
       end
 
     end

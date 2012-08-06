@@ -41,53 +41,49 @@ module Hdo
         cat.children.first.name.should == "ARBEIDSMILJØ"
       end
 
-      it "can serialize as HDO XML" do
-        category = Category.new("5", "ARBEIDSLIV")
-        category.children << Category.new("205", "ARBEIDSMILJØ")
-        category.children << Category.new("94", "ARBEIDSVILKÅR")
+      it 'can serialize as JSON' do
+        cat = Category.new("5", "ARBEIDSLIV")
+        cat.children << Category.new("3", "LØNN")
 
-        category.to_hdo_xml.should == <<-XML
-<category>
-  <externalId>5</externalId>
-  <name>ARBEIDSLIV</name>
-  <subcategories>
-    <category>
-      <externalId>205</externalId>
-      <name>ARBEIDSMILJØ</name>
-    </category>
-    <category>
-      <externalId>94</externalId>
-      <name>ARBEIDSVILKÅR</name>
-    </category>
-  </subcategories>
-</category>
-          XML
+        cat.to_json.should be_json('
+        {
+          "kind": "hdo#category",
+          "externalId": "5",
+          "name": "ARBEIDSLIV",
+          "subCategories": [
+            { "kind": "hdo#category", "externalId": "3", "name": "LØNN" }
+          ]
+        }')
       end
 
-      it 'can deserialize a HDO XML node' do
-        orig = Category.new("5", "ARBEIDSLIV")
-        orig.children << Category.new("3", "LØNN")
-
-        Category.from_hdo_node(parse(orig.to_hdo_xml)).should == orig
+      it 'can deserialize JSON' do
+        ex = Category.example
+        Category.from_json(ex.to_json).should == ex
       end
 
-      it 'can deserialize a HDO XML doc' do
-        orig = Category.new("5", "ARBEIDSLIV")
-        orig.children << Category.new("3", "LØNN")
-
-        Category.from_hdo_doc(parse("<categories>#{orig.to_hdo_xml}</categories>")).should == [orig]
+      it 'can deserialize a JSON array' do
+        input = [Category.example]
+        Category.from_json(input.to_json).should == input
       end
 
-      it 'has a type name' do
-        Category.type_name.should == 'category'
+      it 'fails if the given JSON is invalid' do
+        json = '{
+          "externalId": "1"
+        }'
+
+        expect { Category.from_json(json) }.to raise_error(ValidationError)
+      end
+
+      it 'has a kind' do
+        Category.kind.should == 'hdo#category'
       end
 
       it 'has a description' do
         Category.description.should be_kind_of(String)
       end
 
-      it 'has an XML example' do
-        Category.xml_example.should be_kind_of(String)
+      it 'has a JSON example' do
+        Category.json_example.should be_kind_of(String)
       end
 
       it 'has a list of fields' do

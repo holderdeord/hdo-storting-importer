@@ -7,15 +7,10 @@ module Hdo
         @cache = {}
       end
 
-      def xml_for(name)
-        Util.builder do |xml|
-          xml.instruct!
-          xml.__send__(name) do |builder|
-            data_for(name).each do |obj|
-              obj.to_hdo_xml(builder)
-            end
-          end
-        end
+      def json_for(name, opts = nil)
+        obj = data_for(name)
+        
+        Yajl::Encoder.encode(obj, opts && opts[:pretty])
       end
 
       private

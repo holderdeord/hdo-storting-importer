@@ -3,25 +3,12 @@ module Hdo
     class Category
       include IvarEquality
       include Inspectable
+      include HasJsonSchema
 
       attr_reader :external_id, :name
       attr_accessor :children
 
-      def self.type_name
-        'category'
-      end
-
-      def self.description
-        'a parliamentary category, used to categorize issues and promises'
-      end
-
-      def self.fields
-        [
-          EXTERNAL_ID_FIELD,
-          Field.new(:name, true, :string, 'The name of the category.'),
-          Field.new(:subcategories, false, 'list<category>', 'A list of subcategories.'),
-        ]
-      end
+      schema_path StortingImporter.lib.join("hdo/storting_importer/schema/category.json").to_s
 
       def self.example
         cat = new("5", "Employment")
@@ -30,8 +17,8 @@ module Hdo
         cat
       end
 
-      def self.xml_example(builder = Util.builder)
-        example.to_hdo_xml(builder)
+      def self.json_example
+        Util.json_pretty example
       end
 
       #
@@ -61,32 +48,11 @@ module Hdo
         cat
       end
 
-      #
-      # Deserialize from a HDO XML document (<categories><category>...</category></categories>)
-      #
-      # @param [Nokogiri::XML::Element]
-      # @return [Array<Category>]
-      #
+      def self.from_hash(data)
+        obj = new data['externalId'], data['name']
+        obj.children = Array(data['subCategories']).map { |e| from_hash(e) }
 
-
-      def self.from_hdo_doc(doc)
-        doc.css("categories > category").map { |node| from_hdo_node(node) }
-      end
-
-      #
-      # Deserialize from a HDO XML node
-      #
-      # @return [Category]
-      #
-
-      def self.from_hdo_node(node)
-        external_id = node.css("externalId").first.text
-        name        = node.css("name").first.text
-
-        cat = new external_id, name
-        cat.children = node.css("subcategories category").map { |e| from_hdo_node(e) }
-
-        cat
+        obj
       end
 
       def initialize(external_id, name)
@@ -99,23 +65,17 @@ module Hdo
         short_inspect_string :include => [:external_id, :name]
       end
 
-      #
-      # Serialize as HDO XML
-      #
+      def to_hash
+        h = {
+          :kind       => self.class.kind,
+          :externalId => @external_id,
+          :name       => @name
+        }
 
-      def to_hdo_xml(builder = Util.builder)
-        builder.category do |cat|
-          cat.externalId external_id
-          cat.name name
+        h[:subCategories] = @children.map { |e| e.to_hash } if @children.any?
 
-          if children.any?
-            cat.subcategories do |sub|
-              children.each { |child| child.to_hdo_xml(sub) }
-            end
-          end
-        end
+        h
       end
-
     end
   end
 end

@@ -1,0 +1,28 @@
+{
+  "id": "hdo#category",
+  "description": "a parliamentary category, used to categorize issues and promises",
+  "type":"object",
+  "properties": {
+    "kind": {
+      "type": "string",
+      "description": "This is always 'hdo#category'",
+      "default": "hdo#category",
+      "required": true
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the category",
+      "type": "string",
+      "required": true
+    },
+    "subCategories": {
+      "description": "A list of subcategories.",
+      "type":"array",
+      "items":{
+        "$ref": "hdo#category"
+      }
+    }
+  }
+}

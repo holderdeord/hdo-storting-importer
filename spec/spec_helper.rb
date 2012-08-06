@@ -1,5 +1,6 @@
 require 'rspec'
 require 'hdo/storting_importer'
+require 'pry'
 require 'pp'
 
 module Hdo
@@ -12,7 +13,7 @@ module Hdo
       end
 
       def output_fixture(name)
-        FIXTURES.join(output_path("#{name}.xml")).read
+        FIXTURES.join(output_path("#{name}.json")).read
       end
 
       def input_path(filename)
@@ -30,6 +31,25 @@ module Hdo
         doc
       end
 
+      class EqualsJson
+        def initialize(expected)
+          @expected = MultiJson.decode(expected)
+        end
+        def matches?(target)
+          @target = MultiJson.decode(target)
+          @target.eql?(@expected)
+        end
+        def failure_message
+          "expected #{@target.inspect} to be #{@expected}"
+        end
+        def negative_failure_message
+          "expected #{@target.inspect} not to be #{@expected}"
+        end
+      end
+
+      def be_json(expected)
+        EqualsJson.new(expected)
+      end
     end
   end
 end

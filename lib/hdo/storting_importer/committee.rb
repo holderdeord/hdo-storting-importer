@@ -1,29 +1,20 @@
 module Hdo
   module StortingImporter
     class Committee
+      include HasJsonSchema
       include IvarEquality
 
       attr_reader :external_id, :name
       alias_method :short_inspect, :inspect
 
-      def self.type_name
-        'committee'
-      end
-
-      def self.description
-        'a parliamentary committe'
-      end
+      schema_path StortingImporter.lib.join("hdo/storting_importer/schema/committee.json").to_s
 
       def self.example
         new "ARBSOS", "Arbeids- og sosialkomiteen"
       end
 
-      def self.xml_example(builder = Util.builder)
-        example.to_hdo_xml(builder)
-      end
-
-      def self.fields
-        [EXTERNAL_ID_FIELD, Field.new(:name, true, :string, 'The name of the committee.')]
+      def self.json_example
+        Util.json_pretty example
       end
 
       def self.from_storting_doc(doc)
@@ -36,12 +27,8 @@ module Hdo
         new node.css("id").first.text, node.css("navn").first.text
       end
 
-      def self.from_hdo_doc(doc)
-        doc.css("committees > committee").map { |e| from_hdo_node e }
-      end
-
-      def self.from_hdo_node(node)
-        new node.css("externalId").first.text, node.css("name").first.text
+      def self.from_hash(hash)
+        new hash['externalId'], hash['name']
       end
 
       def initialize(external_id, name)
@@ -49,12 +36,14 @@ module Hdo
         @name = name
       end
 
-      def to_hdo_xml(builder = Util.builder)
-        builder.committee do |com|
-          com.externalId external_id
-          com.name name
-        end
+      def to_hash
+        {
+          :kind       => self.class.kind,
+          :externalId => @external_id,
+          :name       => @name
+        }
       end
+
     end
   end
 end

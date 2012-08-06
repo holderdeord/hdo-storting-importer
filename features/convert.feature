@@ -107,83 +107,101 @@ Feature: Import data
       When I run `hdo-converter districts fylker.xml`
       Then the stdout should contain:
       """
-      <?xml version="1.0" encoding="UTF-8"?>
-      <districts>
-        <district>
-          <externalId>AA</externalId>
-          <name>Aust-Agder</name>
-        </district>
-        <district>
-          <externalId>VA</externalId>
-          <name>Vest-Agder</name>
-        </district>
-        <district>
-          <externalId>Ak</externalId>
-          <name>Akershus</name>
-        </district>
-        <district>
-          <externalId>Bu</externalId>
-          <name>Buskerud</name>
-        </district>
-        <district>
-          <externalId>Fi</externalId>
-          <name>Finnmark</name>
-        </district>
-        <district>
-          <externalId>He</externalId>
-          <name>Hedmark</name>
-        </district>
-        <district>
-          <externalId>Ho</externalId>
-          <name>Hordaland</name>
-        </district>
-        <district>
-          <externalId>MR</externalId>
-          <name>Møre og Romsdal</name>
-        </district>
-        <district>
-          <externalId>No</externalId>
-          <name>Nordland</name>
-        </district>
-        <district>
-          <externalId>Op</externalId>
-          <name>Oppland</name>
-        </district>
-        <district>
-          <externalId>Os</externalId>
-          <name>Oslo</name>
-        </district>
-        <district>
-          <externalId>Ro</externalId>
-          <name>Rogaland</name>
-        </district>
-        <district>
-          <externalId>SF</externalId>
-          <name>Sogn og Fjordane</name>
-        </district>
-        <district>
-          <externalId>Te</externalId>
-          <name>Telemark</name>
-        </district>
-        <district>
-          <externalId>Tr</externalId>
-          <name>Troms</name>
-        </district>
-        <district>
-          <externalId>NT</externalId>
-          <name>Nord-Trøndelag</name>
-        </district>
-        <district>
-          <externalId>ST</externalId>
-          <name>Sør-Trøndelag</name>
-        </district>
-        <district>
-          <externalId>Ve</externalId>
-          <name>Vestfold</name>
-        </district>
-        <district>
-          <externalId>Øs</externalId>
-          <name>Østfold</name>
-        </district>
-      </districts>
+      [
+        {
+          "kind": "hdo#district",
+          "externalId": "AA",
+          "name": "Aust-Agder"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "VA",
+          "name": "Vest-Agder"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "Ak",
+          "name": "Akershus"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "Bu",
+          "name": "Buskerud"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "Fi",
+          "name": "Finnmark"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "He",
+          "name": "Hedmark"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "Ho",
+          "name": "Hordaland"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "MR",
+          "name": "Møre og Romsdal"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "No",
+          "name": "Nordland"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "Op",
+          "name": "Oppland"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "Os",
+          "name": "Oslo"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "Ro",
+          "name": "Rogaland"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "SF",
+          "name": "Sogn og Fjordane"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "Te",
+          "name": "Telemark"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "Tr",
+          "name": "Troms"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "NT",
+          "name": "Nord-Trøndelag"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "ST",
+          "name": "Sør-Trøndelag"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "Ve",
+          "name": "Vestfold"
+        },
+        {
+          "kind": "hdo#district",
+          "externalId": "Øs",
+          "name": "Østfold"
+        }
+      ]
       """

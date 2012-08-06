@@ -1,0 +1,21 @@
+{
+  "id": "hdo#district",
+  "description": "an electoral district",
+  "type":"object",
+  "properties": {
+    "kind": {
+        "type": "string",
+        "description": "This is always 'hdo#district'",
+        "default": "hdo#district",
+        "required": true
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the district",
+      "type": "string",
+      "required": true
+    }
+  }
+}

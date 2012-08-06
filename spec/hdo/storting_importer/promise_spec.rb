@@ -33,46 +33,53 @@ module Hdo
         prom.page.should == '10'
       end
 
-      it 'serializes to HDO XML' do
-        Promise.example.to_hdo_xml.should == <<-XML
-<promise>
-  <externalId>1</externalId>
-  <party>H</party>
-  <general>true</general>
-  <categories>
-    <category>GRUNNSKOLE</category>
-  </categories>
-  <source>PP:8</source>
-  <body>Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.</body>
-</promise>
-XML
+      it 'serializes to JSON' do
+        Promise.example.to_json.should be_json <<-JSON
+        {
+          "kind": "hdo#promise",
+          "externalId": "1",
+          "party": "H",
+          "general": true,
+          "categories": ["GRUNNSKOLE"],
+          "source": "PP",
+          "page": 8,
+          "body": "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen."
+        }
+        JSON
       end
 
-      it 'deserializes from HDO XML' do
-        promises = Promise.from_hdo_doc(parse(<<-XML))
-        <promises>
-          <promise>
-            <externalId>1</externalId>
-            <party>H</party>
-            <general>true</general>
-            <categories>
-              <category>GRUNNSKOLE</category>
-            </categories>
-            <source>PP:8</source>
-            <body>Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.</body>
-          </promise>
-        </promises>
-        XML
+      it 'deserializes from JSON' do
+        orig = Promise.example
+        Promise.from_json(orig.to_json).should == orig
+      end
 
-        promises.size.should == 1
-        promise = promises.first
+      it 'deserializes from a JSON array' do
+        orig = [Promise.example]
+        Promise.from_json(orig.to_json).should == orig
+      end
 
-        promise.party.should == "H"
-        promise.should be_general
-        promise.categories.should == ["GRUNNSKOLE"]
-        promise.source.should == "PP"
-        promise.page.should == "8"
-        promise.body.should == "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen."
+      it 'deserializes from hash with externalId missing' do
+        pr = Promise.example
+        pr.external_id = nil
+
+        Promise.from_json(pr.to_json).should be_kind_of(Promise)
+      end
+
+      it 'fails if the given JSON is invalid' do
+        # missing general
+
+        json = '
+        {
+          "kind": "hdo#promise",
+          "externalId": "1",
+          "party": "H",
+          "categories": ["GRUNNSKOLE"],
+          "source": "PP",
+          "page": 8,
+          "body": "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen."
+        }'
+
+        expect { Promise.from_json(json) }.to raise_error(ValidationError)
       end
 
       it 'has a description' do
@@ -83,16 +90,21 @@ XML
         Promise.fields.should_not be_empty
       end
 
-      it 'has a type name' do
-        Promise.type_name.should == 'promise'
+      it 'has a kind' do
+        Promise.kind.should == 'hdo#promise'
       end
 
-      it 'has a an XML example' do
-        Promise.xml_example.should be_kind_of(String)
+      it 'has a JSON example' do
+        Promise.json_example.should be_kind_of(String)
       end
 
       it 'has #short_inspect' do
         Promise.example.short_inspect.should be_kind_of(String)
+      end
+
+      it 'strips trailing space from the body' do
+        promise = Promise.new("Party", "Body   ", true, ["æøå"], "PP", 8)
+        promise.body.should == "Body"
       end
 
       it 'correctly upcases non-ASCII category names' do

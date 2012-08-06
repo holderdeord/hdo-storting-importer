@@ -1,29 +1,20 @@
 module Hdo
   module StortingImporter
     class Party
+      include HasJsonSchema
       include IvarEquality
 
       attr_reader :external_id, :name
       alias_method :short_inspect, :inspect
 
-      def self.type_name
-        'party'
-      end
-
-      def self.description
-        'a political party'
-      end
+      schema_path StortingImporter.lib.join("hdo/storting_importer/schema/party.json").to_s
 
       def self.example
         new("DEM", "Democratic Party")
       end
 
-      def self.xml_example(builder = Util.builder)
-        example.to_hdo_xml(builder)
-      end
-
-      def self.fields
-        [EXTERNAL_ID_FIELD, Field.new(:name, true, :string, 'The name of the party.')]
+      def self.json_example
+        Util.json_pretty example
       end
 
       def self.from_storting_doc(doc)
@@ -32,12 +23,8 @@ module Hdo
         end
       end
 
-      def self.from_hdo_doc(doc)
-        doc.css("parties > party").map { |e| from_hdo_node(e) }
-      end
-
-      def self.from_hdo_node(node)
-        new node.css("externalId").first.text, node.css("name").first.text
+      def self.from_hash(hash)
+        new hash.fetch('externalId'), hash.fetch('name')
       end
 
       def initialize(external_id, name)
@@ -49,12 +36,14 @@ module Hdo
         Util.unescape_param @external_id
       end
 
-      def to_hdo_xml(builder = Util.builder)
-        builder.party do |party|
-          party.externalId external_id
-          party.name name
-        end
+      def to_hash
+        {
+          :kind       => self.class.kind,
+          :externalId => @external_id,
+          :name       => @name
+        }
       end
+
     end
   end
 end

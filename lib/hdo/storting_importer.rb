@@ -9,11 +9,17 @@ require 'builder'
 require 'unicode_utils'
 require 'uri'
 require 'multi_json'
+require 'yajl/json_gem'
+require 'jschematic'
 
 module Hdo
   module StortingImporter
     def self.root
-      @root ||= File.expand_path("../../..", __FILE__)
+      @root ||= Pathname.new(File.expand_path("../../..", __FILE__))
+    end
+
+    def self.lib
+      @lib ||= Pathname.new(File.expand_path("../..", __FILE__))
     end
 
     def self.types
@@ -25,7 +31,7 @@ module Hdo
         Category,
         Issue,
         Vote,
-        Vote::Proposition,
+        Proposition,
         Promise
       ]
     end
@@ -51,7 +57,7 @@ module Hdo
       end
 
       types.each_with_index do |type, type_idx|
-        out.puts "\x1b[1m#{type.type_name}\x1b[0m\n"
+        out.puts "\x1b[1m#{type.kind}\x1b[0m\n"
 
         type.fields.each_with_index do |field, field_idx|
 
@@ -100,6 +106,7 @@ end
 require 'hdo/storting_importer/core_ext/enumerable'
 require 'hdo/storting_importer/ivar_equality'
 require 'hdo/storting_importer/inspectable'
+require 'hdo/storting_importer/has_json_schema'
 require 'hdo/storting_importer/util'
 require 'hdo/storting_importer/fusion_table'
 
@@ -115,6 +122,7 @@ require 'hdo/storting_importer/issue'
 require 'hdo/storting_importer/party'
 require 'hdo/storting_importer/promise'
 require 'hdo/storting_importer/representative'
+require 'hdo/storting_importer/proposition'
 require 'hdo/storting_importer/vote'
 
 require 'hdo/storting_importer/converter'

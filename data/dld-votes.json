@@ -1,0 +1,5452 @@
+[
+  {
+    "kind": "hdo#vote",
+    "externalId": "?",
+    "externalIssueId": "48717",
+    "counts": {
+      "for": 89,
+      "against": 80,
+      "absent": 0
+    },
+    "personal": true,
+    "enacted": true,
+    "subject": "Datalagringsdirektivet: Tilrådingens punkt A",
+    "method": "ikke_spesifisert",
+    "resultType": "ikke_spesifisert",
+    "time": "2011-04-04T21:44:54",
+    "representatives": [
+      {
+        "kind": "hdo#representative",
+        "externalId": "AC",
+        "firstName": "Akhtar",
+        "lastName": "Chaudhry",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "AKSH",
+        "firstName": "Aksel",
+        "lastName": "Hagen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ALEH",
+        "firstName": "Alf Egil",
+        "lastName": "Holmelid",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ANA",
+        "firstName": "Anders",
+        "lastName": "Anundsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "AWE",
+        "firstName": "Anders B.",
+        "lastName": "Werp",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ATR",
+        "firstName": "Anette",
+        "lastName": "Trettebergstuen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ALJ",
+        "firstName": "Anna",
+        "lastName": "Ljunggren",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ANMB",
+        "firstName": "Anne Marit",
+        "lastName": "Bjørnflaten",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ATW",
+        "firstName": "Anne Tingelstad",
+        "lastName": "Wøien",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "AREH",
+        "firstName": "Are",
+        "lastName": "Helseth",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "AAST",
+        "firstName": "Arild",
+        "lastName": "Stokkan-Grande",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ARLH",
+        "firstName": "Arne L.",
+        "lastName": "Haugen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "AESO",
+        "firstName": "Arne",
+        "lastName": "Sortevik",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ARK",
+        "firstName": "Arve",
+        "lastName": "Kambe",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BEHA",
+        "firstName": "Bendiks H.",
+        "lastName": "Arnesen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BENH",
+        "firstName": "Bent",
+        "lastName": "Høie",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BEM",
+        "firstName": "Bente Stein",
+        "lastName": "Mathisen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BTH",
+        "firstName": "Bente",
+        "lastName": "Thorsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BLO",
+        "firstName": "Bjørn",
+        "lastName": "Lødemel",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BT",
+        "firstName": "Borghild",
+        "lastName": "Tenden",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Venstre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BÅH",
+        "firstName": "Bård",
+        "lastName": "Hoksrud",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BVS",
+        "firstName": "Bård Vegar",
+        "lastName": "Solhjell",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "CT",
+        "firstName": "Christian",
+        "lastName": "Tybring-Gjedde",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "CNR",
+        "firstName": "Christina Nilsson",
+        "lastName": "Ramsøy",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "DOT",
+        "firstName": "Dag Ole",
+        "lastName": "Teigen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "DS",
+        "firstName": "Dag",
+        "lastName": "Sele",
+        "gender": "?",
+        "dateOfBirth": "1964-04-03T12:00:00",
+        "dateOfDeath": "2000-01-01",
+        "district": "Telemark",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "DTA",
+        "firstName": "Dag Terje",
+        "lastName": "Andersen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "DH",
+        "firstName": "Dagfinn",
+        "lastName": "Høybråten",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "DE",
+        "firstName": "Dagrun",
+        "lastName": "Eriksen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "EIRS",
+        "firstName": "Eirik",
+        "lastName": "Sivertsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "EKS",
+        "firstName": "Eirin",
+        "lastName": "Sund",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "EAS",
+        "firstName": "Elisabeth",
+        "lastName": "Aspaker",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ELN",
+        "firstName": "Elisabeth Røbekk",
+        "lastName": "Nørve",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "EBO",
+        "firstName": "Else-May",
+        "lastName": "Botten",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ES",
+        "firstName": "Erna",
+        "lastName": "Solberg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "EVH",
+        "firstName": "Eva Kristin",
+        "lastName": "Hansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "EVA",
+        "firstName": "Eva Vinje",
+        "lastName": "Aurdal",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "FBJ",
+        "firstName": "Frank",
+        "lastName": "Bakke-Jensen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "FR",
+        "firstName": "Freddy",
+        "lastName": "de Ruiter",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GP",
+        "firstName": "Geir",
+        "lastName": "Pollestad",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GEHN",
+        "firstName": "Geir-Ketil",
+        "lastName": "Hansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GJK",
+        "firstName": "Gerd Janne",
+        "lastName": "Kristoffersen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GKB",
+        "firstName": "Gina Knutson",
+        "lastName": "Barstad",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GJH",
+        "firstName": "Gjermund",
+        "lastName": "Hagesæter",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GOK",
+        "firstName": "Gorm",
+        "lastName": "Kjernli",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GKG",
+        "firstName": "Gunn Karin",
+        "lastName": "Gjul",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GAG",
+        "firstName": "Gunnar",
+        "lastName": "Gundersen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GUE",
+        "firstName": "Gunvor",
+        "lastName": "Eldegard",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HTA",
+        "firstName": "Hadia",
+        "lastName": "Tajik",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HHL",
+        "firstName": "Hallgeir H.",
+        "lastName": "Langeland",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HAFA",
+        "firstName": "Hans Frode Kielland",
+        "lastName": "Asmyhr",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HOSY",
+        "firstName": "Hans Olav",
+        "lastName": "Syversen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HTN",
+        "firstName": "Harald T.",
+        "lastName": "Nesvik",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HEIG",
+        "firstName": "Heidi",
+        "lastName": "Greni",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HEH",
+        "firstName": "Heikki",
+        "lastName": "Holmås",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HSK",
+        "firstName": "Henning",
+        "lastName": "Skumsvoll",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HEW",
+        "firstName": "Henning",
+        "lastName": "Warloe",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HML",
+        "firstName": "Hilde",
+        "lastName": "Magnusson",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HAKH",
+        "firstName": "Håkon",
+        "lastName": "Haugli",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IBTH",
+        "firstName": "Ib",
+        "lastName": "Thomsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IME",
+        "firstName": "Ine M. Eriksen",
+        "lastName": "Søreide",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IMT",
+        "firstName": "Inga Marte",
+        "lastName": "Thorkildsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IOL",
+        "firstName": "Ingalill",
+        "lastName": "Olsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IAG",
+        "firstName": "Ingebjørg",
+        "lastName": "Godskesen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ISC",
+        "firstName": "Ingjerd",
+        "lastName": "Schou",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IHE",
+        "firstName": "Ingrid",
+        "lastName": "Heggø",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IJ",
+        "firstName": "Irene",
+        "lastName": "Johansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IRLN",
+        "firstName": "Irene Lange",
+        "lastName": "Nordahl",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IVK",
+        "firstName": "Ivar",
+        "lastName": "Kristiansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JBO",
+        "firstName": "Jan",
+        "lastName": "Bøhler",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JTS",
+        "firstName": "Jan Tore",
+        "lastName": "Sanner",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JF",
+        "firstName": "Jan-Henrik",
+        "lastName": "Fredriksen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JSN",
+        "firstName": "Janne Sjelmo",
+        "lastName": "Nordås",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JKL",
+        "firstName": "Jenny",
+        "lastName": "Klinge",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JFC",
+        "firstName": "Jette F.",
+        "lastName": "Christensen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JGD",
+        "firstName": "Jon Georg",
+        "lastName": "Dale",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JONG",
+        "firstName": "Jon Jæger",
+        "lastName": "Gåsvatn",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JASP",
+        "firstName": "Jorodd",
+        "lastName": "Asphjell",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JHR",
+        "firstName": "Jørund",
+        "lastName": "Rytman",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KARH",
+        "firstName": "Kari",
+        "lastName": "Henriksen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KKK",
+        "firstName": "Kari Kjønaas",
+        "lastName": "Kjos",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KSTO",
+        "firstName": "Kari",
+        "lastName": "Storstrand",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KAAN",
+        "firstName": "Karin",
+        "lastName": "Andersen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KSW",
+        "firstName": "Karin S.",
+        "lastName": "Woldseth",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KES",
+        "firstName": "Kenneth",
+        "lastName": "Svendsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KETS",
+        "firstName": "Ketil",
+        "lastName": "Solvik-Olsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KBH",
+        "firstName": "Kjell Børre",
+        "lastName": "Hansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KJR",
+        "firstName": "Kjell Ingolf",
+        "lastName": "Ropstad",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KJT",
+        "firstName": "Kjersti",
+        "lastName": "Toppe",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KNAH",
+        "firstName": "Knut Arild",
+        "lastName": "Hareide",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KNO",
+        "firstName": "Knut Magnus",
+        "lastName": "Olsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KSIM",
+        "firstName": "Kåre",
+        "lastName": "Simensen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LD",
+        "firstName": "Laila",
+        "lastName": "Dåvøy",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LAG",
+        "firstName": "Laila",
+        "lastName": "Gustavsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LRE",
+        "firstName": "Laila Marie",
+        "lastName": "Reiertsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LAT",
+        "firstName": "Laila",
+        "lastName": "Thorsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LMY",
+        "firstName": "Lars",
+        "lastName": "Myraune",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LVA",
+        "firstName": "Lene",
+        "lastName": "Vågslid",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LILH",
+        "firstName": "Lillian",
+        "lastName": "Hansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LCH",
+        "firstName": "Linda C. Hofstad",
+        "lastName": "Helleland",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LHH",
+        "firstName": "Line Henriette",
+        "lastName": "Hjemdal",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LIC",
+        "firstName": "Lise",
+        "lastName": "Christoffersen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MAGR",
+        "firstName": "Magne",
+        "lastName": "Rommetveit",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MAAA",
+        "firstName": "Marianne",
+        "lastName": "Aasen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MAM",
+        "firstName": "Marianne",
+        "lastName": "Marthinsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MN",
+        "firstName": "Marit",
+        "lastName": "Nybakk",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MAKO",
+        "firstName": "Martin",
+        "lastName": "Kolberg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MIT",
+        "firstName": "Michael",
+        "lastName": "Tetzschner",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MORH",
+        "firstName": "Morten",
+        "lastName": "Høglund",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MOJ",
+        "firstName": "Morten Ørsal",
+        "lastName": "Johansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "NA",
+        "firstName": "Nikolai",
+        "lastName": "Astrup",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ODB",
+        "firstName": "Odin Adelsten",
+        "lastName": "Bohmann",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "OLET",
+        "firstName": "Olemic",
+        "lastName": "Thommessen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "OG",
+        "firstName": "Oskar J.",
+        "lastName": "Grimstad",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PO",
+        "firstName": "Per Arne",
+        "lastName": "Olsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "POL",
+        "firstName": "Per Olaf",
+        "lastName": "Lundteigen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PB",
+        "firstName": "Per Roar",
+        "lastName": "Bredvold",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PES",
+        "firstName": "Per",
+        "lastName": "Sandberg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PKF",
+        "firstName": "Per-Kristian",
+        "lastName": "Foss",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PTA",
+        "firstName": "Per-Willy",
+        "lastName": "Amundsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PEMY",
+        "firstName": "Peter N.",
+        "lastName": "Myhre",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PEG",
+        "firstName": "Peter Skovholt",
+        "lastName": "Gitmark",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "RAE",
+        "firstName": "Rigmor Andersen",
+        "lastName": "Eide",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ROAH",
+        "firstName": "Roald Aga",
+        "lastName": "Haug",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "RE",
+        "firstName": "Robert",
+        "lastName": "Eriksson",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SME",
+        "firstName": "Siri A.",
+        "lastName": "Meling",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SIVJ",
+        "firstName": "Siv",
+        "lastName": "Jensen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SNV",
+        "firstName": "Snorre Serigstad",
+        "lastName": "Valen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SHK",
+        "firstName": "Solveig",
+        "lastName": "Horne",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SONS",
+        "firstName": "Sonja Irene",
+        "lastName": "Sjøli",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SOM",
+        "firstName": "Sonja",
+        "lastName": "Mandt",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "STEG",
+        "firstName": "Steinar",
+        "lastName": "Gullvåg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "STRH",
+        "firstName": "Stine Renate",
+        "lastName": "Håheim",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SUB",
+        "firstName": "Susanne",
+        "lastName": "Bratli",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SAF",
+        "firstName": "Svein",
+        "lastName": "Flåtten",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SHAR",
+        "firstName": "Svein",
+        "lastName": "Harberg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SRH",
+        "firstName": "Svein Roald",
+        "lastName": "Hansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SMY",
+        "firstName": "Sverre",
+        "lastName": "Myrli",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SYG",
+        "firstName": "Sylvi",
+        "lastName": "Graham",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TELA",
+        "firstName": "Terje",
+        "lastName": "Aasland",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "THB",
+        "firstName": "Thomas",
+        "lastName": "Breen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TEF",
+        "firstName": "Thor Erik",
+        "lastName": "Forsberg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TL",
+        "firstName": "Thor",
+        "lastName": "Lillehovde",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TMS",
+        "firstName": "Tone Merete",
+        "lastName": "Sønsterud",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TBRE",
+        "firstName": "Tor",
+        "lastName": "Bremer",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TSU",
+        "firstName": "Tor Sigbjørn",
+        "lastName": "Utsogn",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TAS",
+        "firstName": "Tor-Arne",
+        "lastName": "Strøm",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TRI",
+        "firstName": "Torbjørn Røe",
+        "lastName": "Isaksen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TALI",
+        "firstName": "Tord",
+        "lastName": "Lien",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TOHA",
+        "firstName": "Tore",
+        "lastName": "Hagebakken",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TON",
+        "firstName": "Tore",
+        "lastName": "Nordtun",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TOT",
+        "firstName": "Torgeir",
+        "lastName": "Trældal",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TR",
+        "firstName": "Torstein",
+        "lastName": "Rudihagen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TKK",
+        "firstName": "Tove Karoline",
+        "lastName": "Knutsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TOVT",
+        "firstName": "Tove-Lise",
+        "lastName": "Torve",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TSG",
+        "firstName": "Trine Skei",
+        "lastName": "Grande",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Venstre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TROH",
+        "firstName": "Trond",
+        "lastName": "Helleland",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TRUW",
+        "firstName": "Truls",
+        "lastName": "Wickholm",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TMV",
+        "firstName": "Trygve Slagsvold",
+        "lastName": "Vedum",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "UEK",
+        "firstName": "Ulf Erik",
+        "lastName": "Knudsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "UIL",
+        "firstName": "Ulf",
+        "lastName": "Leirstein",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "VKG",
+        "firstName": "Vigdis",
+        "lastName": "Giltun",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "WO",
+        "firstName": "Wenche",
+        "lastName": "Olsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "WAP",
+        "firstName": "Willy",
+        "lastName": "Pedersen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "AGES",
+        "firstName": "Åge",
+        "lastName": "Starheim",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ØYVH",
+        "firstName": "Øyvind",
+        "lastName": "Halleraker",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ØH",
+        "firstName": "Øyvind",
+        "lastName": "Håbrekke",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "OYK",
+        "firstName": "Øyvind",
+        "lastName": "Korsberg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "OVA",
+        "firstName": "Øyvind",
+        "lastName": "Vaksdal",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      }
+    ],
+    "propositions": [
+
+    ]
+  },
+  {
+    "kind": "hdo#vote",
+    "externalId": "?",
+    "externalIssueId": "48717",
+    "counts": {
+      "for": 89,
+      "against": 80,
+      "absent": 0
+    },
+    "personal": true,
+    "enacted": true,
+    "subject": "Datalagringsdirektivet: Lovens overskrift og loven i sin helhet",
+    "method": "ikke_spesifisert",
+    "resultType": "ikke_spesifisert",
+    "time": "2011-04-04T21:45:27",
+    "representatives": [
+      {
+        "kind": "hdo#representative",
+        "externalId": "AC",
+        "firstName": "Akhtar",
+        "lastName": "Chaudhry",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "AKSH",
+        "firstName": "Aksel",
+        "lastName": "Hagen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ALEH",
+        "firstName": "Alf Egil",
+        "lastName": "Holmelid",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ANA",
+        "firstName": "Anders",
+        "lastName": "Anundsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "AWE",
+        "firstName": "Anders B.",
+        "lastName": "Werp",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ATR",
+        "firstName": "Anette",
+        "lastName": "Trettebergstuen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ALJ",
+        "firstName": "Anna",
+        "lastName": "Ljunggren",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ANMB",
+        "firstName": "Anne Marit",
+        "lastName": "Bjørnflaten",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ATW",
+        "firstName": "Anne Tingelstad",
+        "lastName": "Wøien",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "AREH",
+        "firstName": "Are",
+        "lastName": "Helseth",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "AAST",
+        "firstName": "Arild",
+        "lastName": "Stokkan-Grande",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ARLH",
+        "firstName": "Arne L.",
+        "lastName": "Haugen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "AESO",
+        "firstName": "Arne",
+        "lastName": "Sortevik",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ARK",
+        "firstName": "Arve",
+        "lastName": "Kambe",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BEHA",
+        "firstName": "Bendiks H.",
+        "lastName": "Arnesen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BENH",
+        "firstName": "Bent",
+        "lastName": "Høie",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BEM",
+        "firstName": "Bente Stein",
+        "lastName": "Mathisen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BTH",
+        "firstName": "Bente",
+        "lastName": "Thorsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BLO",
+        "firstName": "Bjørn",
+        "lastName": "Lødemel",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BT",
+        "firstName": "Borghild",
+        "lastName": "Tenden",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Venstre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BÅH",
+        "firstName": "Bård",
+        "lastName": "Hoksrud",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "BVS",
+        "firstName": "Bård Vegar",
+        "lastName": "Solhjell",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "CT",
+        "firstName": "Christian",
+        "lastName": "Tybring-Gjedde",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "CNR",
+        "firstName": "Christina Nilsson",
+        "lastName": "Ramsøy",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "DOT",
+        "firstName": "Dag Ole",
+        "lastName": "Teigen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "DS",
+        "firstName": "Dag",
+        "lastName": "Sele",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "DTA",
+        "firstName": "Dag Terje",
+        "lastName": "Andersen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "DH",
+        "firstName": "Dagfinn",
+        "lastName": "Høybråten",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "DE",
+        "firstName": "Dagrun",
+        "lastName": "Eriksen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "EIRS",
+        "firstName": "Eirik",
+        "lastName": "Sivertsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "EKS",
+        "firstName": "Eirin",
+        "lastName": "Sund",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "EAS",
+        "firstName": "Elisabeth",
+        "lastName": "Aspaker",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ELN",
+        "firstName": "Elisabeth Røbekk",
+        "lastName": "Nørve",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "EBO",
+        "firstName": "Else-May",
+        "lastName": "Botten",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ES",
+        "firstName": "Erna",
+        "lastName": "Solberg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "EVH",
+        "firstName": "Eva Kristin",
+        "lastName": "Hansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "EVA",
+        "firstName": "Eva Vinje",
+        "lastName": "Aurdal",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "FBJ",
+        "firstName": "Frank",
+        "lastName": "Bakke-Jensen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "FR",
+        "firstName": "Freddy",
+        "lastName": "de Ruiter",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GP",
+        "firstName": "Geir",
+        "lastName": "Pollestad",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GEHN",
+        "firstName": "Geir-Ketil",
+        "lastName": "Hansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GJK",
+        "firstName": "Gerd Janne",
+        "lastName": "Kristoffersen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GKB",
+        "firstName": "Gina Knutson",
+        "lastName": "Barstad",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GJH",
+        "firstName": "Gjermund",
+        "lastName": "Hagesæter",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GOK",
+        "firstName": "Gorm",
+        "lastName": "Kjernli",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GKG",
+        "firstName": "Gunn Karin",
+        "lastName": "Gjul",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GAG",
+        "firstName": "Gunnar",
+        "lastName": "Gundersen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "GUE",
+        "firstName": "Gunvor",
+        "lastName": "Eldegard",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HTA",
+        "firstName": "Hadia",
+        "lastName": "Tajik",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HHL",
+        "firstName": "Hallgeir H.",
+        "lastName": "Langeland",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HAFA",
+        "firstName": "Hans Frode Kielland",
+        "lastName": "Asmyhr",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HOSY",
+        "firstName": "Hans Olav",
+        "lastName": "Syversen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HTN",
+        "firstName": "Harald T.",
+        "lastName": "Nesvik",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HEIG",
+        "firstName": "Heidi",
+        "lastName": "Greni",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HEH",
+        "firstName": "Heikki",
+        "lastName": "Holmås",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HSK",
+        "firstName": "Henning",
+        "lastName": "Skumsvoll",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HEW",
+        "firstName": "Henning",
+        "lastName": "Warloe",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HML",
+        "firstName": "Hilde",
+        "lastName": "Magnusson",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "HAKH",
+        "firstName": "Håkon",
+        "lastName": "Haugli",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IBTH",
+        "firstName": "Ib",
+        "lastName": "Thomsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IME",
+        "firstName": "Ine M. Eriksen",
+        "lastName": "Søreide",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IMT",
+        "firstName": "Inga Marte",
+        "lastName": "Thorkildsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IOL",
+        "firstName": "Ingalill",
+        "lastName": "Olsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IAG",
+        "firstName": "Ingebjørg",
+        "lastName": "Godskesen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ISC",
+        "firstName": "Ingjerd",
+        "lastName": "Schou",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IHE",
+        "firstName": "Ingrid",
+        "lastName": "Heggø",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IJ",
+        "firstName": "Irene",
+        "lastName": "Johansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IRLN",
+        "firstName": "Irene Lange",
+        "lastName": "Nordahl",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "IVK",
+        "firstName": "Ivar",
+        "lastName": "Kristiansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JBO",
+        "firstName": "Jan",
+        "lastName": "Bøhler",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JTS",
+        "firstName": "Jan Tore",
+        "lastName": "Sanner",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JF",
+        "firstName": "Jan-Henrik",
+        "lastName": "Fredriksen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JSN",
+        "firstName": "Janne Sjelmo",
+        "lastName": "Nordås",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JKL",
+        "firstName": "Jenny",
+        "lastName": "Klinge",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JFC",
+        "firstName": "Jette F.",
+        "lastName": "Christensen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JGD",
+        "firstName": "Jon Georg",
+        "lastName": "Dale",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JONG",
+        "firstName": "Jon Jæger",
+        "lastName": "Gåsvatn",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JASP",
+        "firstName": "Jorodd",
+        "lastName": "Asphjell",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "JHR",
+        "firstName": "Jørund",
+        "lastName": "Rytman",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KARH",
+        "firstName": "Kari",
+        "lastName": "Henriksen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KKK",
+        "firstName": "Kari Kjønaas",
+        "lastName": "Kjos",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KSTO",
+        "firstName": "Kari",
+        "lastName": "Storstrand",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KAAN",
+        "firstName": "Karin",
+        "lastName": "Andersen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KSW",
+        "firstName": "Karin S.",
+        "lastName": "Woldseth",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KES",
+        "firstName": "Kenneth",
+        "lastName": "Svendsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KETS",
+        "firstName": "Ketil",
+        "lastName": "Solvik-Olsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KBH",
+        "firstName": "Kjell Børre",
+        "lastName": "Hansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KJR",
+        "firstName": "Kjell Ingolf",
+        "lastName": "Ropstad",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KJT",
+        "firstName": "Kjersti",
+        "lastName": "Toppe",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KNAH",
+        "firstName": "Knut Arild",
+        "lastName": "Hareide",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KNO",
+        "firstName": "Knut Magnus",
+        "lastName": "Olsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "KSIM",
+        "firstName": "Kåre",
+        "lastName": "Simensen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LD",
+        "firstName": "Laila",
+        "lastName": "Dåvøy",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LAG",
+        "firstName": "Laila",
+        "lastName": "Gustavsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LRE",
+        "firstName": "Laila Marie",
+        "lastName": "Reiertsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LAT",
+        "firstName": "Laila",
+        "lastName": "Thorsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LMY",
+        "firstName": "Lars",
+        "lastName": "Myraune",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LVA",
+        "firstName": "Lene",
+        "lastName": "Vågslid",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LILH",
+        "firstName": "Lillian",
+        "lastName": "Hansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LCH",
+        "firstName": "Linda C. Hofstad",
+        "lastName": "Helleland",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LHH",
+        "firstName": "Line Henriette",
+        "lastName": "Hjemdal",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "LIC",
+        "firstName": "Lise",
+        "lastName": "Christoffersen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MAGR",
+        "firstName": "Magne",
+        "lastName": "Rommetveit",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MAAA",
+        "firstName": "Marianne",
+        "lastName": "Aasen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MAM",
+        "firstName": "Marianne",
+        "lastName": "Marthinsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MN",
+        "firstName": "Marit",
+        "lastName": "Nybakk",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MAKO",
+        "firstName": "Martin",
+        "lastName": "Kolberg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MIT",
+        "firstName": "Michael",
+        "lastName": "Tetzschner",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MORH",
+        "firstName": "Morten",
+        "lastName": "Høglund",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "MOJ",
+        "firstName": "Morten Ørsal",
+        "lastName": "Johansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "NA",
+        "firstName": "Nikolai",
+        "lastName": "Astrup",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ODB",
+        "firstName": "Odin Adelsten",
+        "lastName": "Bohmann",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "OLET",
+        "firstName": "Olemic",
+        "lastName": "Thommessen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "OG",
+        "firstName": "Oskar J.",
+        "lastName": "Grimstad",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PO",
+        "firstName": "Per Arne",
+        "lastName": "Olsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "POL",
+        "firstName": "Per Olaf",
+        "lastName": "Lundteigen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PB",
+        "firstName": "Per Roar",
+        "lastName": "Bredvold",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PES",
+        "firstName": "Per",
+        "lastName": "Sandberg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PKF",
+        "firstName": "Per-Kristian",
+        "lastName": "Foss",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PTA",
+        "firstName": "Per-Willy",
+        "lastName": "Amundsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PEMY",
+        "firstName": "Peter N.",
+        "lastName": "Myhre",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "PEG",
+        "firstName": "Peter Skovholt",
+        "lastName": "Gitmark",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "RAE",
+        "firstName": "Rigmor Andersen",
+        "lastName": "Eide",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ROAH",
+        "firstName": "Roald Aga",
+        "lastName": "Haug",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "RE",
+        "firstName": "Robert",
+        "lastName": "Eriksson",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SME",
+        "firstName": "Siri A.",
+        "lastName": "Meling",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SIVJ",
+        "firstName": "Siv",
+        "lastName": "Jensen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SNV",
+        "firstName": "Snorre Serigstad",
+        "lastName": "Valen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Sosialistisk Venstreparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SHK",
+        "firstName": "Solveig",
+        "lastName": "Horne",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SONS",
+        "firstName": "Sonja Irene",
+        "lastName": "Sjøli",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SOM",
+        "firstName": "Sonja",
+        "lastName": "Mandt",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "STEG",
+        "firstName": "Steinar",
+        "lastName": "Gullvåg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "STRH",
+        "firstName": "Stine Renate",
+        "lastName": "Håheim",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SUB",
+        "firstName": "Susanne",
+        "lastName": "Bratli",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SAF",
+        "firstName": "Svein",
+        "lastName": "Flåtten",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SHAR",
+        "firstName": "Svein",
+        "lastName": "Harberg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SRH",
+        "firstName": "Svein Roald",
+        "lastName": "Hansen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SMY",
+        "firstName": "Sverre",
+        "lastName": "Myrli",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "SYG",
+        "firstName": "Sylvi",
+        "lastName": "Graham",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TELA",
+        "firstName": "Terje",
+        "lastName": "Aasland",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "THB",
+        "firstName": "Thomas",
+        "lastName": "Breen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TEF",
+        "firstName": "Thor Erik",
+        "lastName": "Forsberg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TL",
+        "firstName": "Thor",
+        "lastName": "Lillehovde",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TMS",
+        "firstName": "Tone Merete",
+        "lastName": "Sønsterud",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TBRE",
+        "firstName": "Tor",
+        "lastName": "Bremer",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TSU",
+        "firstName": "Tor Sigbjørn",
+        "lastName": "Utsogn",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TAS",
+        "firstName": "Tor-Arne",
+        "lastName": "Strøm",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TRI",
+        "firstName": "Torbjørn Røe",
+        "lastName": "Isaksen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TALI",
+        "firstName": "Tord",
+        "lastName": "Lien",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TOHA",
+        "firstName": "Tore",
+        "lastName": "Hagebakken",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TON",
+        "firstName": "Tore",
+        "lastName": "Nordtun",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TOT",
+        "firstName": "Torgeir",
+        "lastName": "Trældal",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TR",
+        "firstName": "Torstein",
+        "lastName": "Rudihagen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TKK",
+        "firstName": "Tove Karoline",
+        "lastName": "Knutsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TOVT",
+        "firstName": "Tove-Lise",
+        "lastName": "Torve",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TSG",
+        "firstName": "Trine Skei",
+        "lastName": "Grande",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Venstre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TROH",
+        "firstName": "Trond",
+        "lastName": "Helleland",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TRUW",
+        "firstName": "Truls",
+        "lastName": "Wickholm",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "TMV",
+        "firstName": "Trygve Slagsvold",
+        "lastName": "Vedum",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Senterpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "UEK",
+        "firstName": "Ulf Erik",
+        "lastName": "Knudsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "UIL",
+        "firstName": "Ulf",
+        "lastName": "Leirstein",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "VKG",
+        "firstName": "Vigdis",
+        "lastName": "Giltun",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "WO",
+        "firstName": "Wenche",
+        "lastName": "Olsen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "WAP",
+        "firstName": "Willy",
+        "lastName": "Pedersen",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Arbeiderpartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "AGES",
+        "firstName": "Åge",
+        "lastName": "Starheim",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ØYVH",
+        "firstName": "Øyvind",
+        "lastName": "Halleraker",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Høyre",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "for"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "ØH",
+        "firstName": "Øyvind",
+        "lastName": "Håbrekke",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Kristelig Folkeparti",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "OYK",
+        "firstName": "Øyvind",
+        "lastName": "Korsberg",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      },
+      {
+        "kind": "hdo#representative",
+        "externalId": "OVA",
+        "firstName": "Øyvind",
+        "lastName": "Vaksdal",
+        "gender": "?",
+        "dateOfBirth": "2000-01-01",
+        "dateOfDeath": "2000-01-01",
+        "district": "",
+        "party": "Fremskrittspartiet",
+        "committees": [
+
+        ],
+        "period": "",
+        "voteResult": "against"
+      }
+    ],
+    "propositions": [
+
+    ]
+  }
+]

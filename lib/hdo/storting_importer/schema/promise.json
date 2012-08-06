@@ -1,0 +1,42 @@
+{
+  "id": "hdo#promise",
+  "description": "a party promise",
+  "type":"object",
+  "properties": {
+    "kind": {
+      "type": "string",
+      "description": "This is always 'hdo#promise'",
+      "default": "hdo#promise",
+      "required": true
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "party": {
+      "type": "string",
+      "description": "The external id of the party.",
+      "required": true
+    },
+    "general": {
+      "type": "boolean",
+      "description": "Whether this is considered a general promise (i.e. can be ambigious whether it has been fulfilled).",
+      "required": true
+    },
+    "categories": {
+      "type": "array",
+      "description": "List of category names.",
+      "items": { "type": "string" },
+      "required": true
+    },
+    "source": {
+      "type": "string",
+      "description": "The source of the promise. (TODO: this should always be a URL)",
+      "required": true
+    },
+    "body": {
+      "type": "string",
+      "description": "The body text of the promise.",
+      "required": true
+    }
+  }
+}

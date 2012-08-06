@@ -1,0 +1,34 @@
+{
+  "id": "hdo#proposition",
+  "description": "a proposition being voted over",
+  "type":"object",
+  "properties": {
+    "kind": {
+      "type": "string",
+      "description": "This is always 'hdo#proposition'",
+      "default": "hdo#proposition",
+      "required": true
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the proposition.",
+      "required": true
+    },
+    "onBehalfOf": {
+      "type": "string",
+      "description": "Description of who is behind the proposition.",
+      "required": true
+    },
+    "body": {
+      "type": "string",
+      "description": "The full text of the proposition.",
+      "required": true
+    },
+    "deliveredBy": {
+      "$ref": "hdo#representative"
+    }
+  }
+}

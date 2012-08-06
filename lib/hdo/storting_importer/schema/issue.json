@@ -1,0 +1,62 @@
+{
+  "id": "hdo#issue",
+  "description": "a parliament issue",
+  "type":"object",
+  "properties": {
+    "kind": {
+      "type": "string",
+      "description": "This is always 'hdo#issue'",
+      "default": "hdo#issue",
+      "required": true
+    },
+    "externalId": {
+      "type": "string",
+      "description": "",
+      "required": false
+    },
+    "summary": {
+      "type": "string",
+      "description": "A (preferably one-line) summary of the issue.",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "description": "A longer description of the issue.",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "description": "The type of issue.",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of the issue.",
+      "required": true
+    },
+    "lastUpdate": {
+      "type": "string",
+      "description": "The date the issue was last updated in the parliament.",
+      "required": true
+    },
+    "reference": {
+      "type": "string",
+      "description": "A reference",
+      "required": true
+    },
+    "documentGroup": {
+      "type": "string",
+      "description": "What document group this issue belongs to.",
+      "required": true
+      },
+    "committee": {
+      "type": "string",
+      "description": "What committee this issue belongs to. Should match the 'name' field in the committee type."
+    },
+    "categories": {
+      "type": "array",
+      "description": "List of categories (matching the 'name' field of the category type).",
+      "items": { "type": "string" }
+    }
+  }
+}
