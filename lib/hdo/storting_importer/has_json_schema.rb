@@ -7,6 +7,7 @@ module Hdo
     # Includer must define these methods:
     #
     #   .schema_path
+    #   .example
     #   #from_hash(hash)
     #   #to_hash
     #
@@ -38,6 +39,10 @@ module Hdo
 
         def schema
           @schema or raise "schema must be set with #{self}.schema_path"
+        end
+
+        def json_example
+          @json_example ||= Util.json_pretty example
         end
 
         def kind

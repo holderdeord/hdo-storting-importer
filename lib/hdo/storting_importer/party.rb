@@ -13,13 +13,10 @@ module Hdo
         new("DEM", "Democratic Party")
       end
 
-      def self.json_example
-        Util.json_pretty example
-      end
-
       def self.from_storting_doc(doc)
         doc.css("partier_liste parti").map do |node|
-          new node.css("id").first.text, node.css("navn").first.text
+          new node.css("id").first.text,
+              node.css("navn").first.text
         end
       end
 

@@ -5,6 +5,9 @@ module Hdo
   module StortingImporter
     describe Issue do
 
+      it_behaves_like 'type with JSON schema'
+      it_behaves_like 'type with #short_inspect'
+
       it 'builds issues from Storting XML list' do
         xml = <<-XML
         <?xml version="1.0" encoding="utf-8"?>
@@ -85,56 +88,6 @@ module Hdo
           "categories": ["UTENRIKSSAKER", "TRAKTATER", "NORDISK SAMARBEID"]
         }
         JSON
-      end
-
-      it 'can deserialize JSON' do
-        orig = Issue.example
-        Issue.from_json(orig.to_json).should == orig
-      end
-
-      it 'can deserialize an HDO XML doc' do
-        orig = [Issue.example]
-        Issue.from_json(orig.to_json).should == orig
-      end
-
-      it 'fails if the given JSON is invalid' do
-        # summary is number.
-
-        json = '{
-          "kind": "hdo#issue",
-          "externalId" : "53520",
-          "summary": 1,
-          "description": "Samtykke til inngåelse av avtale av 25. november 2011 om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
-          "type": "alminneligsak",
-          "status": "mottatt",
-          "lastUpdate": "2012-04-20T00:00:00",
-          "reference": "Prop. 90 S (2011-2012)",
-          "documentGroup": "proposisjon",
-          "committee": "Transport- og kommunikasjonskomiteen",
-          "categories": ["UTENRIKSSAKER", "TRAKTATER", "NORDISK SAMARBEID"]
-        }'
-
-        expect { Issue.from_json(json) }.to raise_error(ValidationError)
-      end
-
-      it 'has a kind' do
-        Issue.kind.should == 'hdo#issue'
-      end
-
-      it 'has a description' do
-        Issue.description.should be_kind_of(String)
-      end
-
-      it 'has a JSON example' do
-        Issue.json_example.should be_kind_of(String)
-      end
-
-      it 'has a list of fields' do
-        Issue.fields.should_not be_empty
-      end
-
-      it 'has #short_inspect' do
-        Issue.example.short_inspect.should be_kind_of(String)
       end
 
     end

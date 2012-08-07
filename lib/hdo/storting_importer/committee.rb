@@ -13,10 +13,6 @@ module Hdo
         new "ARBSOS", "Arbeids- og sosialkomiteen"
       end
 
-      def self.json_example
-        Util.json_pretty example
-      end
-
       def self.from_storting_doc(doc)
         doc.css("komiteer_liste komite").map do |node|
           from_storting_node(node)
@@ -24,7 +20,8 @@ module Hdo
       end
 
       def self.from_storting_node(node)
-        new node.css("id").first.text, node.css("navn").first.text
+        new node.css("id").first.text,
+            node.css("navn").first.text
       end
 
       def self.from_hash(hash)

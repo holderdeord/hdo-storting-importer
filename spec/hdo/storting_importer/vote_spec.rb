@@ -5,6 +5,9 @@ module Hdo
   module StortingImporter
     describe Vote do
 
+      it_behaves_like 'type with JSON schema'
+      it_behaves_like 'type with #short_inspect'
+
       it "builds votes from the Storting XML list" do
         xml = <<-XML
         <?xml version="1.0" encoding="utf-8"?>
@@ -129,43 +132,6 @@ module Hdo
           ]
         }
         JSON
-      end
-
-      it 'can deserialize JSON' do
-        orig = Vote.example
-        Vote.from_json(orig.to_json).should == orig
-      end
-
-      it 'can deserialize a JSON array' do
-        orig = [Vote.example]
-        Vote.from_json(orig.to_json).should == orig
-      end
-
-      it 'fails if the given JSON is invalid' do
-        json = Vote.example.to_hash
-        json.delete :personal
-
-        expect { Vote.from_json(json.to_json) }.to raise_error(ValidationError)
-      end
-
-      it 'has a kind' do
-        Vote.kind.should == 'hdo#vote'
-      end
-
-      it 'has a description' do
-        Vote.description.should be_kind_of(String)
-      end
-
-      it 'has a JSON example' do
-        Vote.json_example.should be_kind_of(String)
-      end
-
-      it 'has a list of fields' do
-        Vote.fields.should_not be_empty
-      end
-
-      it 'has #short_inspect' do
-        Vote.example.short_inspect.should be_kind_of(String)
       end
 
     end

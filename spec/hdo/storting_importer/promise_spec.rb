@@ -5,6 +5,9 @@ module Hdo
   module StortingImporter
     describe Promise do
 
+      it_behaves_like 'type with JSON schema'
+      it_behaves_like 'type with #short_inspect'
+
       it 'builds promises from CSV' do
         csv = <<-CSV
         Parti;Løftetekst;Generell;Emner;Kilde;Side
@@ -48,58 +51,11 @@ module Hdo
         JSON
       end
 
-      it 'deserializes from JSON' do
-        orig = Promise.example
-        Promise.from_json(orig.to_json).should == orig
-      end
-
-      it 'deserializes from a JSON array' do
-        orig = [Promise.example]
-        Promise.from_json(orig.to_json).should == orig
-      end
-
-      it 'deserializes from hash with externalId missing' do
+      it 'deserializes from JSON with externalId missing' do
         pr = Promise.example
         pr.external_id = nil
 
         Promise.from_json(pr.to_json).should be_kind_of(Promise)
-      end
-
-      it 'fails if the given JSON is invalid' do
-        # missing general
-
-        json = '
-        {
-          "kind": "hdo#promise",
-          "externalId": "1",
-          "party": "H",
-          "categories": ["GRUNNSKOLE"],
-          "source": "PP",
-          "page": 8,
-          "body": "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen."
-        }'
-
-        expect { Promise.from_json(json) }.to raise_error(ValidationError)
-      end
-
-      it 'has a description' do
-        Promise.description.should be_kind_of(String)
-      end
-
-      it 'has fields' do
-        Promise.fields.should_not be_empty
-      end
-
-      it 'has a kind' do
-        Promise.kind.should == 'hdo#promise'
-      end
-
-      it 'has a JSON example' do
-        Promise.json_example.should be_kind_of(String)
-      end
-
-      it 'has #short_inspect' do
-        Promise.example.short_inspect.should be_kind_of(String)
       end
 
       it 'strips trailing space from the body' do

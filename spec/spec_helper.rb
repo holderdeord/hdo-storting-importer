@@ -3,6 +3,10 @@ require 'hdo/storting_importer'
 require 'pry'
 require 'pp'
 
+Dir[File.expand_path("../support/**/*.rb", __FILE__)].each do |f|
+  require f
+end
+
 module Hdo
   module StortingImporter
     module SpecHelper

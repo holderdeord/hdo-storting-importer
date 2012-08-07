@@ -5,6 +5,9 @@ module Hdo
   module StortingImporter
     describe Representative do
 
+      it_behaves_like 'type with JSON schema'
+      it_behaves_like 'type with #short_inspect'
+
       it "builds representatives from the Storting XML list" do
         xml = <<-XML
         <?xml version="1.0" encoding="utf-8"?>
@@ -67,17 +70,7 @@ module Hdo
         JSON
       end
 
-      it 'can deserialize JSON' do
-        rep = Representative.example
-        Representative.from_json(rep.to_json).should == rep
-      end
-
-      it 'can deserialize a JSON array' do
-        reps = [Representative.example]
-        Representative.from_json(reps.to_json).should == reps
-      end
-
-      it 'raises if the JSON if voteResult is invalid' do
+      it 'is invalid if the voteResult property is invalid' do
         pending "find a validator that checks format"
 
         invalid = <<-JSON
@@ -98,46 +91,7 @@ module Hdo
 
         JSON
 
-        expect {
-          Representative.from_json(invalid)
-        }.to raise_error(ValidationError)
-      end
-
-      it 'raises if the JSON data is invalid' do
-        invalid = <<-JSON
-        {
-          "kind": "hdo#representative",
-          "externalId": "ADA",
-          "lastName": "Dahl",
-          "gender": "M",
-          "dateOfBirth": "1975-07-07T00:00:00",
-          "dateOfDeath": "0001-01-01T00:00:00",
-          "district": "Akershus",
-          "party": "Høyre",
-          "committees": ["Justiskomiteen"],
-          "period": "2011-2012"
-        }
-        JSON
-
-        expect {
-          Representative.from_json(invalid)
-        }.to raise_error(ValidationError)
-      end
-
-      it 'has a kind' do
-        Representative.kind.should == 'hdo#representative'
-      end
-
-      it 'has a description' do
-        Representative.description.should be_kind_of(String)
-      end
-
-      it 'has an JSON example' do
-        Representative.json_example.should be_kind_of(String)
-      end
-
-      it 'has a list of fields' do
-        Representative.fields.should_not be_empty
+        Representative.from_json(invalid).should_not be_valid
       end
 
       it 'unescapes non-ASCII characters in the external id' do
@@ -145,10 +99,6 @@ module Hdo
 
         rep.instance_variable_set("@external_id", '_AE_O_A')
         rep.external_id.should == "ÆØÅ"
-      end
-
-      it 'has #short_inspect' do
-        Representative.example.short_inspect.should be_kind_of(String)
       end
 
     end

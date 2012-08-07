@@ -17,10 +17,6 @@ module Hdo
         cat
       end
 
-      def self.json_example
-        Util.json_pretty example
-      end
-
       #
       # Deserialize from a Storting XML document (<emne_liste><emne>...</emne></emne_liste>)
       #

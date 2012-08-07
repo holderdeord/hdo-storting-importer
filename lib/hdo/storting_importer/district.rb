@@ -13,10 +13,6 @@ module Hdo
         new("Db", "Duckburg")
       end
 
-      def self.json_example
-        Util.json_pretty example
-      end
-
       def self.from_storting_doc(doc)
         doc.css("fylker_liste fylke").map do |node|
           from_storting_node(node)
