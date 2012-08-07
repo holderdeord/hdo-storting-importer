@@ -30,14 +30,14 @@ module Hdo
 
       def initialize(external_id, name)
         @external_id = external_id
-        @name = name
+        @name        = name
       end
 
       def to_hash
         {
-          :kind       => self.class.kind,
-          :externalId => @external_id,
-          :name       => @name
+          'kind'       => self.class.kind,
+          'externalId' => @external_id,
+          'name'       => @name
         }
       end
 

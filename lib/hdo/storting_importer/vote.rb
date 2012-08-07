@@ -60,25 +60,25 @@ module Hdo
       end
 
       def self.from_hash(hash)
-        counts = hash.fetch("counts")
+        counts = hash['counts']
 
         args = [
-          hash.fetch("externalId"),
-          hash.fetch("externalIssueId"),
-          hash.fetch("personal"),
-          hash.fetch("enacted"),
-          hash.fetch("subject"),
-          hash.fetch("method"),
-          hash.fetch("resultType"),
-          hash.fetch("time"),
-          counts.fetch("for"),
-          counts.fetch("against"),
-          counts.fetch("absent")
+          hash["externalId"],
+          hash["externalIssueId"],
+          hash["personal"],
+          hash["enacted"],
+          hash["subject"],
+          hash["method"],
+          hash["resultType"],
+          hash["time"],
+          counts && counts["for"],
+          counts && counts["against"],
+          counts && counts["absent"],
         ]
 
         vote = new(*args)
-        vote.representatives = hash.fetch('representatives').map { |e| Representative.from_hash(e) }
-        vote.propositions    = hash.fetch('propositions').map { |e| Proposition.from_hash(e) }
+        vote.representatives = Array(hash['representatives']).map { |e| Representative.from_hash(e || {}) }
+        vote.propositions    = Array(hash['propositions']).map { |e| Proposition.from_hash(e || {}) }
 
         vote
       end
@@ -92,7 +92,7 @@ module Hdo
         @method            = method
         @result_type       = result_type
         @time              = time
-        @counts            = Counts.new(Integer(for_count), Integer(against_count), Integer(absent_count))
+        @counts            = Counts.new(Integer(for_count || 0), Integer(against_count || 0), Integer(absent_count || 0))
 
         @propositions    = []
         @representatives = []
@@ -140,27 +140,27 @@ module Hdo
 
       def to_hash
         {
-          :kind             => self.class.kind,
-          :externalId       => @external_id,
-          :externalIssueId  => @external_issue_id,
-          :counts           => @counts.to_hash,
-          :personal         => @personal,
-          :enacted          => @enacted,
-          :subject          => @subject,
-          :method           => @method,
-          :resultType       => @result_type,
-          :time             => @time,
-          :representatives  => @representatives.map(&:to_hash),
-          :propositions     => @propositions.map(&:to_hash)
+          'kind'             => self.class.kind,
+          'externalId'       => @external_id,
+          'externalIssueId'  => @external_issue_id,
+          'counts'           => @counts.to_hash,
+          'personal'         => @personal,
+          'enacted'          => @enacted,
+          'subject'          => @subject,
+          'method'           => @method,
+          'resultType'       => @result_type,
+          'time'             => @time,
+          'representatives'  => @representatives.map(&:to_hash),
+          'propositions'     => @propositions.map(&:to_hash)
         }
       end
 
       class Counts < Struct.new(:for, :against, :absent)
         def to_hash
           {
-            :for     => self.for,
-            :against => against,
-            :absent  => absent
+            'for'     => self.for,
+            'against' => against,
+            'absent'  => absent
           }
         end
       end

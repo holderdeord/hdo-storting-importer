@@ -75,12 +75,12 @@ module Hdo
       end
 
       def self.from_hash(hash)
-        pr = new hash.fetch('party'),
-                 hash.fetch('body'),
-                 hash.fetch('general'),
-                 hash.fetch('categories'),
-                 hash.fetch('source'),
-                 hash.fetch('page')
+        pr = new hash['party'],
+                 hash['body'],
+                 hash['general'],
+                 hash['categories'],
+                 hash['source'],
+                 hash['page']
 
         pr.external_id = hash['externalId']
 
@@ -88,11 +88,11 @@ module Hdo
       end
 
       def initialize(party, body, general, categories, source, page)
-        @party       = party.strip
-        @body        = body.strip
+        @party       = strip_if_string(party)
+        @body        = strip_if_string(body)
         @general     = general
         @categories  = clean_categories(categories)
-        @source      = source.strip
+        @source      = strip_if_string(source)
         @page        = page
 
         @external_id = nil
@@ -100,16 +100,16 @@ module Hdo
 
       def to_hash
         h = {
-          :kind       => self.class.kind,
-          :party      => @party,
-          :general    => @general,
-          :categories => @categories,
-          :source     => @source,
-          :page       => @page,
-          :body       => @body
+          'kind'       => self.class.kind,
+          'party'      => @party,
+          'general'    => @general,
+          'categories' => @categories,
+          'source'     => @source,
+          'page'       => @page,
+          'body'       => @body
         }
 
-        h[:externalId] = @external_id if @external_id
+        h["externalId"] = @external_id if @external_id
 
         h
       end
@@ -119,9 +119,17 @@ module Hdo
       def clean_categories(categories)
         categories = categories.split(",") if categories.kind_of?(String)
 
-        categories.map(&:strip).
-                   reject(&:empty?).
-                   map { |e| UnicodeUtils.upcase(e) }
+        Array(categories).map(&:strip).
+                          reject(&:empty?).
+                          map { |e| UnicodeUtils.upcase(e) }
+      end
+
+      def strip_if_string(str)
+        if str.respond_to? :strip
+          str.strip
+        else
+          str
+        end
       end
 
     end

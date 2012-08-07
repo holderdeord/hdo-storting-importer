@@ -63,12 +63,12 @@ module Hdo
 
       def to_hash
         h = {
-          :kind       => self.class.kind,
-          :externalId => @external_id,
-          :name       => @name
+          'kind'       => self.class.kind,
+          'externalId' => @external_id,
+          'name'       => @name
         }
 
-        h[:subCategories] = @children.map { |e| e.to_hash } if @children.any?
+        h['subCategories'] = @children.map { |e| e.to_hash } if @children.any?
 
         h
       end

@@ -20,23 +20,24 @@ module Hdo
       end
 
       def self.from_storting_node(node)
-        new node.css("id").first.text, node.css("navn").first.text
+        new node.css("id").first.text,
+            node.css("navn").first.text
       end
 
       def self.from_hash(hash)
-        new hash.fetch('externalId'), hash.fetch('name')
+        new hash['externalId'], hash['name']
       end
 
       def initialize(external_id, name)
         @external_id = external_id
-        @name = name
+        @name        = name
       end
 
       def to_hash
         {
-          :kind       => self.class.kind,
-          :externalId => @external_id,
-          :name       => @name
+          'kind'       => self.class.kind,
+          'externalId' => @external_id,
+          'name'       => @name
         }
       end
 

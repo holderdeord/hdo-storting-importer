@@ -18,6 +18,20 @@ module Hdo
         }.to raise_error(ValidationError)
       end
 
+      it 'knows if itself is valid' do
+        valid = described_class.example
+
+        valid.should be_valid
+        valid.validate!
+      end
+
+      it 'knows if itself is invalid' do
+        invalid = described_class.from_hash({})
+        invalid.should_not be_valid
+
+        expect { invalid.validate! }.to raise_error(ValidationError)
+      end
+
       it 'has a kind' do
         described_class.kind.should be_kind_of(String)
       end

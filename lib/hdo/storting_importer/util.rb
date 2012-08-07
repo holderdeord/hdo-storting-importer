@@ -20,6 +20,8 @@ module Hdo
       }
 
       def unescape_param(query_param)
+        return unless query_param.kind_of?(String)
+
         q = query_param.dup
         ID_CONVERSIONS.each { |k, v| q.gsub!(k, v) }
 

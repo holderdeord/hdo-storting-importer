@@ -65,16 +65,16 @@ module Hdo
       end
 
       def self.from_hash(hash)
-        v = new hash.fetch('externalId'),
-                hash.fetch('firstName'),
-                hash.fetch('lastName'),
-                hash.fetch('gender'),
-                hash.fetch('dateOfBirth'),
-                hash.fetch('dateOfDeath'),
-                hash.fetch('district'),
-                hash.fetch('party'),
-                hash.fetch('committees'),
-                hash.fetch('period')
+        v = new hash['externalId'],
+                hash['firstName'],
+                hash['lastName'],
+                hash['gender'],
+                hash['dateOfBirth'],
+                hash['dateOfDeath'],
+                hash['district'],
+                hash['party'],
+                hash['committees'],
+                hash['period']
 
         v.vote_result = hash['voteResult']
 
@@ -106,20 +106,20 @@ module Hdo
 
       def to_hash
         h = {
-          :kind        => self.class.kind,
-          :externalId  => @external_id,
-          :firstName   => @first_name,
-          :lastName    => @last_name,
-          :gender      => @gender,
-          :dateOfBirth => @date_of_birth,
-          :dateOfDeath => @date_of_death,
-          :district    => @district,
-          :party       => @party,
-          :committees  => @committees,
-          :period      => @period
+          'kind'        => self.class.kind,
+          'externalId'  => @external_id,
+          'firstName'   => @first_name,
+          'lastName'    => @last_name,
+          'gender'      => @gender,
+          'dateOfBirth' => @date_of_birth,
+          'dateOfDeath' => @date_of_death,
+          'district'    => @district,
+          'party'       => @party,
+          'committees'  => @committees,
+          'period'      => @period
         }
 
-        h[:voteResult] = @vote_result if @vote_result
+        h['voteResult'] = @vote_result if @vote_result
 
         h
       end

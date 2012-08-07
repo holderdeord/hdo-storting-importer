@@ -29,6 +29,14 @@ module Hdo
         to_hash
       end
 
+      def valid?
+        self.class.valid? to_hash
+      end
+
+      def validate!
+        self.class.validate! to_hash
+      end
+
       module ClassMethods
         attr_reader :schema
 
@@ -75,6 +83,10 @@ module Hdo
           else
             raise TypeError, "expected Array or Hash, got #{data.inspect}:#{data.class}"
           end
+        end
+
+        def valid?(e)
+          Jschematic.validate(e, schema, :context => HasJsonSchema.schemas, :debug => true)
         end
 
         def validate!(e)

@@ -58,22 +58,19 @@ module Hdo
         end
 
         new(external_id, summary, description, type, status, last_update, reference, document_group, committee, categories)
-      rescue
-        puts lnode
-        raise
       end
 
       def self.from_hash(hash)
-        new hash.fetch('externalId'),
-            hash.fetch('summary'),
-            hash.fetch('description'),
-            hash.fetch('type'),
-            hash.fetch('status'),
-            hash.fetch('lastUpdate'),
-            hash.fetch('reference'),
-            hash.fetch('documentGroup'),
-            hash.fetch('committee'),
-            hash.fetch('categories')
+        new hash['externalId'],
+            hash['summary'],
+            hash['description'],
+            hash['type'],
+            hash['status'],
+            hash['lastUpdate'],
+            hash['reference'],
+            hash['documentGroup'],
+            hash['committee'],
+            hash['categories']
       end
 
       def initialize(external_id, summary, description, type, status, last_update,
@@ -96,17 +93,17 @@ module Hdo
 
       def to_hash
         {
-          :kind           => self.class.kind,
-          :externalId     => @external_id,
-          :summary        => @summary,
-          :description    => @description,
-          :type           => @type,
-          :status         => @status,
-          :lastUpdate     => @last_update,
-          :reference      => @reference,
-          :documentGroup  => @document_group,
-          :committee      => @committee,
-          :categories     => @categories
+          'kind'           => self.class.kind,
+          'externalId'     => @external_id,
+          'summary'        => @summary,
+          'description'    => @description,
+          'type'           => @type,
+          'status'         => @status,
+          'lastUpdate'     => @last_update,
+          'reference'      => @reference,
+          'documentGroup'  => @document_group,
+          'committee'      => @committee,
+          'categories'     => @categories
         }
       end
 
