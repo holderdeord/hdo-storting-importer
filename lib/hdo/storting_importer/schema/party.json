@@ -4,10 +4,10 @@
   "type":"object",
   "properties": {
     "kind": {
-        "type": "string",
-        "description": "This is always 'hdo#party'",
-        "default": "hdo#party",
-        "required": true
+      "type": "string",
+      "description": "This is always 'hdo#party'",
+      "default": "hdo#party",
+      "required": true
     },
     "externalId": {
       "type": "string"
@@ -16,6 +16,26 @@
       "description": "The name of the party",
       "type": "string",
       "required": true
+    },
+    "governingPeriods": {
+      "type": "array",
+      "description": "Periods where this party was in the elected government.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "startDate": {
+            "type": "string",
+            "format": "date",
+            "description": "When the governing period started.",
+            "required": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date",
+            "description": "When the governing period stopped."
+          }
+        }
+      }
     }
   }
 }

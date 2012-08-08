@@ -11,6 +11,7 @@ require 'uri'
 require 'multi_json'
 require 'yajl/json_gem'
 require 'jschematic'
+require 'date'
 
 module Hdo
   module StortingImporter
@@ -124,6 +125,7 @@ require 'hdo/storting_importer/promise'
 require 'hdo/storting_importer/representative'
 require 'hdo/storting_importer/proposition'
 require 'hdo/storting_importer/vote'
+require 'hdo/storting_importer/governing_period'
 
 require 'hdo/storting_importer/converter'
 require 'hdo/storting_importer/cli'

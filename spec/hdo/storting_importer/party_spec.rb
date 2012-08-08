@@ -36,11 +36,14 @@ module Hdo
       end
 
       it 'can serialize as JSON' do
-        Party.new("A", "Arbeiderpartiet").to_json.should be_json <<-JSON
+        Party.example.to_json.should be_json <<-JSON
         {
           "kind": "hdo#party",
           "externalId": "A",
-          "name": "Arbeiderpartiet"
+          "name": "Arbeiderpartiet",
+          "governingPeriods": [
+            { "startDate": "2005-10-17", "endDate": "2013-10-14" }
+          ]
         }
         JSON
       end
