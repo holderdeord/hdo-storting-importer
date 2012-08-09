@@ -3,6 +3,10 @@ module Hdo
     class ApiDataSource < DataSource
       USER_AGENT = "holderdeord-storting-importer"
 
+      def self.default
+        new "http://data.stortinget.no"
+      end
+
       def initialize(url)
         @resource = RestClient::Resource.new(URI.parse(url), )
       end
