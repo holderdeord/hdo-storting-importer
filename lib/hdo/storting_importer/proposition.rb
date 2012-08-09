@@ -23,7 +23,7 @@ module Hdo
           hash['description'],
           hash['onBehalfOf'],
           hash['body'],
-          Representative.from_hash(hash['deliveredBy'] || {})
+          hash['deliveredBy'] && Representative.from_hash(hash['deliveredBy']),
         ]
 
         new(*arr)
