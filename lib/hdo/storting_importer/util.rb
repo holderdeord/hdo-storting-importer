@@ -11,6 +11,7 @@ module Hdo
 
       def remove_invalid_html(str)
         str.gsub("<\\p>", "")
+
       end
 
       ID_CONVERSIONS = {

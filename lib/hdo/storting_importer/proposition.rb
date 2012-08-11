@@ -29,6 +29,24 @@ module Hdo
         new(*arr)
       end
 
+      def self.from_storting_doc(doc)
+        doc.css("voteringsforslag").map do |n|
+          rep_node = n.css("forslag_levert_av_representant").first
+          if rep_node && rep_node['nil'] != 'true'
+            delivered_by = Representative.from_storting_node(rep_node)
+          else
+            delivered_by = nil
+          end
+
+          new n.css("forslag_id").first.text,
+              n.css("forslag_betegnelse").first.text,
+              n.css("forslag_paa_vegne_av_tekst").first.text,
+              Util.remove_invalid_html(n.css("forslag_tekst").first.text),
+              delivered_by
+
+        end
+      end
+
       def initialize(external_id, description, on_behalf_of, body, delivered_by)
         @external_id  = external_id
         @description  = description

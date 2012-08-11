@@ -103,21 +103,7 @@ module Hdo
       end
 
       def add_storting_propositions(node)
-        @propositions += node.css("voteringsforslag").map do |n|
-          rep_node = n.css("forslag_levert_av_representant").first
-          if rep_node && rep_node['nil'] != 'true'
-            delivered_by = Representative.from_storting_node(rep_node)
-          else
-            delivered_by = nil
-          end
-
-          Proposition.new n.css("forslag_id").first.text,
-                          n.css("forslag_betegnelse").first.text,
-                          n.css("forslag_paa_vegne_av_tekst").first.text,
-                          Util.remove_invalid_html(n.css("forslag_tekst").first.text),
-                          delivered_by
-
-        end
+        @propositions += Proposition.from_storting_doc(node)
       end
 
       def add_storting_results(node)
