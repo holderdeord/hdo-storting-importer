@@ -104,6 +104,8 @@ module Hdo
   end
 end
 
+require 'hdo/storting_importer/version'
+
 require 'hdo/storting_importer/core_ext/enumerable'
 require 'hdo/storting_importer/ivar_equality'
 require 'hdo/storting_importer/inspectable'

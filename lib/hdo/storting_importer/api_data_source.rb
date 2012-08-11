@@ -1,10 +1,10 @@
 module Hdo
   module StortingImporter
     class ApiDataSource < DataSource
-      USER_AGENT = "holderdeord-storting-importer"
+      USER_AGENT = "holderdeord-storting-importer v#{Hdo::StortingImporter::VERSION}"
 
-      def self.default(opts = {})
-        new "http://data.stortinget.no", opts
+      def self.default
+        new "http://data.stortinget.no"
       end
 
       def initialize(url_or_resource)

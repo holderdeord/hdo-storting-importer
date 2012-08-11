@@ -7,6 +7,7 @@ module Hdo
 
       it 'caches requests' do
         delegate = mock(DataSource)
+
         ads = CachingDataSource.new(delegate)
 
         delegate.should_receive(:representatives).once.and_return "data"
