@@ -7,8 +7,7 @@ module Hdo
         new "http://data.stortinget.no", opts
       end
 
-      def initialize(url_or_resource, opts = {})
-        @cache = opts[:cache] && {}
+      def initialize(url_or_resource)
         @resource = case url_or_resource
                     when RestClient::Resource
                       url_or_resource
@@ -64,14 +63,6 @@ module Hdo
       private
 
       def fetch(path)
-        if @cache
-          @cache[path] ||= get(path)
-        else
-          get(path)
-        end
-      end
-
-      def get(path)
         sub_resource = @resource[path]
         Hdo::StortingImporter.logger.info "parsing #{sub_resource}"
 

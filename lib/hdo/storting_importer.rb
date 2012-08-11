@@ -110,11 +110,14 @@ require 'hdo/storting_importer/inspectable'
 require 'hdo/storting_importer/has_json_schema'
 require 'hdo/storting_importer/util'
 require 'hdo/storting_importer/fusion_table'
+require 'hdo/storting_importer/in_memory_cache'
 
 require 'hdo/storting_importer/data_source'
 require 'hdo/storting_importer/disk_data_source'
 require 'hdo/storting_importer/api_data_source'
 require 'hdo/storting_importer/parsing_data_source'
+require 'hdo/storting_importer/caching_data_source'
+
 
 require 'hdo/storting_importer/category'
 require 'hdo/storting_importer/committee'
