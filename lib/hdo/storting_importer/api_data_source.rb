@@ -3,12 +3,22 @@ module Hdo
     class ApiDataSource < DataSource
       USER_AGENT = "holderdeord-storting-importer"
 
-      def self.default
-        new "http://data.stortinget.no"
+      def self.default(opts = {})
+        new "http://data.stortinget.no", opts
       end
 
-      def initialize(url)
-        @resource = RestClient::Resource.new(URI.parse(url), )
+      def initialize(url_or_resource, opts = {})
+        @cache = opts[:cache] && {}
+        @resource = case url_or_resource
+                    when RestClient::Resource
+                      url_or_resource
+                    when URI
+                      RestClient::Resource.new(url_or_resource)
+                    when String
+                      RestClient::Resource.new(URI.parse(url_or_resource))
+                    else
+                      raise ArgumentError, "invalid argument #{url_or_resource.inspect}"
+                    end
       end
 
       def representatives(period = DEFAULT_PERIOD)
@@ -54,6 +64,14 @@ module Hdo
       private
 
       def fetch(path)
+        if @cache
+          @cache[path] ||= get(path)
+        else
+          get(path)
+        end
+      end
+
+      def get(path)
         sub_resource = @resource[path]
         Hdo::StortingImporter.logger.info "parsing #{sub_resource}"
 
