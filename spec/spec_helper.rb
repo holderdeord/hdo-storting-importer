@@ -1,8 +1,12 @@
 require 'rspec'
-require 'hdo/storting_importer'
 require 'pry'
 require 'pp'
 
+require 'simplecov'
+SimpleCov.start
+SimpleCov.command_name 'spec'
+
+require 'hdo/storting_importer'
 Dir[File.expand_path("../support/**/*.rb", __FILE__)].each do |f|
   require f
 end
