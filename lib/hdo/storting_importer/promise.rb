@@ -8,8 +8,7 @@ module Hdo
       include HasJsonSchema
       include IvarEquality
 
-      attr_reader :party, :body, :general, :categories, :source, :page
-      attr_accessor :external_id
+      attr_reader :external_id, :party, :body, :general, :categories, :source, :page, :date
       alias_method :general?, :general
       alias_method :short_inspect, :inspect
 
@@ -23,7 +22,8 @@ module Hdo
           true,
           ["GRUNNSKOLE"],
           "PP",
-          8
+          8,
+          '2009-06-01'
         )
       end
 
@@ -43,8 +43,27 @@ module Hdo
         result = []
 
         (0..row_count).step(limit) do |offset|
-          sql = "SELECT #{column_names},\"rowid\" FROM #{table_id} OFFSET #{offset} LIMIT #{limit}"
-          result.concat table.query(sql, :rows => true).map { |data| new(*data) }
+          sql = %{SELECT #{column_names},"rowid" FROM #{table_id} OFFSET #{offset} LIMIT #{limit}}
+
+          table.query(sql, :rows => true).map do |data|
+            Hdo::StortingImporter.logger.info "promise row: #{data.inspect}"
+
+            party = data.fetch(0)
+            body = data.fetch(1)
+            general = data.fetch(2).downcase
+
+            unless ['ja', 'nei'].include?(general.downcase)
+              raise "unexpected value for general: #{general.inspect}"
+            end
+
+            categories  = data.fetch(3)
+            source      = data.fetch(4)
+            page        = data.fetch(5)
+            date        = data.fetch(6)
+            external_id = data.fetch(7)
+
+            result << new(external_id, party, body, general == 'ja', categories, source, page, date)
+          end
         end
 
         result
@@ -57,12 +76,13 @@ module Hdo
                  hash['general'],
                  hash['categories'],
                  hash['source'],
-                 hash['page']
+                 hash['page'],
+                 hash['date']
 
         pr
       end
 
-      def initialize(external_id, party, body, general, categories, source, page)
+      def initialize(external_id, party, body, general, categories, source, page, date)
         @external_id = external_id
         @party       = strip_if_string(party)
         @body        = strip_if_string(body)
@@ -70,10 +90,11 @@ module Hdo
         @categories  = clean_categories(categories)
         @source      = strip_if_string(source)
         @page        = page
+        @date        = date
       end
 
       def to_hash
-        h = {
+        {
           'kind'       => self.class.kind,
           'externalId' => @external_id,
           'party'      => @party,
@@ -81,10 +102,9 @@ module Hdo
           'categories' => @categories,
           'source'     => @source,
           'page'       => @page,
-          'body'       => @body
+          'body'       => @body,
+          'date'       => @date
         }
-
-        h
       end
 
       private

@@ -7,7 +7,7 @@ module Hdo
 
     class FusionTable
       def initialize(api_key)
-        @api_key  = api_key
+        @api_key = api_key
       end
 
       def query(sql, opts = {})
