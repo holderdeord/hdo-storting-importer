@@ -16,43 +16,19 @@ module Hdo
       schema_path StortingImporter.lib.join("hdo/storting_importer/schema/promise.json").to_s
 
       def self.example
-        pr = new("H", "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.", true, ["GRUNNSKOLE"], "PP", 8)
-        pr.external_id = "1"
-
-        pr
+        new(
+          "1",
+          "H",
+          "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.",
+          true,
+          ["GRUNNSKOLE"],
+          "PP",
+          8
+        )
       end
 
       def self.json_example
         Util.json_pretty example
-      end
-
-      def self.from_csv(str)
-        # cleanup
-        str.gsub!(/\bFrp\b/, "FrP")
-        str.gsub!(/\bKrf\b/, "KrF")
-        str.gsub!(/\bSP\b/, "Sp")
-
-        rows = CSV.parse(
-          str,
-          headers: [:party, :body, :general, :categories, :source, :page],
-          col_sep: ";",
-          skip_blanks: true,
-          return_headers: false,
-        )
-
-        rows.map do |e|
-          pr = e.to_hash
-          next if pr[:party].to_s.strip == "Parti" # header row
-
-          new(
-            pr[:party].to_s.strip,
-            pr[:body].to_s.strip,
-            pr[:general].to_s.downcase == 'ja',
-            pr[:categories].to_s.split(","),
-            pr[:source].to_s.strip,
-            pr[:page].to_s.strip
-            )
-        end.compact
       end
 
       # doesn't really belong here - data source?
@@ -75,32 +51,31 @@ module Hdo
       end
 
       def self.from_hash(hash)
-        pr = new hash['party'],
+        pr = new hash['externalId'],
+                 hash['party'],
                  hash['body'],
                  hash['general'],
                  hash['categories'],
                  hash['source'],
                  hash['page']
 
-        pr.external_id = hash['externalId']
-
         pr
       end
 
-      def initialize(party, body, general, categories, source, page)
+      def initialize(external_id, party, body, general, categories, source, page)
+        @external_id = external_id
         @party       = strip_if_string(party)
         @body        = strip_if_string(body)
         @general     = general
         @categories  = clean_categories(categories)
         @source      = strip_if_string(source)
         @page        = page
-
-        @external_id = nil
       end
 
       def to_hash
         h = {
           'kind'       => self.class.kind,
+          'externalId' => @external_id,
           'party'      => @party,
           'general'    => @general,
           'categories' => @categories,
@@ -108,8 +83,6 @@ module Hdo
           'page'       => @page,
           'body'       => @body
         }
-
-        h["externalId"] = @external_id if @external_id
 
         h
       end
