@@ -45,8 +45,9 @@
       "required": true
     },
     "date": {
-      "type": "date",
+      "type": "string",
       "description": "The date the promise was made.",
+      "format": "date",
       "required": true
     }
   }
