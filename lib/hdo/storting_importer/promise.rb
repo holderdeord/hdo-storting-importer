@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-require 'csv'
+require 'roo'
 
 module Hdo
   module StortingImporter
@@ -8,8 +8,7 @@ module Hdo
       include HasJsonSchema
       include IvarEquality
 
-      attr_reader :party, :body, :general, :categories, :source, :page
-      attr_accessor :external_id
+      attr_reader :external_id, :party, :body, :general, :categories, :source, :page, :date
       alias_method :general?, :general
       alias_method :short_inspect, :inspect
 
@@ -23,7 +22,8 @@ module Hdo
           true,
           ["GRUNNSKOLE"],
           "PP",
-          8
+          8,
+          '2009-06-01'
         )
       end
 
@@ -31,23 +31,70 @@ module Hdo
         Util.json_pretty example
       end
 
-      # doesn't really belong here - data source?
-      def self.from_fusion_table(table_id, api_key)
-        table = FusionTable.new(api_key)
+      def self.from_xlsx(path)
+        table  = Excelx.new(path)
+        raise "empty spreadsheet" unless table.first_row
 
-        column_names = table.columns_for(table_id).map { |e| e['name'] }.map { |e| e.inspect }.join(",")
-        row_count = Integer(table.query("select count(rowid) from #{table_id}", :rows => true).flatten.first)
+        errors = []
 
-        # do this in batches of 100
-        limit = 100
-        result = []
+        # 0 is empty, 1 is header
+        promises = 2.upto(table.last_row).map { |idx|
+          data = table.row(idx)
 
-        (0..row_count).step(limit) do |offset|
-          sql = "SELECT #{column_names},\"rowid\" FROM #{table_id} OFFSET #{offset} LIMIT #{limit}"
-          result.concat table.query(sql, :rows => true).map { |data| new(*data) }
+          Hdo::StortingImporter.logger.info "promise row: #{data.inspect}"
+
+          external_id = data.fetch(0).to_i.to_s
+          date        = data.fetch(1)
+          party       = data.fetch(2)
+          body        = data.fetch(3)
+          general     = data.fetch(4).to_s.strip.downcase
+          categories  = data.fetch(5)
+          source      = data.fetch(6)
+          page        = data.fetch(7)
+
+          unless %w[ja nei].include?(general)
+            errors << "row #{external_id}: unexpected value #{general.inspect} for general"
+            next
+          end
+
+          if page.to_s !~ /^\d+(\.\d+)?$/ || page.to_i == 0
+            errors << "row #{external_id}: unexpected value #{page.inspect} for page"
+            next
+          end
+
+          unless party
+            errors << "row #{external_id}: party missing"
+            next
+          end
+
+          unless body =~ /\.$/
+            body << "."
+          end
+
+          promise = new external_id,
+                        party,
+                        body,
+                        general.downcase == "ja",
+                        categories,
+                        source,
+                        Integer(page),
+                        date
+
+          begin
+            promise.validate!
+          rescue Hdo::StortingImporter::ValidationError => ex
+            errors << "row #{external_id}: #{ex.message}"
+            next
+          end
+
+          promise
+        }.compact
+
+        if errors.any?
+          raise "found errors:\n#{errors.join("\n")}"
         end
 
-        result
+        promises
       end
 
       def self.from_hash(hash)
@@ -57,12 +104,13 @@ module Hdo
                  hash['general'],
                  hash['categories'],
                  hash['source'],
-                 hash['page']
+                 hash['page'],
+                 hash['date']
 
         pr
       end
 
-      def initialize(external_id, party, body, general, categories, source, page)
+      def initialize(external_id, party, body, general, categories, source, page, date)
         @external_id = external_id
         @party       = strip_if_string(party)
         @body        = strip_if_string(body)
@@ -70,10 +118,11 @@ module Hdo
         @categories  = clean_categories(categories)
         @source      = strip_if_string(source)
         @page        = page
+        @date        = date
       end
 
       def to_hash
-        h = {
+        {
           'kind'       => self.class.kind,
           'externalId' => @external_id,
           'party'      => @party,
@@ -81,10 +130,9 @@ module Hdo
           'categories' => @categories,
           'source'     => @source,
           'page'       => @page,
-          'body'       => @body
+          'body'       => @body,
+          'date'       => @date
         }
-
-        h
       end
 
       private

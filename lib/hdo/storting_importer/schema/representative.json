@@ -55,7 +55,7 @@
     "voteResult": {
       "type": "string",
       "description": "If this representative object is part of a hdo#vote, this property describes how the representative voted. Valid values are for|against|absent.",
-      "format": "for|against|absent"
+      "pattern": "for|against|absent"
     }
   }
 }

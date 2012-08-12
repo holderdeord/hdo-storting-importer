@@ -32,12 +32,22 @@
     },
     "source": {
       "type": "string",
-      "description": "The source of the promise. (TODO: this should always be a URL)",
+      "description": "The source of the promise.",
       "required": true
+    },
+    "page": {
+      "type": "number",
+      "description": "What page in the source the promise was found on"
     },
     "body": {
       "type": "string",
       "description": "The body text of the promise.",
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "description": "The date the promise was made.",
+      "format": "date",
       "required": true
     }
   }
