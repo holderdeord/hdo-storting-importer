@@ -67,18 +67,18 @@ module Hdo
             next
           end
 
-          unless body =~ /\.$/
-            body << "."
+          unless body.strip =~ /\.$/
+            body = "#{body.strip}."
           end
 
           promise = new external_id,
-                        party,
-                        body,
+                        party.strip,
+                        body.strip,
                         general.downcase == "ja",
                         categories,
-                        source,
+                        source.strip,
                         Integer(page),
-                        date
+                        date.strip
 
           begin
             promise.validate!
