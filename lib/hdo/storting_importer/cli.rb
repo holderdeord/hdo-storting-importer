@@ -77,17 +77,9 @@ module Hdo
       end
 
       def read_promises
-        csvs = @files.any? ? @files : Dir[StortingImporter.root.join('data/promises-*.csv').to_s].sort_by { |e| File.basename(e) }
-        content = ''
-        csvs.each do |csv|
-          if csv =~ /^http/
-            content << open(csv).read
-          else
-            content << File.read(File.expand_path(csv))
-          end
-        end
+        file = @files.first or raise "no spreadsheet given"
 
-        Util.json_pretty Promise.from_csv(content)
+        Util.json_pretty Promise.from_xlsx(file)
       end
 
     end

@@ -44,7 +44,7 @@ module Hdo
         fetch "eksport/emner"
       end
 
-      def issues(session_id = DEFAULT_SESSION)
+      def parliament_issues(session_id = DEFAULT_SESSION)
         fetch "eksport/saker?sesjonid=#{session_id}"
       end
 
