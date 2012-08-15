@@ -29,8 +29,8 @@ module Hdo
         Category.from_storting_doc @data_source.categories
       end
 
-      def issues(session_id = DEFAULT_SESSION)
-        Issue.from_storting_doc @data_source.issues(session_id)
+      def parliament_issues(session_id = DEFAULT_SESSION)
+        ParliamentIssue.from_storting_doc @data_source.parliament_issues(session_id)
       end
 
       def votes_for(issue_id)

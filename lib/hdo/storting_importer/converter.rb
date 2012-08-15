@@ -9,7 +9,7 @@ module Hdo
 
       def json_for(name, opts = nil)
         obj = data_for(name)
-        
+
         Yajl::Encoder.encode(obj, opts && opts[:pretty])
       end
 
@@ -19,7 +19,7 @@ module Hdo
         case name
         when :votes
           # not ideal
-          issue_ids = fetch(:issues).map { |e| e.external_id }
+          issue_ids = fetch(:parliament_issues).map { |e| e.external_id }
           issue_ids.map { |id| @data_source.votes_for(id) }.flatten.uniq_by { |e| e.external_id }
         when :districts
           fetch(name).sort_by { |e| e.name }

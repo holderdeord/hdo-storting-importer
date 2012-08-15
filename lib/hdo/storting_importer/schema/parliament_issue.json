@@ -1,12 +1,12 @@
 {
-  "id": "hdo#issue",
+  "id": "hdo#parliamentIssue",
   "description": "a parliament issue",
   "type":"object",
   "properties": {
     "kind": {
       "type": "string",
-      "description": "This is always 'hdo#issue'",
-      "default": "hdo#issue",
+      "description": "This is always 'hdo#parliamentIssue'",
+      "default": "hdo#parliamentIssue",
       "required": true
     },
     "externalId": {

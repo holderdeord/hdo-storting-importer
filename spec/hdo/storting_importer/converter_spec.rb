@@ -25,7 +25,7 @@ module Hdo
           :committees,
           :districts,
           :categories,
-          :issues,
+          :parliament_issues,
         ].each { |name|
           it "converts #{name}" do
             data_source.should_receive(name).and_return(input_for(name))
@@ -46,7 +46,7 @@ module Hdo
         end
 
         it "converts votes" do
-          parsing_data_source.should_receive(:issues).and_return [mock(:external_id => 2175)]
+          parsing_data_source.should_receive(:parliament_issues).and_return [mock(:external_id => 2175)]
 
           data_source.should_receive(:votes_for).and_return(input_for(:votes))
 

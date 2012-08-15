@@ -2,7 +2,7 @@
 
 module Hdo
   module StortingImporter
-    class Issue
+    class ParliamentIssue
       include HasJsonSchema
       include IvarEquality
       include Inspectable
@@ -10,7 +10,7 @@ module Hdo
       attr_reader :external_id, :summary, :description, :type, :status, :last_update,
                   :reference, :document_group, :committee, :categories
 
-      schema_path StortingImporter.lib.join("hdo/storting_importer/schema/issue.json").to_s
+      schema_path StortingImporter.lib.join("hdo/storting_importer/schema/parliament_issue.json").to_s
 
       def self.example
         new(

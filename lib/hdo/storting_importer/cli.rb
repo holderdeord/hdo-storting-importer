@@ -23,13 +23,13 @@ module Hdo
       private
 
       TYPE_TO_CLASS = {
-        :categories      => Category,
-        :issues          => Issue,
-        :districts       => District,
-        :committees      => Committee,
-        :parties         => Party,
-        :representatives => Representative,
-        :votes           => Vote
+        :categories        => Category,
+        :parliament_issues => ParliamentIssue,
+        :districts         => District,
+        :committees        => Committee,
+        :parties           => Party,
+        :representatives   => Representative,
+        :votes             => Vote
       }
 
       def class_for_type(type)

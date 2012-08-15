@@ -3,7 +3,7 @@ require 'spec_helper'
 
 module Hdo
   module StortingImporter
-    describe Issue do
+    describe ParliamentIssue do
 
       it_behaves_like 'type with JSON schema'
       it_behaves_like 'type with #short_inspect'
@@ -57,7 +57,7 @@ module Hdo
         </saker_oversikt>
         XML
 
-        issues = Issue.from_storting_doc(parse(xml))
+        issues = ParliamentIssue.from_storting_doc(parse(xml))
         issues.size.should == 1
 
         issue = issues.first
@@ -73,9 +73,9 @@ module Hdo
       end
 
       it 'can serialize as JSON' do
-        Issue.example.to_json.should be_json <<-JSON
+        ParliamentIssue.example.to_json.should be_json <<-JSON
         {
-          "kind": "hdo#issue",
+          "kind": "hdo#parliamentIssue",
           "externalId" : "53520",
           "summary": "Inngåelse av avtale om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
           "description": "Samtykke til inngåelse av avtale av 25. november 2011 om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
