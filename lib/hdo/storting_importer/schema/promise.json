@@ -14,10 +14,13 @@
       "description": "A unique identifier for this promise.",
       "required": true
     },
-    "party": {
-      "type": "string",
-      "description": "The external id of the party.",
-      "required": true
+    "parties": {
+      "type": "array",
+      "description": "List of parties (i.e. 'A', 'SV', 'Sp'). Usually a single party.",
+      "required": true,
+      "items": {
+        "type": "string"
+      }
     },
     "general": {
       "type": "boolean",

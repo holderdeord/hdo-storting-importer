@@ -13,7 +13,7 @@ module Hdo
         {
           "kind": "hdo#promise",
           "externalId": "1",
-          "party": "H",
+          "parties": ["H"],
           "general": true,
           "categories": ["GRUNNSKOLE"],
           "source": "PP",

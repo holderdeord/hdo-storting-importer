@@ -8,7 +8,7 @@ module Hdo
       include HasJsonSchema
       include IvarEquality
 
-      attr_reader :external_id, :party, :body, :general, :categories, :source, :page, :date
+      attr_reader :external_id, :parties, :body, :general, :categories, :source, :page, :date
       alias_method :general?, :general
       alias_method :short_inspect, :inspect
 
@@ -17,7 +17,7 @@ module Hdo
       def self.example
         new(
           "1",
-          "H",
+          ["H"],
           "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.",
           true,
           ["GRUNNSKOLE"],
@@ -45,7 +45,7 @@ module Hdo
 
           external_id = data.fetch(0).to_i.to_s
           date        = data.fetch(1)
-          party       = data.fetch(2)
+          parties     = data.fetch(2)
           body        = data.fetch(3)
           general     = data.fetch(4).to_s.strip.downcase
           categories  = data.fetch(5)
@@ -62,8 +62,8 @@ module Hdo
             next
           end
 
-          unless party
-            errors << "row #{external_id}: party missing"
+          unless parties
+            errors << "row #{external_id}: parties missing"
             next
           end
 
@@ -72,7 +72,7 @@ module Hdo
           end
 
           promise = new external_id,
-                        party.strip,
+                        parties.strip,
                         body.strip,
                         general.downcase == "ja",
                         categories,
@@ -91,7 +91,8 @@ module Hdo
         }.compact
 
         if errors.any?
-          raise "found errors:\n#{errors.join("\n")}"
+          puts errors
+          # raise "found errors:\n#{errors.join("\n")}"
         end
 
         promises
@@ -99,7 +100,7 @@ module Hdo
 
       def self.from_hash(hash)
         pr = new hash['externalId'],
-                 hash['party'],
+                 hash['parties'],
                  hash['body'],
                  hash['general'],
                  hash['categories'],
@@ -110,12 +111,12 @@ module Hdo
         pr
       end
 
-      def initialize(external_id, party, body, general, categories, source, page, date)
+      def initialize(external_id, parties, body, general, categories, source, page, date)
         @external_id = external_id
-        @party       = strip_if_string(party)
+        @parties     = clean_array(parties)
         @body        = strip_if_string(body)
         @general     = general
-        @categories  = clean_categories(categories)
+        @categories  = clean_array(categories).map { |e| UnicodeUtils.upcase(e) }
         @source      = strip_if_string(source)
         @page        = page
         @date        = date
@@ -125,7 +126,7 @@ module Hdo
         {
           'kind'       => self.class.kind,
           'externalId' => @external_id,
-          'party'      => @party,
+          'parties'    => @parties,
           'general'    => @general,
           'categories' => @categories,
           'source'     => @source,
@@ -137,12 +138,9 @@ module Hdo
 
       private
 
-      def clean_categories(categories)
+      def clean_array(categories)
         categories = categories.split(",") if categories.kind_of?(String)
-
-        Array(categories).map(&:strip).
-                          reject(&:empty?).
-                          map { |e| UnicodeUtils.upcase(e) }
+        Array(categories).map(&:strip).reject(&:empty?)
       end
 
       def strip_if_string(str)
