@@ -71,11 +71,15 @@ module Hdo
             body = "#{body.strip}."
           end
 
+          clean_invalid_unicode = lambda do |str|
+            str.gsub("\u00c5\u030a", 'Å').gsub("\u00e5\u030a", 'å')
+          end
+
           promise = new external_id,
                         parties.strip,
-                        body.strip,
+                        clean_invalid_unicode.call(body.strip),
                         general.downcase == "ja",
-                        categories,
+                        clean_invalid_unicode.call(categories),
                         source.strip,
                         Integer(page),
                         date.strip
