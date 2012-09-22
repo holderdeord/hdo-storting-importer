@@ -22,9 +22,9 @@
       "description": "Count of for, against or absent representatives.",
       "required": true,
       "properties": {
-        "for": { "type": "number" },
-        "against": { "type": "number" },
-        "absent": { "type": "number" }
+        "for": { "type": "integer" },
+        "against": { "type": "integer" },
+        "absent": { "type": "integer" }
       }
     },
     "personal": {

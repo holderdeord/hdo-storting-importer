@@ -39,7 +39,7 @@
       "required": true
     },
     "page": {
-      "type": "number",
+      "type": "integer",
       "description": "What page in the source the promise was found on"
     },
     "body": {
