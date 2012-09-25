@@ -111,7 +111,6 @@ require 'hdo/storting_importer/ivar_equality'
 require 'hdo/storting_importer/inspectable'
 require 'hdo/storting_importer/has_json_schema'
 require 'hdo/storting_importer/util'
-require 'hdo/storting_importer/fusion_table'
 require 'hdo/storting_importer/in_memory_cache'
 
 require 'hdo/storting_importer/data_source'
