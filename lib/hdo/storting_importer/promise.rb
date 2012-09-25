@@ -14,8 +14,8 @@ module Hdo
 
       schema_path StortingImporter.lib.join("hdo/storting_importer/schema/promise.json").to_s
 
-      def self.example
-        new(
+      def self.example(overrides = nil)
+        obj = new(
           "1",
           ["H"],
           "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.",
@@ -25,6 +25,12 @@ module Hdo
           8,
           '2009-06-01'
         )
+
+        if overrides
+          obj = from_hash(obj.to_hash.merge(overrides))
+        end
+
+        obj
       end
 
       def self.json_example

@@ -14,8 +14,8 @@ module Hdo
 
       schema_path StortingImporter.lib.join("hdo/storting_importer/schema/representative.json").to_s
 
-      def self.example
-        new(
+      def self.example(overrides = nil)
+        obj = new(
           'ADA',
           'André Oktay',
           'Dahl',
@@ -27,6 +27,12 @@ module Hdo
           ['Justiskomiteen'],
           '2011-2012'
         )
+
+        if overrides
+          obj = from_hash(obj.to_hash.merge(overrides))
+        end
+
+        obj
       end
 
       def self.json_example

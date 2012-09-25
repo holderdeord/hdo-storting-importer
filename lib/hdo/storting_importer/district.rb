@@ -9,8 +9,14 @@ module Hdo
 
       schema_path StortingImporter.lib.join("hdo/storting_importer/schema/district.json").to_s
 
-      def self.example
-        new("Db", "Duckburg")
+      def self.example(overrides = nil)
+        obj = new("Db", "Duckburg")
+
+        if overrides
+          obj = from_hash(obj.to_hash.merge(overrides))
+        end
+
+        obj
       end
 
       def self.from_storting_doc(doc)

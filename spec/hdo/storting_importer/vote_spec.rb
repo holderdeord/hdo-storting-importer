@@ -134,6 +134,11 @@ module Hdo
         JSON
       end
 
+      it 'can create a customized example' do
+        obj = Vote.example('subject' => 'foo')
+        obj.subject.should == 'foo'
+      end
+
     end
   end
 end

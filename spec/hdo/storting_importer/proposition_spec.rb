@@ -82,6 +82,11 @@ module Hdo
         prop.body.should_not be_empty
       end
 
+      it 'can create a customized example' do
+        obj = Proposition.example('body' => 'foo')
+        obj.body.should == 'foo'
+      end
+
     end
   end
 end

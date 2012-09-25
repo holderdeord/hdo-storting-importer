@@ -59,6 +59,10 @@ module Hdo
         }')
       end
 
+      it 'can create a customized example' do
+        obj = Category.example('name' => 'foo')
+        obj.name.should == 'foo'
+      end
 
     end
   end

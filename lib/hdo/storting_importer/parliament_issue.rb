@@ -12,8 +12,8 @@ module Hdo
 
       schema_path StortingImporter.lib.join("hdo/storting_importer/schema/parliament_issue.json").to_s
 
-      def self.example
-        new(
+      def self.example(overrides = nil)
+        obj = new(
           "53520",
           "Inngåelse av avtale om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
           "Samtykke til inngåelse av avtale av 25. november 2011 om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
@@ -25,6 +25,12 @@ module Hdo
           "Transport- og kommunikasjonskomiteen",
           ['UTENRIKSSAKER', 'TRAKTATER', 'NORDISK SAMARBEID']
         )
+
+        if overrides
+          obj = from_hash(obj.to_hash.merge(overrides))
+        end
+
+        obj
       end
 
       def self.json_example

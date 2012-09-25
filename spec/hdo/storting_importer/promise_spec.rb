@@ -39,6 +39,12 @@ module Hdo
         promise.categories.should == ["FOO"]
       end
 
+      it 'can create a customized example' do
+        obj = Promise.example('body' => 'foo')
+        obj.body.should == 'foo'
+      end
+
+
     end
   end
 end

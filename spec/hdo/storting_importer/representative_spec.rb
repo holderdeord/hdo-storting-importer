@@ -101,6 +101,11 @@ module Hdo
         rep.external_id.should == "ÆØÅ"
       end
 
+      it 'can create a customized example' do
+        obj = Representative.example('firstName' => 'foo')
+        obj.first_name.should == 'foo'
+      end
+
     end
   end
 end

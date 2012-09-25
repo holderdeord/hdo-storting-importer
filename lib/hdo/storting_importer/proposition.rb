@@ -9,8 +9,14 @@ module Hdo
 
       schema_path StortingImporter.lib.join("hdo/storting_importer/schema/proposition.json").to_s
 
-      def self.example
-        new('1234', 'description', 'on behalf of', 'body', Representative.example)
+      def self.example(overrides = nil)
+        obj = new('1234', 'description', 'on behalf of', 'body', Representative.example)
+
+        if overrides
+          obj = from_hash(obj.to_hash.merge(overrides))
+        end
+
+        obj
       end
 
       def self.json_example

@@ -40,6 +40,12 @@ module Hdo
         JSON
       end
 
+      it 'can create a customized example' do
+        obj = Committee.example('name' => 'foo')
+        obj.name.should == 'foo'
+      end
+
+
     end
   end
 end

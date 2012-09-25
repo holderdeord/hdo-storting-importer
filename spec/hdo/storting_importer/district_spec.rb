@@ -49,6 +49,12 @@ module Hdo
         District.new("Ak", "Akershus").to_json.should be_json(expected)
       end
 
+      it 'can create a customized example' do
+        obj = District.example('name' => 'foo')
+        obj.name.should == 'foo'
+      end
+
+
     end
   end
 end

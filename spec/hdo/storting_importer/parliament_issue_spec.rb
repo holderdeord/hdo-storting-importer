@@ -90,6 +90,12 @@ module Hdo
         JSON
       end
 
+      it 'can create a customized example' do
+        obj = ParliamentIssue.example('status' => 'behandlet')
+        obj.status.should == 'behandlet'
+      end
+
+
     end
   end
 end

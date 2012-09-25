@@ -10,9 +10,13 @@ module Hdo
 
       schema_path StortingImporter.lib.join("hdo/storting_importer/schema/category.json").to_s
 
-      def self.example
+      def self.example(overrides = nil)
         cat = new("5", "Employment")
         cat.children << new("6", "Wages")
+
+        if overrides
+          cat = from_hash(cat.to_hash.merge(overrides))
+        end
 
         cat
       end

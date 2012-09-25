@@ -16,7 +16,7 @@ module Hdo
 
       schema_path StortingImporter.lib.join("hdo/storting_importer/schema/vote.json").to_s
 
-      def self.example
+      def self.example(overrides = nil)
         vote = new('2175', '51448', true, false, 'Forslag 24 - 26 på vegne av Per Olaf Lundteigen', 'ikke_spesifisert', 'ikke_spesifisert', '2012-04-12T16:37:27.053', 2, 96, 71)
 
         rep = Representative.example
@@ -26,6 +26,10 @@ module Hdo
         prop = Proposition.example
 
         vote.propositions << prop
+
+        if overrides
+          vote = from_hash(vote.to_hash.merge(overrides))
+        end
 
         vote
       end

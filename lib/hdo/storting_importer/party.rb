@@ -10,9 +10,13 @@ module Hdo
 
       schema_path StortingImporter.lib.join("hdo/storting_importer/schema/party.json").to_s
 
-      def self.example
+      def self.example(overrides = nil)
         obj = new("A", "Arbeiderpartiet")
         obj.governing_periods = [GoverningPeriod.new('2005-10-17', '2013-10-14')]
+
+        if overrides
+          obj = from_hash(obj.to_hash.merge(overrides))
+        end
 
         obj
       end

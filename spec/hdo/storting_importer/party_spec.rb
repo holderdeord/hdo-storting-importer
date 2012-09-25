@@ -53,6 +53,11 @@ module Hdo
         party.external_id.should == "ÆØÅ"
       end
 
+      it 'can create a customized example' do
+        party = Party.example('name' => 'foo')
+        party.name.should == 'foo'
+      end
+
     end
   end
 end
