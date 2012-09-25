@@ -71,8 +71,6 @@ module Hdo
       end
 
       it 'is invalid if the voteResult property is invalid' do
-        pending "find a validator that checks format"
-
         invalid = <<-JSON
         {
           "kind": "hdo#representative",
@@ -91,7 +89,9 @@ module Hdo
 
         JSON
 
-        Representative.from_json(invalid).should_not be_valid
+        expect {
+          Representative.from_json(invalid)
+        }.to raise_error(ValidationError)
       end
 
       it 'unescapes non-ASCII characters in the external id' do
