@@ -34,6 +34,7 @@ module Hdo
               </parti>
             </representant>
           </representanter_liste>
+          <stortingsperiode_id>2009-2013</stortingsperiode_id>
         </representanter_oversikt>
         XML
 
@@ -45,7 +46,7 @@ module Hdo
         rep.last_name.should == 'Dahl'
         rep.gender.should == 'M'
         rep.district.should == 'Akershus'
-        rep.party.should == 'Høyre'
+        rep.parties.should == [PartyMembership.from_hash('externalId' => 'H', 'startDate' => '2009-10-01', 'endDate' => '2013-08-01')]
         rep.external_id.should == 'ADA'
         rep.date_of_birth.should == '1975-07-07T00:00:00'
         rep.date_of_death.should == '0001-01-01T00:00:00'
@@ -63,9 +64,8 @@ module Hdo
             "dateOfBirth": "1975-07-07T00:00:00",
             "dateOfDeath": "0001-01-01T00:00:00",
             "district": "Akershus",
-            "party": "Høyre",
-            "committees": ["Justiskomiteen"],
-            "period": "2011-2012"
+            "parties": [{"kind": "hdo#partyMembership", "externalId": "H", "startDate": "2011-10-01", "endDate": null}],
+            "committees": ["Justiskomiteen"]
           }
         JSON
       end

@@ -29,6 +29,40 @@ module Hdo
         q
       end
 
+      def period_to_date_range(str)
+        start_year, end_year = str.split("-").map do |y|
+          case y.size
+          when 4
+            Integer(y)
+          when 2
+            Integer("19#{y}")
+          else
+            "couldn't parse year #{str.inspect}"
+          end
+        end
+
+        if start_year > end_year
+          raise "invalid period: #{str.inspect}"
+        end
+
+        # approximate dates
+        Time.new(start_year, 10, 1)..Time.new(end_year, 8, 1)
+      end
+
+      def current_session
+        session_for_date Time.now
+      end
+
+      def session_for_date(date)
+        new_session_start = Time.new(date.year, 10, 1)
+
+        if date >= new_session_start
+          new_session_start..(Time.new(date.year + 1, 8, 1))
+        else
+          Time.new(date.year - 1, 10, 1)..Time.new(date.year, 8, 1)
+        end
+      end
+
       def json_pretty(obj)
         case obj
         when Array

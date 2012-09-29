@@ -8,7 +8,7 @@ module Hdo
       include Inspectable
 
       attr_reader :external_id, :first_name, :last_name, :date_of_birth, :date_of_death,
-                  :district, :party, :committees, :period, :gender
+                  :district, :parties, :committees, :period, :gender
 
       attr_accessor :vote_result
 
@@ -23,9 +23,8 @@ module Hdo
           '1975-07-07T00:00:00',
           '0001-01-01T00:00:00',
           'Akershus',
-          'Høyre',
+          [PartyMembership.from_hash("externalId" => 'H', 'startDate' => '2011-10-01', 'endDate' => nil)],
           ['Justiskomiteen'],
-          '2011-2012'
         )
 
         if overrides
@@ -43,18 +42,27 @@ module Hdo
         nodes = doc.css("dagensrepresentant")
         nodes += doc.css("representant")
 
-        nodes.map { |e| from_storting_node(e) }
+        period_node = doc.css("stortingsperiode_id").first
+        period = Util.period_to_date_range(period_node.text) if period_node
+
+        nodes.map { |e| from_storting_node(e, period) }
       end
 
-      def self.from_storting_node(node)
+      def self.from_storting_node(node, period = nil)
         district_node = node.css("fylke navn").first
         district      = district_node ? district_node.text : ''
 
-        party_node = node.css("parti navn").first
-        party      = party_node ? party_node.text : ''
+        party_node = node.css("parti id").first
+        if party_node
+          start_date = period ? period.begin : Util.current_session.begin
+          end_date = period ? period.end : nil
+
+          parties = [ PartyMembership.new(party_node.text, start_date, end_date) ]
+        else
+          parties = []
+        end
 
         committees = node.css("komite").map { |c| c.css("navn").text.strip }
-        period     = '2011-2012' # FIXME
 
         new(
           node.css("id").first.text,
@@ -64,9 +72,8 @@ module Hdo
           node.css("foedselsdato").first.text,
           node.css("doedsdato").first.text,
           district,
-          party,
-          committees,
-          period
+          parties,
+          committees
         )
       end
 
@@ -78,16 +85,15 @@ module Hdo
                 hash['dateOfBirth'],
                 hash['dateOfDeath'],
                 hash['district'],
-                hash['party'],
-                hash['committees'],
-                hash['period']
+                Array(hash['parties']).map { |e| PartyMembership.from_hash(e) },
+                hash['committees']
 
         v.vote_result = hash['voteResult']
 
         v
       end
 
-      def initialize(external_id, first_name, last_name, gender, date_of_birth, date_of_death, district, party, committees, period)
+      def initialize(external_id, first_name, last_name, gender, date_of_birth, date_of_death, district, parties, committees)
         @external_id   = external_id
         @first_name    = first_name
         @last_name     = last_name
@@ -95,15 +101,14 @@ module Hdo
         @date_of_birth = date_of_birth
         @date_of_death = date_of_death
         @district      = district
-        @party         = party
+        @parties       = parties
         @committees    = committees
-        @period        = period
 
         @vote_result   = nil
       end
 
       def short_inspect
-        short_inspect_string :include => [:external_id, :first_name, :last_name, :party, :vote_result]
+        short_inspect_string :include => [:external_id, :first_name, :last_name, :parties, :vote_result]
       end
 
       def external_id
@@ -120,9 +125,8 @@ module Hdo
           'dateOfBirth' => @date_of_birth,
           'dateOfDeath' => @date_of_death,
           'district'    => @district,
-          'party'       => @party,
-          'committees'  => @committees,
-          'period'      => @period
+          'parties'     => @parties.map { |e| e.to_hash },
+          'committees'  => @committees
         }
 
         h['voteResult'] = @vote_result if @vote_result

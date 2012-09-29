@@ -31,7 +31,7 @@ module Hdo
             data_source.should_receive(name).and_return(input_for(name))
 
             actual_output = converter.json_for(name)
-            actual_output.should == output_for(name)
+            actual_output.should be_json(output_for(name))
           end
         }
 
@@ -42,7 +42,9 @@ module Hdo
           actual = converter.json_for(:representatives)
           expected = output_for(:representatives)
 
-          actual.should == expected
+          File.open("/tmp/actual-reps.json", "w") { |io| io << actual }
+
+          actual.should be_json(expected)
         end
 
         it "converts votes" do
@@ -59,7 +61,7 @@ module Hdo
           actual = converter.json_for(:votes)
           expected = output_for(:votes)
 
-          actual.should == expected
+          actual.should be_json(expected)
         end
 
       end

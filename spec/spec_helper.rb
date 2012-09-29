@@ -43,15 +43,24 @@ module Hdo
         def initialize(expected)
           @expected = MultiJson.decode(expected)
         end
+
         def matches?(target)
           @target = MultiJson.decode(target)
           @target.eql?(@expected)
         end
+
         def failure_message
-          "expected #{@target.inspect} to be #{@expected}"
+          "expected #{@target.inspect} to be #{@expected}\n#{diff}"
         end
+
         def negative_failure_message
           "expected #{@target.inspect} not to be #{@expected}"
+        end
+
+        private
+
+        def diff
+          RSpec::Expectations::Differ.new.diff_as_object(@target, @expected)
         end
       end
 

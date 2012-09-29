@@ -31,7 +31,7 @@ module Hdo
         </voteringsforslag>
         XML
 
-        props = Proposition.from_storting_doc(parse(xml))
+        props = Proposition.from_storting_doc(parse(xml), Time.now)
         props.size.should == 1
 
         prop = props.first
@@ -73,7 +73,7 @@ module Hdo
         </voteringsforslag_oversikt>
         XML
 
-        props = Proposition.from_storting_doc(parse(xml))
+        props = Proposition.from_storting_doc(parse(xml), Time.now)
         props.size.should == 1
 
         prop = props.first

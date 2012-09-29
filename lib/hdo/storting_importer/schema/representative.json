@@ -22,25 +22,21 @@
       "description": "The first name of the representative",
       "required": true
     },
-    "period": {
-      "type": "string",
-      "description": "An identifier for the period the representative is elected for.",
-      "required": true
-    },
     "district": {
       "type": "string",
       "description": "The electoral district the representative belongs to. Must match the 'name' field of the district type.",
       "required": true
     },
-    "party": {
-      "type": "string",
-      "description": "The name of the representative's party.",
+    "parties": {
+      "type": "array",
+      "description": "A list of party memberships for this representative. Note that the import code will assume the field is incomplete, and handle this as an append to the current data unless the start date matches.",
+      "items": { "$ref": "hdo#partyMembership"},
       "required": true
     },
     "committees": {
       "type": "array",
       "description": "A list of committees the representative is a member of. This should match the 'name' field of the committee type.",
-      "items": { "type": "string"},
+      "items": { "type": "string" },
       "required": true
     },
     "dateOfBirth": {

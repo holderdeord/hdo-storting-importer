@@ -102,9 +102,8 @@ module Hdo
               "dateOfBirth": "1975-07-07T00:00:00",
               "dateOfDeath": "0001-01-01T00:00:00",
               "district": "Akershus",
-              "party": "Høyre",
+              "parties": [{"kind": "hdo#partyMembership", "externalId": "H", "startDate": "2011-10-01", "endDate": null}],
               "committees": ["Justiskomiteen"],
-              "period": "2011-2012",
               "voteResult": "for"
             }
             ],
@@ -124,9 +123,8 @@ module Hdo
                 "dateOfBirth": "1975-07-07T00:00:00",
                 "dateOfDeath": "0001-01-01T00:00:00",
                 "district": "Akershus",
-                "party": "Høyre",
-                "committees": ["Justiskomiteen"],
-                "period": "2011-2012"
+                "parties": [{"kind": "hdo#partyMembership", "externalId": "H", "startDate": "2011-10-01", "endDate": null}],
+                "committees": ["Justiskomiteen"]
               }
             }
           ]
