@@ -46,20 +46,20 @@ module Hdo
         end
 
         # approximate dates
-        Time.new(start_year, 10, 1)..Time.new(end_year, 8, 1)
+        Date.new(start_year, 10, 1)..Date.new(end_year, 8, 1)
       end
 
       def current_session
-        session_for_date Time.now
+        session_for_date Date.today
       end
 
       def session_for_date(date)
-        new_session_start = Time.new(date.year, 10, 1)
+        new_session_start = Date.new(date.year, 10, 1)
 
         if date >= new_session_start
-          new_session_start..(Time.new(date.year + 1, 8, 1))
+          new_session_start..(Date.new(date.year + 1, 8, 1))
         else
-          Time.new(date.year - 1, 10, 1)..Time.new(date.year, 8, 1)
+          Date.new(date.year - 1, 10, 1)..Date.new(date.year, 8, 1)
         end
       end
 

@@ -8,7 +8,7 @@ module Hdo
       schema_path StortingImporter.lib.join('hdo/storting_importer/schema/party_membership.json')
 
       def self.example(overrides = nil)
-        obj = new 'A', Time.parse("2009-09-01"), Time.parse("2013-08-01")
+        obj = new 'A', Date.parse("2009-09-01"), Date.parse("2013-08-01")
 
         if overrides
           obj = from_hash(obj.to_hash.merge(overrides))
@@ -19,8 +19,8 @@ module Hdo
 
       def self.from_hash(hash)
         new hash['externalId'],
-            Time.parse(hash['startDate']),
-            (Time.parse(hash['endDate']) if hash['endDate'])
+            Date.parse(hash['startDate']),
+            (Date.parse(hash['endDate']) if hash['endDate'])
       end
 
       attr_reader :external_id, :start_date, :end_date

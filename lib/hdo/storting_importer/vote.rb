@@ -107,7 +107,7 @@ module Hdo
       end
 
       def add_storting_propositions(node)
-        @propositions += Proposition.from_storting_doc(node, Time.parse(time))
+        @propositions += Proposition.from_storting_doc(node, Date.parse(time))
       end
 
       def add_storting_results(node)
