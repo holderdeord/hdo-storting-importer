@@ -19,23 +19,23 @@ module Hdo
 
       def self.from_hash(hash)
         new hash['externalId'],
-            Date.parse(hash['startDate']),
+            (Date.parse(hash['startDate']) if hash['startDate']),
             (Date.parse(hash['endDate']) if hash['endDate'])
       end
 
       attr_reader :external_id, :start_date, :end_date
 
       def initialize(external_id, start_date, end_date)
-        @external_id   = external_id
-        @start_date = start_date
-        @end_date   = end_date
+        @external_id = external_id
+        @start_date  = start_date
+        @end_date    = end_date
       end
 
       def to_hash
         {
           'kind'       => self.class.kind,
           'externalId' => external_id,
-          'startDate'  => start_date.strftime("%Y-%m-%d"),
+          'startDate'  => (start_date.strftime("%Y-%m-%d") if start_date),
           'endDate'    => (end_date.strftime("%Y-%m-%d") if end_date)
         }
       end
