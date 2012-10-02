@@ -119,9 +119,9 @@ require 'hdo/storting_importer/api_data_source'
 require 'hdo/storting_importer/parsing_data_source'
 require 'hdo/storting_importer/caching_data_source'
 
-
 require 'hdo/storting_importer/category'
 require 'hdo/storting_importer/committee'
+require 'hdo/storting_importer/committee_membership'
 require 'hdo/storting_importer/district'
 require 'hdo/storting_importer/parliament_issue'
 require 'hdo/storting_importer/party'

@@ -24,7 +24,7 @@ module Hdo
           '0001-01-01T00:00:00',
           'Akershus',
           [PartyMembership.from_hash("externalId" => 'H', 'startDate' => '2011-10-01', 'endDate' => nil)],
-          ['Justiskomiteen'],
+          [CommitteeMembership.from_hash('externalId' => 'JUSTIS', 'startDate' => '2011-10-01', 'endDate' => nil)]
         )
 
         if overrides
@@ -52,17 +52,20 @@ module Hdo
         district_node = node.css("fylke navn").first
         district      = district_node ? district_node.text : ''
 
+        start_date = period ? period.begin : Util.current_session.begin
+        end_date = period ? period.end : nil
+
         party_node = node.css("parti id").first
         if party_node
-          start_date = period ? period.begin : Util.current_session.begin
-          end_date = period ? period.end : nil
-
           parties = [ PartyMembership.new(party_node.text, start_date, end_date) ]
         else
           parties = []
         end
 
-        committees = node.css("komite").map { |c| c.css("navn").text.strip }
+        committee_ids = node.css("komite").map { |c| c.css("id").text.strip }
+        committees = committee_ids.map do |id|
+          CommitteeMembership.new(id, start_date, end_date)
+        end
 
         new(
           node.css("id").first.text,
@@ -86,7 +89,7 @@ module Hdo
                 hash['dateOfDeath'],
                 hash['district'],
                 Array(hash['parties']).map { |e| PartyMembership.from_hash(e) },
-                hash['committees']
+                Array(hash['committees']).map { |e| CommitteeMembership.from_hash(e) }
 
         v.vote_result = hash['voteResult']
 
@@ -126,7 +129,7 @@ module Hdo
           'dateOfDeath' => @date_of_death,
           'district'    => @district,
           'parties'     => @parties.map { |e| e.to_hash },
-          'committees'  => @committees
+          'committees'  => @committees.map { |e| e.to_hash }
         }
 
         h['voteResult'] = @vote_result if @vote_result

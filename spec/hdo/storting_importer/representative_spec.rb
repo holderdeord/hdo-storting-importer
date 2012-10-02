@@ -65,7 +65,7 @@ module Hdo
             "dateOfDeath": "0001-01-01T00:00:00",
             "district": "Akershus",
             "parties": [{"kind": "hdo#partyMembership", "externalId": "H", "startDate": "2011-10-01", "endDate": null}],
-            "committees": ["Justiskomiteen"]
+            "committees": [{"kind": "hdo#committeeMembership", "externalId": "JUSTIS", "startDate": "2011-10-01", "endDate": null}]
           }
         JSON
       end

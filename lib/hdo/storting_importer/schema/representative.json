@@ -35,8 +35,8 @@
     },
     "committees": {
       "type": "array",
-      "description": "A list of committees the representative is a member of. This should match the 'name' field of the committee type.",
-      "items": { "type": "string" },
+      "description": "A list of committee memberships for this representative. If this doesn't match the current state, it will always be treated as a change in committee memberships.",
+      "items": { "$ref": "hdo#committeeMembership" },
       "required": true
     },
     "dateOfBirth": {
