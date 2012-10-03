@@ -36,7 +36,7 @@ module Hdo
         }
 
         it "converts representatives" do
-          Date.stub(:today).and_return(Date.new(2012, 9, 20))
+          Date.stub(:today).and_return(Date.new(2011, 10, 1))
 
           data_source.should_receive(:representatives).and_return(input_for(:representatives))
           data_source.should_receive(:representatives_today).and_return(input_for(:representatives_today))
@@ -48,7 +48,7 @@ module Hdo
         end
 
         it "converts votes" do
-          Date.stub(:today).and_return(Date.new(2012, 9, 20))
+          Date.stub(:today).and_return(Date.new(2011, 10, 1))
 
           parsing_data_source.should_receive(:parliament_issues).and_return [mock(:external_id => 2175)]
 

@@ -52,7 +52,7 @@ module Hdo
         district_node = node.css("fylke navn").first
         district      = district_node ? district_node.text : ''
 
-        start_date = period ? period.begin : Util.current_session.begin
+        start_date = period ? period.begin : Date.today
         end_date = period ? period.end : nil
 
         party_node = node.css("parti id").first
