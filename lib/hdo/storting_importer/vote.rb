@@ -106,13 +106,17 @@ module Hdo
         short_inspect_string :include => [:external_id, :subject, :time, :counts]
       end
 
+      def date
+        @date ||= Date.parse(time)
+      end
+
       def add_storting_propositions(node)
-        @propositions += Proposition.from_storting_doc(node, Date.parse(time))
+        @propositions += Proposition.from_storting_doc(node, date)
       end
 
       def add_storting_results(node)
         @representatives += node.css("representant_voteringsresultat").map do |n|
-          rep = Representative.from_storting_node(n.css("representant").first)
+          rep = Representative.from_storting_node(n.css("representant").first, date)
           rep.vote_result = case n.css("votering").text
                             when 'for'
                               'for'

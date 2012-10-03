@@ -45,12 +45,12 @@ module Hdo
         nodes.map { |e| from_storting_node(e) }
       end
 
-      def self.from_storting_node(node)
+      def self.from_storting_node(node, date = nil)
         district_node = node.css("fylke navn").first
         district      = district_node ? district_node.text : ''
 
-        start_date = Date.today
-        end_date = nil
+        start_date = date || Date.today
+        end_date   = nil
 
         party_node = node.css("parti id").first
         if party_node

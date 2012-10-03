@@ -35,11 +35,11 @@ module Hdo
         new(*arr)
       end
 
-      def self.from_storting_doc(doc, time)
+      def self.from_storting_doc(doc, date)
         doc.css("voteringsforslag").map do |n|
           rep_node = n.css("forslag_levert_av_representant").first
           if rep_node && rep_node['nil'] != 'true'
-            delivered_by = Representative.from_storting_node(rep_node)
+            delivered_by = Representative.from_storting_node(rep_node, date)
           else
             delivered_by = nil
           end

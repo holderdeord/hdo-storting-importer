@@ -63,6 +63,8 @@ module Hdo
           actual = converter.json_for(:votes)
           expected = output_for(:votes)
 
+          File.open("spec/fixtures/output/votes2.json", "w") { |file| file << actual }
+
           actual.should be_json(expected)
         end
 
