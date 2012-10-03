@@ -42,18 +42,15 @@ module Hdo
         nodes = doc.css("dagensrepresentant")
         nodes += doc.css("representant")
 
-        period_node = doc.css("stortingsperiode_id").first
-        period = Util.period_to_date_range(period_node.text) if period_node
-
-        nodes.map { |e| from_storting_node(e, period) }
+        nodes.map { |e| from_storting_node(e) }
       end
 
-      def self.from_storting_node(node, period = nil)
+      def self.from_storting_node(node)
         district_node = node.css("fylke navn").first
         district      = district_node ? district_node.text : ''
 
-        start_date = period ? period.begin : Date.today
-        end_date = period ? period.end : nil
+        start_date = Date.today
+        end_date = nil
 
         party_node = node.css("parti id").first
         if party_node

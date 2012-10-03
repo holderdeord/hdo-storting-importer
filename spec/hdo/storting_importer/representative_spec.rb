@@ -46,7 +46,7 @@ module Hdo
         rep.last_name.should == 'Dahl'
         rep.gender.should == 'M'
         rep.district.should == 'Akershus'
-        rep.parties.should == [PartyMembership.from_hash('externalId' => 'H', 'startDate' => '2009-10-01', 'endDate' => '2013-09-30')]
+        rep.parties.should == [PartyMembership.from_hash('externalId' => 'H', 'startDate' => Date.today.strftime("%Y-%m-%d"), 'endDate' => nil)]
         rep.external_id.should == 'ADA'
         rep.date_of_birth.should == '1975-07-07T00:00:00'
         rep.date_of_death.should == '0001-01-01T00:00:00'

@@ -101,8 +101,7 @@ module Hdo
         }.compact
 
         if errors.any?
-          puts errors
-          # raise "found errors:\n#{errors.join("\n")}"
+          raise "found errors:\n#{errors.join("\n")}"
         end
 
         promises

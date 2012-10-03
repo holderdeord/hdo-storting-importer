@@ -39,7 +39,7 @@ module Hdo
         doc.css("voteringsforslag").map do |n|
           rep_node = n.css("forslag_levert_av_representant").first
           if rep_node && rep_node['nil'] != 'true'
-            delivered_by = Representative.from_storting_node(rep_node, Util.session_for_date(time))
+            delivered_by = Representative.from_storting_node(rep_node)
           else
             delivered_by = nil
           end
