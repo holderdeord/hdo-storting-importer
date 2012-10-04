@@ -44,7 +44,7 @@ module Hdo
 
       def parliament_issues(session_id)
         cache :parliament_issues, session_id do
-          @delegate.issues session_id
+          @delegate.parliament_issues session_id
         end
       end
 
