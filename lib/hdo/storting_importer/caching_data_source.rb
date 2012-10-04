@@ -6,7 +6,7 @@ module Hdo
         @cache    = cache
       end
 
-      def representatives(period = DEFAULT_PERIOD)
+      def representatives(period)
         cache :representatives, period do
           @delegate.representatives(period)
         end
@@ -18,13 +18,13 @@ module Hdo
         end
       end
 
-      def parties(session_id = DEFAULT_SESSION)
+      def parties(session_id)
         cache :parties, session_id do
           @delegate.parties(session_id)
         end
       end
 
-      def committees(session_id = DEFAULT_SESSION)
+      def committees(session_id)
         cache :committees, session_id do
           @delegate.committees session_id
         end
@@ -42,7 +42,7 @@ module Hdo
         end
       end
 
-      def parliament_issues(session_id = DEFAULT_SESSION)
+      def parliament_issues(session_id)
         cache :parliament_issues, session_id do
           @delegate.issues session_id
         end

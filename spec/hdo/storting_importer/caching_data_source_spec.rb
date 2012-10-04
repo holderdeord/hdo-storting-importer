@@ -10,10 +10,12 @@ module Hdo
 
         ads = CachingDataSource.new(delegate)
 
-        delegate.should_receive(:representatives).once.and_return "data"
+        delegate.should_receive(:representatives).twice.and_return "data"
 
-        ads.representatives # not cached
-        ads.representatives # cached
+        ads.representatives('2011-2012') # not cached
+        ads.representatives('2011-2012') # cached
+        ads.representatives('2012-2013') # not cached
+        ads.representatives('2012-2013') # cached
       end
 
     end

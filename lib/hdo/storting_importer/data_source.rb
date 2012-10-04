@@ -5,9 +5,6 @@ module Hdo
       class NotFoundError < StandardError
       end
 
-      DEFAULT_SESSION = '2012-2013'
-      DEFAULT_PERIOD = '2009-2013'
-
       private
 
       def parse(str)

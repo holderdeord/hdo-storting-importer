@@ -6,11 +6,11 @@ module Hdo
         @root = Pathname.new(root)
       end
 
-      def parties(session_id = DEFAULT_SESSION)
+      def parties(session_id)
         fetch "eksport/partier/index.html?sesjonid=#{session_id}"
       end
 
-      def committees(session_id = DEFAULT_SESSION)
+      def committees(session_id)
         fetch "eksport/komiteer/index.html?SesjonId=#{session_id}"
       end
 
@@ -22,11 +22,11 @@ module Hdo
         fetch "eksport/emner/index.html"
       end
 
-      def parliament_issues(session_id = DEFAULT_SESSION)
+      def parliament_issues(session_id)
         fetch "eksport/saker/index.html?sesjonid=#{session_id}"
       end
 
-      def representatives(period = DEFAULT_PERIOD)
+      def representatives(period)
         fetch "eksport/representanter/index.html?StortingsPeriodeId=#{period}"
       end
 

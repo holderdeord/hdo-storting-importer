@@ -20,7 +20,16 @@ module Hdo
                     end
       end
 
-      def representatives(period = DEFAULT_PERIOD)
+      #
+      # fetch representatives for the given period
+      #
+      # @param [String] period
+      #
+      # @example
+      #   data_source.representatives('2009-2013')
+      #
+
+      def representatives(period)
         fetch "eksport/representanter/?StortingsPeriodeId=#{period}"
       end
 
@@ -28,11 +37,20 @@ module Hdo
         fetch 'eksport/dagensrepresentanter/'
       end
 
-      def parties(session_id = DEFAULT_SESSION)
+      #
+      # fetch parties for the given session
+      #
+      # @param [String] session
+      #
+      # @example
+      #   data_source.representatives('2011-2012')
+      #
+
+      def parties(session_id)
         fetch "eksport/partier/?sesjonid=#{session_id}"
       end
 
-      def committees(session_id = DEFAULT_SESSION)
+      def committees(session_id)
         fetch "eksport/komiteer/?SesjonId=#{session_id}"
       end
 
@@ -44,7 +62,7 @@ module Hdo
         fetch "eksport/emner"
       end
 
-      def parliament_issues(session_id = DEFAULT_SESSION)
+      def parliament_issues(session_id)
         fetch "eksport/saker?sesjonid=#{session_id}"
       end
 

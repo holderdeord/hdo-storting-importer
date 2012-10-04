@@ -5,7 +5,7 @@ module Hdo
         @data_source = delegate_data_source
       end
 
-      def representatives(period = DEFAULT_PERIOD)
+      def representatives(period)
         Representative.from_storting_doc @data_source.representatives(period)
       end
 
@@ -13,11 +13,11 @@ module Hdo
         Representative.from_storting_doc @data_source.representatives_today
       end
 
-      def parties(session_id = DEFAULT_SESSION)
+      def parties(session_id)
         Party.from_storting_doc @data_source.parties(session_id)
       end
 
-      def committees(session_id = DEFAULT_SESSION)
+      def committees(session_id)
         Committee.from_storting_doc @data_source.committees(session_id)
       end
 
@@ -29,7 +29,7 @@ module Hdo
         Category.from_storting_doc @data_source.categories
       end
 
-      def parliament_issues(session_id = DEFAULT_SESSION)
+      def parliament_issues(session_id)
         ParliamentIssue.from_storting_doc @data_source.parliament_issues(session_id)
       end
 
