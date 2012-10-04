@@ -14,24 +14,6 @@ end
 module Hdo
   module StortingImporter
     module SpecHelper
-      FIXTURES = Pathname.new(File.expand_path("../fixtures", __FILE__))
-
-      def input_fixture(name)
-        FIXTURES.join(input_path("#{name}.xml")).read
-      end
-
-      def output_fixture(name)
-        FIXTURES.join(output_path("#{name}.json")).read
-      end
-
-      def input_path(filename)
-        FIXTURES.join("input/#{filename}")
-      end
-
-      def output_path(filename)
-        FIXTURES.join("output/#{filename}")
-      end
-
       def parse(str)
         doc = Nokogiri::XML.parse(str)
         doc.remove_namespaces!

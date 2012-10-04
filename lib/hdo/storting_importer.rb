@@ -132,7 +132,6 @@ require 'hdo/storting_importer/proposition'
 require 'hdo/storting_importer/vote'
 require 'hdo/storting_importer/governing_period'
 
-require 'hdo/storting_importer/converter'
 require 'hdo/storting_importer/cli'
 
 
