@@ -82,7 +82,7 @@ module Hdo
 
     def self.logger
       @logger ||= (
-        out = $stderr # should be able to pipe output to a file
+        out = $stdout
 
         if defined?(Rails)
           klass = Class.new(Logger) do
