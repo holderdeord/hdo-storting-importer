@@ -12,6 +12,7 @@
     "externalId": {
       "type": "string",
       "description": "A unique identifier for the category.",
+      "required": true
     },
     "name": {
       "description": "The name of the category",
