@@ -10,7 +10,9 @@
       "required": true
     },
     "externalId": {
-      "type": "string"
+      "type": "string",
+      "description": "A unique identifier for the representative.",
+      "required": true
     },
     "firstName": {
       "type": "string",

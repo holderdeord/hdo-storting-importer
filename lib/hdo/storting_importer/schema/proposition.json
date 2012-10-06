@@ -10,7 +10,9 @@
       "required": true
     },
     "externalId": {
-      "type": "string"
+      "type": "string",
+      "description": "A unique identifier for the proposition.",
+      "required": true
     },
     "description": {
       "type": "string",

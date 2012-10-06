@@ -11,7 +11,7 @@
     },
     "externalId": {
       "type": "string",
-      "description": "",
+      "description": "A unique identifier for the issue.",
       "required": false
     },
     "summary": {

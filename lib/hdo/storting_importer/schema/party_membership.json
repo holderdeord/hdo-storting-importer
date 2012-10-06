@@ -11,7 +11,7 @@
     },
     "externalId": {
       "type": "string",
-      "description": "An ID uniquely identifying the party (matching externalId of hdo#party)",
+      "description": "An unique identifier for the party (matching externalId of hdo#party)",
       "required": true
     },
     "startDate": {

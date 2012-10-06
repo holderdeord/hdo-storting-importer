@@ -10,7 +10,9 @@
         "required": true
     },
     "externalId": {
-      "type": "string"
+      "type": "string",
+      "description": "A unique identifier for the committee.",
+      "required": true
     },
     "name": {
       "description": "The name of the committee",

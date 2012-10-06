@@ -10,7 +10,9 @@
       "required": true
     },
     "externalId": {
-      "type": "string"
+      "type": "string",
+      "description": "A unique identifier for the vote.",
+      "required": true
     },
     "externalIssueId": {
       "type": "string",
