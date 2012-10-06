@@ -51,7 +51,7 @@
       },
     "committee": {
       "type": "string",
-      "description": "What committee this issue belongs to. Should match the 'name' field in the committee type."
+      "description": "What committee this issue belongs to. Should match the 'externalId' field in the committee type."
     },
     "categories": {
       "type": "array",

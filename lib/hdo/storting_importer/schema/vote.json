@@ -57,7 +57,7 @@
     },
     "representatives": {
       "type": "array",
-      "description": "An array of each representative's vote. The object should contain a set of <a href='#input-format-representative'>&lt;representative&gt;</a> objects with the property 'voteResult', for which valid values are 'for', 'against', 'absent'.",
+      "description": "An array of each representative's vote. The object should contain a set of <a href='#input-format-representative'>hdo#representative</a> objects with the property 'voteResult' added, for which valid values are 'for', 'against', 'absent'.",
       "items": { "$ref": "hdo#representative" }
     },
     "propositions": {
