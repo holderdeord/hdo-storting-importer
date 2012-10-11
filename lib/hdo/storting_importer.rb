@@ -1,5 +1,6 @@
 require 'nokogiri'
-require 'restclient'
+require 'faraday'
+require 'net/http/persistent'
 require 'tempfile'
 require 'pathname'
 require 'open-uri'

@@ -7,14 +7,14 @@ module Hdo
         new "http://data.stortinget.no"
       end
 
-      def initialize(url_or_resource)
-        @resource = case url_or_resource
-                    when RestClient::Resource
-                      url_or_resource
-                    when URI
-                      RestClient::Resource.new(url_or_resource)
-                    when String
-                      RestClient::Resource.new(URI.parse(url_or_resource))
+      def initialize(connection_or_url)
+        @connection = case connection_or_url
+                    when Faraday::Connection
+                      connection_or_url
+                    when String, URI
+                      Faraday.new(:url => connection_or_url.to_s) do |faraday|
+                        faraday.adapter :net_http_persistent
+                      end
                     else
                       raise ArgumentError, "invalid argument #{url_or_resource.inspect}"
                     end
@@ -81,10 +81,12 @@ module Hdo
       private
 
       def fetch(path)
-        sub_resource = @resource[path]
-        Hdo::StortingImporter.logger.info "parsing #{sub_resource}"
+        Hdo::StortingImporter.logger.info "parsing #{path}"
+        response = @connection.get(path) do |request|
+          request.headers['User-Agent'] = USER_AGENT
+        end
 
-        parse sub_resource.get(:user_agent => USER_AGENT)
+        parse response.body
       end
 
     end
