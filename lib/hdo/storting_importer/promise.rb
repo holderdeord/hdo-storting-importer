@@ -78,7 +78,10 @@ module Hdo
           end
 
           clean_invalid_unicode = lambda do |str|
-            str.gsub("\u00c5\u030a", 'Å').gsub("\u00e5\u030a", 'å')
+            str.gsub("\u00c5\u030a", 'Å').
+                gsub("\u00e5\u030a", 'å').
+                gsub("\u0041\u030a", 'Å').
+                gsub("\u0061\u030a", 'å')
           end
 
           promise = new external_id,
