@@ -20,6 +20,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency "aruba"
   gem.add_runtime_dependency "rake"
   gem.add_runtime_dependency "faraday"
+  gem.add_runtime_dependency "net-http-persistent"
   gem.add_runtime_dependency "unicode_utils"
   gem.add_runtime_dependency "multi_json"
   gem.add_runtime_dependency "yajl-ruby"
