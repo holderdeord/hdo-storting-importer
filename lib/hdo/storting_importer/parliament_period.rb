@@ -53,6 +53,7 @@ module Hdo
         }
       end
 
+      alias_method :short_inspect, :inspect
     end
   end
 end

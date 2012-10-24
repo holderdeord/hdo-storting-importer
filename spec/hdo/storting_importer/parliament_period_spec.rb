@@ -6,6 +6,7 @@ module Hdo
     describe ParliamentPeriod do
 
       it_behaves_like 'type with JSON schema'
+      it_behaves_like 'type with #short_inspect'
 
       it 'builds parliament periods from Storting XML list' do
         xml = <<-XML
