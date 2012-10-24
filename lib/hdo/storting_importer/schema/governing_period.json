@@ -1,0 +1,24 @@
+{
+  "id": "hdo#governingPeriod",
+  "description": "a period where a party is in government",
+  "type":"object",
+  "properties": {
+    "kind": {
+      "type": "string",
+      "description": "This is always 'hdo#governingPeriod'",
+      "default": "hdo#governingPeriod",
+      "required": true
+    },
+    "startDate": {
+      "type": "string",
+      "description": "The date the association started.",
+      "format": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "string",
+      "description": "The date the association ended. Can be null if the association is current.",
+      "format": "date",
+      "required": false
+    }
+}

@@ -54,5 +54,6 @@ module Hdo
 end
 
 RSpec.configure do |c|
+  c.color = $stdout.tty?
   c.include Hdo::StortingImporter::SpecHelper
 end

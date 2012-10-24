@@ -26,15 +26,18 @@ module Hdo
 
     def self.types
       [
-        Party,
-        Committee,
-        District,
-        Representative,
         Category,
-        Issue,
-        Vote,
+        Committee,
+        CommitteeMembership,
+        District,
+        GoverningPeriod,
+        ParliamentIssue,
+        Party,
+        PartyMembership,
+        Promise,
         Proposition,
-        Promise
+        Representative,
+        Vote,
       ]
     end
 
