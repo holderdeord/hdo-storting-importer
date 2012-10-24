@@ -1,12 +1,12 @@
 {
-  "id": "hdo#governingPeriod",
-  "description": "a period where a party is in government",
+  "id": "hdo#parliamentSession",
+  "description": "Object representing the parliamentary year.",
   "type":"object",
   "properties": {
     "kind": {
       "type": "string",
-      "description": "This is always 'hdo#governingPeriod'",
-      "default": "hdo#governingPeriod",
+      "description": "This is always 'hdo#parliamentSession'",
+      "default": "hdo#parliamentSession",
       "required": true
     },
     "startDate": {
@@ -17,8 +17,8 @@
     },
     "endDate": {
       "type": "string",
-      "description": "The date the period ended. Can be null if the period is current.",
+      "description": "The date the period ended.",
       "format": "date",
-      "required": false
+      "required": true
     }
 }

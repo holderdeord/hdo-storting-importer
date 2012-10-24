@@ -22,6 +22,14 @@ module Hdo
         fetch "eksport/emner/index.html"
       end
 
+      def parliament_periods
+        fetch "eksport/stortingsperioder"
+      end
+
+      def parliament_sessions
+        fetch "eksport/sesjoner"
+      end
+
       def parliament_issues(session_id)
         fetch "eksport/saker/index.html?sesjonid=#{session_id}"
       end

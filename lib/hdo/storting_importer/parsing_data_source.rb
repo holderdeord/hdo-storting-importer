@@ -25,6 +25,14 @@ module Hdo
         District.from_storting_doc @data_source.districts
       end
 
+      def parliament_periods
+        ParliamentPeriod.from_storting_doc @data_source.parliament_periods
+      end
+
+      def parliament_sessions
+        ParliamentSession.from_storting_doc @data_source.parliament_sessions
+      end
+
       def categories
         Category.from_storting_doc @data_source.categories
       end

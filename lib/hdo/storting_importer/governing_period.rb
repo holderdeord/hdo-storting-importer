@@ -42,8 +42,9 @@ module Hdo
 
       def to_hash
         {
+          'kind'      => self.class.kind,
           'startDate' => @start_date && @start_date.iso8601,
-          'endDate' => @end_date && @end_date.iso8601
+          'endDate'   => @end_date && @end_date.iso8601
         }
       end
 

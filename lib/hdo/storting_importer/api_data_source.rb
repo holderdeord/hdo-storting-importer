@@ -58,6 +58,14 @@ module Hdo
         fetch "eksport/fylker"
       end
 
+      def parliament_periods
+        fetch "eksport/stortingsperioder"
+      end
+
+      def parliament_sessions
+        fetch "eksport/sesjoner"
+      end
+
       def categories
         fetch "eksport/emner"
       end

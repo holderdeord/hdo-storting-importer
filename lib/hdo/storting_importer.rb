@@ -32,6 +32,8 @@ module Hdo
         District,
         GoverningPeriod,
         ParliamentIssue,
+        ParliamentSession,
+        ParliamentPeriod,
         Party,
         PartyMembership,
         Promise,
@@ -128,6 +130,8 @@ require 'hdo/storting_importer/committee'
 require 'hdo/storting_importer/committee_membership'
 require 'hdo/storting_importer/district'
 require 'hdo/storting_importer/parliament_issue'
+require 'hdo/storting_importer/parliament_period'
+require 'hdo/storting_importer/parliament_session'
 require 'hdo/storting_importer/party'
 require 'hdo/storting_importer/party_membership'
 require 'hdo/storting_importer/promise'

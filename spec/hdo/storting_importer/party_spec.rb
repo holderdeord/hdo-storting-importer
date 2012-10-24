@@ -42,7 +42,11 @@ module Hdo
           "externalId": "A",
           "name": "Arbeiderpartiet",
           "governingPeriods": [
-            { "startDate": "2005-10-17", "endDate": "2013-10-14" }
+            {
+              "kind": "hdo#governingPeriod",
+              "startDate": "2005-10-17",
+              "endDate": "2013-10-14"
+            }
           ]
         }
         JSON
