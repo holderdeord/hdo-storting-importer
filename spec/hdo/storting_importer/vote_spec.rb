@@ -67,7 +67,7 @@ module Hdo
         vote.should be_personal
         vote.enacted.should be_false
         vote.subject.should == 'Forslag 24 - 26 på vegne av Per Olaf Lundteigen'
-        vote.method.should == 'ikke_spesifisert'
+        vote.method_name.should == 'ikke_spesifisert'
         vote.result_type.should == 'ikke_spesifisert'
         vote.time.should == '2012-04-12T16:37:27.053'
         vote.counts.for.should == 2

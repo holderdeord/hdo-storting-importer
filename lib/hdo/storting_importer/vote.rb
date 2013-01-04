@@ -8,7 +8,7 @@ module Hdo
       include Inspectable
 
       attr_reader :external_id, :external_issue_id, :personal, :enacted, :subject,
-                  :method, :result_type, :time, :counts
+                  :method_name, :result_type, :time, :counts
       attr_accessor :propositions, :representatives
 
       alias_method :personal?, :personal
@@ -87,13 +87,13 @@ module Hdo
         vote
       end
 
-      def initialize(external_id, external_issue_id, personal, enacted, subject, method, result_type, time, for_count, against_count, absent_count)
+      def initialize(external_id, external_issue_id, personal, enacted, subject, method_name, result_type, time, for_count, against_count, absent_count)
         @external_id       = external_id
         @external_issue_id = external_issue_id
         @personal          = personal
         @enacted           = enacted
         @subject           = subject
-        @method            = method
+        @method_name       = method_name
         @result_type       = result_type
         @time              = time
         @counts            = Counts.new(Integer(for_count || 0), Integer(against_count || 0), Integer(absent_count || 0))
@@ -141,7 +141,7 @@ module Hdo
           'personal'         => @personal,
           'enacted'          => @enacted,
           'subject'          => @subject,
-          'method'           => @method,
+          'method'           => @method_name,
           'resultType'       => @result_type,
           'time'             => @time,
           'representatives'  => @representatives.map(&:to_hash),
