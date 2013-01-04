@@ -11,4 +11,4 @@ notifications:
     on_failure: change
     template:
       - "%{author} | %{commit} | %{message} | %{build_url}"
-script: "bundle exec rake"
+script: "SPEC_OPTS=--backtrace bundle exec rake"
