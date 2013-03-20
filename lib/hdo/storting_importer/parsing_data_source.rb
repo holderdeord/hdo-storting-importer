@@ -1,6 +1,10 @@
 module Hdo
   module StortingImporter
     class ParsingDataSource < DataSource
+      def self.default
+        new ApiDataSource.default
+      end
+
       def initialize(delegate_data_source)
         @data_source = delegate_data_source
       end

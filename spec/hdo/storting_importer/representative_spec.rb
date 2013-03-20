@@ -106,6 +106,16 @@ module Hdo
         obj.first_name.should == 'foo'
       end
 
+      it 'serializes the "permanent substitute for" field' do
+        obj = Representative.example
+        obj.permanent_substitute_for = "JB"
+
+        data = obj.to_hash
+        data['permanentSubstituteFor'].should == "JB"
+
+        Representative.from_hash(data).permanent_substitute_for.should == "JB"
+      end
+
     end
   end
 end
