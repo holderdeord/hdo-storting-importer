@@ -38,7 +38,7 @@ module Hdo
       end
 
       def self.from_xlsx(path)
-        table  = Excelx.new(path)
+        table  = Roo::Excelx.new(path)
         raise "empty spreadsheet" unless table.first_row
 
         errors = []
