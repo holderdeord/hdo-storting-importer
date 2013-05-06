@@ -5,6 +5,9 @@ module Hdo
       class NotFoundError < StandardError
       end
 
+      class ServerError < StandardError
+      end
+
       private
 
       def parse(str)

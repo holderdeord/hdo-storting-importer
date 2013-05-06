@@ -94,6 +94,10 @@ module Hdo
           request.headers['User-Agent'] = USER_AGENT
         end
 
+        if response.status != 200
+          raise ServerError, "response code #{response.status}\n#{response.body}"
+        end
+
         parse response.body
       end
 
