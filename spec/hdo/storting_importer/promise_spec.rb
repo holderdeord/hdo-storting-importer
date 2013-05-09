@@ -19,23 +19,23 @@ module Hdo
           "source": "PP",
           "page": 8,
           "body": "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.",
-          "date": "2009-06-01"
+          "period": "2009-2013"
         }
         JSON
       end
 
       it 'strips trailing space from the body' do
-        promise = Promise.new("1", "Party", "Body   ", true, ["æøå"], "PP", 8, '2012-06-01')
+        promise = Promise.new("1", "Party", "Body   ", true, ["æøå"], "PP", 8, '2009-2013')
         promise.body.should == "Body"
       end
 
       it 'correctly upcases non-ASCII category names' do
-        promise = Promise.new("1", "Party", "Body", true, ["æøå"], "PP", 8, '2012-06-01')
+        promise = Promise.new("1", "Party", "Body", true, ["æøå"], "PP", 8, '2009-2013')
         promise.categories.should == ["ÆØÅ"]
       end
 
       it 'ignores empty categories' do
-        promise = Promise.new("1", "Party", "Body", true, ["FOO", ""], "PP", 8, '2012-06-01')
+        promise = Promise.new("1", "Party", "Body", true, ["FOO", ""], "PP", 8, '2009-2013')
         promise.categories.should == ["FOO"]
       end
 
@@ -44,6 +44,9 @@ module Hdo
         obj.body.should == 'foo'
       end
 
+      it 'is invalid if period is not the correct format' do
+        Promise.example('period' => '2009-06-01').should_not be_valid
+      end
 
     end
   end

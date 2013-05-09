@@ -8,7 +8,7 @@ module Hdo
       include HasJsonSchema
       include IvarEquality
 
-      attr_reader :external_id, :parties, :body, :general, :categories, :source, :page, :date
+      attr_reader :external_id, :parties, :body, :general, :categories, :source, :page, :period
       alias_method :general?, :general
       alias_method :short_inspect, :inspect
 
@@ -23,7 +23,7 @@ module Hdo
           ["GRUNNSKOLE"],
           "PP",
           8,
-          '2009-06-01'
+          '2009-2013'
         )
 
         if overrides
@@ -50,7 +50,7 @@ module Hdo
           Hdo::StortingImporter.logger.info "promise row: #{data.inspect}"
 
           external_id = data.fetch(0).to_i.to_s
-          date        = data.fetch(1)
+          period      = data.fetch(1)
           parties     = data.fetch(2)
           body        = data.fetch(3)
           general     = data.fetch(4).to_s.strip.downcase
@@ -91,7 +91,7 @@ module Hdo
                         clean_invalid_unicode.call(categories),
                         source.strip,
                         Integer(page),
-                        date.strip
+                        period.strip
 
           begin
             promise.validate!
@@ -118,12 +118,12 @@ module Hdo
                  hash['categories'],
                  hash['source'],
                  hash['page'],
-                 hash['date']
+                 hash['period']
 
         pr
       end
 
-      def initialize(external_id, parties, body, general, categories, source, page, date)
+      def initialize(external_id, parties, body, general, categories, source, page, period)
         @external_id = external_id
         @parties     = clean_array(parties)
         @body        = strip_if_string(body)
@@ -131,7 +131,7 @@ module Hdo
         @categories  = clean_array(categories).map { |e| UnicodeUtils.upcase(e) }
         @source      = strip_if_string(source)
         @page        = page
-        @date        = date
+        @period      = period
       end
 
       def to_hash
@@ -144,7 +144,7 @@ module Hdo
           'source'     => @source,
           'page'       => @page,
           'body'       => @body,
-          'date'       => @date
+          'period'     => @period
         }
       end
 

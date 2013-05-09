@@ -47,10 +47,10 @@
       "description": "The body text of the promise.",
       "required": true
     },
-    "date": {
+    "period": {
       "type": "string",
-      "description": "The date the promise was made.",
-      "format": "date",
+      "description": "The period for which this promise is valid.",
+      "pattern": "\\d{4}-\\d{4}",
       "required": true
     }
   }
