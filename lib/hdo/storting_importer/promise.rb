@@ -60,18 +60,25 @@ module Hdo
 
           unless %w[ja nei].include?(general)
             errors << "row #{external_id}: unexpected value #{general.inspect} for general"
-            next
           end
 
           if page.to_s !~ /^\d+(\.\d+)?$/ || page.to_i == 0
             errors << "row #{external_id}: unexpected value #{page.inspect} for page"
-            next
           end
 
-          unless parties
+          if parties.nil? || parties.empty?
             errors << "row #{external_id}: parties missing"
-            next
           end
+
+          if categories.nil? || categories.empty?
+            errors << "row #{external_id}: categories missing"
+          end
+
+          unless period
+            errors << "row #{external_id}: period is missing"
+          end
+
+          next if errors.any?
 
           unless body.strip =~ /\.$/
             body = "#{body.strip}."
@@ -91,7 +98,7 @@ module Hdo
                         clean_invalid_unicode.call(categories),
                         source.strip,
                         Integer(page),
-                        period.strip
+                        period
 
           begin
             promise.validate!
