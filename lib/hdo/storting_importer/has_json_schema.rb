@@ -41,12 +41,11 @@ module Hdo
         attr_reader :schema
 
         def schema_path(path)
-          @schema = MultiJson.decode(open(path).read)
-          HasJsonSchema.schemas << @schema
+          @schema_path = path
         end
 
         def schema
-          @schema or raise "schema must be set with #{self}.schema_path"
+          @schema ||= load_schema
         end
 
         def json_example
@@ -94,6 +93,17 @@ module Hdo
           e
         rescue Jschematic::ValidationError => ex
           raise ValidationError, "#{ex.message}: #{e.inspect}"
+        end
+
+        private
+
+        def load_schema
+          @schema_path or raise "schema must be set with #{self}.schema_path"
+
+          schema = MultiJson.decode(File.read(@schema_path))
+          HasJsonSchema.schemas << schema
+
+          schema
         end
       end
 
