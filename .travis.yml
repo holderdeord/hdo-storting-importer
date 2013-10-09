@@ -7,7 +7,7 @@ notifications:
   irc:
     channels:
       - "irc.freenode.net#holderdeord"
-    on_success: change
+    on_success: always
     on_failure: change
     template:
       - "%{author} | %{commit} | %{message} | %{build_url}"
