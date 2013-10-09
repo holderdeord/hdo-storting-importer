@@ -16,7 +16,7 @@ module Hdo
 
       #
       # Who and who isn't in government is not available in the data
-      # from Stortinget and changes just every 4 years, so we hardcode it here.
+      # from Stortinget, so we hardcode it here.
       #
 
       def self.all
