@@ -32,7 +32,7 @@ module Hdo
       end
 
       def self.from_hash(hash)
-        new hash['startDate'], hash['endDate']
+        new hash['start_date'], hash['end_date']
       end
 
       def initialize(start_date, end_date = nil)
@@ -42,9 +42,9 @@ module Hdo
 
       def to_hash
         {
-          'kind'      => self.class.kind,
-          'startDate' => @start_date && @start_date.iso8601,
-          'endDate'   => @end_date && @end_date.iso8601
+          'kind'       => self.class.kind,
+          'start_date' => @start_date && @start_date.iso8601,
+          'end_date'   => @end_date && @end_date.iso8601
         }
       end
 

@@ -9,7 +9,7 @@
       "default": "hdo#category",
       "required": true
     },
-    "externalId": {
+    "external_id": {
       "type": "string",
       "description": "A unique identifier for the category.",
       "required": true
@@ -19,7 +19,7 @@
       "type": "string",
       "required": true
     },
-    "subCategories": {
+    "sub_categories": {
       "description": "A list of subcategories.",
       "type":"array",
       "items":{

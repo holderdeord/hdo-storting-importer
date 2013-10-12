@@ -1,21 +1,21 @@
 {
-  "id": "hdo#governingPeriod",
+  "id": "hdo#governing_period",
   "description": "a period where a party is in government",
   "type":"object",
   "properties": {
     "kind": {
       "type": "string",
-      "description": "This is always 'hdo#governingPeriod'",
-      "default": "hdo#governingPeriod",
+      "description": "This is always 'hdo#governing_period'",
+      "default": "hdo#governing_period",
       "required": true
     },
-    "startDate": {
+    "start_date": {
       "type": "string",
       "description": "The date the period started.",
       "format": "date",
       "required": true
     },
-    "endDate": {
+    "end_date": {
       "type": "string",
       "description": "The date the period ended. Can be null if the period is current.",
       "format": "date",

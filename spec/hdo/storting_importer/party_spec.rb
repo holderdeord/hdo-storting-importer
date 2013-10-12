@@ -39,13 +39,13 @@ module Hdo
         Party.example.to_json.should be_json <<-JSON
         {
           "kind": "hdo#party",
-          "externalId": "A",
+          "external_id": "A",
           "name": "Arbeiderpartiet",
-          "governingPeriods": [
+          "governing_periods": [
             {
-              "kind": "hdo#governingPeriod",
-              "startDate": "2005-10-17",
-              "endDate": "2013-10-14"
+              "kind": "hdo#governing_period",
+              "start_date": "2005-10-17",
+              "end_date": "2013-10-14"
             }
           ]
         }

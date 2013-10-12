@@ -67,13 +67,13 @@ module Hdo
         counts = hash['counts']
 
         args = [
-          hash["externalId"],
-          hash["externalIssueId"],
+          hash["external_id"],
+          hash["external_issue_id"],
           hash["personal"],
           hash["enacted"],
           hash["subject"],
           hash["method"],
-          hash["resultType"],
+          hash["result_type"],
           hash["time"],
           counts && counts["for"],
           counts && counts["against"],
@@ -134,18 +134,18 @@ module Hdo
 
       def to_hash
         {
-          'kind'             => self.class.kind,
-          'externalId'       => @external_id,
-          'externalIssueId'  => @external_issue_id,
-          'counts'           => @counts.to_hash,
-          'personal'         => @personal,
-          'enacted'          => @enacted,
-          'subject'          => @subject,
-          'method'           => @method_name,
-          'resultType'       => @result_type,
-          'time'             => @time,
-          'representatives'  => @representatives.map(&:to_hash),
-          'propositions'     => @propositions.map(&:to_hash)
+          'kind'              => self.class.kind,
+          'external_id'       => @external_id,
+          'external_issue_id' => @external_issue_id,
+          'counts'            => @counts.to_hash,
+          'personal'          => @personal,
+          'enacted'           => @enacted,
+          'subject'           => @subject,
+          'method'            => @method_name,
+          'result_type'       => @result_type,
+          'time'              => @time,
+          'representatives'   => @representatives.map(&:to_hash),
+          'propositions'      => @propositions.map(&:to_hash)
         }
       end
 

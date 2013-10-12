@@ -1,21 +1,21 @@
 {
-  "id": "hdo#parliamentSession",
+  "id": "hdo#parliament_session",
   "description": "Object representing the parliamentary year.",
   "type":"object",
   "properties": {
     "kind": {
       "type": "string",
-      "description": "This is always 'hdo#parliamentSession'",
-      "default": "hdo#parliamentSession",
+      "description": "This is always 'hdo#parliament_session'",
+      "default": "hdo#parliament_session",
       "required": true
     },
-    "startDate": {
+    "start_date": {
       "type": "string",
       "description": "The date the period started.",
       "format": "date",
       "required": true
     },
-    "endDate": {
+    "end_date": {
       "type": "string",
       "description": "The date the period ended.",
       "format": "date",

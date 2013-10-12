@@ -34,7 +34,7 @@ module Hdo
         str.should be_json <<-JSON
           {
             "kind": "hdo#committee",
-            "externalId": "ARBSOS",
+            "external_id": "ARBSOS",
             "name": "Arbeids- og sosialkomiteen"
           }
         JSON

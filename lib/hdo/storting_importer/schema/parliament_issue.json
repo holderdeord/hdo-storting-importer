@@ -1,15 +1,15 @@
 {
-  "id": "hdo#parliamentIssue",
+  "id": "hdo#parliament_issue",
   "description": "a parliament issue",
   "type":"object",
   "properties": {
     "kind": {
       "type": "string",
-      "description": "This is always 'hdo#parliamentIssue'",
-      "default": "hdo#parliamentIssue",
+      "description": "This is always 'hdo#parliament_issue'",
+      "default": "hdo#parliament_issue",
       "required": true
     },
-    "externalId": {
+    "external_id": {
       "type": "string",
       "description": "A unique identifier for the issue.",
       "required": false
@@ -34,7 +34,7 @@
       "description": "The status of the issue.",
       "required": true
     },
-    "lastUpdate": {
+    "last_update": {
       "type": "string",
       "description": "The date the issue was last updated in the parliament.",
       "required": true
@@ -44,7 +44,7 @@
       "description": "A reference",
       "required": true
     },
-    "documentGroup": {
+    "document_group": {
       "type": "string",
       "description": "What document group this issue belongs to.",
       "required": true

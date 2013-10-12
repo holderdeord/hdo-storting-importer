@@ -25,11 +25,11 @@ module Hdo
 
       def self.from_hash(hash)
         arr = [
-          hash['externalId'],
+          hash['external_id'],
           hash['description'],
-          hash['onBehalfOf'],
+          hash['on_behalf_of'],
           hash['body'],
-          hash['deliveredBy'] && Representative.from_hash(hash['deliveredBy']),
+          hash['delivered_by'] && Representative.from_hash(hash['delivered_by']),
         ]
 
         new(*arr)
@@ -67,14 +67,14 @@ module Hdo
 
       def to_hash
         h = {
-          'kind'        => self.class.kind,
-          'externalId'  => @external_id,
-          'description' => @description,
-          'onBehalfOf'  => @on_behalf_of,
-          'body'        => @body
+          'kind'         => self.class.kind,
+          'external_id'  => @external_id,
+          'description'  => @description,
+          'on_behalf_of' => @on_behalf_of,
+          'body'         => @body
         }
 
-        h['deliveredBy'] = @delivered_by.to_hash if @delivered_by
+        h['delivered_by'] = @delivered_by.to_hash if @delivered_by
 
         h
       end

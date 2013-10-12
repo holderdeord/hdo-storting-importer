@@ -46,7 +46,7 @@ module Hdo
         rep.last_name.should == 'Dahl'
         rep.gender.should == 'M'
         rep.district.should == 'Akershus'
-        rep.parties.should == [PartyMembership.from_hash('externalId' => 'H', 'startDate' => Date.today.strftime("%Y-%m-%d"), 'endDate' => nil)]
+        rep.parties.should == [PartyMembership.from_hash('external_id' => 'H', 'start_date' => Date.today.strftime("%Y-%m-%d"), 'end_date' => nil)]
         rep.external_id.should == 'ADA'
         rep.date_of_birth.should == '1975-07-07T00:00:00'
         rep.date_of_death.should == '0001-01-01T00:00:00'
@@ -57,15 +57,15 @@ module Hdo
         rep.to_json.should be_json <<-JSON
           {
             "kind": "hdo#representative",
-            "externalId": "ADA",
-            "firstName": "André Oktay",
-            "lastName": "Dahl",
+            "external_id": "ADA",
+            "first_name": "André Oktay",
+            "last_name": "Dahl",
             "gender": "M",
-            "dateOfBirth": "1975-07-07T00:00:00",
-            "dateOfDeath": "0001-01-01T00:00:00",
+            "date_of_birth": "1975-07-07T00:00:00",
+            "date_of_death": "0001-01-01T00:00:00",
             "district": "Akershus",
-            "parties": [{"kind": "hdo#partyMembership", "externalId": "H", "startDate": "2011-10-01", "endDate": null}],
-            "committees": [{"kind": "hdo#committeeMembership", "externalId": "JUSTIS", "startDate": "2011-10-01", "endDate": null}]
+            "parties": [{"kind": "hdo#party_membership", "external_id": "H", "start_date": "2011-10-01", "end_date": null}],
+            "committees": [{"kind": "hdo#committee_membership", "external_id": "JUSTIS", "start_date": "2011-10-01", "end_date": null}]
           }
         JSON
       end
@@ -74,17 +74,17 @@ module Hdo
         invalid = <<-JSON
         {
           "kind": "hdo#representative",
-          "externalId": "ADA",
-          "firstName": "André Oktay",
-          "lastName": "Dahl",
+          "external_id": "ADA",
+          "first_name": "André Oktay",
+          "last_name": "Dahl",
           "gender": "M",
-          "dateOfBirth": "1975-07-07T00:00:00",
-          "dateOfDeath": "0001-01-01T00:00:00",
+          "date_of_birth": "1975-07-07T00:00:00",
+          "date_of_death": "0001-01-01T00:00:00",
           "district": "Akershus",
           "party": "Høyre",
           "committees": ["Justiskomiteen"],
           "period": "2011-2012",
-          "voteResult": "blah"
+          "vote_result": "blah"
         }
 
         JSON
@@ -102,7 +102,7 @@ module Hdo
       end
 
       it 'can create a customized example' do
-        obj = Representative.example('firstName' => 'foo')
+        obj = Representative.example('first_name' => 'foo')
         obj.first_name.should == 'foo'
       end
 
@@ -111,7 +111,7 @@ module Hdo
         obj.permanent_substitute_for = "JB"
 
         data = obj.to_hash
-        data['permanentSubstituteFor'].should == "JB"
+        data['permanent_substitute_for'].should == "JB"
 
         Representative.from_hash(data).permanent_substitute_for.should == "JB"
       end

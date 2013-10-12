@@ -12,7 +12,7 @@ module Hdo
         Promise.example.to_json.should be_json <<-JSON
         {
           "kind": "hdo#promise",
-          "externalId": "1",
+          "external_id": "1",
           "parties": ["H"],
           "general": true,
           "categories": ["GRUNNSKOLE"],

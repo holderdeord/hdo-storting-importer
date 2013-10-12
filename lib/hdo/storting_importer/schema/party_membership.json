@@ -1,26 +1,26 @@
 {
-  "id": "hdo#partyMembership",
+  "id": "hdo#party_membership",
   "description": "a representative's party association for the given dates",
   "type":"object",
   "properties": {
     "kind": {
       "type": "string",
-      "description": "This is always 'hdo#partyMembership'",
-      "default": "hdo#partyMembership",
+      "description": "This is always 'hdo#party_membership'",
+      "default": "hdo#party_membership",
       "required": true
     },
-    "externalId": {
+    "external_id": {
       "type": "string",
       "description": "An unique identifier for the party (matching externalId of hdo#party)",
       "required": true
     },
-    "startDate": {
+    "start_date": {
       "type": "string",
       "description": "The date the association started.",
       "format": "date",
       "required": true
     },
-    "endDate": {
+    "end_date": {
       "type": "string",
       "description": "The date the association ended. Can be null if the association is current.",
       "format": "date",

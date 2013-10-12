@@ -9,7 +9,7 @@
       "default": "hdo#proposition",
       "required": true
     },
-    "externalId": {
+    "external_id": {
       "type": "string",
       "description": "A unique identifier for the proposition.",
       "required": true
@@ -19,7 +19,7 @@
       "description": "A short description of the proposition.",
       "required": true
     },
-    "onBehalfOf": {
+    "on_behalf_of": {
       "type": "string",
       "description": "Description of who is behind the proposition.",
       "required": true
@@ -29,7 +29,7 @@
       "description": "The full text of the proposition.",
       "required": true
     },
-    "deliveredBy": {
+    "delivered_by": {
       "$ref": "hdo#representative"
     }
   }

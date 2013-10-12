@@ -110,97 +110,97 @@ Feature: Import data
       [
         {
           "kind": "hdo#district",
-          "externalId": "AA",
+          "external_id": "AA",
           "name": "Aust-Agder"
         },
         {
           "kind": "hdo#district",
-          "externalId": "VA",
+          "external_id": "VA",
           "name": "Vest-Agder"
         },
         {
           "kind": "hdo#district",
-          "externalId": "Ak",
+          "external_id": "Ak",
           "name": "Akershus"
         },
         {
           "kind": "hdo#district",
-          "externalId": "Bu",
+          "external_id": "Bu",
           "name": "Buskerud"
         },
         {
           "kind": "hdo#district",
-          "externalId": "Fi",
+          "external_id": "Fi",
           "name": "Finnmark"
         },
         {
           "kind": "hdo#district",
-          "externalId": "He",
+          "external_id": "He",
           "name": "Hedmark"
         },
         {
           "kind": "hdo#district",
-          "externalId": "Ho",
+          "external_id": "Ho",
           "name": "Hordaland"
         },
         {
           "kind": "hdo#district",
-          "externalId": "MR",
+          "external_id": "MR",
           "name": "Møre og Romsdal"
         },
         {
           "kind": "hdo#district",
-          "externalId": "No",
+          "external_id": "No",
           "name": "Nordland"
         },
         {
           "kind": "hdo#district",
-          "externalId": "Op",
+          "external_id": "Op",
           "name": "Oppland"
         },
         {
           "kind": "hdo#district",
-          "externalId": "Os",
+          "external_id": "Os",
           "name": "Oslo"
         },
         {
           "kind": "hdo#district",
-          "externalId": "Ro",
+          "external_id": "Ro",
           "name": "Rogaland"
         },
         {
           "kind": "hdo#district",
-          "externalId": "SF",
+          "external_id": "SF",
           "name": "Sogn og Fjordane"
         },
         {
           "kind": "hdo#district",
-          "externalId": "Te",
+          "external_id": "Te",
           "name": "Telemark"
         },
         {
           "kind": "hdo#district",
-          "externalId": "Tr",
+          "external_id": "Tr",
           "name": "Troms"
         },
         {
           "kind": "hdo#district",
-          "externalId": "NT",
+          "external_id": "NT",
           "name": "Nord-Trøndelag"
         },
         {
           "kind": "hdo#district",
-          "externalId": "ST",
+          "external_id": "ST",
           "name": "Sør-Trøndelag"
         },
         {
           "kind": "hdo#district",
-          "externalId": "Ve",
+          "external_id": "Ve",
           "name": "Vestfold"
         },
         {
           "kind": "hdo#district",
-          "externalId": "Øs",
+          "external_id": "Øs",
           "name": "Østfold"
         }
       ]

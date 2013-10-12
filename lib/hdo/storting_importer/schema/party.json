@@ -9,7 +9,7 @@
       "default": "hdo#party",
       "required": true
     },
-    "externalId": {
+    "external_id": {
       "type": "string",
       "description": "A unique identifier for the party.",
       "required": true
@@ -19,19 +19,19 @@
       "type": "string",
       "required": true
     },
-    "governingPeriods": {
+    "governing_periods": {
       "type": "array",
       "description": "Periods where this party was in the elected government.",
       "items": {
         "type": "object",
         "properties": {
-          "startDate": {
+          "start_date": {
             "type": "string",
             "format": "date",
             "description": "When the governing period started.",
             "required": true
           },
-          "endDate": {
+          "end_date": {
             "type": "string",
             "format": "date",
             "description": "When the governing period stopped."

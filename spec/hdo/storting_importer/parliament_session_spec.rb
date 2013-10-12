@@ -49,10 +49,10 @@ module Hdo
       it 'can serialize as JSON' do
         expected = <<-JSON
         {
-          "kind": "hdo#parliamentSession",
-          "externalId": "2012-2013",
-          "startDate": "2012-10-01",
-          "endDate": "2013-09-30"
+          "kind": "hdo#parliament_session",
+          "external_id": "2012-2013",
+          "start_date": "2012-10-01",
+          "end_date": "2013-09-30"
         }
         JSON
 
@@ -61,7 +61,7 @@ module Hdo
       end
 
       it 'can create a customized example' do
-        obj = ParliamentSession.example('endDate' => nil)
+        obj = ParliamentSession.example('end_date' => nil)
         obj.end_date.should be_nil
       end
 

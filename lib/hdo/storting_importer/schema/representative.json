@@ -9,17 +9,17 @@
       "default": "hdo#representative",
       "required": true
     },
-    "externalId": {
+    "external_id": {
       "type": "string",
       "description": "A unique identifier for the representative.",
       "required": true
     },
-    "firstName": {
+    "first_name": {
       "type": "string",
       "description": "The first name of the representative",
       "required": true
     },
-    "lastName": {
+    "last_name": {
       "type": "string",
       "description": "The first name of the representative",
       "required": true
@@ -32,30 +32,30 @@
     "parties": {
       "type": "array",
       "description": "A list of party memberships for this representative. Note that the import code will assume the field is incomplete, and handle this as an append to the current data unless the start date matches.",
-      "items": { "$ref": "hdo#partyMembership"},
+      "items": { "$ref": "hdo#party_membership"},
       "required": true
     },
     "committees": {
       "type": "array",
       "description": "A list of committee memberships for this representative. If this doesn't match the current state, it will always be treated as a change in committee memberships.",
-      "items": { "$ref": "hdo#committeeMembership" },
+      "items": { "$ref": "hdo#committee_membership" },
       "required": true
     },
-    "dateOfBirth": {
+    "date_of_birth": {
       "type": "string",
       "description": "The representative's birth date.",
       "required": true
     },
-    "dateOfDeath": {
+    "date_of_death": {
       "type": "string",
       "description": "The representative's death date."
     },
-    "voteResult": {
+    "vote_result": {
       "type": "string",
       "description": "If this representative object is part of a hdo#vote, this property describes how the representative voted. Valid values are for|against|absent.",
       "pattern": "for|against|absent"
     },
-    "permanentSubstituteFor": {
+    "permanent_substitute_for": {
       "type": "string",
       "description": "A representative the current representative is a permanent substitute for."
     }

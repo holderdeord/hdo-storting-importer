@@ -41,7 +41,7 @@ module Hdo
         expected = <<-JSON
         {
           "kind": "hdo#district",
-          "externalId": "Ak",
+          "external_id": "Ak",
           "name": "Akershus"
         }
         JSON

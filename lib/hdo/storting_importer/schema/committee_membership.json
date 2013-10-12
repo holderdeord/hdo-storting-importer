@@ -1,26 +1,26 @@
 {
-  "id": "hdo#committeeMembership",
+  "id": "hdo#committee_membership",
   "description": "a representative's committee associations for the given dates",
   "type":"object",
   "properties": {
     "kind": {
       "type": "string",
-      "description": "This is always 'hdo#committeeMembership'",
-      "default": "hdo#committeeMembership",
+      "description": "This is always 'hdo#committee_membership'",
+      "default": "hdo#committee_membership",
       "required": true
     },
-    "externalId": {
+    "external_id": {
       "type": "string",
       "description": "An ID uniquely identifying the committee (matching externalId of hdo#committee)",
       "required": true
     },
-    "startDate": {
+    "start_date": {
       "type": "string",
       "description": "The date the association started.",
       "format": "date",
       "required": true
     },
-    "endDate": {
+    "end_date": {
       "type": "string",
       "description": "The date the association ended. Can be null if the association is current.",
       "format": "date",

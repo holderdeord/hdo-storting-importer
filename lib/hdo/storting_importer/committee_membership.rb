@@ -20,9 +20,9 @@ module Hdo
       def self.from_hash(hash)
         binding.pry unless Hash === hash
 
-        new hash['externalId'],
-            (Date.parse(hash['startDate']) if hash['startDate']),
-            (Date.parse(hash['endDate']) if hash['endDate'])
+        new hash['external_id'],
+            (Date.parse(hash['start_date']) if hash['start_date']),
+            (Date.parse(hash['end_date']) if hash['end_date'])
       end
 
       attr_reader :external_id, :start_date, :end_date
@@ -35,10 +35,10 @@ module Hdo
 
       def to_hash
         {
-          'kind'       => self.class.kind,
-          'externalId' => external_id,
-          'startDate'  => (start_date.strftime("%Y-%m-%d") if start_date),
-          'endDate'    => (end_date.strftime("%Y-%m-%d") if end_date)
+          'kind'        => self.class.kind,
+          'external_id' => external_id,
+          'start_date'  => (start_date.strftime("%Y-%m-%d") if start_date),
+          'end_date'    => (end_date.strftime("%Y-%m-%d") if end_date)
         }
       end
 

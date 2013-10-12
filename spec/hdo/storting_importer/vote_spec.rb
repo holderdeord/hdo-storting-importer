@@ -79,8 +79,8 @@ module Hdo
         Vote.example.to_json.should be_json <<-JSON
         {
           "kind": "hdo#vote",
-          "externalId": "2175",
-          "externalIssueId": "51448",
+          "external_id": "2175",
+          "external_issue_id": "51448",
           "counts": {
             "for": 2,
             "against": 96,
@@ -90,41 +90,41 @@ module Hdo
           "enacted": false,
           "subject": "Forslag 24 - 26 på vegne av Per Olaf Lundteigen",
           "method": "ikke_spesifisert",
-          "resultType": "ikke_spesifisert",
+          "result_type": "ikke_spesifisert",
           "time": "2012-04-12T16:37:27.053",
           "representatives": [
             {
               "kind": "hdo#representative",
-              "externalId": "ADA",
-              "firstName": "André Oktay",
-              "lastName": "Dahl",
+              "external_id": "ADA",
+              "first_name": "André Oktay",
+              "last_name": "Dahl",
               "gender": "M",
-              "dateOfBirth": "1975-07-07T00:00:00",
-              "dateOfDeath": "0001-01-01T00:00:00",
+              "date_of_birth": "1975-07-07T00:00:00",
+              "date_of_death": "0001-01-01T00:00:00",
               "district": "Akershus",
-              "parties": [{"kind": "hdo#partyMembership", "externalId": "H", "startDate": "2011-10-01", "endDate": null}],
-              "committees": [{"kind": "hdo#committeeMembership", "externalId": "JUSTIS", "startDate": "2011-10-01", "endDate": null}],
-              "voteResult": "for"
+              "parties": [{"kind": "hdo#party_membership", "external_id": "H", "start_date": "2011-10-01", "end_date": null}],
+              "committees": [{"kind": "hdo#committee_membership", "external_id": "JUSTIS", "start_date": "2011-10-01", "end_date": null}],
+              "vote_result": "for"
             }
             ],
           "propositions": [
             {
               "kind": "hdo#proposition",
-              "externalId": "1234",
+              "external_id": "1234",
               "description": "description",
-              "onBehalfOf": "on behalf of",
+              "on_behalf_of": "on behalf of",
               "body": "body",
-              "deliveredBy": {
+              "delivered_by": {
                 "kind": "hdo#representative",
-                "externalId": "ADA",
-                "firstName": "André Oktay",
-                "lastName": "Dahl",
+                "external_id": "ADA",
+                "first_name": "André Oktay",
+                "last_name": "Dahl",
                 "gender": "M",
-                "dateOfBirth": "1975-07-07T00:00:00",
-                "dateOfDeath": "0001-01-01T00:00:00",
+                "date_of_birth": "1975-07-07T00:00:00",
+                "date_of_death": "0001-01-01T00:00:00",
                 "district": "Akershus",
-                "parties": [{"kind": "hdo#partyMembership", "externalId": "H", "startDate": "2011-10-01", "endDate": null}],
-                "committees": [{"kind": "hdo#committeeMembership", "externalId": "JUSTIS", "startDate": "2011-10-01", "endDate": null}]
+                "parties": [{"kind": "hdo#party_membership", "external_id": "H", "start_date": "2011-10-01", "end_date": null}],
+                "committees": [{"kind": "hdo#committee_membership", "external_id": "JUSTIS", "start_date": "2011-10-01", "end_date": null}]
               }
             }
           ]

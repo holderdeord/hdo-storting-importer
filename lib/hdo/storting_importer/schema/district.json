@@ -9,7 +9,7 @@
         "default": "hdo#district",
         "required": true
     },
-    "externalId": {
+    "external_id": {
       "type": "string",
       "description": "A unique identifier for the district.",
       "required": true

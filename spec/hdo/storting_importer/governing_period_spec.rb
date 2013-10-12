@@ -10,9 +10,9 @@ module Hdo
       it 'can serialize as JSON' do
         expected = <<-JSON
         {
-          "kind": "hdo#governingPeriod",
-          "startDate": "2005-10-01",
-          "endDate": "2013-09-30"
+          "kind": "hdo#governing_period",
+          "start_date": "2005-10-01",
+          "end_date": "2013-09-30"
         }
         JSON
 

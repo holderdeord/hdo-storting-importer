@@ -3,24 +3,24 @@ require 'spec_helper'
 
 module Hdo
   module StortingImporter
-    describe PartyMembership do
+    describe CommitteeMembership do
 
       it_behaves_like 'type with JSON schema'
 
       it 'can serialize as JSON' do
-        str = PartyMembership.example.to_json
+        str = CommitteeMembership.example.to_json
         str.should be_json <<-JSON
           {
-            "kind": "hdo#partyMembership",
-            "externalId": "A",
-            "startDate": "2009-09-01",
-            "endDate": "2013-08-01"
+            "kind": "hdo#committee_membership",
+            "external_id": "ARBSOS",
+            "start_date": "2009-09-01",
+            "end_date": "2013-08-01"
           }
         JSON
       end
 
       it 'can create a customized example' do
-        obj = PartyMembership.example('externalId' => 'foo')
+        obj = CommitteeMembership.example('external_id' => 'foo')
         obj.external_id.should == 'foo'
       end
 

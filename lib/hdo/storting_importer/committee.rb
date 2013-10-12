@@ -31,7 +31,7 @@ module Hdo
       end
 
       def self.from_hash(hash)
-        new hash['externalId'], hash['name']
+        new hash['external_id'], hash['name']
       end
 
       def initialize(external_id, name)
@@ -41,9 +41,9 @@ module Hdo
 
       def to_hash
         {
-          'kind'       => self.class.kind,
-          'externalId' => @external_id,
-          'name'       => @name
+          'kind'        => self.class.kind,
+          'external_id' => @external_id,
+          'name'        => @name
         }
       end
 

@@ -23,8 +23,8 @@ module Hdo
           '1975-07-07T00:00:00',
           '0001-01-01T00:00:00',
           'Akershus',
-          [PartyMembership.from_hash("externalId" => 'H', 'startDate' => '2011-10-01', 'endDate' => nil)],
-          [CommitteeMembership.from_hash('externalId' => 'JUSTIS', 'startDate' => '2011-10-01', 'endDate' => nil)]
+          [PartyMembership.from_hash("external_id" => 'H', 'start_date' => '2011-10-01', 'end_date' => nil)],
+          [CommitteeMembership.from_hash('external_id' => 'JUSTIS', 'start_date' => '2011-10-01', 'end_date' => nil)]
         )
 
         if overrides
@@ -85,18 +85,18 @@ module Hdo
       end
 
       def self.from_hash(hash)
-        v = new hash['externalId'],
-                hash['firstName'],
-                hash['lastName'],
+        v = new hash['external_id'],
+                hash['first_name'],
+                hash['last_name'],
                 hash['gender'],
-                hash['dateOfBirth'],
-                hash['dateOfDeath'],
+                hash['date_of_birth'],
+                hash['date_of_death'],
                 hash['district'],
                 Array(hash['parties']).map { |e| PartyMembership.from_hash(e) },
                 Array(hash['committees']).map { |e| CommitteeMembership.from_hash(e) }
 
-        v.vote_result = hash['voteResult']
-        v.permanent_substitute_for = hash['permanentSubstituteFor']
+        v.vote_result = hash['vote_result']
+        v.permanent_substitute_for = hash['permanent_substitute_for']
 
         v
       end
@@ -126,20 +126,20 @@ module Hdo
 
       def to_hash
         h = {
-          'kind'        => self.class.kind,
-          'externalId'  => @external_id,
-          'firstName'   => @first_name,
-          'lastName'    => @last_name,
-          'gender'      => @gender,
-          'dateOfBirth' => @date_of_birth,
-          'dateOfDeath' => @date_of_death,
-          'district'    => @district,
-          'parties'     => @parties.map { |e| e.to_hash },
-          'committees'  => @committees.map { |e| e.to_hash }
+          'kind'          => self.class.kind,
+          'external_id'   => @external_id,
+          'first_name'    => @first_name,
+          'last_name'     => @last_name,
+          'gender'        => @gender,
+          'date_of_birth' => @date_of_birth,
+          'date_of_death' => @date_of_death,
+          'district'      => @district,
+          'parties'       => @parties.map { |e| e.to_hash },
+          'committees'    => @committees.map { |e| e.to_hash }
         }
 
-        h['voteResult'] = @vote_result if @vote_result
-        h['permanentSubstituteFor'] = @permanent_substitute_for if @permanent_substitute_for
+        h['vote_result'] = @vote_result if @vote_result
+        h['permanent_substitute_for'] = @permanent_substitute_for if @permanent_substitute_for
 
         h
       end

@@ -33,10 +33,10 @@ module Hdo
       end
 
       def self.from_hash(hash)
-        obj = new hash['externalId'],
+        obj = new hash['external_id'],
                   hash['name']
 
-        obj.governing_periods = Array(hash['governingPeriods']).map do |gp|
+        obj.governing_periods = Array(hash['governing_periods']).map do |gp|
           GoverningPeriod.from_hash gp
         end
 
@@ -55,13 +55,13 @@ module Hdo
 
       def to_hash
         h = {
-          'kind'       => self.class.kind,
-          'externalId' => @external_id,
-          'name'       => @name,
+          'kind'        => self.class.kind,
+          'external_id' => @external_id,
+          'name'        => @name,
         }
 
         if @governing_periods
-          h['governingPeriods'] = @governing_periods.map { |e| e.to_hash }
+          h['governing_periods'] = @governing_periods.map { |e| e.to_hash }
         end
 
         h

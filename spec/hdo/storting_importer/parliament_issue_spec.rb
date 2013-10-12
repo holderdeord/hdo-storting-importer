@@ -75,15 +75,15 @@ module Hdo
       it 'can serialize as JSON' do
         ParliamentIssue.example.to_json.should be_json <<-JSON
         {
-          "kind": "hdo#parliamentIssue",
-          "externalId" : "53520",
+          "kind": "hdo#parliament_issue",
+          "external_id" : "53520",
           "summary": "Inngåelse av avtale om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
           "description": "Samtykke til inngåelse av avtale av 25. november 2011 om opprettelse av sekretariatet for Den nordlige dimensjons partnerskap for helse og livskvalitet (NDPHS)",
           "type": "alminneligsak",
           "status": "mottatt",
-          "lastUpdate": "2012-04-20T00:00:00",
+          "last_update": "2012-04-20T00:00:00",
           "reference": "Prop. 90 S (2011-2012)",
-          "documentGroup": "proposisjon",
+          "document_group": "proposisjon",
           "committee": "Transport- og kommunikasjonskomiteen",
           "categories": ["UTENRIKSSAKER", "TRAKTATER", "NORDISK SAMARBEID"]
         }

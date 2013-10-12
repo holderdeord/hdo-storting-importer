@@ -49,8 +49,8 @@ module Hdo
       end
 
       def self.from_hash(data)
-        obj = new data['externalId'], data['name']
-        obj.children = Array(data['subCategories']).map { |e| from_hash(e) }
+        obj = new data['external_id'], data['name']
+        obj.children = Array(data['sub_categories']).map { |e| from_hash(e) }
 
         obj
       end
@@ -67,12 +67,12 @@ module Hdo
 
       def to_hash
         h = {
-          'kind'       => self.class.kind,
-          'externalId' => @external_id,
-          'name'       => @name
+          'kind'        => self.class.kind,
+          'external_id' => @external_id,
+          'name'        => @name
         }
 
-        h['subCategories'] = @children.map { |e| e.to_hash } if @children.any?
+        h['sub_categories'] = @children.map { |e| e.to_hash } if @children.any?
 
         h
       end

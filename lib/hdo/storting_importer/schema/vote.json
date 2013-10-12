@@ -9,12 +9,12 @@
       "default": "hdo#vote",
       "required": true
     },
-    "externalId": {
+    "external_id": {
       "type": "string",
       "description": "A unique identifier for the vote.",
       "required": true
     },
-    "externalIssueId": {
+    "external_issue_id": {
       "type": "string",
       "description": "External ID of the issue being voted on (TODO: this is an 'append', since one vote may have multiple issues).",
       "required": true
@@ -53,13 +53,13 @@
       "type": "string",
       "description": "Not entirely what sure this is at the moment."
     },
-    "resultType": {
+    "result_type": {
       "type": "string",
       "description": "Not entirely what sure this is at the moment."
     },
     "representatives": {
       "type": "array",
-      "description": "An array of each representative's vote. The object should contain a set of <a href='#input-format-representative'>hdo#representative</a> objects with the property 'voteResult' added, for which valid values are 'for', 'against', 'absent'.",
+      "description": "An array of each representative's vote. The object should contain a set of <a href='#input-format-representative'>hdo#representative</a> objects with the property 'vote_result' added, for which valid values are 'for', 'against', 'absent'.",
       "items": { "$ref": "hdo#representative" }
     },
     "propositions": {

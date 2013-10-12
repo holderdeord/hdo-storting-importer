@@ -51,10 +51,10 @@ module Hdo
         cat.to_json.should be_json('
         {
           "kind": "hdo#category",
-          "externalId": "5",
+          "external_id": "5",
           "name": "ARBEIDSLIV",
-          "subCategories": [
-            { "kind": "hdo#category", "externalId": "3", "name": "LØNN" }
+          "sub_categories": [
+            { "kind": "hdo#category", "external_id": "3", "name": "LØNN" }
           ]
         }')
       end
