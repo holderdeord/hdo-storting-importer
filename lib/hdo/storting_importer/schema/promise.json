@@ -14,13 +14,10 @@
       "description": "A unique identifier for this promise.",
       "required": true
     },
-    "parties": {
-      "type": "array",
-      "description": "List of parties (i.e. 'A', 'SV', 'Sp'). Usually a single party.",
-      "required": true,
-      "items": {
-        "type": "string"
-      }
+    "promisor": {
+      "type": "string",
+      "description": "A party id (i.e. 'A', 'SV', 'Sp') or government name (i.e. 'Stoltenberg II')",
+      "required": true
     },
     "general": {
       "type": "boolean",

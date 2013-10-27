@@ -8,7 +8,7 @@ module Hdo
       include HasJsonSchema
       include IvarEquality
 
-      attr_reader :external_id, :parties, :body, :general, :categories, :source, :page, :period
+      attr_reader :external_id, :promisor, :body, :general, :categories, :source, :page, :period
       alias_method :general?, :general
       alias_method :short_inspect, :inspect
 
@@ -17,7 +17,7 @@ module Hdo
       def self.example(overrides = nil)
         obj = new(
           "1",
-          ["H"],
+          "H",
           "Stille strengere krav til orden og oppførsel for å hindre at uro ødelegger undervisningen.",
           true,
           ["GRUNNSKOLE"],
@@ -58,7 +58,7 @@ module Hdo
 
           external_id = data.fetch(0).to_i.to_s
           period      = data.fetch(1)
-          parties     = data.fetch(2)
+          promisor    = data.fetch(2)
           body        = data.fetch(3)
           general     = data.fetch(4).to_s.strip.downcase
           categories  = data.fetch(5)
@@ -73,10 +73,12 @@ module Hdo
             errors << "row #{external_id}: unexpected value #{page.inspect} for page"
           end
 
-          if parties.nil? || parties.empty?
-            errors << "row #{external_id}: parties missing"
+          if promisor.nil? || promisor.empty?
+            errors << "row #{external_id}: promisor missing"
+          elsif promise.include?(",")
+            errors << "row #{external_id}: comma not allowed in promisor id/name"
           end
-
+          
           if categories.nil? || categories.empty?
             errors << "row #{external_id}: categories missing"
           end
@@ -99,7 +101,7 @@ module Hdo
           end
 
           promise = new external_id,
-                        parties.strip,
+                        promisor.strip,
                         clean_invalid_unicode.call(body.strip),
                         general.downcase == "ja",
                         clean_invalid_unicode.call(categories),
@@ -126,7 +128,7 @@ module Hdo
 
       def self.from_hash(hash)
         pr = new hash['external_id'],
-                 hash['parties'],
+                 hash['promisor'],
                  hash['body'],
                  hash['general'],
                  hash['categories'],
@@ -137,9 +139,9 @@ module Hdo
         pr
       end
 
-      def initialize(external_id, parties, body, general, categories, source, page, period)
+      def initialize(external_id, promisor, body, general, categories, source, page, period)
         @external_id = external_id
-        @parties     = clean_array(parties)
+        @promisor    = promisor
         @body        = strip_if_string(body)
         @general     = general
         @categories  = clean_array(categories).map { |e| UnicodeUtils.upcase(e) }
@@ -152,7 +154,7 @@ module Hdo
         {
           'kind'        => self.class.kind,
           'external_id' => @external_id,
-          'parties'     => @parties,
+          'promisor'    => @promisor,
           'general'     => @general,
           'categories'  => @categories,
           'source'      => @source,
