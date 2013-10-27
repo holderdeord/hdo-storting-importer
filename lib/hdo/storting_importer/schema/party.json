@@ -18,26 +18,6 @@
       "description": "The name of the party",
       "type": "string",
       "required": true
-    },
-    "governing_periods": {
-      "type": "array",
-      "description": "Periods where this party was in the elected government.",
-      "items": {
-        "type": "object",
-        "properties": {
-          "start_date": {
-            "type": "string",
-            "format": "date",
-            "description": "When the governing period started.",
-            "required": true
-          },
-          "end_date": {
-            "type": "string",
-            "format": "date",
-            "description": "When the governing period stopped."
-          }
-        }
-      }
     }
   }
 }

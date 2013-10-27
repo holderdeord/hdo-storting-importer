@@ -6,7 +6,7 @@ module Hdo
     describe CachingDataSource do
 
       it 'caches requests' do
-        delegate = mock(DataSource)
+        delegate = double(DataSource)
 
         ads = CachingDataSource.new(delegate)
 

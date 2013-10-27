@@ -40,14 +40,7 @@ module Hdo
         {
           "kind": "hdo#party",
           "external_id": "A",
-          "name": "Arbeiderpartiet",
-          "governing_periods": [
-            {
-              "kind": "hdo#governing_period",
-              "start_date": "2005-10-17",
-              "end_date": "2013-10-14"
-            }
-          ]
+          "name": "Arbeiderpartiet"
         }
         JSON
       end

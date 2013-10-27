@@ -30,7 +30,6 @@ module Hdo
         Committee,
         CommitteeMembership,
         District,
-        GoverningPeriod,
         ParliamentIssue,
         ParliamentSession,
         ParliamentPeriod,
@@ -138,6 +137,5 @@ require 'hdo/storting_importer/promise'
 require 'hdo/storting_importer/representative'
 require 'hdo/storting_importer/proposition'
 require 'hdo/storting_importer/vote'
-require 'hdo/storting_importer/governing_period'
 
 require 'hdo/storting_importer/cli'
