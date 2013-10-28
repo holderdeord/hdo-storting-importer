@@ -75,7 +75,7 @@ module Hdo
 
           if promisor.nil? || promisor.empty?
             errors << "row #{external_id}: promisor missing"
-          elsif promise.include?(",")
+          elsif promisor.include?(",")
             errors << "row #{external_id}: comma not allowed in promisor id/name"
           end
           
