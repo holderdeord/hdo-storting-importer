@@ -20,6 +20,7 @@ module Hdo
               <etternavn>Dahl</etternavn>
               <foedselsdato>1975-07-07T00:00:00</foedselsdato>
               <fornavn>André Oktay</fornavn>
+              <epost>aod@stortinget.no</epost>
               <id>ADA</id>
               <kjoenn>mann</kjoenn>
               <fylke>
@@ -44,6 +45,7 @@ module Hdo
         rep = representatives.first
         rep.first_name.should == 'André Oktay'
         rep.last_name.should == 'Dahl'
+        rep.email.should == 'aod@stortinget.no'
         rep.gender.should == 'M'
         rep.district.should == 'Akershus'
         rep.parties.should == [PartyMembership.from_hash('external_id' => 'H', 'start_date' => Date.today.strftime("%Y-%m-%d"), 'end_date' => nil)]
@@ -60,6 +62,7 @@ module Hdo
             "external_id": "ADA",
             "first_name": "André Oktay",
             "last_name": "Dahl",
+            "email": "aod@stortinget.no",
             "gender": "M",
             "date_of_birth": "1975-07-07T00:00:00",
             "date_of_death": "0001-01-01T00:00:00",
@@ -77,6 +80,7 @@ module Hdo
           "external_id": "ADA",
           "first_name": "André Oktay",
           "last_name": "Dahl",
+          "email": "aod@stortinget.no",
           "gender": "M",
           "date_of_birth": "1975-07-07T00:00:00",
           "date_of_death": "0001-01-01T00:00:00",

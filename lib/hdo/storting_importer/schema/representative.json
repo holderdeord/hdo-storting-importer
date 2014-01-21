@@ -24,6 +24,10 @@
       "description": "The first name of the representative",
       "required": true
     },
+    "email": {
+      "type": "string",
+      "description": "The representative email, if available."
+    },
     "district": {
       "type": "string",
       "description": "The electoral district the representative belongs to. Must match the 'name' field of the district type.",

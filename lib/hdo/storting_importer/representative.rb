@@ -7,7 +7,7 @@ module Hdo
       include IvarEquality
       include Inspectable
 
-      attr_reader :external_id, :first_name, :last_name, :date_of_birth, :date_of_death,
+      attr_reader :external_id, :first_name, :last_name, :email, :date_of_birth, :date_of_death,
                   :district, :parties, :committees, :period, :gender
 
       attr_accessor :vote_result, :permanent_substitute_for
@@ -19,6 +19,7 @@ module Hdo
           'ADA',
           'André Oktay',
           'Dahl',
+          'aod@stortinget.no',
           'M',
           '1975-07-07T00:00:00',
           '0001-01-01T00:00:00',
@@ -59,6 +60,13 @@ module Hdo
           parties = []
         end
 
+        email_node = node.css('epost').first
+        if email_node
+          email = email_node.text
+        else
+          email = nil
+        end
+
         committee_ids = node.css("komite").map { |c| c.css("id").text.strip }
         committees = committee_ids.map do |id|
           CommitteeMembership.new(id, start_date, end_date)
@@ -68,6 +76,7 @@ module Hdo
           node.css("id").first.text,
           node.css("fornavn").first.text,
           node.css("etternavn").first.text,
+          email,
           node.css("kjoenn").first.text == "mann" ? 'M' : 'F',
           node.css("foedselsdato").first.text,
           node.css("doedsdato").first.text,
@@ -88,6 +97,7 @@ module Hdo
         v = new hash['external_id'],
                 hash['first_name'],
                 hash['last_name'],
+                hash['email'],
                 hash['gender'],
                 hash['date_of_birth'],
                 hash['date_of_death'],
@@ -101,10 +111,11 @@ module Hdo
         v
       end
 
-      def initialize(external_id, first_name, last_name, gender, date_of_birth, date_of_death, district, parties, committees)
+      def initialize(external_id, first_name, last_name, email, gender, date_of_birth, date_of_death, district, parties, committees)
         @external_id   = external_id
         @first_name    = first_name
         @last_name     = last_name
+        @email         = email
         @gender        = gender
         @date_of_birth = date_of_birth
         @date_of_death = date_of_death
@@ -130,6 +141,7 @@ module Hdo
           'external_id'   => @external_id,
           'first_name'    => @first_name,
           'last_name'     => @last_name,
+          'email'         => @email,
           'gender'        => @gender,
           'date_of_birth' => @date_of_birth,
           'date_of_death' => @date_of_death,
