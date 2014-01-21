@@ -128,7 +128,7 @@ module Hdo
       end
 
       def short_inspect
-        short_inspect_string :include => [:external_id, :first_name, :last_name, :parties, :vote_result]
+        short_inspect_string :include => [:external_id, :first_name, :last_name, :email, :parties, :vote_result]
       end
 
       def external_id
