@@ -6,6 +6,19 @@ module Hdo
       end
 
       class ServerError < StandardError
+        def initialize(msg, response)
+          super(msg)
+
+          @response = response
+        end
+
+        def code
+          @response.status
+        end
+
+        def body
+          @response.body
+        end
       end
 
       private

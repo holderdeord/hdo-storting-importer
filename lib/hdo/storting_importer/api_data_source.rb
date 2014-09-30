@@ -120,7 +120,7 @@ module Hdo
         end
 
         if response.status != 200
-          raise ServerError, "response code #{response.status}\n#{response.body}"
+          raise ServerError.new("response code #{response.status}", response)
         end
 
         response.body
