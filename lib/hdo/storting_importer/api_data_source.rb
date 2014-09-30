@@ -37,6 +37,31 @@ module Hdo
         fetch 'eksport/dagensrepresentanter/'
       end
 
+      def person(person_id)
+        fetch "eksport/person?personid=#{person_id}"
+      end
+
+      #
+      # Fetch JPEG photo data for the specified person
+      #
+      # @param [String] person_id
+      # @param [:small, :medium, :large] size
+      #
+
+      def person_photo(person_id, size = :medium)
+        size_param = {
+          :small  => 'lite',
+          :medium => 'middels',
+          :large  => 'stort'
+        }.fetch(size)
+
+        fetch_raw "eksport/personbilde?personid=#{person_id}&storrelse=#{size_param}"
+      end
+
+      def speaker_list
+        fetch 'eksport/talerliste'
+      end
+
       #
       # fetch parties for the given session
       #
@@ -88,7 +113,7 @@ module Hdo
 
       private
 
-      def fetch(path)
+      def fetch_raw(path)
         Hdo::StortingImporter.logger.info "parsing #{path}"
         response = @connection.get(path) do |request|
           request.headers['User-Agent'] = USER_AGENT
@@ -98,7 +123,11 @@ module Hdo
           raise ServerError, "response code #{response.status}\n#{response.body}"
         end
 
-        parse response.body
+        response.body
+      end
+
+      def fetch(path)
+        parse fetch_raw(path)
       end
 
     end

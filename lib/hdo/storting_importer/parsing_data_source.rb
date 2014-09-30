@@ -58,6 +58,19 @@ module Hdo
         votes
       end
 
+      def person(person_id)
+        raise NotImplementedError, "fix me"
+      end
+
+      def person_photo(person_id, size = :medium)
+        # jpeg data - no parsing
+        @data_source.person_photo(person_id, size)
+      end
+
+      def speaker_list
+        raise NotImplementedError, "fix me"
+      end
+
       def propositions_for(vote_id)
         raise NotImplementedError, 'result of #votes_for includes propositions'
       end
