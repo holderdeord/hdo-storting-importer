@@ -42,9 +42,27 @@ module Hdo
         end
       end
 
+      def parliament_periods
+        cache :parliament_periods do
+          @delegate.parliament_periods
+        end
+      end
+
+      def parliament_sessions
+        cache :parliament_sessions do
+          @delegate.parliament_sessions
+        end
+      end
+
       def parliament_issues(session_id)
         cache :parliament_issues, session_id do
           @delegate.parliament_issues session_id
+        end
+      end
+
+      def parliament_issue_details(parliament_issue_id)
+        cache :parliament_issue_details, parliament_issue_id do
+          @delegate.parliament_issue_details parliament_issue_id
         end
       end
 
