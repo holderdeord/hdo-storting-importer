@@ -16,9 +16,9 @@ namespace :doc do
     Hdo::StortingImporter.print_types
   end
 
-  desc 'Like `rake docs`, but includes XML examples.'
-  task :xml => :env do
-    Hdo::StortingImporter.print_types :xml => true
+  desc 'Like `rake docs`, but includes JSON examples.'
+  task :json => :env do
+    Hdo::StortingImporter.print_types :json => true
   end
 end
 

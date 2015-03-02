@@ -45,6 +45,10 @@ module Hdo
         ParliamentIssue.from_storting_doc @data_source.parliament_issues(session_id)
       end
 
+      def parliament_issue_details(parliament_issue_id)
+        ParliamentIssueDetails.from_storting_doc @data_source.parliament_issue_details(parliament_issue_id)
+      end
+
       def votes_for(issue_id)
         votes = Vote.from_storting_doc @data_source.votes_for(issue_id)
 

@@ -31,6 +31,7 @@ module Hdo
         CommitteeMembership,
         District,
         ParliamentIssue,
+        ParliamentIssueDetails,
         ParliamentSession,
         ParliamentPeriod,
         Party,
@@ -43,8 +44,8 @@ module Hdo
     end
 
     def self.print_types(opts = {})
-      out = opts[:io] || $stdout
-      xml = !!opts[:xml]
+      out  = opts[:io] || $stdout
+      json = !!opts[:json]
 
       max_name_size = 0
       max_type_size  = 0
@@ -78,8 +79,8 @@ module Hdo
 
         out.puts "\n\n"
 
-        if xml
-          puts type.xml_example.split("\n")
+        if json
+          puts type.json_example.split("\n")
           puts "\n\n"
         end
       end
@@ -129,6 +130,7 @@ require 'hdo/storting_importer/committee'
 require 'hdo/storting_importer/committee_membership'
 require 'hdo/storting_importer/district'
 require 'hdo/storting_importer/parliament_issue'
+require 'hdo/storting_importer/parliament_issue_details'
 require 'hdo/storting_importer/parliament_period'
 require 'hdo/storting_importer/parliament_session'
 require 'hdo/storting_importer/party'

@@ -1,0 +1,32 @@
+{
+  "id": "hdo#parliament_issue_details",
+  "description": "details about a parliament issue",
+  "type":"object",
+  "properties": {
+    "kind": {
+      "type": "string",
+      "description": "This is always 'hdo#parliament_issue_details'",
+      "default": "hdo#parliament_issue_details",
+      "required": true
+    },
+    "external_id": {
+      "type": "string",
+      "description": "A unique identifier for the issue.",
+      "required": true
+    },
+    "links": {
+      "type": "array",
+      "description": "List of links to relevant documents",
+      "items": {
+        "type": "object",
+        "properties": {
+          "external_id": { "type": "string", "required": false },
+          "title": { "type": "string", "required": true },
+          "url": { "type": "string", "required": true },
+          "type": { "type": "string", "required": false },
+          "subtype": { "type": "string", "required": false }
+        }
+      }
+    }
+  }
+}

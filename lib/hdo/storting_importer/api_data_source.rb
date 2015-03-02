@@ -99,6 +99,10 @@ module Hdo
         fetch "eksport/saker?sesjonid=#{session_id}"
       end
 
+      def parliament_issue_details(parliament_issue_id)
+        fetch "eksport/sak?sakid=#{parliament_issue_id}"
+      end
+
       def votes_for(issue_id)
         fetch "eksport/voteringer?sakid=#{issue_id}"
       end
