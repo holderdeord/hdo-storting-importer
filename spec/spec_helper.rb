@@ -42,6 +42,8 @@ module Hdo
           "expected #{@target.inspect} not to be #{@expected}"
         end
 
+        alias_method :failure_message_when_negated, :negative_failure_message
+
         private
 
         def diff

@@ -65,7 +65,7 @@ module Hdo
         vote.external_id.should == "2175"
         vote.external_issue_id.should == "51448"
         vote.should be_personal
-        vote.enacted.should be_false
+        vote.enacted.should be false
         vote.subject.should == 'Forslag 24 - 26 på vegne av Per Olaf Lundteigen'
         vote.method_name.should == 'ikke_spesifisert'
         vote.result_type.should == 'ikke_spesifisert'

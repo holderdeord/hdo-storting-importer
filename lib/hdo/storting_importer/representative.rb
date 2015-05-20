@@ -10,7 +10,7 @@ module Hdo
       attr_reader :external_id, :first_name, :last_name, :email, :date_of_birth, :date_of_death,
                   :district, :parties, :committees, :period, :gender
 
-      attr_accessor :vote_result, :permanent_substitute_for
+      attr_accessor :vote_result, :permanent_substitute_for, :substitute
 
       schema_path StortingImporter.lib.join("hdo/storting_importer/schema/representative.json").to_s
 
@@ -85,9 +85,14 @@ module Hdo
           committees
         )
 
-        sub = node.css('fast_vara_for').first
+        sub_for = node.css('fast_vara_for').first
+        if sub_for && sub_for['nil'] != 'true'
+          rep.permanent_substitute_for = sub_for.css("id").first.text
+        end
+
+        sub = node.css('vara').first
         if sub && sub['nil'] != 'true'
-          rep.permanent_substitute_for = sub.css("id").first.text
+          rep.substitute = sub.css('id').first.text
         end
 
         rep
@@ -107,6 +112,7 @@ module Hdo
 
         v.vote_result = hash['vote_result']
         v.permanent_substitute_for = hash['permanent_substitute_for']
+        v.substitute = hash['substitute']
 
         v
       end
@@ -123,8 +129,9 @@ module Hdo
         @parties       = parties
         @committees    = committees
 
-        @vote_result   = nil
+        @vote_result              = nil
         @permanent_substitute_for = nil
+        @substitute               = nil
       end
 
       def short_inspect
@@ -152,6 +159,7 @@ module Hdo
 
         h['vote_result'] = @vote_result if @vote_result
         h['permanent_substitute_for'] = @permanent_substitute_for if @permanent_substitute_for
+        h['substitute'] = @substitute if @substitute
 
         h
       end

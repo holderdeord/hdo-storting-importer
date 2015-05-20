@@ -120,6 +120,16 @@ module Hdo
         Representative.from_hash(data).permanent_substitute_for.should == "JB"
       end
 
+      it 'serializes the "substitute" field' do
+        obj = Representative.example
+        obj.substitute = "JB"
+
+        data = obj.to_hash
+        data['substitute'].should == "JB"
+
+        Representative.from_hash(data).substitute.should == "JB"
+      end
+
     end
   end
 end

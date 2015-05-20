@@ -61,7 +61,11 @@
     },
     "permanent_substitute_for": {
       "type": "string",
-      "description": "A representative the current representative is a permanent substitute for."
+      "description": "The external id of the representative the current representative is a permanent substitute for."
+    },
+    "substitute": {
+      "type": "string",
+      "description": "The external id of the representative that is the substitute for the current representative"
     }
   }
 }
