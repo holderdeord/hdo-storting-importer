@@ -8,7 +8,7 @@ module Hdo
       include Inspectable
 
       attr_reader :external_id, :external_issue_id, :personal, :enacted, :subject,
-                  :method_name, :result_type, :time, :counts
+                  :method_name, :result_type, :time, :counts, :comment
       attr_accessor :propositions, :representatives
 
       alias_method :personal?, :personal
@@ -17,7 +17,7 @@ module Hdo
       schema_path StortingImporter.lib.join("hdo/storting_importer/schema/vote.json").to_s
 
       def self.example(overrides = nil)
-        vote = new('2175', '51448', true, false, 'Forslag 24 - 26 på vegne av Per Olaf Lundteigen', 'ikke_spesifisert', 'ikke_spesifisert', '2012-04-12T16:37:27.053', 2, 96, 71)
+        vote = new('2175', '51448', true, false, 'Forslag 24 - 26 på vegne av Per Olaf Lundteigen', 'ikke_spesifisert', 'ikke_spesifisert', '2012-04-12T16:37:27.053', 2, 96, 71, 'hei')
 
         rep = Representative.example
         rep.vote_result = 'for'
@@ -49,6 +49,7 @@ module Hdo
           method      = vote_node.css("votering_metode").text
           result_type = vote_node.css("votering_resultat_type").text
           time        = vote_node.css("votering_tid").text
+          comment     = vote_node.css('kommentar').text
 
           forc     = Integer(vote_node.css("antall_for").text)
           againstc = Integer(vote_node.css("antall_mot").text)
@@ -59,7 +60,7 @@ module Hdo
           againstc = 0 if againstc < 0
           absentc = 0 if absentc < 0
 
-          new vote_id, issue_id, personal, enacted, subject, method, result_type, time, forc, againstc, absentc
+          new vote_id, issue_id, personal, enacted, subject, method, result_type, time, forc, againstc, absentc, comment
         end
       end
 
@@ -78,6 +79,7 @@ module Hdo
           counts && counts["for"],
           counts && counts["against"],
           counts && counts["absent"],
+          hash["comment"],
         ]
 
         vote = new(*args)
@@ -87,7 +89,7 @@ module Hdo
         vote
       end
 
-      def initialize(external_id, external_issue_id, personal, enacted, subject, method_name, result_type, time, for_count, against_count, absent_count)
+      def initialize(external_id, external_issue_id, personal, enacted, subject, method_name, result_type, time, for_count, against_count, absent_count, comment)
         @external_id       = external_id
         @external_issue_id = external_issue_id
         @personal          = personal
@@ -96,6 +98,7 @@ module Hdo
         @method_name       = method_name
         @result_type       = result_type
         @time              = time
+        @comment           = comment
         @counts            = Counts.new(Integer(for_count || 0), Integer(against_count || 0), Integer(absent_count || 0))
 
         @propositions    = []
@@ -144,6 +147,7 @@ module Hdo
           'method'            => @method_name,
           'result_type'       => @result_type,
           'time'              => @time,
+          'comment'           => @comment,
           'representatives'   => @representatives.map(&:to_hash),
           'propositions'      => @propositions.map(&:to_hash)
         }

@@ -24,7 +24,7 @@ module Hdo
               <behandlingsrekkefoelge>1</behandlingsrekkefoelge>
               <dagsorden_sak_nummer>2</dagsorden_sak_nummer>
               <fri_votering>false</fri_votering>
-              <kommentar i:nil="true" />
+              <kommentar>Dette gikk fint.</kommentar>
               <personlig_votering>true</personlig_votering>
               <president>
                 <versjon>1.0</versjon>
@@ -73,6 +73,7 @@ module Hdo
         vote.counts.for.should == 2
         vote.counts.against.should == 96
         vote.counts.absent.should == 71
+        vote.comment.should == 'Dette gikk fint.'
       end
 
       it 'can serialize as JSON' do
@@ -92,6 +93,7 @@ module Hdo
           "method": "ikke_spesifisert",
           "result_type": "ikke_spesifisert",
           "time": "2012-04-12T16:37:27.053",
+          "comment": "hei",
           "representatives": [
             {
               "kind": "hdo#representative",

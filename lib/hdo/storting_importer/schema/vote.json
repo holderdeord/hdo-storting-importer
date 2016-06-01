@@ -57,6 +57,10 @@
       "type": "string",
       "description": "Not entirely what sure this is at the moment."
     },
+    "comment": {
+      "type": "string",
+      "description": "A comment for the vote (usually to make corrections)"
+    },
     "representatives": {
       "type": "array",
       "description": "An array of each representative's vote. The object should contain a set of <a href='#input-format-representative'>hdo#representative</a> objects with the property 'vote_result' added, for which valid values are 'for', 'against', 'absent'.",
