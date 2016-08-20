@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
 
   gem.add_runtime_dependency "builder"
   gem.add_runtime_dependency "nokogiri"
-  gem.add_runtime_dependency "aruba", "0.8.1"
+  gem.add_runtime_dependency "aruba", "0.6.2"
   gem.add_runtime_dependency "rake"
   gem.add_runtime_dependency "faraday"
   gem.add_runtime_dependency "net-http-persistent"
