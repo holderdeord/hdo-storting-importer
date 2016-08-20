@@ -10,5 +10,7 @@ notifications:
     on_success: always
     on_failure: change
     template:
-      - "%{author} | %{commit} | %{message} | %{build_url}"
-script: "SPEC_OPTS=--backtrace bundle exec rake"
+    - "%{author} | %{commit} | %{message} | %{build_url}"
+  slack:
+    secure: kqWLjIkXnKSnvinLB4wllKljWk0k9tXC8dA9s85qL7+UU0x90iEulx6GPhi8nIOK/5reNUhDcS6nktuzPz7/4iIM0J7BxMZiDLp6xjDaeag9cuXpNc8/lsFViyrsTqqs///WZjV5AmCsAM01GErqhkO5xxoCs5Pu50ulS4VvVc4=
+script: SPEC_OPTS=--backtrace bundle exec rake
