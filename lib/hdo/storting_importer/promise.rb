@@ -78,7 +78,7 @@ module Hdo
           elsif promisor.include?(",")
             errors << "row #{external_id}: comma not allowed in promisor id/name"
           end
-          
+
           if categories.nil? || categories.empty?
             errors << "row #{external_id}: categories missing"
           end
@@ -167,7 +167,7 @@ module Hdo
       private
 
       def clean_array(categories)
-        categories = categories.split(",") if categories.kind_of?(String)
+        categories = categories.split(/,\s*/) if categories.kind_of?(String)
         Array(categories).map(&:strip).reject(&:empty?)
       end
 

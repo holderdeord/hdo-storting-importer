@@ -48,14 +48,16 @@ module Hdo
       # @param [:small, :medium, :large] size
       #
 
-      def person_photo(person_id, size = :medium)
+      def person_photo(person_id, size = :medium, fallback = false)
         size_param = {
           :small  => 'lite',
           :medium => 'middels',
           :large  => 'stort'
         }.fetch(size)
 
-        fetch_raw "eksport/personbilde?personid=#{person_id}&storrelse=#{size_param}"
+        fb = fallback ? '&erstatningsbilde=true' : ''
+
+        fetch_raw "eksport/personbilde?personid=#{person_id}&storrelse=#{size_param}#{fb}"
       end
 
       def speaker_list
