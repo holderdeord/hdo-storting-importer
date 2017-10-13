@@ -104,7 +104,7 @@ Feature: Import data
         </fylker_liste>
       </fylker_oversikt>
       """
-      When I successfully run `hdo-converter districts fylker.xml`
+      When I successfully run `hdo-converter districts fylker.xml` for up to 5 seconds
       Then the stdout should contain:
       """
       [
