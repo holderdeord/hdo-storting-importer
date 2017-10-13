@@ -47,8 +47,6 @@ module Hdo
       end
 
       def self.from_storting_node(node, date = nil)
-        id = node.css("id").first.text
-
         district_node = node.css("fylke navn").first
         district      = district_node ? district_node.text : ''
 
@@ -66,7 +64,7 @@ module Hdo
         if email_node
           email = email_node.text
         else
-          email = "#{id.downcase}@stortinget.no"
+          email = nil
         end
 
         committee_ids = node.css("komite").map { |c| c.css("id").text.strip }
@@ -75,10 +73,10 @@ module Hdo
         end
 
         rep = new(
-          id,
+          node.css("id").first.text,
           node.css("fornavn").first.text,
           node.css("etternavn").first.text,
-          email,
+          email.nil? || email.empty? ? nil : email,
           node.css("kjoenn").first.text == "mann" ? 'M' : 'F',
           node.css("foedselsdato").first.text,
           node.css("doedsdato").first.text,
